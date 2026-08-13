@@ -1,0 +1,11 @@
+import { apiRequest, isApiEnabled } from "./client";
+export const listVendors = () => isApiEnabled ? apiRequest("/api/v1/vendors") : null;
+export const createVendor = input => apiRequest("/api/v1/vendors", { method: "POST", body: JSON.stringify(input) });
+export const updateVendor = (id, version, input) => apiRequest(`/api/v1/vendors/${id}`, { method: "PATCH", body: JSON.stringify({ ...input, version }) });
+export const createVendorAssessment = (id, input) => apiRequest(`/api/v1/vendors/${id}/assessments`, { method: "POST", body: JSON.stringify(input) });
+export const listAudits = frameworkId => isApiEnabled ? apiRequest(`/api/v1/audits?frameworkId=${encodeURIComponent(frameworkId)}`) : null;
+export const createAudit = input => apiRequest("/api/v1/audits", { method: "POST", body: JSON.stringify(input) });
+export const createAuditFinding = (auditId, input) => apiRequest(`/api/v1/audits/${auditId}/findings`, { method: "POST", body: JSON.stringify(input) });
+export const reviewAuditFinding = (id, comments = "") => apiRequest(`/api/v1/audit-findings/${id}/review`, { method: "POST", body: JSON.stringify({ comments }) });
+export const resolveAuditFinding = id => apiRequest(`/api/v1/audit-findings/${id}/resolve`, { method: "POST" });
+export const synchronizeAuditReadiness = (frameworkId, findings) => apiRequest("/api/v1/audits/readiness/sync", { method: "POST", body: JSON.stringify({ frameworkId, findings }) });

@@ -1,0 +1,471 @@
+{
+  "questionnaireSections": [
+    {
+      "id": "QS-ORG",
+      "title": "Organization",
+      "questions": [
+        {
+          "id": "Q-ORG-001",
+          "question": "What type of organization are you preparing for SOC 2 Type II?",
+          "type": "single_select",
+          "options": ["SaaS", "FinTech", "HealthTech", "Marketplace", "Infrastructure provider", "Professional services", "Other"],
+          "rules": [
+            {
+              "condition": "answer equals SaaS or Infrastructure provider",
+              "action": "prioritize availability, change management, monitoring, and incident response controls"
+            }
+          ],
+          "relatedControls": ["CC3.1", "CC5.1", "CC7.2", "CC8.1", "CC9.1"]
+        },
+        {
+          "id": "Q-ORG-002",
+          "question": "Which Trust Services Criteria are in scope?",
+          "type": "multi_select",
+          "options": ["Security", "Availability", "Processing Integrity", "Confidentiality", "Privacy"],
+          "rules": [
+            {
+              "condition": "answer includes Availability",
+              "action": "prioritize backup, disaster recovery, monitoring, and business continuity implementation tasks"
+            },
+            {
+              "condition": "answer includes Confidentiality or Privacy",
+              "action": "prioritize data classification, encryption, access control, and vendor review tasks"
+            }
+          ],
+          "relatedControls": ["CC3.1", "CC6.5", "CC6.7", "CC7.5", "CC9.1", "CC9.2"]
+        },
+        {
+          "id": "Q-ORG-003",
+          "question": "Do you have documented information security policies?",
+          "type": "single_select",
+          "options": ["Yes", "Partially", "No"],
+          "rules": [
+            {
+              "condition": "answer equals Partially or No",
+              "action": "generate tasks to create, review, approve, and distribute required security policies"
+            }
+          ],
+          "relatedControls": ["CC1.1", "CC2.2", "CC5.3"]
+        },
+        {
+          "id": "Q-ORG-004",
+          "question": "Do you have a defined security owner or compliance owner?",
+          "type": "single_select",
+          "options": ["Yes", "No", "Not sure"],
+          "rules": [
+            {
+              "condition": "answer equals No or Not sure",
+              "action": "generate task to assign security and compliance ownership"
+            }
+          ],
+          "relatedControls": ["CC1.3", "CC1.5"]
+        }
+      ]
+    },
+    {
+      "id": "QS-CLOUD",
+      "title": "Cloud Providers",
+      "questions": [
+        {
+          "id": "Q-CLOUD-001",
+          "question": "Which cloud providers are used in production?",
+          "type": "multi_select",
+          "options": ["AWS", "Azure", "Google Cloud", "Oracle Cloud", "DigitalOcean", "Heroku", "Vercel", "Other", "None"],
+          "rules": [
+            {
+              "condition": "answer includes any cloud provider",
+              "action": "prioritize cloud configuration review, access review, logging, and vulnerability monitoring tasks"
+            }
+          ],
+          "relatedControls": ["CC5.2", "CC6.1", "CC6.6", "CC7.1", "CC7.2"]
+        },
+        {
+          "id": "Q-CLOUD-002",
+          "question": "Do you monitor cloud configuration drift or security posture?",
+          "type": "single_select",
+          "options": ["Yes", "Partially", "No"],
+          "rules": [
+            {
+              "condition": "answer equals Partially or No",
+              "action": "generate task to implement cloud security posture review"
+            }
+          ],
+          "relatedControls": ["CC5.2", "CC6.6", "CC7.1"]
+        },
+        {
+          "id": "Q-CLOUD-003",
+          "question": "Are production cloud administrator roles reviewed periodically?",
+          "type": "single_select",
+          "options": ["Yes", "No", "Not sure"],
+          "rules": [
+            {
+              "condition": "answer equals No or Not sure",
+              "action": "prioritize privileged access review for cloud environments"
+            }
+          ],
+          "relatedControls": ["CC6.1", "CC6.2", "CC6.3"]
+        }
+      ]
+    },
+    {
+      "id": "QS-IDP",
+      "title": "Identity Providers",
+      "questions": [
+        {
+          "id": "Q-IDP-001",
+          "question": "Which identity provider do you use?",
+          "type": "single_select",
+          "options": ["Google Workspace", "Okta", "Microsoft Entra ID", "OneLogin", "JumpCloud", "Other", "None"],
+          "rules": [
+            {
+              "condition": "answer does not equal None",
+              "action": "prioritize identity provider evidence collection and access review tasks"
+            }
+          ],
+          "relatedControls": ["CC6.1", "CC6.2", "CC6.3"]
+        },
+        {
+          "id": "Q-IDP-002",
+          "question": "Is MFA enforced for all employees?",
+          "type": "single_select",
+          "options": ["Yes", "Privileged users only", "No", "Not sure"],
+          "rules": [
+            {
+              "condition": "answer equals Privileged users only or No or Not sure",
+              "action": "generate task to verify and expand MFA enforcement"
+            }
+          ],
+          "relatedControls": ["CC6.1", "CC6.6"]
+        },
+        {
+          "id": "Q-IDP-003",
+          "question": "How often do you review user access?",
+          "type": "single_select",
+          "options": ["Monthly", "Quarterly", "Annually", "Ad hoc", "Never"],
+          "rules": [
+            {
+              "condition": "answer equals Annually or Ad hoc or Never",
+              "action": "prioritize quarterly user access review implementation"
+            }
+          ],
+          "relatedControls": ["CC6.1", "CC6.3", "CC4.1"]
+        }
+      ]
+    },
+    {
+      "id": "QS-MON",
+      "title": "Monitoring",
+      "questions": [
+        {
+          "id": "Q-MON-001",
+          "question": "Which monitoring or logging tools are used?",
+          "type": "multi_select",
+          "options": ["Datadog", "Splunk", "CloudWatch", "Google Cloud Logging", "Azure Monitor", "Sentry", "SIEM", "Other", "None"],
+          "rules": [
+            {
+              "condition": "answer equals None",
+              "action": "generate task to define security logging and monitoring approach"
+            }
+          ],
+          "relatedControls": ["CC7.1", "CC7.2", "CC7.3"]
+        },
+        {
+          "id": "Q-MON-002",
+          "question": "Are security alerts reviewed by assigned personnel?",
+          "type": "single_select",
+          "options": ["Yes", "Partially", "No", "Not sure"],
+          "rules": [
+            {
+              "condition": "answer equals Partially or No or Not sure",
+              "action": "generate task to assign alert review ownership and evidence process"
+            }
+          ],
+          "relatedControls": ["CC7.2", "CC7.3", "CC7.4"]
+        },
+        {
+          "id": "Q-MON-003",
+          "question": "Do you retain security logs for a defined period?",
+          "type": "single_select",
+          "options": ["Yes", "No", "Not sure"],
+          "rules": [
+            {
+              "condition": "answer equals No or Not sure",
+              "action": "generate task to define and evidence log retention"
+            }
+          ],
+          "relatedControls": ["CC6.7", "CC7.2"]
+        }
+      ]
+    },
+    {
+      "id": "QS-SCM",
+      "title": "Source Control",
+      "questions": [
+        {
+          "id": "Q-SCM-001",
+          "question": "Which source control platform is used?",
+          "type": "single_select",
+          "options": ["GitHub", "GitLab", "Bitbucket", "Azure DevOps", "Other", "None"],
+          "rules": [
+            {
+              "condition": "answer does not equal None",
+              "action": "prioritize secure code review, branch protection, and change management tasks"
+            }
+          ],
+          "relatedControls": ["CC5.2", "CC8.1"]
+        },
+        {
+          "id": "Q-SCM-002",
+          "question": "Are pull request reviews required before production code is merged?",
+          "type": "single_select",
+          "options": ["Yes", "No", "Not sure"],
+          "rules": [
+            {
+              "condition": "answer equals No or Not sure",
+              "action": "generate task to implement code review and branch protection evidence"
+            }
+          ],
+          "relatedControls": ["CC8.1"]
+        },
+        {
+          "id": "Q-SCM-003",
+          "question": "Do you scan dependencies for vulnerabilities?",
+          "type": "single_select",
+          "options": ["Yes", "Partially", "No", "Not sure"],
+          "rules": [
+            {
+              "condition": "answer equals Partially or No or Not sure",
+              "action": "prioritize dependency scan review implementation"
+            }
+          ],
+          "relatedControls": ["CC7.1", "CC8.1", "CC9.2"]
+        }
+      ]
+    },
+    {
+      "id": "QS-INFRA",
+      "title": "Infrastructure",
+      "questions": [
+        {
+          "id": "Q-INFRA-001",
+          "question": "Do you maintain an inventory of production assets?",
+          "type": "single_select",
+          "options": ["Yes", "Partially", "No"],
+          "rules": [
+            {
+              "condition": "answer equals Partially or No",
+              "action": "generate task to create or update asset inventory"
+            }
+          ],
+          "relatedControls": ["CC5.2", "CC6.5", "CC7.1"]
+        },
+        {
+          "id": "Q-INFRA-002",
+          "question": "How often are vulnerabilities scanned?",
+          "type": "single_select",
+          "options": ["Continuous", "Monthly", "Quarterly", "Annually", "Never"],
+          "rules": [
+            {
+              "condition": "answer equals Quarterly or Annually or Never",
+              "action": "prioritize vulnerability scan review and remediation tasks"
+            }
+          ],
+          "relatedControls": ["CC7.1", "CC4.2"]
+        },
+        {
+          "id": "Q-INFRA-003",
+          "question": "Are firewall or network access rules reviewed periodically?",
+          "type": "single_select",
+          "options": ["Yes", "No", "Not sure"],
+          "rules": [
+            {
+              "condition": "answer equals No or Not sure",
+              "action": "generate task to perform firewall review"
+            }
+          ],
+          "relatedControls": ["CC6.6", "CC7.1"]
+        }
+      ]
+    },
+    {
+      "id": "QS-IR",
+      "title": "Incident Response",
+      "questions": [
+        {
+          "id": "Q-IR-001",
+          "question": "Do you have a documented incident response plan?",
+          "type": "single_select",
+          "options": ["Yes", "Draft", "No"],
+          "rules": [
+            {
+              "condition": "answer equals Draft or No",
+              "action": "generate task to create, approve, and publish incident response plan"
+            }
+          ],
+          "relatedControls": ["CC7.3", "CC7.4", "CC7.5"]
+        },
+        {
+          "id": "Q-IR-002",
+          "question": "Have you completed an incident response tabletop exercise in the last 12 months?",
+          "type": "single_select",
+          "options": ["Yes", "No", "Not sure"],
+          "rules": [
+            {
+              "condition": "answer equals No or Not sure",
+              "action": "generate task to schedule and document tabletop exercise"
+            }
+          ],
+          "relatedControls": ["CC7.4", "CC7.5"]
+        },
+        {
+          "id": "Q-IR-003",
+          "question": "Are security incidents tracked through closure?",
+          "type": "single_select",
+          "options": ["Yes", "Partially", "No", "No incidents yet"],
+          "rules": [
+            {
+              "condition": "answer equals Partially or No",
+              "action": "prioritize incident ticket review and post-incident review process"
+            }
+          ],
+          "relatedControls": ["CC4.2", "CC7.3", "CC7.4", "CC7.5"]
+        }
+      ]
+    },
+    {
+      "id": "QS-BACKUP",
+      "title": "Backups",
+      "questions": [
+        {
+          "id": "Q-BACKUP-001",
+          "question": "Are backups enabled for critical systems and data?",
+          "type": "single_select",
+          "options": ["Yes", "Partially", "No", "Not sure"],
+          "rules": [
+            {
+              "condition": "answer equals Partially or No or Not sure",
+              "action": "generate task to define backup coverage and backup verification"
+            }
+          ],
+          "relatedControls": ["CC7.5", "CC9.1"]
+        },
+        {
+          "id": "Q-BACKUP-002",
+          "question": "How often do you test backup restoration?",
+          "type": "single_select",
+          "options": ["Quarterly", "Annually", "Ad hoc", "Never"],
+          "rules": [
+            {
+              "condition": "answer equals Ad hoc or Never",
+              "action": "prioritize backup restore test"
+            }
+          ],
+          "relatedControls": ["CC7.5", "CC9.1"]
+        },
+        {
+          "id": "Q-BACKUP-003",
+          "question": "Do you have documented disaster recovery objectives?",
+          "type": "single_select",
+          "options": ["Yes", "No", "Not sure"],
+          "rules": [
+            {
+              "condition": "answer equals No or Not sure",
+              "action": "generate task to define recovery time and recovery point objectives"
+            }
+          ],
+          "relatedControls": ["CC7.5", "CC9.1"]
+        }
+      ]
+    },
+    {
+      "id": "QS-VENDOR",
+      "title": "Vendor Management",
+      "questions": [
+        {
+          "id": "Q-VENDOR-001",
+          "question": "Do you maintain a vendor inventory?",
+          "type": "single_select",
+          "options": ["Yes", "Partially", "No"],
+          "rules": [
+            {
+              "condition": "answer equals Partially or No",
+              "action": "generate task to create vendor inventory"
+            }
+          ],
+          "relatedControls": ["CC9.2"]
+        },
+        {
+          "id": "Q-VENDOR-002",
+          "question": "Do vendors with access to customer data receive security review before onboarding?",
+          "type": "single_select",
+          "options": ["Yes", "Sometimes", "No", "Not sure"],
+          "rules": [
+            {
+              "condition": "answer equals Sometimes or No or Not sure",
+              "action": "prioritize vendor due diligence implementation"
+            }
+          ],
+          "relatedControls": ["CC2.3", "CC9.2"]
+        },
+        {
+          "id": "Q-VENDOR-003",
+          "question": "Are critical vendors reviewed at least annually?",
+          "type": "single_select",
+          "options": ["Yes", "No", "Not sure"],
+          "rules": [
+            {
+              "condition": "answer equals No or Not sure",
+              "action": "generate task to perform annual vendor review"
+            }
+          ],
+          "relatedControls": ["CC4.1", "CC9.2"]
+        }
+      ]
+    },
+    {
+      "id": "QS-EMP",
+      "title": "Employee Security",
+      "questions": [
+        {
+          "id": "Q-EMP-001",
+          "question": "Do employees complete security awareness training?",
+          "type": "single_select",
+          "options": ["Yes", "Some employees", "No", "Not sure"],
+          "rules": [
+            {
+              "condition": "answer equals Some employees or No or Not sure",
+              "action": "generate task to implement security awareness training review"
+            }
+          ],
+          "relatedControls": ["CC1.4", "CC2.2"]
+        },
+        {
+          "id": "Q-EMP-002",
+          "question": "Do employees acknowledge security policies?",
+          "type": "single_select",
+          "options": ["Yes", "Some policies", "No", "Not sure"],
+          "rules": [
+            {
+              "condition": "answer equals Some policies or No or Not sure",
+              "action": "generate task to collect policy acknowledgements"
+            }
+          ],
+          "relatedControls": ["CC1.1", "CC2.2", "CC5.3"]
+        },
+        {
+          "id": "Q-EMP-003",
+          "question": "Is employee offboarding tied to access removal?",
+          "type": "single_select",
+          "options": ["Yes", "Partially", "No", "Not sure"],
+          "rules": [
+            {
+              "condition": "answer equals Partially or No or Not sure",
+              "action": "prioritize access deprovisioning review"
+            }
+          ],
+          "relatedControls": ["CC6.3", "CC6.4", "CC6.5"]
+        }
+      ]
+    }
+  ]
+}

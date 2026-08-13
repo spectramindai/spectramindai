@@ -1,0 +1,4304 @@
+{
+  "evidenceRequirements": [
+    {
+      "id": "EV-ISO-001",
+      "title": "Evidence of policies for information security evidence",
+      "description": "Evidence package supporting Evidence of policies for information security.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of policies for information security"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.1"
+      ],
+      "relatedControls": [
+        "5.1"
+      ]
+    },
+    {
+      "id": "EV-ISO-002",
+      "title": "Operating review for policies for information security evidence",
+      "description": "Evidence package supporting Operating review for policies for information security.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for policies for information security"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.2"
+      ],
+      "relatedControls": [
+        "5.1"
+      ]
+    },
+    {
+      "id": "EV-ISO-003",
+      "title": "Evidence of information security roles and responsibilities evidence",
+      "description": "Evidence package supporting Evidence of information security roles and responsibilities.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of information security roles and responsibilities"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.3"
+      ],
+      "relatedControls": [
+        "5.2"
+      ]
+    },
+    {
+      "id": "EV-ISO-004",
+      "title": "Operating review for information security roles and responsibilities evidence",
+      "description": "Evidence package supporting Operating review for information security roles and responsibilities.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for information security roles and responsibilities"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.4"
+      ],
+      "relatedControls": [
+        "5.2"
+      ]
+    },
+    {
+      "id": "EV-ISO-005",
+      "title": "Evidence of segregation of duties evidence",
+      "description": "Evidence package supporting Evidence of segregation of duties.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of segregation of duties"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.5"
+      ],
+      "relatedControls": [
+        "5.3"
+      ]
+    },
+    {
+      "id": "EV-ISO-006",
+      "title": "Operating review for segregation of duties evidence",
+      "description": "Evidence package supporting Operating review for segregation of duties.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for segregation of duties"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.6"
+      ],
+      "relatedControls": [
+        "5.3"
+      ]
+    },
+    {
+      "id": "EV-ISO-007",
+      "title": "Evidence of management responsibilities evidence",
+      "description": "Evidence package supporting Evidence of management responsibilities.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of management responsibilities"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.7"
+      ],
+      "relatedControls": [
+        "5.4"
+      ]
+    },
+    {
+      "id": "EV-ISO-008",
+      "title": "Operating review for management responsibilities evidence",
+      "description": "Evidence package supporting Operating review for management responsibilities.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for management responsibilities"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.8"
+      ],
+      "relatedControls": [
+        "5.4"
+      ]
+    },
+    {
+      "id": "EV-ISO-009",
+      "title": "Evidence of contact with authorities evidence",
+      "description": "Evidence package supporting Evidence of contact with authorities.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of contact with authorities"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.9"
+      ],
+      "relatedControls": [
+        "5.5"
+      ]
+    },
+    {
+      "id": "EV-ISO-010",
+      "title": "Operating review for contact with authorities evidence",
+      "description": "Evidence package supporting Operating review for contact with authorities.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for contact with authorities"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.10"
+      ],
+      "relatedControls": [
+        "5.5"
+      ]
+    },
+    {
+      "id": "EV-ISO-011",
+      "title": "Evidence of contact with special interest groups evidence",
+      "description": "Evidence package supporting Evidence of contact with special interest groups.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of contact with special interest groups"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.11"
+      ],
+      "relatedControls": [
+        "5.6"
+      ]
+    },
+    {
+      "id": "EV-ISO-012",
+      "title": "Operating review for contact with special interest groups evidence",
+      "description": "Evidence package supporting Operating review for contact with special interest groups.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for contact with special interest groups"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.12"
+      ],
+      "relatedControls": [
+        "5.6"
+      ]
+    },
+    {
+      "id": "EV-ISO-013",
+      "title": "Evidence of threat intelligence evidence",
+      "description": "Evidence package supporting Evidence of threat intelligence.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of threat intelligence"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.13"
+      ],
+      "relatedControls": [
+        "5.7"
+      ]
+    },
+    {
+      "id": "EV-ISO-014",
+      "title": "Operating review for threat intelligence evidence",
+      "description": "Evidence package supporting Operating review for threat intelligence.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for threat intelligence"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.14"
+      ],
+      "relatedControls": [
+        "5.7"
+      ]
+    },
+    {
+      "id": "EV-ISO-015",
+      "title": "Evidence of information security in project management evidence",
+      "description": "Evidence package supporting Evidence of information security in project management.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of information security in project management"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.15"
+      ],
+      "relatedControls": [
+        "5.8"
+      ]
+    },
+    {
+      "id": "EV-ISO-016",
+      "title": "Operating review for information security in project management evidence",
+      "description": "Evidence package supporting Operating review for information security in project management.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for information security in project management"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.16"
+      ],
+      "relatedControls": [
+        "5.8"
+      ]
+    },
+    {
+      "id": "EV-ISO-017",
+      "title": "Evidence of inventory of information and other associated assets evidence",
+      "description": "Evidence package supporting Evidence of inventory of information and other associated assets.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of inventory of information and other associated assets"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.17"
+      ],
+      "relatedControls": [
+        "5.9"
+      ]
+    },
+    {
+      "id": "EV-ISO-018",
+      "title": "Operating review for inventory of information and other associated assets evidence",
+      "description": "Evidence package supporting Operating review for inventory of information and other associated assets.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for inventory of information and other associated assets"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.18"
+      ],
+      "relatedControls": [
+        "5.9"
+      ]
+    },
+    {
+      "id": "EV-ISO-019",
+      "title": "Evidence of acceptable use of information and other associated assets evidence",
+      "description": "Evidence package supporting Evidence of acceptable use of information and other associated assets.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of acceptable use of information and other associated assets"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.19"
+      ],
+      "relatedControls": [
+        "5.10"
+      ]
+    },
+    {
+      "id": "EV-ISO-020",
+      "title": "Operating review for acceptable use of information and other associated assets evidence",
+      "description": "Evidence package supporting Operating review for acceptable use of information and other associated assets.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for acceptable use of information and other associated assets"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.20"
+      ],
+      "relatedControls": [
+        "5.10"
+      ]
+    },
+    {
+      "id": "EV-ISO-021",
+      "title": "Evidence of return of assets evidence",
+      "description": "Evidence package supporting Evidence of return of assets.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of return of assets"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.21"
+      ],
+      "relatedControls": [
+        "5.11"
+      ]
+    },
+    {
+      "id": "EV-ISO-022",
+      "title": "Operating review for return of assets evidence",
+      "description": "Evidence package supporting Operating review for return of assets.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for return of assets"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.22"
+      ],
+      "relatedControls": [
+        "5.11"
+      ]
+    },
+    {
+      "id": "EV-ISO-023",
+      "title": "Evidence of classification of information evidence",
+      "description": "Evidence package supporting Evidence of classification of information.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of classification of information"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.23"
+      ],
+      "relatedControls": [
+        "5.12"
+      ]
+    },
+    {
+      "id": "EV-ISO-024",
+      "title": "Operating review for classification of information evidence",
+      "description": "Evidence package supporting Operating review for classification of information.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for classification of information"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.24"
+      ],
+      "relatedControls": [
+        "5.12"
+      ]
+    },
+    {
+      "id": "EV-ISO-025",
+      "title": "Evidence of labelling of information evidence",
+      "description": "Evidence package supporting Evidence of labelling of information.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of labelling of information"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.25"
+      ],
+      "relatedControls": [
+        "5.13"
+      ]
+    },
+    {
+      "id": "EV-ISO-026",
+      "title": "Operating review for labelling of information evidence",
+      "description": "Evidence package supporting Operating review for labelling of information.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for labelling of information"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.26"
+      ],
+      "relatedControls": [
+        "5.13"
+      ]
+    },
+    {
+      "id": "EV-ISO-027",
+      "title": "Evidence of information transfer evidence",
+      "description": "Evidence package supporting Evidence of information transfer.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of information transfer"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.27"
+      ],
+      "relatedControls": [
+        "5.14"
+      ]
+    },
+    {
+      "id": "EV-ISO-028",
+      "title": "Operating review for information transfer evidence",
+      "description": "Evidence package supporting Operating review for information transfer.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for information transfer"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.28"
+      ],
+      "relatedControls": [
+        "5.14"
+      ]
+    },
+    {
+      "id": "EV-ISO-029",
+      "title": "Evidence of access control evidence",
+      "description": "Evidence package supporting Evidence of access control.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of access control"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.29"
+      ],
+      "relatedControls": [
+        "5.15"
+      ]
+    },
+    {
+      "id": "EV-ISO-030",
+      "title": "Operating review for access control evidence",
+      "description": "Evidence package supporting Operating review for access control.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for access control"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.30"
+      ],
+      "relatedControls": [
+        "5.15"
+      ]
+    },
+    {
+      "id": "EV-ISO-031",
+      "title": "Evidence of identity management evidence",
+      "description": "Evidence package supporting Evidence of identity management.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of identity management"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.31"
+      ],
+      "relatedControls": [
+        "5.16"
+      ]
+    },
+    {
+      "id": "EV-ISO-032",
+      "title": "Operating review for identity management evidence",
+      "description": "Evidence package supporting Operating review for identity management.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for identity management"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.32"
+      ],
+      "relatedControls": [
+        "5.16"
+      ]
+    },
+    {
+      "id": "EV-ISO-033",
+      "title": "Evidence of authentication information evidence",
+      "description": "Evidence package supporting Evidence of authentication information.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of authentication information"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.33"
+      ],
+      "relatedControls": [
+        "5.17"
+      ]
+    },
+    {
+      "id": "EV-ISO-034",
+      "title": "Operating review for authentication information evidence",
+      "description": "Evidence package supporting Operating review for authentication information.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for authentication information"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.34"
+      ],
+      "relatedControls": [
+        "5.17"
+      ]
+    },
+    {
+      "id": "EV-ISO-035",
+      "title": "Evidence of access rights evidence",
+      "description": "Evidence package supporting Evidence of access rights.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of access rights"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.35"
+      ],
+      "relatedControls": [
+        "5.18"
+      ]
+    },
+    {
+      "id": "EV-ISO-036",
+      "title": "Operating review for access rights evidence",
+      "description": "Evidence package supporting Operating review for access rights.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for access rights"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.36"
+      ],
+      "relatedControls": [
+        "5.18"
+      ]
+    },
+    {
+      "id": "EV-ISO-037",
+      "title": "Evidence of information security in supplier relationships evidence",
+      "description": "Evidence package supporting Evidence of information security in supplier relationships.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of information security in supplier relationships"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.37"
+      ],
+      "relatedControls": [
+        "5.19"
+      ]
+    },
+    {
+      "id": "EV-ISO-038",
+      "title": "Operating review for information security in supplier relationships evidence",
+      "description": "Evidence package supporting Operating review for information security in supplier relationships.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for information security in supplier relationships"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.38"
+      ],
+      "relatedControls": [
+        "5.19"
+      ]
+    },
+    {
+      "id": "EV-ISO-039",
+      "title": "Evidence of addressing information security within supplier agreements evidence",
+      "description": "Evidence package supporting Evidence of addressing information security within supplier agreements.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of addressing information security within supplier agreements"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.39"
+      ],
+      "relatedControls": [
+        "5.20"
+      ]
+    },
+    {
+      "id": "EV-ISO-040",
+      "title": "Operating review for addressing information security within supplier agreements evidence",
+      "description": "Evidence package supporting Operating review for addressing information security within supplier agreements.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for addressing information security within supplier agreements"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.40"
+      ],
+      "relatedControls": [
+        "5.20"
+      ]
+    },
+    {
+      "id": "EV-ISO-041",
+      "title": "Evidence of managing information security in the ict supply chain evidence",
+      "description": "Evidence package supporting Evidence of managing information security in the ict supply chain.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of managing information security in the ict supply chain"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.41"
+      ],
+      "relatedControls": [
+        "5.21"
+      ]
+    },
+    {
+      "id": "EV-ISO-042",
+      "title": "Operating review for managing information security in the ict supply chain evidence",
+      "description": "Evidence package supporting Operating review for managing information security in the ict supply chain.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for managing information security in the ict supply chain"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.42"
+      ],
+      "relatedControls": [
+        "5.21"
+      ]
+    },
+    {
+      "id": "EV-ISO-043",
+      "title": "Evidence of monitoring, review and change management of supplier services evidence",
+      "description": "Evidence package supporting Evidence of monitoring, review and change management of supplier services.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of monitoring, review and change management of supplier services"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.43"
+      ],
+      "relatedControls": [
+        "5.22"
+      ]
+    },
+    {
+      "id": "EV-ISO-044",
+      "title": "Operating review for monitoring, review and change management of supplier services evidence",
+      "description": "Evidence package supporting Operating review for monitoring, review and change management of supplier services.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for monitoring, review and change management of supplier services"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.44"
+      ],
+      "relatedControls": [
+        "5.22"
+      ]
+    },
+    {
+      "id": "EV-ISO-045",
+      "title": "Evidence of information security for use of cloud services evidence",
+      "description": "Evidence package supporting Evidence of information security for use of cloud services.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of information security for use of cloud services"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.45"
+      ],
+      "relatedControls": [
+        "5.23"
+      ]
+    },
+    {
+      "id": "EV-ISO-046",
+      "title": "Operating review for information security for use of cloud services evidence",
+      "description": "Evidence package supporting Operating review for information security for use of cloud services.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for information security for use of cloud services"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.46"
+      ],
+      "relatedControls": [
+        "5.23"
+      ]
+    },
+    {
+      "id": "EV-ISO-047",
+      "title": "Evidence of information security incident management planning and preparation evidence",
+      "description": "Evidence package supporting Evidence of information security incident management planning and preparation.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of information security incident management planning and preparation"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.47"
+      ],
+      "relatedControls": [
+        "5.24"
+      ]
+    },
+    {
+      "id": "EV-ISO-048",
+      "title": "Operating review for information security incident management planning and preparation evidence",
+      "description": "Evidence package supporting Operating review for information security incident management planning and preparation.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for information security incident management planning and preparation"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.48"
+      ],
+      "relatedControls": [
+        "5.24"
+      ]
+    },
+    {
+      "id": "EV-ISO-049",
+      "title": "Evidence of assessment and decision on information security events evidence",
+      "description": "Evidence package supporting Evidence of assessment and decision on information security events.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of assessment and decision on information security events"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.49"
+      ],
+      "relatedControls": [
+        "5.25"
+      ]
+    },
+    {
+      "id": "EV-ISO-050",
+      "title": "Operating review for assessment and decision on information security events evidence",
+      "description": "Evidence package supporting Operating review for assessment and decision on information security events.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for assessment and decision on information security events"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.50"
+      ],
+      "relatedControls": [
+        "5.25"
+      ]
+    },
+    {
+      "id": "EV-ISO-051",
+      "title": "Evidence of response to information security incidents evidence",
+      "description": "Evidence package supporting Evidence of response to information security incidents.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of response to information security incidents"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.51"
+      ],
+      "relatedControls": [
+        "5.26"
+      ]
+    },
+    {
+      "id": "EV-ISO-052",
+      "title": "Operating review for response to information security incidents evidence",
+      "description": "Evidence package supporting Operating review for response to information security incidents.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for response to information security incidents"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.52"
+      ],
+      "relatedControls": [
+        "5.26"
+      ]
+    },
+    {
+      "id": "EV-ISO-053",
+      "title": "Evidence of learning from information security incidents evidence",
+      "description": "Evidence package supporting Evidence of learning from information security incidents.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of learning from information security incidents"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.53"
+      ],
+      "relatedControls": [
+        "5.27"
+      ]
+    },
+    {
+      "id": "EV-ISO-054",
+      "title": "Operating review for learning from information security incidents evidence",
+      "description": "Evidence package supporting Operating review for learning from information security incidents.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for learning from information security incidents"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.54"
+      ],
+      "relatedControls": [
+        "5.27"
+      ]
+    },
+    {
+      "id": "EV-ISO-055",
+      "title": "Evidence of collection of evidence evidence",
+      "description": "Evidence package supporting Evidence of collection of evidence.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of collection of evidence"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.55"
+      ],
+      "relatedControls": [
+        "5.28"
+      ]
+    },
+    {
+      "id": "EV-ISO-056",
+      "title": "Operating review for collection of evidence evidence",
+      "description": "Evidence package supporting Operating review for collection of evidence.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for collection of evidence"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.56"
+      ],
+      "relatedControls": [
+        "5.28"
+      ]
+    },
+    {
+      "id": "EV-ISO-057",
+      "title": "Evidence of information security during disruption evidence",
+      "description": "Evidence package supporting Evidence of information security during disruption.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of information security during disruption"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.57"
+      ],
+      "relatedControls": [
+        "5.29"
+      ]
+    },
+    {
+      "id": "EV-ISO-058",
+      "title": "Operating review for information security during disruption evidence",
+      "description": "Evidence package supporting Operating review for information security during disruption.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for information security during disruption"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.58"
+      ],
+      "relatedControls": [
+        "5.29"
+      ]
+    },
+    {
+      "id": "EV-ISO-059",
+      "title": "Evidence of ict readiness for business continuity evidence",
+      "description": "Evidence package supporting Evidence of ict readiness for business continuity.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of ict readiness for business continuity"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.59"
+      ],
+      "relatedControls": [
+        "5.30"
+      ]
+    },
+    {
+      "id": "EV-ISO-060",
+      "title": "Operating review for ict readiness for business continuity evidence",
+      "description": "Evidence package supporting Operating review for ict readiness for business continuity.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for ict readiness for business continuity"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.60"
+      ],
+      "relatedControls": [
+        "5.30"
+      ]
+    },
+    {
+      "id": "EV-ISO-061",
+      "title": "Evidence of legal, statutory, regulatory and contractual requirements evidence",
+      "description": "Evidence package supporting Evidence of legal, statutory, regulatory and contractual requirements.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of legal, statutory, regulatory and contractual requirements"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.61"
+      ],
+      "relatedControls": [
+        "5.31"
+      ]
+    },
+    {
+      "id": "EV-ISO-062",
+      "title": "Operating review for legal, statutory, regulatory and contractual requirements evidence",
+      "description": "Evidence package supporting Operating review for legal, statutory, regulatory and contractual requirements.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for legal, statutory, regulatory and contractual requirements"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.62"
+      ],
+      "relatedControls": [
+        "5.31"
+      ]
+    },
+    {
+      "id": "EV-ISO-063",
+      "title": "Evidence of intellectual property rights evidence",
+      "description": "Evidence package supporting Evidence of intellectual property rights.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of intellectual property rights"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.63"
+      ],
+      "relatedControls": [
+        "5.32"
+      ]
+    },
+    {
+      "id": "EV-ISO-064",
+      "title": "Operating review for intellectual property rights evidence",
+      "description": "Evidence package supporting Operating review for intellectual property rights.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for intellectual property rights"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.64"
+      ],
+      "relatedControls": [
+        "5.32"
+      ]
+    },
+    {
+      "id": "EV-ISO-065",
+      "title": "Evidence of protection of records evidence",
+      "description": "Evidence package supporting Evidence of protection of records.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of protection of records"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.65"
+      ],
+      "relatedControls": [
+        "5.33"
+      ]
+    },
+    {
+      "id": "EV-ISO-066",
+      "title": "Operating review for protection of records evidence",
+      "description": "Evidence package supporting Operating review for protection of records.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for protection of records"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.66"
+      ],
+      "relatedControls": [
+        "5.33"
+      ]
+    },
+    {
+      "id": "EV-ISO-067",
+      "title": "Evidence of privacy and protection of pii evidence",
+      "description": "Evidence package supporting Evidence of privacy and protection of pii.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of privacy and protection of pii"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.67"
+      ],
+      "relatedControls": [
+        "5.34"
+      ]
+    },
+    {
+      "id": "EV-ISO-068",
+      "title": "Operating review for privacy and protection of pii evidence",
+      "description": "Evidence package supporting Operating review for privacy and protection of pii.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for privacy and protection of pii"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.68"
+      ],
+      "relatedControls": [
+        "5.34"
+      ]
+    },
+    {
+      "id": "EV-ISO-069",
+      "title": "Evidence of independent review of information security evidence",
+      "description": "Evidence package supporting Evidence of independent review of information security.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of independent review of information security"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.69"
+      ],
+      "relatedControls": [
+        "5.35"
+      ]
+    },
+    {
+      "id": "EV-ISO-070",
+      "title": "Operating review for independent review of information security evidence",
+      "description": "Evidence package supporting Operating review for independent review of information security.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for independent review of information security"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.70"
+      ],
+      "relatedControls": [
+        "5.35"
+      ]
+    },
+    {
+      "id": "EV-ISO-071",
+      "title": "Evidence of compliance with policies, rules and standards for information security evidence",
+      "description": "Evidence package supporting Evidence of compliance with policies, rules and standards for information security.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of compliance with policies, rules and standards for information security"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.71"
+      ],
+      "relatedControls": [
+        "5.36"
+      ]
+    },
+    {
+      "id": "EV-ISO-072",
+      "title": "Operating review for compliance with policies, rules and standards for information security evidence",
+      "description": "Evidence package supporting Operating review for compliance with policies, rules and standards for information security.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for compliance with policies, rules and standards for information security"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.72"
+      ],
+      "relatedControls": [
+        "5.36"
+      ]
+    },
+    {
+      "id": "EV-ISO-073",
+      "title": "Documented operating procedures document evidence",
+      "description": "Evidence package supporting Documented operating procedures document.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Documented operating procedures document"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.73"
+      ],
+      "relatedControls": [
+        "5.37"
+      ]
+    },
+    {
+      "id": "EV-ISO-074",
+      "title": "Operating review for documented operating procedures evidence",
+      "description": "Evidence package supporting Operating review for documented operating procedures.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for documented operating procedures"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-OP.74"
+      ],
+      "relatedControls": [
+        "5.37"
+      ]
+    },
+    {
+      "id": "EV-ISO-075",
+      "title": "Evidence of screening evidence",
+      "description": "Evidence package supporting Evidence of screening.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of screening"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PE.1"
+      ],
+      "relatedControls": [
+        "6.1"
+      ]
+    },
+    {
+      "id": "EV-ISO-076",
+      "title": "Operating review for screening evidence",
+      "description": "Evidence package supporting Operating review for screening.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for screening"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PE.2"
+      ],
+      "relatedControls": [
+        "6.1"
+      ]
+    },
+    {
+      "id": "EV-ISO-077",
+      "title": "Evidence of terms and conditions of employment evidence",
+      "description": "Evidence package supporting Evidence of terms and conditions of employment.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of terms and conditions of employment"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PE.3"
+      ],
+      "relatedControls": [
+        "6.2"
+      ]
+    },
+    {
+      "id": "EV-ISO-078",
+      "title": "Operating review for terms and conditions of employment evidence",
+      "description": "Evidence package supporting Operating review for terms and conditions of employment.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for terms and conditions of employment"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PE.4"
+      ],
+      "relatedControls": [
+        "6.2"
+      ]
+    },
+    {
+      "id": "EV-ISO-079",
+      "title": "Evidence of information security awareness, education and training evidence",
+      "description": "Evidence package supporting Evidence of information security awareness, education and training.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of information security awareness, education and training"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PE.5"
+      ],
+      "relatedControls": [
+        "6.3"
+      ]
+    },
+    {
+      "id": "EV-ISO-080",
+      "title": "Operating review for information security awareness, education and training evidence",
+      "description": "Evidence package supporting Operating review for information security awareness, education and training.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for information security awareness, education and training"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PE.6"
+      ],
+      "relatedControls": [
+        "6.3"
+      ]
+    },
+    {
+      "id": "EV-ISO-081",
+      "title": "Evidence of disciplinary process evidence",
+      "description": "Evidence package supporting Evidence of disciplinary process.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of disciplinary process"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PE.7"
+      ],
+      "relatedControls": [
+        "6.4"
+      ]
+    },
+    {
+      "id": "EV-ISO-082",
+      "title": "Operating review for disciplinary process evidence",
+      "description": "Evidence package supporting Operating review for disciplinary process.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for disciplinary process"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PE.8"
+      ],
+      "relatedControls": [
+        "6.4"
+      ]
+    },
+    {
+      "id": "EV-ISO-083",
+      "title": "Evidence of responsibilities after termination or change of employment evidence",
+      "description": "Evidence package supporting Evidence of responsibilities after termination or change of employment.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of responsibilities after termination or change of employment"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PE.9"
+      ],
+      "relatedControls": [
+        "6.5"
+      ]
+    },
+    {
+      "id": "EV-ISO-084",
+      "title": "Operating review for responsibilities after termination or change of employment evidence",
+      "description": "Evidence package supporting Operating review for responsibilities after termination or change of employment.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for responsibilities after termination or change of employment"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PE.10"
+      ],
+      "relatedControls": [
+        "6.5"
+      ]
+    },
+    {
+      "id": "EV-ISO-085",
+      "title": "Evidence of confidentiality or non-disclosure agreements evidence",
+      "description": "Evidence package supporting Evidence of confidentiality or non-disclosure agreements.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of confidentiality or non-disclosure agreements"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PE.11"
+      ],
+      "relatedControls": [
+        "6.6"
+      ]
+    },
+    {
+      "id": "EV-ISO-086",
+      "title": "Operating review for confidentiality or non-disclosure agreements evidence",
+      "description": "Evidence package supporting Operating review for confidentiality or non-disclosure agreements.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for confidentiality or non-disclosure agreements"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PE.12"
+      ],
+      "relatedControls": [
+        "6.6"
+      ]
+    },
+    {
+      "id": "EV-ISO-087",
+      "title": "Evidence of remote working evidence",
+      "description": "Evidence package supporting Evidence of remote working.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of remote working"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PE.13"
+      ],
+      "relatedControls": [
+        "6.7"
+      ]
+    },
+    {
+      "id": "EV-ISO-088",
+      "title": "Operating review for remote working evidence",
+      "description": "Evidence package supporting Operating review for remote working.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for remote working"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PE.14"
+      ],
+      "relatedControls": [
+        "6.7"
+      ]
+    },
+    {
+      "id": "EV-ISO-089",
+      "title": "Evidence of information security event reporting evidence",
+      "description": "Evidence package supporting Evidence of information security event reporting.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of information security event reporting"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PE.15"
+      ],
+      "relatedControls": [
+        "6.8"
+      ]
+    },
+    {
+      "id": "EV-ISO-090",
+      "title": "Operating review for information security event reporting evidence",
+      "description": "Evidence package supporting Operating review for information security event reporting.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for information security event reporting"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PE.16"
+      ],
+      "relatedControls": [
+        "6.8"
+      ]
+    },
+    {
+      "id": "EV-ISO-091",
+      "title": "Evidence of physical security perimeters evidence",
+      "description": "Evidence package supporting Evidence of physical security perimeters.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of physical security perimeters"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.1"
+      ],
+      "relatedControls": [
+        "7.1"
+      ]
+    },
+    {
+      "id": "EV-ISO-092",
+      "title": "Operating review for physical security perimeters evidence",
+      "description": "Evidence package supporting Operating review for physical security perimeters.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for physical security perimeters"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.2"
+      ],
+      "relatedControls": [
+        "7.1"
+      ]
+    },
+    {
+      "id": "EV-ISO-093",
+      "title": "Evidence of physical entry evidence",
+      "description": "Evidence package supporting Evidence of physical entry.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of physical entry"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.3"
+      ],
+      "relatedControls": [
+        "7.2"
+      ]
+    },
+    {
+      "id": "EV-ISO-094",
+      "title": "Operating review for physical entry evidence",
+      "description": "Evidence package supporting Operating review for physical entry.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for physical entry"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.4"
+      ],
+      "relatedControls": [
+        "7.2"
+      ]
+    },
+    {
+      "id": "EV-ISO-095",
+      "title": "Evidence of securing offices, rooms and facilities evidence",
+      "description": "Evidence package supporting Evidence of securing offices, rooms and facilities.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of securing offices, rooms and facilities"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.5"
+      ],
+      "relatedControls": [
+        "7.3"
+      ]
+    },
+    {
+      "id": "EV-ISO-096",
+      "title": "Operating review for securing offices, rooms and facilities evidence",
+      "description": "Evidence package supporting Operating review for securing offices, rooms and facilities.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for securing offices, rooms and facilities"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.6"
+      ],
+      "relatedControls": [
+        "7.3"
+      ]
+    },
+    {
+      "id": "EV-ISO-097",
+      "title": "Evidence of physical security monitoring evidence",
+      "description": "Evidence package supporting Evidence of physical security monitoring.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of physical security monitoring"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.7"
+      ],
+      "relatedControls": [
+        "7.4"
+      ]
+    },
+    {
+      "id": "EV-ISO-098",
+      "title": "Operating review for physical security monitoring evidence",
+      "description": "Evidence package supporting Operating review for physical security monitoring.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for physical security monitoring"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.8"
+      ],
+      "relatedControls": [
+        "7.4"
+      ]
+    },
+    {
+      "id": "EV-ISO-099",
+      "title": "Evidence of protecting against physical and environmental threats evidence",
+      "description": "Evidence package supporting Evidence of protecting against physical and environmental threats.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of protecting against physical and environmental threats"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.9"
+      ],
+      "relatedControls": [
+        "7.5"
+      ]
+    },
+    {
+      "id": "EV-ISO-100",
+      "title": "Operating review for protecting against physical and environmental threats evidence",
+      "description": "Evidence package supporting Operating review for protecting against physical and environmental threats.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for protecting against physical and environmental threats"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.10"
+      ],
+      "relatedControls": [
+        "7.5"
+      ]
+    },
+    {
+      "id": "EV-ISO-101",
+      "title": "Evidence of working in secure areas evidence",
+      "description": "Evidence package supporting Evidence of working in secure areas.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of working in secure areas"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.11"
+      ],
+      "relatedControls": [
+        "7.6"
+      ]
+    },
+    {
+      "id": "EV-ISO-102",
+      "title": "Operating review for working in secure areas evidence",
+      "description": "Evidence package supporting Operating review for working in secure areas.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for working in secure areas"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.12"
+      ],
+      "relatedControls": [
+        "7.6"
+      ]
+    },
+    {
+      "id": "EV-ISO-103",
+      "title": "Evidence of clear desk and clear screen evidence",
+      "description": "Evidence package supporting Evidence of clear desk and clear screen.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of clear desk and clear screen"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.13"
+      ],
+      "relatedControls": [
+        "7.7"
+      ]
+    },
+    {
+      "id": "EV-ISO-104",
+      "title": "Operating review for clear desk and clear screen evidence",
+      "description": "Evidence package supporting Operating review for clear desk and clear screen.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for clear desk and clear screen"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.14"
+      ],
+      "relatedControls": [
+        "7.7"
+      ]
+    },
+    {
+      "id": "EV-ISO-105",
+      "title": "Evidence of equipment siting and protection evidence",
+      "description": "Evidence package supporting Evidence of equipment siting and protection.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of equipment siting and protection"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.15"
+      ],
+      "relatedControls": [
+        "7.8"
+      ]
+    },
+    {
+      "id": "EV-ISO-106",
+      "title": "Operating review for equipment siting and protection evidence",
+      "description": "Evidence package supporting Operating review for equipment siting and protection.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for equipment siting and protection"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.16"
+      ],
+      "relatedControls": [
+        "7.8"
+      ]
+    },
+    {
+      "id": "EV-ISO-107",
+      "title": "Evidence of security of assets off-premises evidence",
+      "description": "Evidence package supporting Evidence of security of assets off-premises.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of security of assets off-premises"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.17"
+      ],
+      "relatedControls": [
+        "7.9"
+      ]
+    },
+    {
+      "id": "EV-ISO-108",
+      "title": "Operating review for security of assets off-premises evidence",
+      "description": "Evidence package supporting Operating review for security of assets off-premises.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for security of assets off-premises"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.18"
+      ],
+      "relatedControls": [
+        "7.9"
+      ]
+    },
+    {
+      "id": "EV-ISO-109",
+      "title": "Evidence of storage media evidence",
+      "description": "Evidence package supporting Evidence of storage media.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of storage media"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.19"
+      ],
+      "relatedControls": [
+        "7.10"
+      ]
+    },
+    {
+      "id": "EV-ISO-110",
+      "title": "Operating review for storage media evidence",
+      "description": "Evidence package supporting Operating review for storage media.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for storage media"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.20"
+      ],
+      "relatedControls": [
+        "7.10"
+      ]
+    },
+    {
+      "id": "EV-ISO-111",
+      "title": "Evidence of supporting utilities evidence",
+      "description": "Evidence package supporting Evidence of supporting utilities.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of supporting utilities"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.21"
+      ],
+      "relatedControls": [
+        "7.11"
+      ]
+    },
+    {
+      "id": "EV-ISO-112",
+      "title": "Operating review for supporting utilities evidence",
+      "description": "Evidence package supporting Operating review for supporting utilities.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for supporting utilities"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.22"
+      ],
+      "relatedControls": [
+        "7.11"
+      ]
+    },
+    {
+      "id": "EV-ISO-113",
+      "title": "Evidence of cabling security evidence",
+      "description": "Evidence package supporting Evidence of cabling security.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of cabling security"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.23"
+      ],
+      "relatedControls": [
+        "7.12"
+      ]
+    },
+    {
+      "id": "EV-ISO-114",
+      "title": "Operating review for cabling security evidence",
+      "description": "Evidence package supporting Operating review for cabling security.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for cabling security"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.24"
+      ],
+      "relatedControls": [
+        "7.12"
+      ]
+    },
+    {
+      "id": "EV-ISO-115",
+      "title": "Evidence of equipment maintenance evidence",
+      "description": "Evidence package supporting Evidence of equipment maintenance.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of equipment maintenance"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.25"
+      ],
+      "relatedControls": [
+        "7.13"
+      ]
+    },
+    {
+      "id": "EV-ISO-116",
+      "title": "Operating review for equipment maintenance evidence",
+      "description": "Evidence package supporting Operating review for equipment maintenance.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for equipment maintenance"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.26"
+      ],
+      "relatedControls": [
+        "7.13"
+      ]
+    },
+    {
+      "id": "EV-ISO-117",
+      "title": "Evidence of secure disposal or re-use of equipment evidence",
+      "description": "Evidence package supporting Evidence of secure disposal or re-use of equipment.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of secure disposal or re-use of equipment"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.27"
+      ],
+      "relatedControls": [
+        "7.14"
+      ]
+    },
+    {
+      "id": "EV-ISO-118",
+      "title": "Operating review for secure disposal or re-use of equipment evidence",
+      "description": "Evidence package supporting Operating review for secure disposal or re-use of equipment.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for secure disposal or re-use of equipment"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-PH.28"
+      ],
+      "relatedControls": [
+        "7.14"
+      ]
+    },
+    {
+      "id": "EV-ISO-119",
+      "title": "Evidence of user endpoint devices evidence",
+      "description": "Evidence package supporting Evidence of user endpoint devices.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of user endpoint devices"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.1"
+      ],
+      "relatedControls": [
+        "8.1"
+      ]
+    },
+    {
+      "id": "EV-ISO-120",
+      "title": "Operating review for user endpoint devices evidence",
+      "description": "Evidence package supporting Operating review for user endpoint devices.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for user endpoint devices"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.2"
+      ],
+      "relatedControls": [
+        "8.1"
+      ]
+    },
+    {
+      "id": "EV-ISO-121",
+      "title": "Evidence of privileged access rights evidence",
+      "description": "Evidence package supporting Evidence of privileged access rights.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of privileged access rights"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.3"
+      ],
+      "relatedControls": [
+        "8.2"
+      ]
+    },
+    {
+      "id": "EV-ISO-122",
+      "title": "Operating review for privileged access rights evidence",
+      "description": "Evidence package supporting Operating review for privileged access rights.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for privileged access rights"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.4"
+      ],
+      "relatedControls": [
+        "8.2"
+      ]
+    },
+    {
+      "id": "EV-ISO-123",
+      "title": "Evidence of information access restriction evidence",
+      "description": "Evidence package supporting Evidence of information access restriction.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of information access restriction"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.5"
+      ],
+      "relatedControls": [
+        "8.3"
+      ]
+    },
+    {
+      "id": "EV-ISO-124",
+      "title": "Operating review for information access restriction evidence",
+      "description": "Evidence package supporting Operating review for information access restriction.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for information access restriction"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.6"
+      ],
+      "relatedControls": [
+        "8.3"
+      ]
+    },
+    {
+      "id": "EV-ISO-125",
+      "title": "Evidence of access to source code evidence",
+      "description": "Evidence package supporting Evidence of access to source code.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of access to source code"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.7"
+      ],
+      "relatedControls": [
+        "8.4"
+      ]
+    },
+    {
+      "id": "EV-ISO-126",
+      "title": "Operating review for access to source code evidence",
+      "description": "Evidence package supporting Operating review for access to source code.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for access to source code"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.8"
+      ],
+      "relatedControls": [
+        "8.4"
+      ]
+    },
+    {
+      "id": "EV-ISO-127",
+      "title": "Evidence of secure authentication evidence",
+      "description": "Evidence package supporting Evidence of secure authentication.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of secure authentication"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.9"
+      ],
+      "relatedControls": [
+        "8.5"
+      ]
+    },
+    {
+      "id": "EV-ISO-128",
+      "title": "Operating review for secure authentication evidence",
+      "description": "Evidence package supporting Operating review for secure authentication.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for secure authentication"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.10"
+      ],
+      "relatedControls": [
+        "8.5"
+      ]
+    },
+    {
+      "id": "EV-ISO-129",
+      "title": "Evidence of capacity management evidence",
+      "description": "Evidence package supporting Evidence of capacity management.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of capacity management"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.11"
+      ],
+      "relatedControls": [
+        "8.6"
+      ]
+    },
+    {
+      "id": "EV-ISO-130",
+      "title": "Operating review for capacity management evidence",
+      "description": "Evidence package supporting Operating review for capacity management.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for capacity management"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.12"
+      ],
+      "relatedControls": [
+        "8.6"
+      ]
+    },
+    {
+      "id": "EV-ISO-131",
+      "title": "Evidence of protection against malware evidence",
+      "description": "Evidence package supporting Evidence of protection against malware.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of protection against malware"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.13"
+      ],
+      "relatedControls": [
+        "8.7"
+      ]
+    },
+    {
+      "id": "EV-ISO-132",
+      "title": "Operating review for protection against malware evidence",
+      "description": "Evidence package supporting Operating review for protection against malware.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for protection against malware"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.14"
+      ],
+      "relatedControls": [
+        "8.7"
+      ]
+    },
+    {
+      "id": "EV-ISO-133",
+      "title": "Evidence of management of technical vulnerabilities evidence",
+      "description": "Evidence package supporting Evidence of management of technical vulnerabilities.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of management of technical vulnerabilities"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.15"
+      ],
+      "relatedControls": [
+        "8.8"
+      ]
+    },
+    {
+      "id": "EV-ISO-134",
+      "title": "Operating review for management of technical vulnerabilities evidence",
+      "description": "Evidence package supporting Operating review for management of technical vulnerabilities.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for management of technical vulnerabilities"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.16"
+      ],
+      "relatedControls": [
+        "8.8"
+      ]
+    },
+    {
+      "id": "EV-ISO-135",
+      "title": "Evidence of configuration management evidence",
+      "description": "Evidence package supporting Evidence of configuration management.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of configuration management"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.17"
+      ],
+      "relatedControls": [
+        "8.9"
+      ]
+    },
+    {
+      "id": "EV-ISO-136",
+      "title": "Operating review for configuration management evidence",
+      "description": "Evidence package supporting Operating review for configuration management.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for configuration management"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.18"
+      ],
+      "relatedControls": [
+        "8.9"
+      ]
+    },
+    {
+      "id": "EV-ISO-137",
+      "title": "Evidence of information deletion evidence",
+      "description": "Evidence package supporting Evidence of information deletion.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of information deletion"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.19"
+      ],
+      "relatedControls": [
+        "8.10"
+      ]
+    },
+    {
+      "id": "EV-ISO-138",
+      "title": "Operating review for information deletion evidence",
+      "description": "Evidence package supporting Operating review for information deletion.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for information deletion"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.20"
+      ],
+      "relatedControls": [
+        "8.10"
+      ]
+    },
+    {
+      "id": "EV-ISO-139",
+      "title": "Evidence of data masking evidence",
+      "description": "Evidence package supporting Evidence of data masking.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of data masking"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.21"
+      ],
+      "relatedControls": [
+        "8.11"
+      ]
+    },
+    {
+      "id": "EV-ISO-140",
+      "title": "Operating review for data masking evidence",
+      "description": "Evidence package supporting Operating review for data masking.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for data masking"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.22"
+      ],
+      "relatedControls": [
+        "8.11"
+      ]
+    },
+    {
+      "id": "EV-ISO-141",
+      "title": "Evidence of data leakage prevention evidence",
+      "description": "Evidence package supporting Evidence of data leakage prevention.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of data leakage prevention"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.23"
+      ],
+      "relatedControls": [
+        "8.12"
+      ]
+    },
+    {
+      "id": "EV-ISO-142",
+      "title": "Operating review for data leakage prevention evidence",
+      "description": "Evidence package supporting Operating review for data leakage prevention.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for data leakage prevention"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.24"
+      ],
+      "relatedControls": [
+        "8.12"
+      ]
+    },
+    {
+      "id": "EV-ISO-143",
+      "title": "Evidence of information backup evidence",
+      "description": "Evidence package supporting Evidence of information backup.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of information backup"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.25"
+      ],
+      "relatedControls": [
+        "8.13"
+      ]
+    },
+    {
+      "id": "EV-ISO-144",
+      "title": "Operating review for information backup evidence",
+      "description": "Evidence package supporting Operating review for information backup.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for information backup"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.26"
+      ],
+      "relatedControls": [
+        "8.13"
+      ]
+    },
+    {
+      "id": "EV-ISO-145",
+      "title": "Evidence of redundancy of information processing facilities evidence",
+      "description": "Evidence package supporting Evidence of redundancy of information processing facilities.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of redundancy of information processing facilities"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.27"
+      ],
+      "relatedControls": [
+        "8.14"
+      ]
+    },
+    {
+      "id": "EV-ISO-146",
+      "title": "Operating review for redundancy of information processing facilities evidence",
+      "description": "Evidence package supporting Operating review for redundancy of information processing facilities.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for redundancy of information processing facilities"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.28"
+      ],
+      "relatedControls": [
+        "8.14"
+      ]
+    },
+    {
+      "id": "EV-ISO-147",
+      "title": "Evidence of logging evidence",
+      "description": "Evidence package supporting Evidence of logging.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of logging"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.29"
+      ],
+      "relatedControls": [
+        "8.15"
+      ]
+    },
+    {
+      "id": "EV-ISO-148",
+      "title": "Operating review for logging evidence",
+      "description": "Evidence package supporting Operating review for logging.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for logging"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.30"
+      ],
+      "relatedControls": [
+        "8.15"
+      ]
+    },
+    {
+      "id": "EV-ISO-149",
+      "title": "Evidence of monitoring activities evidence",
+      "description": "Evidence package supporting Evidence of monitoring activities.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of monitoring activities"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.31"
+      ],
+      "relatedControls": [
+        "8.16"
+      ]
+    },
+    {
+      "id": "EV-ISO-150",
+      "title": "Operating review for monitoring activities evidence",
+      "description": "Evidence package supporting Operating review for monitoring activities.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for monitoring activities"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.32"
+      ],
+      "relatedControls": [
+        "8.16"
+      ]
+    },
+    {
+      "id": "EV-ISO-151",
+      "title": "Evidence of clock synchronization evidence",
+      "description": "Evidence package supporting Evidence of clock synchronization.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of clock synchronization"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.33"
+      ],
+      "relatedControls": [
+        "8.17"
+      ]
+    },
+    {
+      "id": "EV-ISO-152",
+      "title": "Operating review for clock synchronization evidence",
+      "description": "Evidence package supporting Operating review for clock synchronization.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for clock synchronization"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.34"
+      ],
+      "relatedControls": [
+        "8.17"
+      ]
+    },
+    {
+      "id": "EV-ISO-153",
+      "title": "Evidence of use of privileged utility programs evidence",
+      "description": "Evidence package supporting Evidence of use of privileged utility programs.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of use of privileged utility programs"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.35"
+      ],
+      "relatedControls": [
+        "8.18"
+      ]
+    },
+    {
+      "id": "EV-ISO-154",
+      "title": "Operating review for use of privileged utility programs evidence",
+      "description": "Evidence package supporting Operating review for use of privileged utility programs.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for use of privileged utility programs"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.36"
+      ],
+      "relatedControls": [
+        "8.18"
+      ]
+    },
+    {
+      "id": "EV-ISO-155",
+      "title": "Evidence of installation of software on operational systems evidence",
+      "description": "Evidence package supporting Evidence of installation of software on operational systems.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of installation of software on operational systems"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.37"
+      ],
+      "relatedControls": [
+        "8.19"
+      ]
+    },
+    {
+      "id": "EV-ISO-156",
+      "title": "Operating review for installation of software on operational systems evidence",
+      "description": "Evidence package supporting Operating review for installation of software on operational systems.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for installation of software on operational systems"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.38"
+      ],
+      "relatedControls": [
+        "8.19"
+      ]
+    },
+    {
+      "id": "EV-ISO-157",
+      "title": "Evidence of networks security evidence",
+      "description": "Evidence package supporting Evidence of networks security.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of networks security"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.39"
+      ],
+      "relatedControls": [
+        "8.20"
+      ]
+    },
+    {
+      "id": "EV-ISO-158",
+      "title": "Operating review for networks security evidence",
+      "description": "Evidence package supporting Operating review for networks security.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Quarterly",
+      "requiredFor": [
+        "Operating review for networks security"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.40"
+      ],
+      "relatedControls": [
+        "8.20"
+      ]
+    },
+    {
+      "id": "EV-ISO-159",
+      "title": "Evidence of security of network services evidence",
+      "description": "Evidence package supporting Evidence of security of network services.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of security of network services"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.41"
+      ],
+      "relatedControls": [
+        "8.21"
+      ]
+    },
+    {
+      "id": "EV-ISO-160",
+      "title": "Evidence of segregation of networks evidence",
+      "description": "Evidence package supporting Evidence of segregation of networks.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of segregation of networks"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.42"
+      ],
+      "relatedControls": [
+        "8.22"
+      ]
+    },
+    {
+      "id": "EV-ISO-161",
+      "title": "Evidence of web filtering evidence",
+      "description": "Evidence package supporting Evidence of web filtering.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of web filtering"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.43"
+      ],
+      "relatedControls": [
+        "8.23"
+      ]
+    },
+    {
+      "id": "EV-ISO-162",
+      "title": "Evidence of use of cryptography evidence",
+      "description": "Evidence package supporting Evidence of use of cryptography.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of use of cryptography"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.44"
+      ],
+      "relatedControls": [
+        "8.24"
+      ]
+    },
+    {
+      "id": "EV-ISO-163",
+      "title": "Evidence of secure development life cycle evidence",
+      "description": "Evidence package supporting Evidence of secure development life cycle.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of secure development life cycle"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.45"
+      ],
+      "relatedControls": [
+        "8.25"
+      ]
+    },
+    {
+      "id": "EV-ISO-164",
+      "title": "Evidence of application security requirements evidence",
+      "description": "Evidence package supporting Evidence of application security requirements.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of application security requirements"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.46"
+      ],
+      "relatedControls": [
+        "8.26"
+      ]
+    },
+    {
+      "id": "EV-ISO-165",
+      "title": "Evidence of secure system architecture and engineering principles evidence",
+      "description": "Evidence package supporting Evidence of secure system architecture and engineering principles.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of secure system architecture and engineering principles"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.47"
+      ],
+      "relatedControls": [
+        "8.27"
+      ]
+    },
+    {
+      "id": "EV-ISO-166",
+      "title": "Evidence of secure coding evidence",
+      "description": "Evidence package supporting Evidence of secure coding.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of secure coding"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.48"
+      ],
+      "relatedControls": [
+        "8.28"
+      ]
+    },
+    {
+      "id": "EV-ISO-167",
+      "title": "Evidence of security testing in development and acceptance evidence",
+      "description": "Evidence package supporting Evidence of security testing in development and acceptance.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of security testing in development and acceptance"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.49"
+      ],
+      "relatedControls": [
+        "8.29"
+      ]
+    },
+    {
+      "id": "EV-ISO-168",
+      "title": "Evidence of outsourced development evidence",
+      "description": "Evidence package supporting Evidence of outsourced development.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of outsourced development"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.50"
+      ],
+      "relatedControls": [
+        "8.30"
+      ]
+    },
+    {
+      "id": "EV-ISO-169",
+      "title": "Evidence of separation of development, test and production environments evidence",
+      "description": "Evidence package supporting Evidence of separation of development, test and production environments.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of separation of development, test and production environments"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.51"
+      ],
+      "relatedControls": [
+        "8.31"
+      ]
+    },
+    {
+      "id": "EV-ISO-170",
+      "title": "Evidence of change management evidence",
+      "description": "Evidence package supporting Evidence of change management.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of change management"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.52"
+      ],
+      "relatedControls": [
+        "8.32"
+      ]
+    },
+    {
+      "id": "EV-ISO-171",
+      "title": "Evidence of test information evidence",
+      "description": "Evidence package supporting Evidence of test information.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of test information"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.53"
+      ],
+      "relatedControls": [
+        "8.33"
+      ]
+    },
+    {
+      "id": "EV-ISO-172",
+      "title": "Evidence of protection of information systems during audit testing evidence",
+      "description": "Evidence package supporting Evidence of protection of information systems during audit testing.",
+      "collectionMethod": "Upload document, export, screenshot, ticket, or approved record.",
+      "frequency": "Annually",
+      "requiredFor": [
+        "Evidence of protection of information systems during audit testing"
+      ],
+      "acceptedFileTypes": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "csv",
+        "png",
+        "jpg"
+      ],
+      "manualOrAutomatic": "Manual",
+      "relatedTests": [
+        "T-TC.54"
+      ],
+      "relatedControls": [
+        "8.34"
+      ]
+    }
+  ]
+}

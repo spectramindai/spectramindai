@@ -1,0 +1,757 @@
+{
+  "risks": [
+    {
+      "id": "R-ID-001",
+      "title": "Unauthorized User Access",
+      "description": "Users may gain access to systems or data without proper authorization due to weak provisioning, approval, or access review processes.",
+      "category": "Identity",
+      "severity": "Critical",
+      "likelihood": "Medium",
+      "mitigation": "Require documented access approval, role-based access controls, MFA, and periodic user access reviews.",
+      "relatedControls": [
+        "CC6.1",
+        "CC6.2",
+        "CC6.3"
+      ],
+      "relatedTests": [
+        "T-ID-001",
+        "T-ID-003",
+        "T-ID-004"
+      ],
+      "requiredEvidence": [
+        "Access request approvals",
+        "User access review report",
+        "Identity provider user export",
+        "MFA configuration"
+      ]
+    },
+    {
+      "id": "R-ID-002",
+      "title": "Privilege Escalation",
+      "description": "Users may obtain elevated privileges beyond business need, increasing the impact of account compromise or misuse.",
+      "category": "Identity",
+      "severity": "Critical",
+      "likelihood": "Medium",
+      "mitigation": "Enforce least privilege, privileged access approval, privileged access reviews, and segregation of duties.",
+      "relatedControls": [
+        "CC6.1",
+        "CC6.2",
+        "CC6.3"
+      ],
+      "relatedTests": [
+        "T-ID-002",
+        "T-ID-003",
+        "T-ID-004"
+      ],
+      "requiredEvidence": [
+        "Privileged user list",
+        "Privileged access approval records",
+        "Privileged access review report"
+      ]
+    },
+    {
+      "id": "R-ID-003",
+      "title": "Missing Multi-Factor Authentication",
+      "description": "Accounts may be compromised if multi-factor authentication is not enforced for privileged, remote, or user access.",
+      "category": "Identity",
+      "severity": "Critical",
+      "likelihood": "High",
+      "mitigation": "Enable MFA for all users where possible and require MFA for privileged and remote access.",
+      "relatedControls": [
+        "CC6.1",
+        "CC6.6"
+      ],
+      "relatedTests": [
+        "T-ID-003"
+      ],
+      "requiredEvidence": [
+        "MFA policy",
+        "MFA configuration screenshot",
+        "Identity provider MFA report"
+      ]
+    },
+    {
+      "id": "R-ID-004",
+      "title": "Dormant User Accounts",
+      "description": "Inactive accounts may remain enabled and become targets for unauthorized access.",
+      "category": "Identity",
+      "severity": "High",
+      "likelihood": "Medium",
+      "mitigation": "Identify inactive accounts, review access periodically, and disable or remove accounts that are no longer needed.",
+      "relatedControls": [
+        "CC6.2",
+        "CC6.3"
+      ],
+      "relatedTests": [
+        "T-ID-001",
+        "T-ID-005"
+      ],
+      "requiredEvidence": [
+        "Dormant account report",
+        "Account deactivation records",
+        "Periodic access review evidence"
+      ]
+    },
+    {
+      "id": "R-ID-005",
+      "title": "Shared Account Misuse",
+      "description": "Shared accounts may prevent accountability and make unauthorized activity difficult to trace.",
+      "category": "Identity",
+      "severity": "High",
+      "likelihood": "Medium",
+      "mitigation": "Prohibit shared accounts where possible, require named user access, and monitor unavoidable shared accounts.",
+      "relatedControls": [
+        "CC1.5",
+        "CC6.1",
+        "CC6.2"
+      ],
+      "relatedTests": [
+        "T-ID-001"
+      ],
+      "requiredEvidence": [
+        "Account inventory",
+        "Shared account exception records",
+        "Access monitoring logs"
+      ]
+    },
+    {
+      "id": "R-INF-001",
+      "title": "Cloud Misconfiguration",
+      "description": "Cloud resources may be configured insecurely, exposing systems or data to unauthorized access.",
+      "category": "Infrastructure",
+      "severity": "Critical",
+      "likelihood": "High",
+      "mitigation": "Use secure baseline configurations, configuration monitoring, periodic reviews, and automated remediation where possible.",
+      "relatedControls": [
+        "CC5.2",
+        "CC6.6",
+        "CC7.1"
+      ],
+      "relatedTests": [
+        "T-INF-003",
+        "T-INF-004",
+        "T-INF-005"
+      ],
+      "requiredEvidence": [
+        "Cloud configuration review",
+        "Cloud security posture report",
+        "Remediation records"
+      ]
+    },
+    {
+      "id": "R-INF-002",
+      "title": "Unpatched Systems",
+      "description": "Systems with missing security patches may be exploited through known vulnerabilities.",
+      "category": "Infrastructure",
+      "severity": "Critical",
+      "likelihood": "High",
+      "mitigation": "Maintain patch management, vulnerability scanning, remediation SLAs, and patch verification.",
+      "relatedControls": [
+        "CC5.2",
+        "CC6.8",
+        "CC7.1"
+      ],
+      "relatedTests": [
+        "T-INF-001",
+        "T-INF-002"
+      ],
+      "requiredEvidence": [
+        "Patch management policy",
+        "Vulnerability scan report",
+        "Patch deployment records"
+      ]
+    },
+    {
+      "id": "R-INF-003",
+      "title": "Firewall Rule Misconfiguration",
+      "description": "Overly permissive firewall rules may expose internal systems or sensitive services to unauthorized networks.",
+      "category": "Infrastructure",
+      "severity": "High",
+      "likelihood": "Medium",
+      "mitigation": "Review firewall rules periodically, restrict inbound access, and document approvals for exceptions.",
+      "relatedControls": [
+        "CC6.6",
+        "CC7.1"
+      ],
+      "relatedTests": [
+        "T-INF-003"
+      ],
+      "requiredEvidence": [
+        "Firewall rule review",
+        "Network diagram",
+        "Firewall exception approvals"
+      ]
+    },
+    {
+      "id": "R-INF-004",
+      "title": "Endpoint Compromise",
+      "description": "Employee endpoints may be compromised through malware, phishing, or insecure configuration.",
+      "category": "Infrastructure",
+      "severity": "High",
+      "likelihood": "Medium",
+      "mitigation": "Deploy endpoint protection, enforce device security baselines, monitor alerts, and keep systems patched.",
+      "relatedControls": [
+        "CC6.5",
+        "CC6.8",
+        "CC7.2"
+      ],
+      "relatedTests": [
+        "T-INF-001",
+        "T-INF-006"
+      ],
+      "requiredEvidence": [
+        "Endpoint protection report",
+        "Device compliance report",
+        "Malware alert records"
+      ]
+    },
+    {
+      "id": "R-INF-005",
+      "title": "Inadequate Asset Inventory",
+      "description": "The organization may be unable to protect assets it has not identified or classified.",
+      "category": "Infrastructure",
+      "severity": "High",
+      "likelihood": "Medium",
+      "mitigation": "Maintain an asset inventory covering systems, endpoints, applications, cloud resources, and data stores.",
+      "relatedControls": [
+        "CC5.2",
+        "CC6.5",
+        "CC7.1"
+      ],
+      "relatedTests": [
+        "T-INF-005"
+      ],
+      "requiredEvidence": [
+        "Asset inventory",
+        "Asset ownership records",
+        "Asset review evidence"
+      ]
+    },
+    {
+      "id": "R-APP-001",
+      "title": "Unauthorized Production Change",
+      "description": "Unapproved or untested changes may be deployed to production and compromise security, availability, or integrity.",
+      "category": "Application Security",
+      "severity": "Critical",
+      "likelihood": "Medium",
+      "mitigation": "Require change tickets, approvals, testing evidence, deployment records, and emergency change review.",
+      "relatedControls": [
+        "CC8.1"
+      ],
+      "relatedTests": [
+        "T-APP-001",
+        "T-APP-002",
+        "T-APP-004"
+      ],
+      "requiredEvidence": [
+        "Change tickets",
+        "Approval records",
+        "Deployment logs",
+        "Testing evidence"
+      ]
+    },
+    {
+      "id": "R-APP-002",
+      "title": "Insecure Software Development",
+      "description": "Applications may contain security weaknesses if secure development practices are not followed.",
+      "category": "Application Security",
+      "severity": "High",
+      "likelihood": "Medium",
+      "mitigation": "Adopt secure development standards, code review, dependency scanning, security testing, and release controls.",
+      "relatedControls": [
+        "CC5.2",
+        "CC8.1"
+      ],
+      "relatedTests": [
+        "T-APP-002",
+        "T-APP-004"
+      ],
+      "requiredEvidence": [
+        "Secure development policy",
+        "Code review records",
+        "Security scan results"
+      ]
+    },
+    {
+      "id": "R-APP-003",
+      "title": "Dependency Vulnerability",
+      "description": "Third-party software dependencies may introduce known vulnerabilities into applications.",
+      "category": "Application Security",
+      "severity": "High",
+      "likelihood": "High",
+      "mitigation": "Use dependency scanning, vulnerability remediation SLAs, and controlled release processes.",
+      "relatedControls": [
+        "CC7.1",
+        "CC8.1",
+        "CC9.2"
+      ],
+      "relatedTests": [
+        "T-APP-003",
+        "T-INF-002"
+      ],
+      "requiredEvidence": [
+        "Dependency scan report",
+        "Vulnerability remediation records",
+        "Release approval evidence"
+      ]
+    },
+    {
+      "id": "R-MON-001",
+      "title": "Missing Security Monitoring",
+      "description": "Security events may go undetected if systems are not logged, monitored, and reviewed.",
+      "category": "Monitoring",
+      "severity": "Critical",
+      "likelihood": "Medium",
+      "mitigation": "Centralize logs, define alert rules, assign review responsibilities, and retain monitoring evidence.",
+      "relatedControls": [
+        "CC7.1",
+        "CC7.2",
+        "CC7.3"
+      ],
+      "relatedTests": [
+        "T-MON-001",
+        "T-MON-002"
+      ],
+      "requiredEvidence": [
+        "Logging configuration",
+        "Alert rule list",
+        "Alert review records"
+      ]
+    },
+    {
+      "id": "R-MON-002",
+      "title": "Log Tampering",
+      "description": "Logs may be modified or deleted, reducing the organization's ability to investigate incidents.",
+      "category": "Monitoring",
+      "severity": "High",
+      "likelihood": "Medium",
+      "mitigation": "Restrict log access, centralize logs, retain logs securely, and monitor administrative actions.",
+      "relatedControls": [
+        "CC6.1",
+        "CC6.7",
+        "CC7.2"
+      ],
+      "relatedTests": [
+        "T-MON-001",
+        "T-MON-003"
+      ],
+      "requiredEvidence": [
+        "Log retention policy",
+        "Log access review",
+        "SIEM configuration"
+      ]
+    },
+    {
+      "id": "R-MON-003",
+      "title": "Unreviewed Security Alerts",
+      "description": "Alerts may not result in timely investigation or response if review ownership and escalation are unclear.",
+      "category": "Monitoring",
+      "severity": "High",
+      "likelihood": "Medium",
+      "mitigation": "Assign alert review owners, define severity criteria, and track investigation and closure.",
+      "relatedControls": [
+        "CC7.2",
+        "CC7.3",
+        "CC7.4"
+      ],
+      "relatedTests": [
+        "T-MON-002"
+      ],
+      "requiredEvidence": [
+        "Alert review tickets",
+        "Escalation procedure",
+        "Security event investigation records"
+      ]
+    },
+    {
+      "id": "R-IR-001",
+      "title": "Incident Response Failure",
+      "description": "Security incidents may not be contained or remediated effectively if response procedures are incomplete or untested.",
+      "category": "Incident Response",
+      "severity": "Critical",
+      "likelihood": "Medium",
+      "mitigation": "Maintain an incident response plan, train responders, conduct tabletop exercises, and document incidents.",
+      "relatedControls": [
+        "CC7.3",
+        "CC7.4",
+        "CC7.5"
+      ],
+      "relatedTests": [
+        "T-IR-001",
+        "T-IR-002"
+      ],
+      "requiredEvidence": [
+        "Incident response plan",
+        "Tabletop exercise records",
+        "Incident tickets"
+      ]
+    },
+    {
+      "id": "R-IR-002",
+      "title": "Delayed Incident Escalation",
+      "description": "Incidents may not be escalated to appropriate stakeholders in time to reduce impact.",
+      "category": "Incident Response",
+      "severity": "High",
+      "likelihood": "Medium",
+      "mitigation": "Define escalation criteria, communication paths, response roles, and notification timelines.",
+      "relatedControls": [
+        "CC2.2",
+        "CC2.3",
+        "CC7.4"
+      ],
+      "relatedTests": [
+        "T-IR-001",
+        "T-IR-002",
+        "T-MON-002"
+      ],
+      "requiredEvidence": [
+        "Escalation matrix",
+        "Incident communication records",
+        "Incident response role assignments"
+      ]
+    },
+    {
+      "id": "R-IR-003",
+      "title": "Incomplete Post-Incident Review",
+      "description": "Incidents may recur if root causes, lessons learned, and corrective actions are not documented and tracked.",
+      "category": "Incident Response",
+      "severity": "Medium",
+      "likelihood": "Medium",
+      "mitigation": "Perform post-incident reviews and track corrective actions through completion.",
+      "relatedControls": [
+        "CC4.2",
+        "CC7.5"
+      ],
+      "relatedTests": [
+        "T-IR-002",
+        "T-IR-003"
+      ],
+      "requiredEvidence": [
+        "Post-incident review",
+        "Corrective action plan",
+        "Remediation closure evidence"
+      ]
+    },
+    {
+      "id": "R-VND-001",
+      "title": "Third-Party Security Failure",
+      "description": "A vendor or service provider may fail to protect systems or data relied on by the organization.",
+      "category": "Vendor Management",
+      "severity": "High",
+      "likelihood": "Medium",
+      "mitigation": "Perform vendor due diligence, obtain security reports, define contract requirements, and review vendors periodically.",
+      "relatedControls": [
+        "CC2.3",
+        "CC9.2"
+      ],
+      "relatedTests": [
+        "T-VND-001",
+        "T-VND-002"
+      ],
+      "requiredEvidence": [
+        "Vendor inventory",
+        "Vendor risk assessment",
+        "Vendor SOC report",
+        "Security contract terms"
+      ]
+    },
+    {
+      "id": "R-VND-002",
+      "title": "Vendor Access Misuse",
+      "description": "Vendors with access to systems or data may misuse access or retain access longer than needed.",
+      "category": "Vendor Management",
+      "severity": "High",
+      "likelihood": "Medium",
+      "mitigation": "Limit vendor access, require approvals, review access periodically, and remove access when no longer required.",
+      "relatedControls": [
+        "CC6.1",
+        "CC6.2",
+        "CC6.3",
+        "CC9.2"
+      ],
+      "relatedTests": [
+        "T-VND-003"
+      ],
+      "requiredEvidence": [
+        "Vendor access list",
+        "Vendor access approvals",
+        "Vendor access review report"
+      ]
+    },
+    {
+      "id": "R-VND-003",
+      "title": "Missing Vendor Review",
+      "description": "Vendors may continue operating without periodic assessment of security, compliance, or service risk.",
+      "category": "Vendor Management",
+      "severity": "Medium",
+      "likelihood": "Medium",
+      "mitigation": "Maintain periodic vendor reviews based on vendor criticality and data access.",
+      "relatedControls": [
+        "CC4.1",
+        "CC9.2"
+      ],
+      "relatedTests": [
+        "T-VND-001",
+        "T-VND-002"
+      ],
+      "requiredEvidence": [
+        "Annual vendor review",
+        "Vendor risk rating",
+        "Updated vendor due diligence"
+      ]
+    },
+    {
+      "id": "R-BC-001",
+      "title": "Backup Failure",
+      "description": "Backups may be incomplete, unavailable, or unusable during a recovery event.",
+      "category": "Business Continuity",
+      "severity": "Critical",
+      "likelihood": "Medium",
+      "mitigation": "Perform scheduled backups, monitor backup jobs, test restores, and document remediation for failures.",
+      "relatedControls": [
+        "CC7.5",
+        "CC9.1"
+      ],
+      "relatedTests": [
+        "T-BC-001",
+        "T-BC-002"
+      ],
+      "requiredEvidence": [
+        "Backup policy",
+        "Backup job report",
+        "Restore test evidence"
+      ]
+    },
+    {
+      "id": "R-BC-002",
+      "title": "Disaster Recovery Failure",
+      "description": "Critical services may not be restored within expected timeframes during a disruption.",
+      "category": "Business Continuity",
+      "severity": "Critical",
+      "likelihood": "Medium",
+      "mitigation": "Maintain disaster recovery plans, define recovery objectives, and test recovery procedures.",
+      "relatedControls": [
+        "CC7.5",
+        "CC9.1"
+      ],
+      "relatedTests": [
+        "T-BC-002",
+        "T-BC-003"
+      ],
+      "requiredEvidence": [
+        "Disaster recovery plan",
+        "DR test results",
+        "Recovery objectives"
+      ]
+    },
+    {
+      "id": "R-BC-003",
+      "title": "Service Availability Failure",
+      "description": "Systems may become unavailable due to inadequate capacity, monitoring, resilience, or recovery planning.",
+      "category": "Business Continuity",
+      "severity": "High",
+      "likelihood": "Medium",
+      "mitigation": "Monitor availability, define capacity thresholds, test continuity procedures, and review incidents.",
+      "relatedControls": [
+        "CC7.2",
+        "CC9.1"
+      ],
+      "relatedTests": [
+        "T-BC-003"
+      ],
+      "requiredEvidence": [
+        "Availability monitoring report",
+        "Capacity review",
+        "Business continuity exercise"
+      ]
+    },
+    {
+      "id": "R-HR-001",
+      "title": "Incomplete Employee Onboarding",
+      "description": "Employees may begin work without completing required security training, policy acknowledgement, or access approvals.",
+      "category": "Human Resources",
+      "severity": "Medium",
+      "likelihood": "Medium",
+      "mitigation": "Use onboarding checklists covering training, policy acknowledgement, role assignment, and access approval.",
+      "relatedControls": [
+        "CC1.4",
+        "CC2.2",
+        "CC6.2"
+      ],
+      "relatedTests": [
+        "T-HR-001",
+        "T-HR-002",
+        "T-ID-004"
+      ],
+      "requiredEvidence": [
+        "Onboarding checklist",
+        "Training completion records",
+        "Policy acknowledgement records"
+      ]
+    },
+    {
+      "id": "R-HR-002",
+      "title": "Incomplete Employee Offboarding",
+      "description": "Former employees may retain access to systems, data, or facilities after termination.",
+      "category": "Human Resources",
+      "severity": "Critical",
+      "likelihood": "Medium",
+      "mitigation": "Trigger access removal from HR termination events and verify deprovisioning across systems.",
+      "relatedControls": [
+        "CC6.3",
+        "CC6.4"
+      ],
+      "relatedTests": [
+        "T-ID-005"
+      ],
+      "requiredEvidence": [
+        "Termination list",
+        "Deprovisioning checklist",
+        "Access removal records"
+      ]
+    },
+    {
+      "id": "R-HR-003",
+      "title": "Security Awareness Failure",
+      "description": "Employees may mishandle systems or data if they do not receive security awareness training.",
+      "category": "Human Resources",
+      "severity": "Medium",
+      "likelihood": "High",
+      "mitigation": "Provide recurring security awareness training and track completion.",
+      "relatedControls": [
+        "CC1.4",
+        "CC2.2"
+      ],
+      "relatedTests": [
+        "T-HR-001",
+        "T-HR-002"
+      ],
+      "requiredEvidence": [
+        "Security awareness training content",
+        "Training completion report",
+        "Reminder communications"
+      ]
+    },
+    {
+      "id": "R-HR-004",
+      "title": "Insider Threat",
+      "description": "Employees or contractors may intentionally misuse authorized access to harm systems, data, or operations.",
+      "category": "Human Resources",
+      "severity": "High",
+      "likelihood": "Medium",
+      "mitigation": "Apply least privilege, monitoring, code of conduct, disciplinary processes, and access reviews.",
+      "relatedControls": [
+        "CC1.1",
+        "CC1.5",
+        "CC6.1",
+        "CC7.2"
+      ],
+      "relatedTests": [
+        "T-HR-001",
+        "T-ID-002",
+        "T-INF-006"
+      ],
+      "requiredEvidence": [
+        "Code of conduct",
+        "Access review report",
+        "Security monitoring records"
+      ]
+    },
+    {
+      "id": "R-DP-001",
+      "title": "Sensitive Data Exposure",
+      "description": "Sensitive or confidential data may be exposed through improper access, storage, transmission, or disclosure.",
+      "category": "Data Protection",
+      "severity": "Critical",
+      "likelihood": "Medium",
+      "mitigation": "Classify data, restrict access, encrypt data, monitor transfers, and review data handling practices.",
+      "relatedControls": [
+        "CC6.1",
+        "CC6.5",
+        "CC6.7"
+      ],
+      "relatedTests": [
+        "T-BC-001",
+        "T-DP-001",
+        "T-ID-001",
+        "T-ID-005",
+        "T-INF-004"
+      ],
+      "requiredEvidence": [
+        "Data classification policy",
+        "Encryption configuration",
+        "Data access review"
+      ]
+    },
+    {
+      "id": "R-DP-002",
+      "title": "Data Leakage",
+      "description": "Data may leave approved systems or channels without authorization.",
+      "category": "Data Protection",
+      "severity": "Critical",
+      "likelihood": "Medium",
+      "mitigation": "Restrict exports, enforce approved transfer methods, monitor data movement, and train personnel on data handling.",
+      "relatedControls": [
+        "CC6.5",
+        "CC6.7",
+        "CC7.2"
+      ],
+      "relatedTests": [
+        "T-DP-001",
+        "T-INF-004"
+      ],
+      "requiredEvidence": [
+        "Data transfer procedure",
+        "DLP configuration",
+        "Data export access review"
+      ]
+    },
+    {
+      "id": "R-DP-003",
+      "title": "Unauthorized Data Modification",
+      "description": "Data may be changed without authorization, affecting integrity, reporting, or customer trust.",
+      "category": "Data Protection",
+      "severity": "High",
+      "likelihood": "Medium",
+      "mitigation": "Restrict write access, monitor changes, review privileged activity, and maintain audit logs.",
+      "relatedControls": [
+        "CC6.1",
+        "CC6.3",
+        "CC7.2",
+        "CC8.1"
+      ],
+      "relatedTests": [
+        "T-APP-001",
+        "T-ID-002",
+        "T-MON-001"
+      ],
+      "requiredEvidence": [
+        "Database access review",
+        "Change logs",
+        "Privileged activity monitoring"
+      ]
+    },
+    {
+      "id": "R-DP-004",
+      "title": "Data Retention Failure",
+      "description": "Data may be retained longer than required or deleted before business, legal, or compliance needs are met.",
+      "category": "Data Protection",
+      "severity": "Medium",
+      "likelihood": "Medium",
+      "mitigation": "Define retention requirements, implement retention procedures, and review deletion or archival processes.",
+      "relatedControls": [
+        "CC5.3",
+        "CC6.5"
+      ],
+      "relatedTests": [
+        "T-DP-002",
+        "T-MON-003"
+      ],
+      "requiredEvidence": [
+        "Data retention policy",
+        "Retention schedule",
+        "Deletion or archival records"
+      ]
+    }
+  ]
+}

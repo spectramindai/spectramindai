@@ -1,0 +1,2143 @@
+{
+  "aiGuidance": [
+    {
+      "controlId": "5.1",
+      "purpose": "Implement ISO 27001 control 5.1 for Policies for information security.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for policies for information security.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Policies for information security evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.1."
+    },
+    {
+      "controlId": "5.2",
+      "purpose": "Implement ISO 27001 control 5.2 for Information security roles and responsibilities.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for information security roles and responsibilities.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Information security roles and responsibilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.2."
+    },
+    {
+      "controlId": "5.3",
+      "purpose": "Implement ISO 27001 control 5.3 for Segregation of duties.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for segregation of duties.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Segregation of duties evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.3."
+    },
+    {
+      "controlId": "5.4",
+      "purpose": "Implement ISO 27001 control 5.4 for Management Responsibilities.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for management responsibilities.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Management Responsibilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.4."
+    },
+    {
+      "controlId": "5.5",
+      "purpose": "Implement ISO 27001 control 5.5 for Contact with Authorities.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for contact with authorities.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Contact with Authorities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.5."
+    },
+    {
+      "controlId": "5.6",
+      "purpose": "Implement ISO 27001 control 5.6 for Contact with special interest groups.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for contact with special interest groups.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Contact with special interest groups evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.6."
+    },
+    {
+      "controlId": "5.7",
+      "purpose": "Implement ISO 27001 control 5.7 for Threat intelligence.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for threat intelligence.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Threat intelligence evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.7."
+    },
+    {
+      "controlId": "5.8",
+      "purpose": "Implement ISO 27001 control 5.8 for Information security in project management.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for information security in project management.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Information security in project management evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.8."
+    },
+    {
+      "controlId": "5.9",
+      "purpose": "Implement ISO 27001 control 5.9 for Inventory of information and other associated assets.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for inventory of information and other associated assets.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Inventory of information and other associated assets evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.9."
+    },
+    {
+      "controlId": "5.10",
+      "purpose": "Implement ISO 27001 control 5.10 for Acceptable use of information and other associated assets.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for acceptable use of information and other associated assets.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Acceptable use of information and other associated assets evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.10."
+    },
+    {
+      "controlId": "5.11",
+      "purpose": "Implement ISO 27001 control 5.11 for Return of Assets.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for return of assets.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Return of Assets evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.11."
+    },
+    {
+      "controlId": "5.12",
+      "purpose": "Implement ISO 27001 control 5.12 for Classification Of Information.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for classification of information.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Classification Of Information evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.12."
+    },
+    {
+      "controlId": "5.13",
+      "purpose": "Implement ISO 27001 control 5.13 for Labelling of Information.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for labelling of information.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Labelling of Information evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.13."
+    },
+    {
+      "controlId": "5.14",
+      "purpose": "Implement ISO 27001 control 5.14 for Information Transfer.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for information transfer.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Information Transfer evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.14."
+    },
+    {
+      "controlId": "5.15",
+      "purpose": "Implement ISO 27001 control 5.15 for Access Control.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for access control.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.15."
+    },
+    {
+      "controlId": "5.16",
+      "purpose": "Implement ISO 27001 control 5.16 for Identity Management.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for identity management.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.16."
+    },
+    {
+      "controlId": "5.17",
+      "purpose": "Implement ISO 27001 control 5.17 for Authentication information.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for authentication information.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.17."
+    },
+    {
+      "controlId": "5.18",
+      "purpose": "Implement ISO 27001 control 5.18 for Access rights.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for access rights.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.18."
+    },
+    {
+      "controlId": "5.19",
+      "purpose": "Implement ISO 27001 control 5.19 for Information security in supplier relationships.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for information security in supplier relationships.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Supplier register",
+        "Supplier review record",
+        "Contract security requirements"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.19."
+    },
+    {
+      "controlId": "5.20",
+      "purpose": "Implement ISO 27001 control 5.20 for Addressing information security within supplier agreements.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for addressing information security within supplier agreements.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Supplier register",
+        "Supplier review record",
+        "Contract security requirements"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.20."
+    },
+    {
+      "controlId": "5.21",
+      "purpose": "Implement ISO 27001 control 5.21 for Managing information security in the ICT supply chain.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for managing information security in the ict supply chain.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Managing information security in the ICT supply chain evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.21."
+    },
+    {
+      "controlId": "5.22",
+      "purpose": "Implement ISO 27001 control 5.22 for Monitoring, review and change management of supplier services.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for monitoring, review and change management of supplier services.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Supplier register",
+        "Supplier review record",
+        "Contract security requirements"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.22."
+    },
+    {
+      "controlId": "5.23",
+      "purpose": "Implement ISO 27001 control 5.23 for Information security for use of cloud services.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for information security for use of cloud services.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Information security for use of cloud services evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.23."
+    },
+    {
+      "controlId": "5.24",
+      "purpose": "Implement ISO 27001 control 5.24 for Information security incident management planning and preparation.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for information security incident management planning and preparation.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Information security incident management planning and preparation evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.24."
+    },
+    {
+      "controlId": "5.25",
+      "purpose": "Implement ISO 27001 control 5.25 for Assessment and decision on information security events.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for assessment and decision on information security events.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Assessment and decision on information security events evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.25."
+    },
+    {
+      "controlId": "5.26",
+      "purpose": "Implement ISO 27001 control 5.26 for Response to information security incidents.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for response to information security incidents.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Response to information security incidents evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.26."
+    },
+    {
+      "controlId": "5.27",
+      "purpose": "Implement ISO 27001 control 5.27 for Learning from information security incidents.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for learning from information security incidents.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Learning from information security incidents evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.27."
+    },
+    {
+      "controlId": "5.28",
+      "purpose": "Implement ISO 27001 control 5.28 for Collection of evidence.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for collection of evidence.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Collection of evidence evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.28."
+    },
+    {
+      "controlId": "5.29",
+      "purpose": "Implement ISO 27001 control 5.29 for Information security during disruption.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for information security during disruption.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Information security during disruption evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.29."
+    },
+    {
+      "controlId": "5.30",
+      "purpose": "Implement ISO 27001 control 5.30 for ICT readiness for business continuity.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for ict readiness for business continuity.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Backup configuration",
+        "Restore test evidence",
+        "Continuity plan review"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.30."
+    },
+    {
+      "controlId": "5.31",
+      "purpose": "Implement ISO 27001 control 5.31 for Legal, statutory, regulatory and contractual requirements.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for legal, statutory, regulatory and contractual requirements.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Legal, statutory, regulatory and contractual requirements evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.31."
+    },
+    {
+      "controlId": "5.32",
+      "purpose": "Implement ISO 27001 control 5.32 for Intellectual property rights.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for intellectual property rights.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Intellectual property rights evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.32."
+    },
+    {
+      "controlId": "5.33",
+      "purpose": "Implement ISO 27001 control 5.33 for Protection of records.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for protection of records.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Protection of records evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.33."
+    },
+    {
+      "controlId": "5.34",
+      "purpose": "Implement ISO 27001 control 5.34 for Privacy and protection of PII.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for privacy and protection of pii.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Privacy and protection of PII evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.34."
+    },
+    {
+      "controlId": "5.35",
+      "purpose": "Implement ISO 27001 control 5.35 for Independent review of information security.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for independent review of information security.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Independent review of information security evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.35."
+    },
+    {
+      "controlId": "5.36",
+      "purpose": "Implement ISO 27001 control 5.36 for Compliance with policies, rules and standards for information security.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for compliance with policies, rules and standards for information security.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Compliance with policies, rules and standards for information security evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.36."
+    },
+    {
+      "controlId": "5.37",
+      "purpose": "Implement ISO 27001 control 5.37 for Documented operating procedures.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for documented operating procedures.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Documented operating procedures evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 5.37."
+    },
+    {
+      "controlId": "6.1",
+      "purpose": "Implement ISO 27001 control 6.1 for Screening.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for screening.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Screening evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 6.1."
+    },
+    {
+      "controlId": "6.2",
+      "purpose": "Implement ISO 27001 control 6.2 for Terms and conditions of employment.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for terms and conditions of employment.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Terms and conditions of employment evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 6.2."
+    },
+    {
+      "controlId": "6.3",
+      "purpose": "Implement ISO 27001 control 6.3 for Information security awareness, education and training.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for information security awareness, education and training.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Information security awareness, education and training evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 6.3."
+    },
+    {
+      "controlId": "6.4",
+      "purpose": "Implement ISO 27001 control 6.4 for Disciplinary process.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for disciplinary process.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Disciplinary process evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 6.4."
+    },
+    {
+      "controlId": "6.5",
+      "purpose": "Implement ISO 27001 control 6.5 for Responsibilities after termination or change of employment.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for responsibilities after termination or change of employment.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Responsibilities after termination or change of employment evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 6.5."
+    },
+    {
+      "controlId": "6.6",
+      "purpose": "Implement ISO 27001 control 6.6 for Confidentiality or non-disclosure agreements.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for confidentiality or non-disclosure agreements.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Confidentiality or non-disclosure agreements evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 6.6."
+    },
+    {
+      "controlId": "6.7",
+      "purpose": "Implement ISO 27001 control 6.7 for Remote working.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for remote working.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Remote working evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 6.7."
+    },
+    {
+      "controlId": "6.8",
+      "purpose": "Implement ISO 27001 control 6.8 for Information security event reporting.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for information security event reporting.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Information security event reporting evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 6.8."
+    },
+    {
+      "controlId": "7.1",
+      "purpose": "Implement ISO 27001 control 7.1 for Physical security perimeters.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for physical security perimeters.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Physical security perimeters evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 7.1."
+    },
+    {
+      "controlId": "7.2",
+      "purpose": "Implement ISO 27001 control 7.2 for Physical entry.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for physical entry.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Physical entry evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 7.2."
+    },
+    {
+      "controlId": "7.3",
+      "purpose": "Implement ISO 27001 control 7.3 for Securing offices, rooms and facilities.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for securing offices, rooms and facilities.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Securing offices, rooms and facilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 7.3."
+    },
+    {
+      "controlId": "7.4",
+      "purpose": "Implement ISO 27001 control 7.4 for Physical security monitoring.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for physical security monitoring.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Physical security monitoring evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 7.4."
+    },
+    {
+      "controlId": "7.5",
+      "purpose": "Implement ISO 27001 control 7.5 for Protecting against physical and environmental threats.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for protecting against physical and environmental threats.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Protecting against physical and environmental threats evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 7.5."
+    },
+    {
+      "controlId": "7.6",
+      "purpose": "Implement ISO 27001 control 7.6 for Working in secure areas.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for working in secure areas.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Working in secure areas evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 7.6."
+    },
+    {
+      "controlId": "7.7",
+      "purpose": "Implement ISO 27001 control 7.7 for Clear desk and clear screen.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for clear desk and clear screen.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Clear desk and clear screen evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 7.7."
+    },
+    {
+      "controlId": "7.8",
+      "purpose": "Implement ISO 27001 control 7.8 for Equipment siting and protection.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for equipment siting and protection.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Equipment siting and protection evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 7.8."
+    },
+    {
+      "controlId": "7.9",
+      "purpose": "Implement ISO 27001 control 7.9 for Security of assets off-premises.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for security of assets off-premises.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Security of assets off-premises evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 7.9."
+    },
+    {
+      "controlId": "7.10",
+      "purpose": "Implement ISO 27001 control 7.10 for Storage media.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for storage media.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Storage media evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 7.10."
+    },
+    {
+      "controlId": "7.11",
+      "purpose": "Implement ISO 27001 control 7.11 for Supporting utilities.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for supporting utilities.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Supporting utilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 7.11."
+    },
+    {
+      "controlId": "7.12",
+      "purpose": "Implement ISO 27001 control 7.12 for Cabling security.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for cabling security.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Cabling security evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 7.12."
+    },
+    {
+      "controlId": "7.13",
+      "purpose": "Implement ISO 27001 control 7.13 for Equipment maintenance.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for equipment maintenance.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Equipment maintenance evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 7.13."
+    },
+    {
+      "controlId": "7.14",
+      "purpose": "Implement ISO 27001 control 7.14 for Secure disposal or re-use of equipment.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for secure disposal or re-use of equipment.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Secure disposal or re-use of equipment evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 7.14."
+    },
+    {
+      "controlId": "8.1",
+      "purpose": "Implement ISO 27001 control 8.1 for User endpoint devices.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for user endpoint devices.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "User endpoint devices evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.1."
+    },
+    {
+      "controlId": "8.2",
+      "purpose": "Implement ISO 27001 control 8.2 for Privileged access rights.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for privileged access rights.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.2."
+    },
+    {
+      "controlId": "8.3",
+      "purpose": "Implement ISO 27001 control 8.3 for Information access restriction.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for information access restriction.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.3."
+    },
+    {
+      "controlId": "8.4",
+      "purpose": "Implement ISO 27001 control 8.4 for Access to source code.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for access to source code.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.4."
+    },
+    {
+      "controlId": "8.5",
+      "purpose": "Implement ISO 27001 control 8.5 for Secure authentication.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for secure authentication.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.5."
+    },
+    {
+      "controlId": "8.6",
+      "purpose": "Implement ISO 27001 control 8.6 for Capacity management.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for capacity management.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Capacity management evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.6."
+    },
+    {
+      "controlId": "8.7",
+      "purpose": "Implement ISO 27001 control 8.7 for Protection against malware.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for protection against malware.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Protection against malware evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.7."
+    },
+    {
+      "controlId": "8.8",
+      "purpose": "Implement ISO 27001 control 8.8 for Management of technical vulnerabilities.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for management of technical vulnerabilities.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Management of technical vulnerabilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.8."
+    },
+    {
+      "controlId": "8.9",
+      "purpose": "Implement ISO 27001 control 8.9 for Configuration management.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for configuration management.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Configuration management evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.9."
+    },
+    {
+      "controlId": "8.10",
+      "purpose": "Implement ISO 27001 control 8.10 for Information deletion.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for information deletion.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Information deletion evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.10."
+    },
+    {
+      "controlId": "8.11",
+      "purpose": "Implement ISO 27001 control 8.11 for Data masking.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for data masking.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Data masking evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.11."
+    },
+    {
+      "controlId": "8.12",
+      "purpose": "Implement ISO 27001 control 8.12 for Data leakage prevention.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for data leakage prevention.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Data leakage prevention evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.12."
+    },
+    {
+      "controlId": "8.13",
+      "purpose": "Implement ISO 27001 control 8.13 for Information backup.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for information backup.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Backup configuration",
+        "Restore test evidence",
+        "Continuity plan review"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.13."
+    },
+    {
+      "controlId": "8.14",
+      "purpose": "Implement ISO 27001 control 8.14 for Redundancy of information processing facilities.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for redundancy of information processing facilities.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Redundancy of information processing facilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.14."
+    },
+    {
+      "controlId": "8.15",
+      "purpose": "Implement ISO 27001 control 8.15 for Logging.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for logging.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Logging evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.15."
+    },
+    {
+      "controlId": "8.16",
+      "purpose": "Implement ISO 27001 control 8.16 for Monitoring activities.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for monitoring activities.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Monitoring activities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.16."
+    },
+    {
+      "controlId": "8.17",
+      "purpose": "Implement ISO 27001 control 8.17 for Clock synchronization.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for clock synchronization.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Clock synchronization evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.17."
+    },
+    {
+      "controlId": "8.18",
+      "purpose": "Implement ISO 27001 control 8.18 for Use of privileged utility programs.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for use of privileged utility programs.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Use of privileged utility programs evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.18."
+    },
+    {
+      "controlId": "8.19",
+      "purpose": "Implement ISO 27001 control 8.19 for Installation of software on operational systems.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for installation of software on operational systems.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Installation of software on operational systems evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.19."
+    },
+    {
+      "controlId": "8.20",
+      "purpose": "Implement ISO 27001 control 8.20 for Networks security.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for networks security.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Networks security evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.20."
+    },
+    {
+      "controlId": "8.21",
+      "purpose": "Implement ISO 27001 control 8.21 for Security of network services.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for security of network services.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Security of network services evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.21."
+    },
+    {
+      "controlId": "8.22",
+      "purpose": "Implement ISO 27001 control 8.22 for Segregation of networks.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for segregation of networks.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Segregation of networks evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.22."
+    },
+    {
+      "controlId": "8.23",
+      "purpose": "Implement ISO 27001 control 8.23 for Web filtering.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for web filtering.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Web filtering evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.23."
+    },
+    {
+      "controlId": "8.24",
+      "purpose": "Implement ISO 27001 control 8.24 for Use of cryptography.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for use of cryptography.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Use of cryptography evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.24."
+    },
+    {
+      "controlId": "8.25",
+      "purpose": "Implement ISO 27001 control 8.25 for Secure development life cycle.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for secure development life cycle.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Secure development life cycle evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.25."
+    },
+    {
+      "controlId": "8.26",
+      "purpose": "Implement ISO 27001 control 8.26 for Application security requirements.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for application security requirements.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Application security requirements evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.26."
+    },
+    {
+      "controlId": "8.27",
+      "purpose": "Implement ISO 27001 control 8.27 for Secure system architecture and engineering principles.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for secure system architecture and engineering principles.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Secure system architecture and engineering principles evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.27."
+    },
+    {
+      "controlId": "8.28",
+      "purpose": "Implement ISO 27001 control 8.28 for Secure coding.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for secure coding.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Secure coding evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.28."
+    },
+    {
+      "controlId": "8.29",
+      "purpose": "Implement ISO 27001 control 8.29 for Security testing in development and acceptance.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for security testing in development and acceptance.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Security testing in development and acceptance evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.29."
+    },
+    {
+      "controlId": "8.30",
+      "purpose": "Implement ISO 27001 control 8.30 for Outsourced development.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for outsourced development.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Outsourced development evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.30."
+    },
+    {
+      "controlId": "8.31",
+      "purpose": "Implement ISO 27001 control 8.31 for Separation of development, test and production environments.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for separation of development, test and production environments.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Separation of development, test and production environments evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.31."
+    },
+    {
+      "controlId": "8.32",
+      "purpose": "Implement ISO 27001 control 8.32 for Change management.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for change management.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Change management evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.32."
+    },
+    {
+      "controlId": "8.33",
+      "purpose": "Implement ISO 27001 control 8.33 for Test information.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for test information.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Test information evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.33."
+    },
+    {
+      "controlId": "8.34",
+      "purpose": "Implement ISO 27001 control 8.34 for Protection of information systems during audit testing.",
+      "implementationGuidance": "Assign an owner, document the process, implement operating activities, and retain evidence for protection of information systems during audit testing.",
+      "commonMistakes": [
+        "The control exists informally but is not documented.",
+        "Evidence is stale or not tied to a defined owner."
+      ],
+      "auditTips": [
+        "Provide the latest approved document or record.",
+        "Show that the control is operating for the in-scope ISMS."
+      ],
+      "bestPractices": [
+        "Review evidence at least annually.",
+        "Link exceptions to risk treatment decisions."
+      ],
+      "suggestedEvidence": [
+        "Protection of information systems during audit testing evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "suggestedNextAction": "Upload current evidence for ISO control 8.34."
+    }
+  ]
+}

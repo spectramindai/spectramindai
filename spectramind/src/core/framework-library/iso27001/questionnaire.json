@@ -1,0 +1,294 @@
+{
+  "questionnaireSections": [
+    {
+      "id": "QS-ISO-GENERAL",
+      "title": "General Questionnaire",
+      "questions": [
+        {
+          "id": "Q-ISO-GEN-001",
+          "question": "Please provide a detailed overview of your organization",
+          "type": "long_text",
+          "helpText": "1. Nature of business\n2. Services and/or Products offered\n3. Customer use cases",
+          "placeholder": "Describe the organization, its services or products, and customer use cases.",
+          "relatedControls": [
+            "5.1",
+            "5.2",
+            "5.4"
+          ],
+          "required": true,
+          "rules": [
+            {
+              "condition": "answer indicates missing, incomplete, not applicable, or unclear implementation context",
+              "action": "prioritize the mapped ISO controls, tests, and evidence requirements"
+            }
+          ]
+        },
+        {
+          "id": "Q-ISO-GEN-002",
+          "question": "Please provide a list of all the departments/teams within the organization.",
+          "type": "long_text",
+          "placeholder": "Example: Engineering, IT, Sales, Operations, HR, Leadership.",
+          "relatedControls": [
+            "5.2",
+            "5.3",
+            "5.4"
+          ],
+          "required": true,
+          "rules": [
+            {
+              "condition": "answer indicates missing, incomplete, not applicable, or unclear implementation context",
+              "action": "prioritize the mapped ISO controls, tests, and evidence requirements"
+            }
+          ]
+        },
+        {
+          "id": "Q-ISO-GEN-003",
+          "question": "ISMS Scope and Locations: Identify the locations and business units to be included in the scope of your Information Security Management System (ISMS). For each, indicate whether it is a physical site, a virtual office, or another arrangement (for example, coworking spaces).",
+          "type": "long_text",
+          "placeholder": "List locations, business units, and whether each is physical, virtual, or another arrangement.",
+          "relatedControls": [
+            "5.1",
+            "5.4",
+            "5.35"
+          ],
+          "required": true,
+          "rules": [
+            {
+              "condition": "answer indicates missing, incomplete, not applicable, or unclear implementation context",
+              "action": "prioritize the mapped ISO controls, tests, and evidence requirements"
+            }
+          ]
+        },
+        {
+          "id": "Q-ISO-GEN-004",
+          "question": "What type of work arrangement does your company use?",
+          "type": "long_text",
+          "helpText": "i.e. Do all employees need to be present in the office to perform their duties, are they stationed at client locations, or are they allowed to work remotely?",
+          "placeholder": "Describe remote, hybrid, office, client-site, or other working arrangements.",
+          "relatedControls": [
+            "6.2",
+            "6.3",
+            "7.1"
+          ],
+          "required": true,
+          "rules": [
+            {
+              "condition": "answer indicates missing, incomplete, not applicable, or unclear implementation context",
+              "action": "prioritize the mapped ISO controls, tests, and evidence requirements"
+            }
+          ]
+        },
+        {
+          "id": "Q-ISO-GEN-005",
+          "question": "Are employees, contractors, partners, or anyone else who handles company information allowed to store or download any data on their devices?",
+          "type": "single_select",
+          "options": [
+            "Yes",
+            "No",
+            "Not Applicable"
+          ],
+          "relatedControls": [
+            "5.10",
+            "5.12",
+            "8.1",
+            "8.12"
+          ],
+          "subQuestions": [
+            {
+              "id": "Q-ISO-GEN-005A",
+              "question": "What devices are provided by the company?",
+              "type": "long_text",
+              "placeholder": "Example: corporate laptops, phones, tablets, or no company-provided devices.",
+              "required": false
+            }
+          ],
+          "required": true,
+          "rules": [
+            {
+              "condition": "answer indicates missing, incomplete, not applicable, or unclear implementation context",
+              "action": "prioritize the mapped ISO controls, tests, and evidence requirements"
+            }
+          ]
+        },
+        {
+          "id": "Q-ISO-GEN-006",
+          "question": "Are all the devices used by employees provided by the organization, or do employees use their own personal devices for work purposes?",
+          "type": "long_text",
+          "placeholder": "Describe whether devices are company-owned, personal/BYOD, or a mix of both.",
+          "relatedControls": [
+            "5.10",
+            "6.7",
+            "8.1"
+          ],
+          "required": true,
+          "rules": [
+            {
+              "condition": "answer indicates missing, incomplete, not applicable, or unclear implementation context",
+              "action": "prioritize the mapped ISO controls, tests, and evidence requirements"
+            }
+          ]
+        },
+        {
+          "id": "Q-ISO-GEN-007",
+          "question": "Does the organization use any removable media for storing data, such as external storage devices, USB drives, or laptops? Is storage encryption enforced for such removable media?",
+          "type": "long_text",
+          "placeholder": "Describe removable media usage and encryption expectations.",
+          "relatedControls": [
+            "7.10",
+            "8.10",
+            "8.24"
+          ],
+          "required": true,
+          "rules": [
+            {
+              "condition": "answer indicates missing, incomplete, not applicable, or unclear implementation context",
+              "action": "prioritize the mapped ISO controls, tests, and evidence requirements"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QS-ISO-TECHNICAL",
+      "title": "Technical Questionnaire",
+      "questions": [
+        {
+          "id": "Q-ISO-TEC-001",
+          "question": "Is there a dedicated team or person responsible for handling information security in your organization?",
+          "type": "single_select",
+          "options": [
+            "Yes",
+            "No",
+            "Not Applicable"
+          ],
+          "relatedControls": [
+            "5.2",
+            "5.3",
+            "5.4"
+          ],
+          "required": true,
+          "rules": [
+            {
+              "condition": "answer indicates missing, incomplete, not applicable, or unclear implementation context",
+              "action": "prioritize the mapped ISO controls, tests, and evidence requirements"
+            }
+          ]
+        },
+        {
+          "id": "Q-ISO-TEC-002",
+          "question": "Does the organization conduct any software development or testing activities?",
+          "type": "single_select",
+          "options": [
+            "Yes",
+            "No",
+            "Not Applicable"
+          ],
+          "relatedControls": [
+            "8.25",
+            "8.26",
+            "8.29"
+          ],
+          "subQuestions": [
+            {
+              "id": "Q-ISO-TEC-002A",
+              "question": "What type of application is developed (please specify the number of such applications)?",
+              "type": "multi_select",
+              "options": [
+                "Web Application",
+                "Desktop Application",
+                "IOS App",
+                "Android App",
+                "Other (please specify)"
+              ],
+              "required": false
+            }
+          ],
+          "required": true,
+          "rules": [
+            {
+              "condition": "answer indicates missing, incomplete, not applicable, or unclear implementation context",
+              "action": "prioritize the mapped ISO controls, tests, and evidence requirements"
+            }
+          ]
+        },
+        {
+          "id": "Q-ISO-TEC-003",
+          "question": "Do you store, process, or transmit any internal, confidential, or sensitive information, personal identifiable of your clients or employees?",
+          "type": "single_select",
+          "options": [
+            "Yes",
+            "No",
+            "Not Applicable"
+          ],
+          "relatedControls": [
+            "5.12",
+            "5.13",
+            "8.11",
+            "8.12"
+          ],
+          "subQuestions": [
+            {
+              "id": "Q-ISO-TEC-003A",
+              "question": "Please provide details on the type of data involved and location where it is stored (in house or cloud environment)",
+              "type": "long_text",
+              "placeholder": "Describe data types and storage locations.",
+              "required": false
+            }
+          ],
+          "required": true,
+          "rules": [
+            {
+              "condition": "answer indicates missing, incomplete, not applicable, or unclear implementation context",
+              "action": "prioritize the mapped ISO controls, tests, and evidence requirements"
+            }
+          ]
+        },
+        {
+          "id": "Q-ISO-TEC-004",
+          "question": "If applicable, Please provide an overview of the network architecture used within your organization. Does your organization allow the use of VPNs/Remote session software or proxy sessions?",
+          "type": "long_text",
+          "placeholder": "Describe internal networks, cloud access, VPNs, remote sessions, proxies, and administration paths.",
+          "uploadEnabled": true,
+          "relatedControls": [
+            "8.20",
+            "8.21",
+            "8.22"
+          ],
+          "required": true,
+          "rules": [
+            {
+              "condition": "answer indicates missing, incomplete, not applicable, or unclear implementation context",
+              "action": "prioritize the mapped ISO controls, tests, and evidence requirements"
+            }
+          ]
+        },
+        {
+          "id": "Q-ISO-TEC-005",
+          "question": "Scope Of System",
+          "type": "system_table",
+          "helpText": "Please provide as exhaustive list as possible so the implementation team can estimate your needs accurately.",
+          "fields": [
+            "System Name",
+            "System Usage Description",
+            "System Hosted In",
+            "Name of Third Party",
+            "Does this system store, process or transit client confidential information?",
+            "Client Service Impact by the System"
+          ],
+          "relatedControls": [
+            "5.9",
+            "5.23",
+            "8.20"
+          ],
+          "required": true,
+          "rules": [
+            {
+              "condition": "answer indicates missing, incomplete, not applicable, or unclear implementation context",
+              "action": "prioritize the mapped ISO controls, tests, and evidence requirements"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

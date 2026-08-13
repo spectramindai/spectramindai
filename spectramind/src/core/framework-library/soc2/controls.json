@@ -1,0 +1,940 @@
+{
+  "controls": [
+    {
+      "id": "CC1.1",
+      "title": "Integrity and Ethical Values",
+      "category": "Control Environment",
+      "objective": "Demonstrate commitment to integrity and ethical values.",
+      "description": "The entity establishes expectations for ethical conduct, communicates them across the organization, and addresses deviations in a timely manner.",
+      "priority": "High",
+      "guidance": "Maintain a code of conduct, communicate expected behavior, train personnel, and document how misconduct is reported and remediated.",
+      "relatedPolicies": [
+        "POL-001",
+        "POL-005",
+        "POL-018",
+        "POL-020"
+      ],
+      "relatedTests": [
+        "T-HR-002"
+      ],
+      "relatedRisks": [
+        "R-HR-004"
+      ],
+      "requiredEvidence": [
+        "Code of conduct",
+        "Employee acknowledgement records",
+        "Ethics training records",
+        "Disciplinary or exception handling procedure"
+      ],
+      "aiGuidance": "Confirm that ethical expectations are documented, acknowledged by personnel, and supported by a repeatable issue handling process."
+    },
+    {
+      "id": "CC1.2",
+      "title": "Board Independence and Oversight",
+      "category": "Control Environment",
+      "objective": "Establish independent oversight of internal control.",
+      "description": "The board or equivalent governing body provides oversight of management and the system of internal control.",
+      "priority": "High",
+      "guidance": "Document governance responsibilities, meeting cadence, escalation paths, and evidence of oversight activities.",
+      "relatedPolicies": [
+        "POL-001"
+      ],
+      "relatedTests": [],
+      "relatedRisks": [],
+      "requiredEvidence": [
+        "Board or governance charter",
+        "Meeting minutes",
+        "Security or compliance reporting package",
+        "Risk escalation records"
+      ],
+      "aiGuidance": "Look for evidence that leadership receives meaningful risk and control information and takes action when needed."
+    },
+    {
+      "id": "CC1.3",
+      "title": "Organizational Structure, Authority, and Responsibility",
+      "category": "Control Environment",
+      "objective": "Define structures, reporting lines, authority, and responsibilities.",
+      "description": "The entity establishes organizational roles and reporting lines that support achievement of control objectives.",
+      "priority": "High",
+      "guidance": "Keep organizational charts, role descriptions, ownership matrices, and approval responsibilities current.",
+      "relatedPolicies": [
+        "POL-001"
+      ],
+      "relatedTests": [],
+      "relatedRisks": [],
+      "requiredEvidence": [
+        "Organization chart",
+        "Role and responsibility matrix",
+        "Security ownership documentation",
+        "Delegation of authority record"
+      ],
+      "aiGuidance": "Validate that accountability for security, compliance, operations, and risk decisions is clearly assigned."
+    },
+    {
+      "id": "CC1.4",
+      "title": "Commitment to Competence",
+      "category": "Control Environment",
+      "objective": "Attract, develop, and retain competent personnel.",
+      "description": "The entity defines required competencies and supports personnel with hiring, training, and performance processes.",
+      "priority": "Medium",
+      "guidance": "Document role qualifications, onboarding, training, performance review, and continuing education practices.",
+      "relatedPolicies": [
+        "POL-005",
+        "POL-018"
+      ],
+      "relatedTests": [
+        "T-HR-001"
+      ],
+      "relatedRisks": [
+        "R-HR-001",
+        "R-HR-003"
+      ],
+      "requiredEvidence": [
+        "Job descriptions",
+        "Training records",
+        "Performance review records",
+        "Onboarding checklist"
+      ],
+      "aiGuidance": "Confirm that personnel responsible for controls have appropriate qualifications and receive relevant training."
+    },
+    {
+      "id": "CC1.5",
+      "title": "Accountability",
+      "category": "Control Environment",
+      "objective": "Hold individuals accountable for internal control responsibilities.",
+      "description": "The entity establishes accountability through performance expectations, incentives, corrective action, and oversight.",
+      "priority": "High",
+      "guidance": "Tie control responsibilities to roles, performance management, and corrective action processes.",
+      "relatedPolicies": [
+        "POL-001",
+        "POL-020"
+      ],
+      "relatedTests": [],
+      "relatedRisks": [
+        "R-HR-004",
+        "R-ID-005"
+      ],
+      "requiredEvidence": [
+        "Performance management policy",
+        "Control ownership matrix",
+        "Corrective action records",
+        "Management review evidence"
+      ],
+      "aiGuidance": "Check whether control owners are named and whether failures result in documented follow-up."
+    },
+    {
+      "id": "CC2.1",
+      "title": "Relevant and Quality Information",
+      "category": "Communication and Information",
+      "objective": "Obtain or generate relevant, quality information to support internal control.",
+      "description": "The entity identifies information requirements and uses reliable information to operate and monitor controls.",
+      "priority": "Medium",
+      "guidance": "Define reporting needs, data sources, quality expectations, and review procedures for control information.",
+      "relatedPolicies": [],
+      "relatedTests": [],
+      "relatedRisks": [],
+      "requiredEvidence": [
+        "Control reporting examples",
+        "Data source inventory",
+        "Report review evidence",
+        "Information quality procedure"
+      ],
+      "aiGuidance": "Ensure control decisions are based on complete, accurate, and timely information."
+    },
+    {
+      "id": "CC2.2",
+      "title": "Internal Communication",
+      "category": "Communication and Information",
+      "objective": "Internally communicate information needed to support internal control.",
+      "description": "The entity communicates objectives, responsibilities, and control information internally.",
+      "priority": "Medium",
+      "guidance": "Use documented communication channels for security updates, policy changes, incidents, and control responsibilities.",
+      "relatedPolicies": [
+        "POL-005",
+        "POL-010",
+        "POL-017",
+        "POL-018"
+      ],
+      "relatedTests": [
+        "T-HR-001",
+        "T-HR-002"
+      ],
+      "relatedRisks": [
+        "R-HR-001",
+        "R-HR-003",
+        "R-IR-002"
+      ],
+      "requiredEvidence": [
+        "Internal communication examples",
+        "Policy announcement records",
+        "Security awareness communications",
+        "Control responsibility notifications"
+      ],
+      "aiGuidance": "Verify that employees receive relevant security and compliance information when responsibilities or risks change."
+    },
+    {
+      "id": "CC2.3",
+      "title": "External Communication",
+      "category": "Communication and Information",
+      "objective": "Communicate relevant information externally.",
+      "description": "The entity communicates with external parties about matters affecting controls, commitments, and system requirements.",
+      "priority": "Medium",
+      "guidance": "Maintain customer, vendor, auditor, and regulator communication procedures, including escalation and response ownership.",
+      "relatedPolicies": [
+        "POL-010",
+        "POL-012"
+      ],
+      "relatedTests": [
+        "T-VND-001"
+      ],
+      "relatedRisks": [
+        "R-IR-002",
+        "R-VND-001"
+      ],
+      "requiredEvidence": [
+        "External communication procedure",
+        "Customer security response examples",
+        "Vendor communication records",
+        "Incident notification procedure"
+      ],
+      "aiGuidance": "Confirm external communication responsibilities are assigned and supported by approved messaging paths."
+    },
+    {
+      "id": "CC3.1",
+      "title": "Specified Objectives",
+      "category": "Risk Assessment",
+      "objective": "Specify objectives clearly enough to identify and assess risks.",
+      "description": "The entity defines objectives for operations, reporting, and compliance that allow risk identification and control design.",
+      "priority": "High",
+      "guidance": "Document business, security, availability, confidentiality, processing integrity, and privacy objectives where applicable.",
+      "relatedPolicies": [
+        "POL-001",
+        "POL-020"
+      ],
+      "relatedTests": [],
+      "relatedRisks": [],
+      "requiredEvidence": [
+        "Security objectives",
+        "Compliance objectives",
+        "Service commitments",
+        "Risk assessment scope"
+      ],
+      "aiGuidance": "Use defined objectives as the basis for deciding which risks and controls are relevant."
+    },
+    {
+      "id": "CC3.2",
+      "title": "Risk Identification and Analysis",
+      "category": "Risk Assessment",
+      "objective": "Identify and analyze risks to achieving objectives.",
+      "description": "The entity identifies internal and external risks and analyzes their likelihood, impact, and response options.",
+      "priority": "High",
+      "guidance": "Maintain a risk register, scoring method, review cadence, and documented risk treatment decisions.",
+      "relatedPolicies": [
+        "POL-020"
+      ],
+      "relatedTests": [],
+      "relatedRisks": [],
+      "requiredEvidence": [
+        "Risk register",
+        "Risk assessment methodology",
+        "Risk review records",
+        "Risk treatment plan"
+      ],
+      "aiGuidance": "Confirm risks are assessed consistently and linked to controls or mitigation activities."
+    },
+    {
+      "id": "CC3.3",
+      "title": "Fraud Risk Consideration",
+      "category": "Risk Assessment",
+      "objective": "Consider the potential for fraud when assessing risks.",
+      "description": "The entity considers fraudulent activity, incentives, pressures, opportunities, and attitudes when assessing risk.",
+      "priority": "Medium",
+      "guidance": "Include fraud scenarios in risk assessment, access reviews, financial process controls, and incident response planning.",
+      "relatedPolicies": [
+        "POL-020"
+      ],
+      "relatedTests": [],
+      "relatedRisks": [],
+      "requiredEvidence": [
+        "Fraud risk assessment",
+        "Segregation of duties review",
+        "Whistleblower or reporting process",
+        "Management review evidence"
+      ],
+      "aiGuidance": "Look for risks involving privilege misuse, unauthorized changes, and management override."
+    },
+    {
+      "id": "CC3.4",
+      "title": "Significant Change Assessment",
+      "category": "Risk Assessment",
+      "objective": "Identify and assess changes that could significantly affect internal control.",
+      "description": "The entity evaluates organizational, operational, technology, vendor, and regulatory changes for control impact.",
+      "priority": "High",
+      "guidance": "Connect change management, vendor changes, infrastructure changes, and business changes to risk reassessment.",
+      "relatedPolicies": [
+        "POL-009",
+        "POL-011",
+        "POL-020"
+      ],
+      "relatedTests": [],
+      "relatedRisks": [],
+      "requiredEvidence": [
+        "Change impact assessment",
+        "Risk reassessment records",
+        "Major change approval records",
+        "Regulatory change review"
+      ],
+      "aiGuidance": "Flag major changes that occurred without documented risk and control impact review."
+    },
+    {
+      "id": "CC4.1",
+      "title": "Ongoing and Separate Evaluations",
+      "category": "Monitoring Activities",
+      "objective": "Perform evaluations to determine whether controls are present and functioning.",
+      "description": "The entity uses ongoing monitoring, separate evaluations, or both to assess control design and operation.",
+      "priority": "High",
+      "guidance": "Define monitoring activities, internal reviews, compliance testing, and management review cadence.",
+      "relatedPolicies": [
+        "POL-020"
+      ],
+      "relatedTests": [
+        "T-VND-002"
+      ],
+      "relatedRisks": [
+        "R-VND-003"
+      ],
+      "requiredEvidence": [
+        "Control monitoring plan",
+        "Internal audit or compliance testing records",
+        "Management review minutes",
+        "Control test results"
+      ],
+      "aiGuidance": "Verify that controls are monitored periodically and exceptions are tracked to closure."
+    },
+    {
+      "id": "CC4.2",
+      "title": "Deficiency Evaluation and Communication",
+      "category": "Monitoring Activities",
+      "objective": "Evaluate and communicate control deficiencies.",
+      "description": "The entity evaluates identified deficiencies and communicates them to parties responsible for corrective action.",
+      "priority": "High",
+      "guidance": "Track control exceptions, assign remediation owners, set target dates, and report significant deficiencies to leadership.",
+      "relatedPolicies": [
+        "POL-020"
+      ],
+      "relatedTests": [
+        "T-INF-002",
+        "T-IR-003"
+      ],
+      "relatedRisks": [
+        "R-IR-003"
+      ],
+      "requiredEvidence": [
+        "Issue register",
+        "Remediation plan",
+        "Exception reports",
+        "Leadership escalation evidence"
+      ],
+      "aiGuidance": "Confirm deficiencies have severity, ownership, remediation deadlines, and completion evidence."
+    },
+    {
+      "id": "CC5.1",
+      "title": "Selection and Development of Control Activities",
+      "category": "Control Activities",
+      "objective": "Select and develop control activities that mitigate risks.",
+      "description": "The entity designs control activities to address risks to objectives at appropriate levels of the organization.",
+      "priority": "High",
+      "guidance": "Map risks to controls, define control frequency, ownership, evidence, and review expectations.",
+      "relatedPolicies": [
+        "POL-020"
+      ],
+      "relatedTests": [],
+      "relatedRisks": [],
+      "requiredEvidence": [
+        "Risk-control matrix",
+        "Control descriptions",
+        "Control owner assignments",
+        "Control design review"
+      ],
+      "aiGuidance": "Check that controls are tied to specific risks and have clear operating criteria."
+    },
+    {
+      "id": "CC5.2",
+      "title": "General Technology Controls",
+      "category": "Control Activities",
+      "objective": "Select and develop general controls over technology.",
+      "description": "The entity designs technology controls over infrastructure, security management, technology acquisition, development, and maintenance.",
+      "priority": "High",
+      "guidance": "Document technology control domains, including access, change management, operations, monitoring, backup, and incident response.",
+      "relatedPolicies": [
+        "POL-006",
+        "POL-016"
+      ],
+      "relatedTests": [
+        "T-APP-002",
+        "T-INF-001",
+        "T-INF-004",
+        "T-INF-005"
+      ],
+      "relatedRisks": [
+        "R-APP-002",
+        "R-INF-001",
+        "R-INF-002",
+        "R-INF-005"
+      ],
+      "requiredEvidence": [
+        "IT control matrix",
+        "Technology policy set",
+        "Access control evidence",
+        "Change management evidence"
+      ],
+      "aiGuidance": "Prioritize evidence for access, change, vulnerability, logging, and backup controls."
+    },
+    {
+      "id": "CC5.3",
+      "title": "Policies and Procedures",
+      "category": "Control Activities",
+      "objective": "Deploy control activities through policies and procedures.",
+      "description": "The entity establishes policies and procedures that put control activities into operation.",
+      "priority": "High",
+      "guidance": "Maintain approved policies, procedures, review dates, ownership, and employee communication evidence.",
+      "relatedPolicies": [
+        "POL-001",
+        "POL-011",
+        "POL-020"
+      ],
+      "relatedTests": [
+        "T-DP-002",
+        "T-HR-002"
+      ],
+      "relatedRisks": [
+        "R-DP-004"
+      ],
+      "requiredEvidence": [
+        "Approved policies",
+        "Procedure documents",
+        "Policy review records",
+        "Policy acknowledgement records"
+      ],
+      "aiGuidance": "Confirm policies are approved, current, communicated, and aligned to actual control activities."
+    },
+    {
+      "id": "CC6.1",
+      "title": "Logical Access Security",
+      "category": "Logical and Physical Access Controls",
+      "objective": "Implement logical access controls to protect systems and data.",
+      "description": "The entity uses security software, infrastructure, and architectures to restrict logical access to authorized users.",
+      "priority": "Critical",
+      "guidance": "Use centralized identity, MFA, role-based access, least privilege, and periodic access reviews.",
+      "relatedPolicies": [
+        "POL-002",
+        "POL-003",
+        "POL-004",
+        "POL-017"
+      ],
+      "relatedTests": [
+        "T-ID-001",
+        "T-ID-002",
+        "T-ID-003",
+        "T-VND-003"
+      ],
+      "relatedRisks": [
+        "R-DP-001",
+        "R-DP-003",
+        "R-HR-004",
+        "R-ID-001",
+        "R-ID-002",
+        "R-ID-003",
+        "R-ID-005",
+        "R-MON-002",
+        "R-VND-002"
+      ],
+      "requiredEvidence": [
+        "Identity provider configuration",
+        "MFA settings",
+        "Access control policy",
+        "User access review"
+      ],
+      "aiGuidance": "Focus on privileged access, MFA enforcement, and evidence that access is limited by role."
+    },
+    {
+      "id": "CC6.2",
+      "title": "User Registration and Authorization",
+      "category": "Logical and Physical Access Controls",
+      "objective": "Register and authorize users and devices before granting access.",
+      "description": "The entity authorizes users, credentials, and devices before granting system access.",
+      "priority": "Critical",
+      "guidance": "Require documented approval for new users, privileged users, service accounts, and registered devices.",
+      "relatedPolicies": [
+        "POL-002",
+        "POL-003",
+        "POL-018"
+      ],
+      "relatedTests": [
+        "T-ID-001",
+        "T-ID-002",
+        "T-ID-004",
+        "T-VND-003"
+      ],
+      "relatedRisks": [
+        "R-HR-001",
+        "R-ID-001",
+        "R-ID-002",
+        "R-ID-004",
+        "R-ID-005",
+        "R-VND-002"
+      ],
+      "requiredEvidence": [
+        "Access request tickets",
+        "Access approval records",
+        "Device registration records",
+        "Privileged access approval"
+      ],
+      "aiGuidance": "Check whether access was approved before activation and whether approvals match job responsibilities."
+    },
+    {
+      "id": "CC6.3",
+      "title": "Access Modification and Removal",
+      "category": "Logical and Physical Access Controls",
+      "objective": "Authorize, modify, and remove access based on roles and responsibilities.",
+      "description": "The entity manages access changes and removals when responsibilities change or users leave.",
+      "priority": "Critical",
+      "guidance": "Connect HR events, role changes, access requests, terminations, and periodic reviews to access updates.",
+      "relatedPolicies": [
+        "POL-002",
+        "POL-019"
+      ],
+      "relatedTests": [
+        "T-ID-001",
+        "T-ID-002",
+        "T-ID-005",
+        "T-VND-003"
+      ],
+      "relatedRisks": [
+        "R-DP-003",
+        "R-HR-002",
+        "R-ID-001",
+        "R-ID-002",
+        "R-ID-004",
+        "R-VND-002"
+      ],
+      "requiredEvidence": [
+        "Termination access removal records",
+        "Role change access records",
+        "Access review results",
+        "Deprovisioning checklist"
+      ],
+      "aiGuidance": "Prioritize terminated users, privileged accounts, and dormant accounts for evidence review."
+    },
+    {
+      "id": "CC6.4",
+      "title": "Physical Access Restrictions",
+      "category": "Logical and Physical Access Controls",
+      "objective": "Restrict physical access to facilities and protected assets.",
+      "description": "The entity restricts physical access to facilities, infrastructure, and protected information assets.",
+      "priority": "High",
+      "guidance": "Use badge access, visitor controls, locked areas, monitoring, and periodic physical access reviews where applicable.",
+      "relatedPolicies": [
+        "POL-002",
+        "POL-019"
+      ],
+      "relatedTests": [
+        "T-ID-005"
+      ],
+      "relatedRisks": [
+        "R-HR-002"
+      ],
+      "requiredEvidence": [
+        "Physical access policy",
+        "Badge access review",
+        "Visitor log",
+        "Data center or office access records"
+      ],
+      "aiGuidance": "For cloud-native teams, confirm reliance on cloud provider physical security reports and office controls."
+    },
+    {
+      "id": "CC6.5",
+      "title": "Protection of Information Assets",
+      "category": "Logical and Physical Access Controls",
+      "objective": "Protect information assets through their lifecycle.",
+      "description": "The entity protects information assets against unauthorized access, disclosure, modification, or destruction.",
+      "priority": "High",
+      "guidance": "Maintain asset handling, encryption, secure storage, disposal, and media sanitization procedures.",
+      "relatedPolicies": [
+        "POL-005",
+        "POL-006",
+        "POL-013",
+        "POL-014",
+        "POL-017",
+        "POL-019"
+      ],
+      "relatedTests": [
+        "T-DP-001",
+        "T-DP-002",
+        "T-INF-005",
+        "T-INF-006"
+      ],
+      "relatedRisks": [
+        "R-DP-001",
+        "R-DP-002",
+        "R-DP-004",
+        "R-INF-004",
+        "R-INF-005"
+      ],
+      "requiredEvidence": [
+        "Asset inventory",
+        "Encryption configuration",
+        "Media disposal records",
+        "Asset handling procedure"
+      ],
+      "aiGuidance": "Look for controls over sensitive data storage, transfer, retention, and secure disposal."
+    },
+    {
+      "id": "CC6.6",
+      "title": "Boundary Protection",
+      "category": "Logical and Physical Access Controls",
+      "objective": "Protect against unauthorized access from outside system boundaries.",
+      "description": "The entity implements controls to detect, prevent, and restrict unauthorized external access.",
+      "priority": "Critical",
+      "guidance": "Use network segmentation, firewall rules, secure remote access, endpoint protection, and vulnerability management.",
+      "relatedPolicies": [
+        "POL-004",
+        "POL-017"
+      ],
+      "relatedTests": [
+        "T-ID-003",
+        "T-INF-003",
+        "T-INF-004"
+      ],
+      "relatedRisks": [
+        "R-ID-003",
+        "R-INF-001",
+        "R-INF-003"
+      ],
+      "requiredEvidence": [
+        "Firewall configuration",
+        "Network architecture diagram",
+        "Remote access configuration",
+        "Vulnerability scan results"
+      ],
+      "aiGuidance": "Confirm public exposure is minimized and externally reachable services are monitored and hardened."
+    },
+    {
+      "id": "CC6.7",
+      "title": "Data Transmission and Movement",
+      "category": "Logical and Physical Access Controls",
+      "objective": "Restrict transmission, movement, and removal of information.",
+      "description": "The entity restricts data transfer to authorized users, processes, systems, and locations.",
+      "priority": "High",
+      "guidance": "Use encryption, approved transfer methods, data loss prevention, and access controls over exports and removable media.",
+      "relatedPolicies": [
+        "POL-013",
+        "POL-014",
+        "POL-015"
+      ],
+      "relatedTests": [
+        "T-DP-001",
+        "T-MON-003"
+      ],
+      "relatedRisks": [
+        "R-DP-001",
+        "R-DP-002",
+        "R-MON-002"
+      ],
+      "requiredEvidence": [
+        "Encryption settings",
+        "Data transfer procedure",
+        "DLP configuration",
+        "Data export access review"
+      ],
+      "aiGuidance": "Review how sensitive data leaves systems and whether transfer paths are encrypted and authorized."
+    },
+    {
+      "id": "CC6.8",
+      "title": "Malicious Software Protection",
+      "category": "Logical and Physical Access Controls",
+      "objective": "Prevent, detect, and respond to malicious software.",
+      "description": "The entity uses controls to prevent or detect unauthorized or malicious software and respond appropriately.",
+      "priority": "Critical",
+      "guidance": "Deploy endpoint protection, malware scanning, patching, alerting, and response procedures.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-INF-001",
+        "T-INF-006"
+      ],
+      "relatedRisks": [
+        "R-INF-002",
+        "R-INF-004"
+      ],
+      "requiredEvidence": [
+        "Endpoint protection configuration",
+        "Malware alert records",
+        "Patch management records",
+        "Incident response procedure"
+      ],
+      "aiGuidance": "Confirm endpoint and server protection is active, monitored, and tied to incident response."
+    },
+    {
+      "id": "CC7.1",
+      "title": "Vulnerability Detection and Monitoring",
+      "category": "System Operations",
+      "objective": "Detect changes and vulnerabilities that could affect security objectives.",
+      "description": "The entity uses monitoring procedures to identify configuration changes and newly discovered vulnerabilities.",
+      "priority": "Critical",
+      "guidance": "Run vulnerability scans, monitor configuration drift, assess findings, and track remediation.",
+      "relatedPolicies": [
+        "POL-006",
+        "POL-015",
+        "POL-016"
+      ],
+      "relatedTests": [
+        "T-APP-003",
+        "T-INF-001",
+        "T-INF-002",
+        "T-INF-003",
+        "T-INF-004",
+        "T-INF-005"
+      ],
+      "relatedRisks": [
+        "R-APP-003",
+        "R-INF-001",
+        "R-INF-002",
+        "R-INF-003",
+        "R-INF-005",
+        "R-MON-001"
+      ],
+      "requiredEvidence": [
+        "Vulnerability scan report",
+        "Configuration monitoring report",
+        "Remediation tracking records",
+        "Patch verification evidence"
+      ],
+      "aiGuidance": "Prioritize unresolved critical vulnerabilities and missing evidence of remediation."
+    },
+    {
+      "id": "CC7.2",
+      "title": "Security Event Monitoring",
+      "category": "System Operations",
+      "objective": "Monitor system components for anomalies and security events.",
+      "description": "The entity monitors systems for anomalies that may indicate malicious activity, errors, or operational issues.",
+      "priority": "Critical",
+      "guidance": "Centralize logs, define alerts, review alerts, and document escalation procedures.",
+      "relatedPolicies": [
+        "POL-015"
+      ],
+      "relatedTests": [
+        "T-INF-006",
+        "T-MON-001",
+        "T-MON-002",
+        "T-MON-003"
+      ],
+      "relatedRisks": [
+        "R-BC-003",
+        "R-DP-002",
+        "R-DP-003",
+        "R-HR-004",
+        "R-INF-004",
+        "R-MON-001",
+        "R-MON-002",
+        "R-MON-003"
+      ],
+      "requiredEvidence": [
+        "SIEM or logging configuration",
+        "Alert rule list",
+        "Alert review records",
+        "Escalation procedure"
+      ],
+      "aiGuidance": "Confirm critical systems produce logs and that alerts are reviewed by responsible personnel."
+    },
+    {
+      "id": "CC7.3",
+      "title": "Security Event Evaluation",
+      "category": "System Operations",
+      "objective": "Evaluate security events to determine impact.",
+      "description": "The entity evaluates detected events to determine whether they represent incidents, control failures, or other issues.",
+      "priority": "High",
+      "guidance": "Define triage criteria, severity levels, investigation steps, and documentation requirements.",
+      "relatedPolicies": [
+        "POL-010",
+        "POL-015"
+      ],
+      "relatedTests": [
+        "T-IR-002",
+        "T-MON-001",
+        "T-MON-002"
+      ],
+      "relatedRisks": [
+        "R-IR-001",
+        "R-MON-001",
+        "R-MON-003"
+      ],
+      "requiredEvidence": [
+        "Security event tickets",
+        "Triage procedure",
+        "Investigation records",
+        "Incident severity matrix"
+      ],
+      "aiGuidance": "Look for documented event triage and evidence that significant events were investigated."
+    },
+    {
+      "id": "CC7.4",
+      "title": "Incident Response",
+      "category": "System Operations",
+      "objective": "Respond to identified security incidents.",
+      "description": "The entity executes incident response procedures for identified security incidents.",
+      "priority": "Critical",
+      "guidance": "Maintain an incident response plan, roles, escalation procedures, communication steps, and tabletop exercises.",
+      "relatedPolicies": [
+        "POL-010"
+      ],
+      "relatedTests": [
+        "T-IR-001",
+        "T-IR-002",
+        "T-MON-002"
+      ],
+      "relatedRisks": [
+        "R-IR-001",
+        "R-IR-002",
+        "R-MON-003"
+      ],
+      "requiredEvidence": [
+        "Incident response plan",
+        "Incident tickets",
+        "Tabletop exercise records",
+        "Incident communication records"
+      ],
+      "aiGuidance": "Confirm incidents have ownership, timeline, root cause, containment, remediation, and closure evidence."
+    },
+    {
+      "id": "CC7.5",
+      "title": "Incident Recovery",
+      "category": "System Operations",
+      "objective": "Recover from identified security incidents.",
+      "description": "The entity identifies, develops, and implements recovery activities after security incidents.",
+      "priority": "High",
+      "guidance": "Document recovery procedures, restoration steps, post-incident reviews, and control improvements.",
+      "relatedPolicies": [
+        "POL-007",
+        "POL-008",
+        "POL-009",
+        "POL-010"
+      ],
+      "relatedTests": [
+        "T-BC-001",
+        "T-BC-002",
+        "T-BC-003",
+        "T-IR-001",
+        "T-IR-002",
+        "T-IR-003"
+      ],
+      "relatedRisks": [
+        "R-BC-001",
+        "R-BC-002",
+        "R-IR-001",
+        "R-IR-003"
+      ],
+      "requiredEvidence": [
+        "Recovery procedure",
+        "Post-incident review",
+        "Corrective action plan",
+        "Recovery test evidence"
+      ],
+      "aiGuidance": "Check whether incidents result in lessons learned and control improvements."
+    },
+    {
+      "id": "CC8.1",
+      "title": "Change Management",
+      "category": "Change Management",
+      "objective": "Authorize, test, approve, and implement changes.",
+      "description": "The entity manages system changes through authorization, design, development, testing, approval, and implementation controls.",
+      "priority": "Critical",
+      "guidance": "Require change tickets, approvals, testing evidence, deployment records, rollback plans, and emergency change review.",
+      "relatedPolicies": [
+        "POL-011",
+        "POL-016"
+      ],
+      "relatedTests": [
+        "T-APP-001",
+        "T-APP-002",
+        "T-APP-003",
+        "T-APP-004"
+      ],
+      "relatedRisks": [
+        "R-APP-001",
+        "R-APP-002",
+        "R-APP-003",
+        "R-DP-003"
+      ],
+      "requiredEvidence": [
+        "Change management policy",
+        "Change tickets",
+        "Approval records",
+        "Testing and deployment evidence"
+      ],
+      "aiGuidance": "Review whether production changes are approved, tested, traceable, and separated from direct unauthorized deployment."
+    },
+    {
+      "id": "CC9.1",
+      "title": "Business Disruption Risk Mitigation",
+      "category": "Risk Mitigation",
+      "objective": "Identify and mitigate risks from business disruptions.",
+      "description": "The entity identifies and develops mitigation activities for risks arising from potential business disruptions.",
+      "priority": "High",
+      "guidance": "Maintain business continuity, disaster recovery, backup, availability monitoring, and resilience procedures.",
+      "relatedPolicies": [
+        "POL-007",
+        "POL-008",
+        "POL-009"
+      ],
+      "relatedTests": [
+        "T-BC-001",
+        "T-BC-002",
+        "T-BC-003"
+      ],
+      "relatedRisks": [
+        "R-BC-001",
+        "R-BC-002",
+        "R-BC-003"
+      ],
+      "requiredEvidence": [
+        "Business continuity plan",
+        "Disaster recovery plan",
+        "Backup test results",
+        "Availability monitoring records"
+      ],
+      "aiGuidance": "Confirm continuity plans are tested and aligned with service commitments."
+    },
+    {
+      "id": "CC9.2",
+      "title": "Vendor and Business Partner Risk Mitigation",
+      "category": "Risk Mitigation",
+      "objective": "Assess and manage risks associated with vendors and business partners.",
+      "description": "The entity assesses third-party risks and manages vendor relationships that could affect system objectives.",
+      "priority": "High",
+      "guidance": "Maintain vendor inventory, due diligence, security reviews, contracts, monitoring, and periodic reassessments.",
+      "relatedPolicies": [
+        "POL-012",
+        "POL-016"
+      ],
+      "relatedTests": [
+        "T-APP-003",
+        "T-VND-001",
+        "T-VND-002",
+        "T-VND-003"
+      ],
+      "relatedRisks": [
+        "R-APP-003",
+        "R-VND-001",
+        "R-VND-002",
+        "R-VND-003"
+      ],
+      "requiredEvidence": [
+        "Vendor inventory",
+        "Vendor risk assessments",
+        "Vendor security reports",
+        "Contract security requirements"
+      ],
+      "aiGuidance": "Prioritize vendors with access to customer data, production systems, or critical services."
+    }
+  ]
+}

@@ -1,0 +1,1027 @@
+{
+  "taskTemplates": [
+    {
+      "id": "TASK-ISO-001",
+      "title": "Implement ISO control 5.1",
+      "trigger": "Policies for information security is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.1"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-002",
+      "title": "Implement ISO control 5.2",
+      "trigger": "Information security roles and responsibilities is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.2"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-003",
+      "title": "Implement ISO control 5.3",
+      "trigger": "Segregation of duties is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.3"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-004",
+      "title": "Implement ISO control 5.4",
+      "trigger": "Management Responsibilities is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.4"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-005",
+      "title": "Implement ISO control 5.5",
+      "trigger": "Contact with Authorities is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.5"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-006",
+      "title": "Implement ISO control 5.6",
+      "trigger": "Contact with special interest groups is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.6"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-007",
+      "title": "Implement ISO control 5.7",
+      "trigger": "Threat intelligence is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.7"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-008",
+      "title": "Implement ISO control 5.8",
+      "trigger": "Information security in project management is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.8"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-009",
+      "title": "Implement ISO control 5.9",
+      "trigger": "Inventory of information and other associated assets is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.9"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-010",
+      "title": "Implement ISO control 5.10",
+      "trigger": "Acceptable use of information and other associated assets is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.10"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-011",
+      "title": "Implement ISO control 5.11",
+      "trigger": "Return of Assets is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.11"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-012",
+      "title": "Implement ISO control 5.12",
+      "trigger": "Classification Of Information is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.12"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-013",
+      "title": "Implement ISO control 5.13",
+      "trigger": "Labelling of Information is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.13"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-014",
+      "title": "Implement ISO control 5.14",
+      "trigger": "Information Transfer is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.14"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-015",
+      "title": "Implement ISO control 5.15",
+      "trigger": "Access Control is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.15"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-016",
+      "title": "Implement ISO control 5.16",
+      "trigger": "Identity Management is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.16"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-017",
+      "title": "Implement ISO control 5.17",
+      "trigger": "Authentication information is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.17"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-018",
+      "title": "Implement ISO control 5.18",
+      "trigger": "Access rights is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.18"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-019",
+      "title": "Implement ISO control 5.19",
+      "trigger": "Information security in supplier relationships is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.19"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-020",
+      "title": "Implement ISO control 5.20",
+      "trigger": "Addressing information security within supplier agreements is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.20"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-021",
+      "title": "Implement ISO control 5.21",
+      "trigger": "Managing information security in the ICT supply chain is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.21"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-022",
+      "title": "Implement ISO control 5.22",
+      "trigger": "Monitoring, review and change management of supplier services is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.22"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-023",
+      "title": "Implement ISO control 5.23",
+      "trigger": "Information security for use of cloud services is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.23"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-024",
+      "title": "Implement ISO control 5.24",
+      "trigger": "Information security incident management planning and preparation is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.24"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-025",
+      "title": "Implement ISO control 5.25",
+      "trigger": "Assessment and decision on information security events is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.25"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-026",
+      "title": "Implement ISO control 5.26",
+      "trigger": "Response to information security incidents is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.26"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-027",
+      "title": "Implement ISO control 5.27",
+      "trigger": "Learning from information security incidents is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.27"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-028",
+      "title": "Implement ISO control 5.28",
+      "trigger": "Collection of evidence is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.28"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-029",
+      "title": "Implement ISO control 5.29",
+      "trigger": "Information security during disruption is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.29"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-030",
+      "title": "Implement ISO control 5.30",
+      "trigger": "ICT readiness for business continuity is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.30"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-031",
+      "title": "Implement ISO control 5.31",
+      "trigger": "Legal, statutory, regulatory and contractual requirements is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.31"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-032",
+      "title": "Implement ISO control 5.32",
+      "trigger": "Intellectual property rights is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.32"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-033",
+      "title": "Implement ISO control 5.33",
+      "trigger": "Protection of records is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.33"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-034",
+      "title": "Implement ISO control 5.34",
+      "trigger": "Privacy and protection of PII is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.34"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-035",
+      "title": "Implement ISO control 5.35",
+      "trigger": "Independent review of information security is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.35"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-036",
+      "title": "Implement ISO control 5.36",
+      "trigger": "Compliance with policies, rules and standards for information security is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.36"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-037",
+      "title": "Implement ISO control 5.37",
+      "trigger": "Documented operating procedures is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "5.37"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-038",
+      "title": "Implement ISO control 6.1",
+      "trigger": "Screening is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "6.1"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-039",
+      "title": "Implement ISO control 6.2",
+      "trigger": "Terms and conditions of employment is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "6.2"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-040",
+      "title": "Implement ISO control 6.3",
+      "trigger": "Information security awareness, education and training is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "6.3"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-041",
+      "title": "Implement ISO control 6.4",
+      "trigger": "Disciplinary process is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "6.4"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-042",
+      "title": "Implement ISO control 6.5",
+      "trigger": "Responsibilities after termination or change of employment is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "6.5"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-043",
+      "title": "Implement ISO control 6.6",
+      "trigger": "Confidentiality or non-disclosure agreements is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "6.6"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-044",
+      "title": "Implement ISO control 6.7",
+      "trigger": "Remote working is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "6.7"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-045",
+      "title": "Implement ISO control 6.8",
+      "trigger": "Information security event reporting is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "6.8"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-046",
+      "title": "Implement ISO control 7.1",
+      "trigger": "Physical security perimeters is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "7.1"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-047",
+      "title": "Implement ISO control 7.2",
+      "trigger": "Physical entry is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "7.2"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-048",
+      "title": "Implement ISO control 7.3",
+      "trigger": "Securing offices, rooms and facilities is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "7.3"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-049",
+      "title": "Implement ISO control 7.4",
+      "trigger": "Physical security monitoring is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "7.4"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-050",
+      "title": "Implement ISO control 7.5",
+      "trigger": "Protecting against physical and environmental threats is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "7.5"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-051",
+      "title": "Implement ISO control 7.6",
+      "trigger": "Working in secure areas is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "7.6"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-052",
+      "title": "Implement ISO control 7.7",
+      "trigger": "Clear desk and clear screen is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "7.7"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-053",
+      "title": "Implement ISO control 7.8",
+      "trigger": "Equipment siting and protection is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "7.8"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-054",
+      "title": "Implement ISO control 7.9",
+      "trigger": "Security of assets off-premises is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "7.9"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-055",
+      "title": "Implement ISO control 7.10",
+      "trigger": "Storage media is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "7.10"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-056",
+      "title": "Implement ISO control 7.11",
+      "trigger": "Supporting utilities is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "7.11"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-057",
+      "title": "Implement ISO control 7.12",
+      "trigger": "Cabling security is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "7.12"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-058",
+      "title": "Implement ISO control 7.13",
+      "trigger": "Equipment maintenance is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "7.13"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-059",
+      "title": "Implement ISO control 7.14",
+      "trigger": "Secure disposal or re-use of equipment is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "7.14"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-060",
+      "title": "Implement ISO control 8.1",
+      "trigger": "User endpoint devices is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.1"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-061",
+      "title": "Implement ISO control 8.2",
+      "trigger": "Privileged access rights is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.2"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-062",
+      "title": "Implement ISO control 8.3",
+      "trigger": "Information access restriction is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.3"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-063",
+      "title": "Implement ISO control 8.4",
+      "trigger": "Access to source code is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.4"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-064",
+      "title": "Implement ISO control 8.5",
+      "trigger": "Secure authentication is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.5"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-065",
+      "title": "Implement ISO control 8.6",
+      "trigger": "Capacity management is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.6"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-066",
+      "title": "Implement ISO control 8.7",
+      "trigger": "Protection against malware is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.7"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-067",
+      "title": "Implement ISO control 8.8",
+      "trigger": "Management of technical vulnerabilities is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.8"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-068",
+      "title": "Implement ISO control 8.9",
+      "trigger": "Configuration management is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.9"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-069",
+      "title": "Implement ISO control 8.10",
+      "trigger": "Information deletion is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.10"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-070",
+      "title": "Implement ISO control 8.11",
+      "trigger": "Data masking is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.11"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-071",
+      "title": "Implement ISO control 8.12",
+      "trigger": "Data leakage prevention is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.12"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-072",
+      "title": "Implement ISO control 8.13",
+      "trigger": "Information backup is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.13"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-073",
+      "title": "Implement ISO control 8.14",
+      "trigger": "Redundancy of information processing facilities is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.14"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-074",
+      "title": "Implement ISO control 8.15",
+      "trigger": "Logging is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.15"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-075",
+      "title": "Implement ISO control 8.16",
+      "trigger": "Monitoring activities is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.16"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-076",
+      "title": "Implement ISO control 8.17",
+      "trigger": "Clock synchronization is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.17"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-077",
+      "title": "Implement ISO control 8.18",
+      "trigger": "Use of privileged utility programs is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.18"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-078",
+      "title": "Implement ISO control 8.19",
+      "trigger": "Installation of software on operational systems is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.19"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-079",
+      "title": "Implement ISO control 8.20",
+      "trigger": "Networks security is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.20"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-080",
+      "title": "Implement ISO control 8.21",
+      "trigger": "Security of network services is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.21"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-081",
+      "title": "Implement ISO control 8.22",
+      "trigger": "Segregation of networks is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.22"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-082",
+      "title": "Implement ISO control 8.23",
+      "trigger": "Web filtering is not assigned, implemented, or supported by evidence.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.23"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-083",
+      "title": "Implement ISO control 8.24",
+      "trigger": "Use of cryptography is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.24"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-084",
+      "title": "Implement ISO control 8.25",
+      "trigger": "Secure development life cycle is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.25"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-085",
+      "title": "Implement ISO control 8.26",
+      "trigger": "Application security requirements is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.26"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-086",
+      "title": "Implement ISO control 8.27",
+      "trigger": "Secure system architecture and engineering principles is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.27"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-087",
+      "title": "Implement ISO control 8.28",
+      "trigger": "Secure coding is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.28"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-088",
+      "title": "Implement ISO control 8.29",
+      "trigger": "Security testing in development and acceptance is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.29"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-089",
+      "title": "Implement ISO control 8.30",
+      "trigger": "Outsourced development is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.30"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-090",
+      "title": "Implement ISO control 8.31",
+      "trigger": "Separation of development, test and production environments is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.31"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-091",
+      "title": "Implement ISO control 8.32",
+      "trigger": "Change management is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.32"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-092",
+      "title": "Implement ISO control 8.33",
+      "trigger": "Test information is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.33"
+      ],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-ISO-093",
+      "title": "Implement ISO control 8.34",
+      "trigger": "Protection of information systems during audit testing is not assigned, implemented, or supported by evidence.",
+      "priority": "Medium",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": [
+        "8.34"
+      ],
+      "relatedTests": []
+    }
+  ]
+}
