@@ -31,10 +31,22 @@ import cmmcTasksData from "../../framework-library/cmmc/tasks.json";
 import cmmcMappingsData from "../../framework-library/cmmc/mappings.json";
 import cmmcAIGuidanceData from "../../framework-library/cmmc/ai-guidance.json";
 import cmmcAuditRulesData from "../../framework-library/cmmc/audit-rules.json";
+import tisaxFramework from "../../framework-library/tisax/framework.json";
+import tisaxControlsData from "../../framework-library/tisax/controls.json";
+import tisaxRisksData from "../../framework-library/tisax/risks.json";
+import tisaxTestsData from "../../framework-library/tisax/tests.json";
+import tisaxPoliciesData from "../../framework-library/tisax/policies.json";
+import tisaxEvidenceData from "../../framework-library/tisax/evidence.json";
+import tisaxQuestionnaireData from "../../framework-library/tisax/questionnaire.json";
+import tisaxTasksData from "../../framework-library/tisax/tasks.json";
+import tisaxMappingsData from "../../framework-library/tisax/mappings.json";
+import tisaxAIGuidanceData from "../../framework-library/tisax/ai-guidance.json";
+import tisaxAuditRulesData from "../../framework-library/tisax/audit-rules.json";
 
 export const DEFAULT_FRAMEWORK_ID = "soc2-type-ii";
 export const ISO27001_FRAMEWORK_ID = "iso27001-2022";
 export const CMMC_FRAMEWORK_ID = "cmmc-level-2";
+export const TISAX_FRAMEWORK_ID = "tisax-isa-2027";
 
 const frameworkLibraries = {
   [DEFAULT_FRAMEWORK_ID]: {
@@ -78,6 +90,19 @@ const frameworkLibraries = {
     aiGuidance: cmmcAIGuidanceData.aiGuidance,
     auditRules: cmmcAuditRulesData.auditRules,
   },
+  [TISAX_FRAMEWORK_ID]: {
+    framework: tisaxFramework,
+    controls: tisaxControlsData.controls,
+    risks: tisaxRisksData.risks,
+    tests: tisaxTestsData.tests,
+    policies: tisaxPoliciesData.policies,
+    evidence: tisaxEvidenceData.evidenceRequirements,
+    questionnaire: tisaxQuestionnaireData.questionnaireSections,
+    tasks: tisaxTasksData.taskTemplates,
+    mappings: tisaxMappingsData.mappings,
+    aiGuidance: tisaxAIGuidanceData.aiGuidance,
+    auditRules: tisaxAuditRulesData.auditRules,
+  },
 };
 
 const frameworkSlugs = {
@@ -90,6 +115,9 @@ const frameworkSlugs = {
   "iso27001-2022": ISO27001_FRAMEWORK_ID,
   cmmc: CMMC_FRAMEWORK_ID,
   "cmmc-level-2": CMMC_FRAMEWORK_ID,
+  tisax: TISAX_FRAMEWORK_ID,
+  "tisax-2027": TISAX_FRAMEWORK_ID,
+  "tisax-isa-2027": TISAX_FRAMEWORK_ID,
 };
 
 export function resolveFrameworkId(value = DEFAULT_FRAMEWORK_ID) {

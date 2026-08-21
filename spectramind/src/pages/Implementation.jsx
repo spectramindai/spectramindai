@@ -957,6 +957,10 @@ function ControlsSection({ rows, questionnaireResponses, workspaceData, selected
   const [filterBy, setFilterBy] = useState("All");
   const [sortBy, setSortBy] = useState("dueDate");
   const [selectedControl, setSelectedControl] = useState(null);
+  const categories = useMemo(
+    () => [...new Set(rows.map((control) => control.category).filter(Boolean))].sort(),
+    [rows]
+  );
 
   const filteredControls = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -970,7 +974,8 @@ function ControlsSection({ rows, questionnaireResponses, workspaceData, selected
           filterBy === "All" ||
           control.status === filterBy ||
           control.evidenceStatus === filterBy ||
-          control.owner === filterBy;
+          control.owner === filterBy ||
+          control.category === filterBy;
 
         return matchesQuery && matchesFilter;
       })
@@ -1024,6 +1029,9 @@ function ControlsSection({ rows, questionnaireResponses, workspaceData, selected
                 <option value="Ready">Evidence ready</option>
                 <option value="Partial">Evidence partial</option>
                 <option value="Missing">Evidence missing</option>
+                {categories.map((category) => (
+                  <option key={category} value={category}>{category}</option>
+                ))}
               </select>
             </label>
 

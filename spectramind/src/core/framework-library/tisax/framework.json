@@ -1,0 +1,33 @@
+{
+  "id": "tisax-isa-2027",
+  "name": "TISAX ISA2027",
+  "shortName": "TISAX",
+  "version": "2027",
+  "releaseDate": "2026-07-01",
+  "category": "Automotive information security assessment",
+  "description": "TISAX readiness workspace based on the VDA Information Security Assessment (ISA2027).",
+  "issuingBody": "VDA",
+  "assessmentType": "TISAX readiness self-assessment",
+  "controlCategories": [
+    "Information Security",
+    "Prototype Protection",
+    "Data Protection"
+  ],
+  "maturityLevels": [
+    "Incomplete",
+    "Performed",
+    "Managed",
+    "Established",
+    "Predictable",
+    "Optimizing"
+  ],
+  "controlCount": 78,
+  "libraryStatus": "active",
+  "owner": "SpectraMind",
+  "sourceWorkbook": "ISA2027-EN.xlsx",
+  "attribution": "ISA2027 © 2026 ENX Association. Data Protection catalog © 2026 Verband der Automobilindustrie e.V. (VDA).",
+  "license": "Creative Commons Attribution-NoDerivatives 4.0 International with the additional derivative-distribution permission in ISA2027 license section 9.",
+  "licenseUrl": "https://creativecommons.org/licenses/by-nd/4.0/",
+  "derivativeNotice": "This SpectraMind framework library is a modified derivative and is not approved by ENX Association or VDA.",
+  "notes": "Readiness and self-assessment support only. TISAX assessments and labels are issued through the ENX assessment process. No ENX or VDA logos are included."
+}

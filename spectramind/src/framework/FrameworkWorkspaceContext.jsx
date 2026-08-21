@@ -51,6 +51,13 @@ export const FRAMEWORK_CATALOG = [
     shortName: "CMMC",
     description: "Defense contractor cybersecurity maturity workspace.",
   },
+  {
+    id: "tisax-isa-2027",
+    slug: "tisax",
+    name: "TISAX ISA2027",
+    shortName: "TISAX",
+    description: "Automotive information security, prototype protection, and data protection readiness.",
+  },
 ];
 
 const FrameworkWorkspaceContext = createContext(null);

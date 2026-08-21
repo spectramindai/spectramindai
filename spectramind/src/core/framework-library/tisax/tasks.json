@@ -1,0 +1,1265 @@
+{
+  "taskTemplates": [
+    {
+      "id": "TASK-TISAX-001",
+      "title": "Assess and implement 1.1.1",
+      "description": "Review To what extent are information security policies available?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "1.1.1"
+      ],
+      "requiredEvidence": [
+        "To what extent are information security policies available implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-002",
+      "title": "Assess and implement 1.2.1",
+      "description": "Review To what extent is information security managed within the organization?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "1.2.1"
+      ],
+      "requiredEvidence": [
+        "To what extent is information security managed within the organization implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-003",
+      "title": "Assess and implement 1.2.2",
+      "description": "Review To what extent are information security responsibilities organized?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "1.2.2"
+      ],
+      "requiredEvidence": [
+        "To what extent are information security responsibilities organized implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-004",
+      "title": "Assess and implement 1.2.3",
+      "description": "Review To what extent are information security requirements considered in projects?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "1.2.3"
+      ],
+      "requiredEvidence": [
+        "To what extent are information security requirements considered in projects implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-005",
+      "title": "Assess and implement 1.3.1",
+      "description": "Review To what extent are information assets identified and recorded?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "1.3.1"
+      ],
+      "requiredEvidence": [
+        "To what extent are information assets identified and recorded implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-006",
+      "title": "Assess and implement 1.3.2",
+      "description": "Review To what extent are information assets classified and managed in terms of their protection needs?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "1.3.2"
+      ],
+      "requiredEvidence": [
+        "To what extent are information assets classified and managed in terms of their protection needs implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-007",
+      "title": "Assess and implement 1.3.3",
+      "description": "Review To what extent is it ensured that only evaluated and approved external IT services are used for processing the organization’s information assets?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "1.3.3"
+      ],
+      "requiredEvidence": [
+        "To what extent is it ensured that only evaluated and approved external IT services are used for processing the organization’s information assets implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-008",
+      "title": "Assess and implement 1.3.4",
+      "description": "Review To what extent is it ensured that only evaluated and approved software is used for processing the organization’s information assets?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "1.3.4"
+      ],
+      "requiredEvidence": [
+        "Process documentation for approval process",
+        "Exports of lists of approved software from software repositories",
+        "Screenshots from software management software (such as Mobile Device Management)"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-009",
+      "title": "Assess and implement 1.4.1",
+      "description": "Review To what extent are information security risks managed?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "1.4.1"
+      ],
+      "requiredEvidence": [
+        "To what extent are information security risks managed implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-010",
+      "title": "Assess and implement 1.5.1",
+      "description": "Review To what extent is compliance with information security ensured in procedures and processes?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "1.5.1"
+      ],
+      "requiredEvidence": [
+        "To what extent is compliance with information security ensured in procedures and processes implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-011",
+      "title": "Assess and implement 1.5.2",
+      "description": "Review To what extent is the ISMS reviewed by an independent authority?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "1.5.2"
+      ],
+      "requiredEvidence": [
+        "To what extent is the ISMS reviewed by an independent authority implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-012",
+      "title": "Assess and implement 1.6.1",
+      "description": "Review To what extent are information security relevant events or observations reported?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "1.6.1"
+      ],
+      "requiredEvidence": [
+        "To what extent are information security relevant events or observations reported implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-013",
+      "title": "Assess and implement 1.6.2",
+      "description": "Review To what extent are reported security events managed?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "1.6.2"
+      ],
+      "requiredEvidence": [
+        "To what extent are reported security events managed implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-014",
+      "title": "Assess and implement 1.6.3",
+      "description": "Review To what extent is the organization prepared to handle crisis situations?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "1.6.3"
+      ],
+      "requiredEvidence": [
+        "To what extent is the organization prepared to handle crisis situations implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-015",
+      "title": "Assess and implement 2.1.1",
+      "description": "Review To what extent is the qualification of employees for sensitive work fields ensured?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "2.1.1"
+      ],
+      "requiredEvidence": [
+        "To what extent is the qualification of employees for sensitive work fields ensured implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-016",
+      "title": "Assess and implement 2.1.2",
+      "description": "Review To what extent is all staff contractually bound to comply with information security policies?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "2.1.2"
+      ],
+      "requiredEvidence": [
+        "To what extent is all staff contractually bound to comply with information security policies implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-017",
+      "title": "Assess and implement 2.1.3",
+      "description": "Review To what extent is staff made aware of and trained with respect to the risks arising from the handling of information?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "2.1.3"
+      ],
+      "requiredEvidence": [
+        "To what extent is staff made aware of and trained with respect to the risks arising from the handling of information implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-018",
+      "title": "Assess and implement 2.1.4",
+      "description": "Review To what extent is mobile work regulated?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "2.1.4"
+      ],
+      "requiredEvidence": [
+        "To what extent is mobile work regulated implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-019",
+      "title": "Assess and implement 3.1.1",
+      "description": "Review To what extent are security zones managed to protect information assets?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "3.1.1"
+      ],
+      "requiredEvidence": [
+        "Security zone concept and plan (site plan)",
+        "Key lists",
+        "Extracts of the assigned authorizations of an electronic access control system",
+        "Access logs of selected areas",
+        "Visitor Policy",
+        "Guideline for the handling of mobile IT devices",
+        "Protocols of reviews",
+        "Photos of the respective areas with recognizable security measures",
+        "Contracts with security companies"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-020",
+      "title": "Assess and implement 3.1.2",
+      "description": "Review Superseded by 1.6.3, 5.2.8 and 5.2.9, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "3.1.2"
+      ],
+      "requiredEvidence": [
+        "Superseded by 1.6.3, 5.2.8 and 5.2.9 implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-021",
+      "title": "Assess and implement 3.1.3",
+      "description": "Review To what extent is the handling of supporting assets managed?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "3.1.3"
+      ],
+      "requiredEvidence": [
+        "To what extent is the handling of supporting assets managed implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-022",
+      "title": "Assess and implement 3.1.4",
+      "description": "Review To what extent is the handling of mobile IT devices and mobile data storage devices managed?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "3.1.4"
+      ],
+      "requiredEvidence": [
+        "To what extent is the handling of mobile IT devices and mobile data storage devices managed implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-023",
+      "title": "Assess and implement 4.1.1",
+      "description": "Review To what extent is the use of identification means managed?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "4.1.1"
+      ],
+      "requiredEvidence": [
+        "To what extent is the use of identification means managed implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-024",
+      "title": "Assess and implement 4.1.2",
+      "description": "Review To what extent is the user access to IT services and IT systems secured?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "4.1.2"
+      ],
+      "requiredEvidence": [
+        "To what extent is the user access to IT services and IT systems secured implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-025",
+      "title": "Assess and implement 4.1.3",
+      "description": "Review To what extent are user accounts and login information securely managed and applied?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "4.1.3"
+      ],
+      "requiredEvidence": [
+        "To what extent are user accounts and login information securely managed and applied implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-026",
+      "title": "Assess and implement 4.2.1",
+      "description": "Review To what extent are access rights assigned and managed?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "4.2.1"
+      ],
+      "requiredEvidence": [
+        "To what extent are access rights assigned and managed implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-027",
+      "title": "Assess and implement 5.1.1",
+      "description": "Review To what extent is the use of cryptographic procedures managed?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "5.1.1"
+      ],
+      "requiredEvidence": [
+        "To what extent is the use of cryptographic procedures managed implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-028",
+      "title": "Assess and implement 5.1.2",
+      "description": "Review To what extent is information protected during transfer?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "5.1.2"
+      ],
+      "requiredEvidence": [
+        "To what extent is information protected during transfer implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-029",
+      "title": "Assess and implement 5.2.1",
+      "description": "Review To what extent are changes managed?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "5.2.1"
+      ],
+      "requiredEvidence": [
+        "To what extent are changes managed implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-030",
+      "title": "Assess and implement 5.2.2",
+      "description": "Review To what extent are development and testing environments separated from operational environments?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "5.2.2"
+      ],
+      "requiredEvidence": [
+        "To what extent are development and testing environments separated from operational environments implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-031",
+      "title": "Assess and implement 5.2.3",
+      "description": "Review To what extent are IT systems protected against malware?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "5.2.3"
+      ],
+      "requiredEvidence": [
+        "To what extent are IT systems protected against malware implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-032",
+      "title": "Assess and implement 5.2.4",
+      "description": "Review To what extent are event logs recorded and analysed?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "5.2.4"
+      ],
+      "requiredEvidence": [
+        "To what extent are event logs recorded and analysed implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-033",
+      "title": "Assess and implement 5.2.5",
+      "description": "Review To what extent are vulnerabilities identified and addressed?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "5.2.5"
+      ],
+      "requiredEvidence": [
+        "To what extent are vulnerabilities identified and addressed implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-034",
+      "title": "Assess and implement 5.2.6",
+      "description": "Review To what extent are IT systems and services technically checked (system and service audit)?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "5.2.6"
+      ],
+      "requiredEvidence": [
+        "To what extent are IT systems and services technically checked (system and service audit) implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-035",
+      "title": "Assess and implement 5.2.7",
+      "description": "Review To what extent is the network of the organization managed?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "5.2.7"
+      ],
+      "requiredEvidence": [
+        "To what extent is the network of the organization managed implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-036",
+      "title": "Assess and implement 5.2.8",
+      "description": "Review To what extent is continuity planning for IT services in place?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "5.2.8"
+      ],
+      "requiredEvidence": [
+        "To what extent is continuity planning for IT services in place implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-037",
+      "title": "Assess and implement 5.2.9",
+      "description": "Review To what extent is the backup and recovery of data and IT services ensured?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "5.2.9"
+      ],
+      "requiredEvidence": [
+        "To what extent is the backup and recovery of data and IT services ensured implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-038",
+      "title": "Assess and implement 5.3.1",
+      "description": "Review To what extent is information security considered in new or further developed IT service?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "5.3.1"
+      ],
+      "requiredEvidence": [
+        "To what extent is information security considered in new or further developed IT service implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-039",
+      "title": "Assess and implement 5.3.2",
+      "description": "Review To what extent are requirements for network services defined?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "5.3.2"
+      ],
+      "requiredEvidence": [
+        "To what extent are requirements for network services defined implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-040",
+      "title": "Assess and implement 5.3.3",
+      "description": "Review To what extent is the return and secure removal of information assets from external IT services regulated?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "5.3.3"
+      ],
+      "requiredEvidence": [
+        "To what extent is the return and secure removal of information assets from external IT services regulated implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-041",
+      "title": "Assess and implement 5.3.4",
+      "description": "Review To what extent is information protected in shared external IT services?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "5.3.4"
+      ],
+      "requiredEvidence": [
+        "To what extent is information protected in shared external IT services implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-042",
+      "title": "Assess and implement 6.1.1",
+      "description": "Review To what extent is information security ensured among contractors and cooperation partners?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "6.1.1"
+      ],
+      "requiredEvidence": [
+        "Template NDA with a contractor",
+        "Example of a signed NDA",
+        "Example of a risk assessment (Focus point: Information security aspects)",
+        "Information security policy for service providers/contractual terms and conditions regarding information security",
+        "Process description B2B/supplier management (e.g., selection, evaluation, qualification of suppliers)",
+        "Viewing of self-disclosures",
+        "Viewing of attestations/certificates of selected suppliers (e.g., TISAX label; ISO/IEC 27001 certificate)",
+        "Example of conducted supplier evaluation (focus on information security aspects)",
+        "Viewing of audit reports",
+        "List of approved contractors",
+        "Viewing of SLA reporting"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-043",
+      "title": "Assess and implement 6.1.2",
+      "description": "Review To what extent is non-disclosure regarding the exchange of information contractually agreed?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "6.1.2"
+      ],
+      "requiredEvidence": [
+        "To what extent is non-disclosure regarding the exchange of information contractually agreed implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-044",
+      "title": "Assess and implement 6.1.3",
+      "description": "Review To what extent are the responsibilities between external IT service providers and the own organization defined?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "6.1.3"
+      ],
+      "requiredEvidence": [
+        "To what extent are the responsibilities between external IT service providers and the own organization defined implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-045",
+      "title": "Assess and implement 7.1.1",
+      "description": "Review To what extent is compliance with regulatory and contractual provisions ensured?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "7.1.1"
+      ],
+      "requiredEvidence": [
+        "To what extent is compliance with regulatory and contractual provisions ensured implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-046",
+      "title": "Assess and implement 7.1.2",
+      "description": "Review To what extent is the protection of personal data considered when implementing information security?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Information Security",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "High",
+      "relatedControls": [
+        "7.1.2"
+      ],
+      "requiredEvidence": [
+        "To what extent is the protection of personal data considered when implementing information security implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-047",
+      "title": "Assess and implement 8.1.1",
+      "description": "Review To what extent are regulations for prototype protection defined within the organization and responsibilities established?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Prototype Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "8.1.1"
+      ],
+      "requiredEvidence": [
+        "To what extent are regulations for prototype protection defined within the organization and responsibilities established implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-048",
+      "title": "Assess and implement 8.1.2",
+      "description": "Review To what extent are order-specific requirements and specifications for handling prototypes regulated?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Prototype Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "8.1.2"
+      ],
+      "requiredEvidence": [
+        "To what extent are order-specific requirements and specifications for handling prototypes regulated implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-049",
+      "title": "Assess and implement 8.1.3",
+      "description": "Review To what extent do employees and project members evidently participate in training and awareness measures regarding the handling of prototypes?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Prototype Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "8.1.3"
+      ],
+      "requiredEvidence": [
+        "To what extent do employees and project members evidently participate in training and awareness measures regarding the handling of prototypes implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-050",
+      "title": "Assess and implement 8.1.4",
+      "description": "Review To what extent is the qualification of employees for working in prototype areas ensured?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Prototype Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "8.1.4"
+      ],
+      "requiredEvidence": [
+        "To what extent is the qualification of employees for working in prototype areas ensured implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-051",
+      "title": "Assess and implement 8.1.5",
+      "description": "Review To what extent are non-disclosure agreements/obligations existent according to the valid contractual law?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Prototype Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "8.1.5"
+      ],
+      "requiredEvidence": [
+        "It is important for every organization to know the value of the information provided to it (e.g. trade secrets, information on critical business processes, know-how, patents). These are called information values.",
+        "These must be named by the client and treated and secured over the entire project life cycle in accordance with their protection requirements."
+      ]
+    },
+    {
+      "id": "TASK-TISAX-052",
+      "title": "Assess and implement 8.1.6",
+      "description": "Review To what extent are requirements for commissioning subcontractors known and fulfilled?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Prototype Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "8.1.6"
+      ],
+      "requiredEvidence": [
+        "To what extent are requirements for commissioning subcontractors known and fulfilled implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-053",
+      "title": "Assess and implement 8.1.7",
+      "description": "Review To what extent is a process defined for granting access to security areas?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Prototype Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "8.1.7"
+      ],
+      "requiredEvidence": [
+        "To what extent is a process defined for granting access to security areas implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-054",
+      "title": "Assess and implement 8.1.8",
+      "description": "Review To what extent are regulations for visitor management (including registration and escorting of visitors) in place?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Prototype Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "8.1.8"
+      ],
+      "requiredEvidence": [
+        "To what extent are regulations for visitor management (including registration and escorting of visitors) in place implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-055",
+      "title": "Assess and implement 8.1.9",
+      "description": "Review To what extent is a regulation for carrying along and using mobile video and photography devices in(to) defined security areas established?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Prototype Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "8.1.9"
+      ],
+      "requiredEvidence": [
+        "To what extent is a regulation for carrying along and using mobile video and photography devices in(to) defined security areas established implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-056",
+      "title": "Assess and implement 8.1.10",
+      "description": "Review To what extent are regulations for image recording and handling of created image material existent?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Prototype Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "8.1.10"
+      ],
+      "requiredEvidence": [
+        "To what extent are regulations for image recording and handling of created image material existent implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-057",
+      "title": "Assess and implement 8.1.11",
+      "description": "Review To what extent are incident management requirements regulated?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Prototype Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "8.1.11"
+      ],
+      "requiredEvidence": [
+        "To what extent are incident management requirements regulated implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-058",
+      "title": "Assess and implement 8.1.12",
+      "description": "Review To what extent is it ensured that vehicles, components and parts classified as in need of protection are documented and tracked in a comprehensible manner over the entire processing period?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Prototype Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "8.1.12"
+      ],
+      "requiredEvidence": [
+        "To what extent is it ensured that vehicles, components and parts classified as in need of protection are documented and tracked in a comprehensible manner over the entire processing period implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-059",
+      "title": "Assess and implement 8.1.13",
+      "description": "Review To what extent is it ensured that vehicles, components, parts and relevant tools classified as in need of protection that are no longer needed are disposed of/ recycled/ returned in accordance with the client's specifications?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Prototype Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "8.1.13"
+      ],
+      "requiredEvidence": [
+        "To what extent is it ensured that vehicles, components, parts and relevant tools classified as in need of protection that are no longer needed are disposed of/ recycled/ returned in accordance with the client's specifications implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-060",
+      "title": "Assess and implement 8.2.1",
+      "description": "Review To what extent is a security concept available describing minimum requirements regarding the physical and environmental security for prototype protection?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Prototype Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "8.2.1"
+      ],
+      "requiredEvidence": [
+        "To what extent is a security concept available describing minimum requirements regarding the physical and environmental security for prototype protection implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-061",
+      "title": "Assess and implement 8.2.2",
+      "description": "Review To what extent is perimeter security existent preventing unauthorized access to protected property objects?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Prototype Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "8.2.2"
+      ],
+      "requiredEvidence": [
+        "To what extent is perimeter security existent preventing unauthorized access to protected property objects implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-062",
+      "title": "Assess and implement 8.2.3",
+      "description": "Review To what extent is the outer skin of the protected objects/ security areas constructed such as to prevent removal or opening of outer-skin components using standard tools?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Prototype Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "8.2.3"
+      ],
+      "requiredEvidence": [
+        "To what extent is the outer skin of the protected objects/ security areas constructed such as to prevent removal or opening of outer-skin components using standard tools implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-063",
+      "title": "Assess and implement 8.2.4",
+      "description": "Review To what extent is view and sight protection ensured in defined security areas?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Prototype Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "8.2.4"
+      ],
+      "requiredEvidence": [
+        "To what extent is view and sight protection ensured in defined security areas implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-064",
+      "title": "Assess and implement 8.2.5",
+      "description": "Review To what extent is the protection against unauthorized entry regulated in the form of access control?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Prototype Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "8.2.5"
+      ],
+      "requiredEvidence": [
+        "To what extent is the protection against unauthorized entry regulated in the form of access control implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-065",
+      "title": "Assess and implement 8.2.6",
+      "description": "Review To what extent are the premises to be secured monitored for intrusion?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Prototype Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "8.2.6"
+      ],
+      "requiredEvidence": [
+        "To what extent are the premises to be secured monitored for intrusion implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-066",
+      "title": "Assess and implement 8.2.7",
+      "description": "Review To what extent is on-site client segregation existent?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Prototype Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "8.2.7"
+      ],
+      "requiredEvidence": [
+        "To what extent is on-site client segregation existent implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-067",
+      "title": "Assess and implement 9.1.1",
+      "description": "Review To what extent do data protection policies exist?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Data Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "9.1.1"
+      ],
+      "requiredEvidence": [
+        "To what extent do data protection policies exist implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-068",
+      "title": "Assess and implement 9.2.1",
+      "description": "Review To what extent are the responsibilities for data protection organized?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Data Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "9.2.1"
+      ],
+      "requiredEvidence": [
+        "To what extent are the responsibilities for data protection organized implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-069",
+      "title": "Assess and implement 9.3.1",
+      "description": "Review To what extent are processing activities identified and recorded?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Data Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "9.3.1"
+      ],
+      "requiredEvidence": [
+        "To what extent are processing activities identified and recorded implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-070",
+      "title": "Assess and implement 9.4.1",
+      "description": "Review To what extent is adequate handling of high-risk processing activities ensured (data protection impact assessment)?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Data Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "9.4.1"
+      ],
+      "requiredEvidence": [
+        "To what extent is adequate handling of high-risk processing activities ensured (data protection impact assessment) implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-071",
+      "title": "Assess and implement 9.5.1",
+      "description": "Review To what extent is the transfer of data managed?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Data Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "9.5.1"
+      ],
+      "requiredEvidence": [
+        "To what extent is the transfer of data managed implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-072",
+      "title": "Assess and implement 9.5.2",
+      "description": "Review To what extent are contractual obligations passed through to and enforced at subcontractors and cooperation partners?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Data Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "9.5.2"
+      ],
+      "requiredEvidence": [
+        "To what extent are contractual obligations passed through to and enforced at subcontractors and cooperation partners implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-073",
+      "title": "Assess and implement 9.5.3",
+      "description": "Review To what extent are data transfers to third countries managed?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Data Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "9.5.3"
+      ],
+      "requiredEvidence": [
+        "To what extent are data transfers to third countries managed implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-074",
+      "title": "Assess and implement 9.6.1",
+      "description": "Review To what extent are data subject requests processed?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Data Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "9.6.1"
+      ],
+      "requiredEvidence": [
+        "To what extent are data subject requests processed implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-075",
+      "title": "Assess and implement 9.6.2",
+      "description": "Review To what extent are data protection incidents processed?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Data Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "9.6.2"
+      ],
+      "requiredEvidence": [
+        "To what extent are data protection incidents processed implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-076",
+      "title": "Assess and implement 9.7.1",
+      "description": "Review To what extent are employees obliged to maintain confidentiality?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Data Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "9.7.1"
+      ],
+      "requiredEvidence": [
+        "To what extent are employees obliged to maintain confidentiality implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-077",
+      "title": "Assess and implement 9.7.2",
+      "description": "Review To what extent are employees trained in data protection?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Data Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "9.7.2"
+      ],
+      "requiredEvidence": [
+        "To what extent are employees trained in data protection implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    },
+    {
+      "id": "TASK-TISAX-078",
+      "title": "Assess and implement 9.8.1",
+      "description": "Review To what extent are instructions of processing relationships handled?, record the current maturity level, remediate gaps, and attach objective evidence.",
+      "category": "Data Protection",
+      "defaultOwnerRole": "COMPLIANCE_MANAGER",
+      "priority": "Medium",
+      "relatedControls": [
+        "9.8.1"
+      ],
+      "requiredEvidence": [
+        "To what extent are instructions of processing relationships handled implementation record",
+        "Approved policy or procedure",
+        "Review or operating evidence"
+      ]
+    }
+  ]
+}
