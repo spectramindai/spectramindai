@@ -1,16 +1,18 @@
-name: Deploy SpectraMind to Azure
+name: Deploy Compvd to Azure
 
 on:
   push:
     branches:
-      - codex/consolidate-project-structure
+      - main
   workflow_dispatch:
 
 permissions:
   contents: read
+  id-token: write
 
 jobs:
   frontend:
+    if: ${{ vars.DEPLOY_FRONTEND == 'true' }}
     name: Frontend · Azure Static Web Apps
     runs-on: ubuntu-latest
     steps:
@@ -41,9 +43,14 @@ jobs:
           npm ci
           npm run build:azure
           npm prune --omit=dev
+      - name: Sign in to Azure
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       - name: Deploy backend
         uses: azure/webapps-deploy@v3
         with:
-          app-name: app-spectramind-api-demo
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          app-name: app-compvd-api-prod
           package: backend

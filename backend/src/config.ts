@@ -12,6 +12,8 @@ const schema = z.object({
   CORS_ORIGINS: z.string().default("http://localhost:5173"),
   FRAMEWORK_LIBRARY_PATH: z.string().default("../spectramind/src/core/framework-library"),
   LOCAL_FILE_ROOT: z.string().default("./data/files"),
+  AZURE_STORAGE_ACCOUNT_NAME: z.string().min(3).max(24).optional(),
+  AZURE_STORAGE_CONTAINER_NAME: z.string().min(3).default("cmmc-evidence"),
 });
 
 export const config = schema.parse(process.env);

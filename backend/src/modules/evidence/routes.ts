@@ -1,4 +1,6 @@
 import type { FastifyInstance } from "fastify";
+import { DefaultAzureCredential } from "@azure/identity";
+import { BlobServiceClient } from "@azure/storage-blob";
 import { z } from "zod";
 import { mkdir, readFile, stat, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
@@ -53,10 +55,10 @@ export async function evidenceRoutes(app: FastifyInstance) {
     const evidence = await prisma.evidenceRecord.findFirst({ where: { id: evidenceId, organizationId: request.tenant.organizationId, deletedAt: null } });
     if (!evidence) throw Object.assign(new Error("Evidence not found"), { statusCode: 404 });
     const version = await ownedVersion(evidenceId, versionId, request.tenant.organizationId);
-    const uploadedFile = await stat(localObjectPath(version.objectKey)).catch(() => null);
+    const uploadedFile = await objectProperties(version.objectKey);
     if (!uploadedFile || uploadedFile.size !== version.fileSize) throw Object.assign(new Error("Evidence file upload is incomplete"), { statusCode: 409 });
     if (version.checksum) {
-      const content = await readFile(localObjectPath(version.objectKey));
+      const content = await readObject(version.objectKey);
       const actualChecksum = createHash("sha256").update(content).digest("hex");
       if (actualChecksum !== version.checksum) throw Object.assign(new Error("Evidence checksum verification failed"), { statusCode: 409 });
     }
@@ -76,11 +78,7 @@ export async function evidenceRoutes(app: FastifyInstance) {
     const version = await ownedVersion(evidenceId, versionId, request.tenant.organizationId);
     if (!Buffer.isBuffer(request.body)) return reply.code(415).send({ code: "BINARY_BODY_REQUIRED", message: "Upload must use application/octet-stream" });
     if (request.body.length !== version.fileSize) return reply.code(400).send({ code: "FILE_SIZE_MISMATCH", message: "Uploaded file size does not match the upload intent" });
-    const path = localObjectPath(version.objectKey);
-    await mkdir(dirname(path), { recursive: true });
-    await writeFile(path, request.body, { flag: "wx" }).catch((error) => {
-      if ((error as NodeJS.ErrnoException).code !== "EEXIST") throw error;
-    });
+    await writeObject(version.objectKey, request.body, version.contentType);
     return reply.code(204).send();
   });
 
@@ -89,7 +87,7 @@ export async function evidenceRoutes(app: FastifyInstance) {
     const evidence = await prisma.evidenceRecord.findFirst({ where: { id: evidenceId, organizationId: request.tenant.organizationId, deletedAt: null } });
     if (!evidence?.currentVersionId) return reply.code(404).send({ code: "EVIDENCE_NOT_FOUND", message: "Evidence file not found" });
     const version = await ownedVersion(evidenceId, evidence.currentVersionId, request.tenant.organizationId);
-    const content = await readFile(localObjectPath(version.objectKey)).catch(() => null);
+    const content = await readObject(version.objectKey).catch(() => null);
     if (!content) return reply.code(404).send({ code: "FILE_NOT_FOUND", message: "Evidence file is not available" });
     reply.header("content-disposition", `attachment; filename*=UTF-8''${encodeURIComponent(version.fileName)}`);
     return reply.type(version.contentType).send(content);
@@ -118,4 +116,55 @@ async function ownedVersion(evidenceId: string, versionId: string, organizationI
 
 function localObjectPath(objectKey: string) {
   return resolve(process.cwd(), config.LOCAL_FILE_ROOT, objectKey);
+}
+
+const blobContainer = config.AZURE_STORAGE_ACCOUNT_NAME
+  ? new BlobServiceClient(
+      `https://${config.AZURE_STORAGE_ACCOUNT_NAME}.blob.core.windows.net`,
+      new DefaultAzureCredential(),
+    ).getContainerClient(config.AZURE_STORAGE_CONTAINER_NAME)
+  : null;
+
+async function objectProperties(objectKey: string): Promise<{ size: number } | null> {
+  if (!blobContainer) {
+    const file = await stat(localObjectPath(objectKey)).catch(() => null);
+    return file ? { size: file.size } : null;
+  }
+  try {
+    const properties = await blobContainer.getBlockBlobClient(objectKey).getProperties();
+    return { size: properties.contentLength ?? 0 };
+  } catch (error) {
+    if (azureStatusCode(error) === 404) return null;
+    throw error;
+  }
+}
+
+async function readObject(objectKey: string): Promise<Buffer> {
+  if (!blobContainer) return readFile(localObjectPath(objectKey));
+  return blobContainer.getBlockBlobClient(objectKey).downloadToBuffer();
+}
+
+async function writeObject(objectKey: string, content: Buffer, contentType: string): Promise<void> {
+  if (!blobContainer) {
+    const path = localObjectPath(objectKey);
+    await mkdir(dirname(path), { recursive: true });
+    await writeFile(path, content, { flag: "wx" }).catch((error) => {
+      if ((error as NodeJS.ErrnoException).code !== "EEXIST") throw error;
+    });
+    return;
+  }
+  try {
+    await blobContainer.getBlockBlobClient(objectKey).uploadData(content, {
+      blobHTTPHeaders: { blobContentType: contentType },
+      conditions: { ifNoneMatch: "*" },
+    });
+  } catch (error) {
+    if (azureStatusCode(error) !== 412) throw error;
+  }
+}
+
+function azureStatusCode(error: unknown): number | undefined {
+  return typeof error === "object" && error !== null && "statusCode" in error && typeof error.statusCode === "number"
+    ? error.statusCode
+    : undefined;
 }
