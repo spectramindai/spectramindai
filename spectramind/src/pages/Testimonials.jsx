@@ -20,7 +20,7 @@ export default function Testimonials() {
               Product Stories
             </p>
             <h1 className="mt-4 max-w-4xl text-5xl font-bold leading-tight text-slate-950 dark:text-white md:text-6xl">
-              See how teams use SpectraMind before requesting access.
+              See how teams use Compvd.ai before requesting access.
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600 dark:text-slate-300">
               This page is reserved for customer testimonials, product stories,

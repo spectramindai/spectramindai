@@ -50,6 +50,7 @@ export async function apiRequest(path, options = {}) {
     error.details = body?.details;
     error.validationFailed = Boolean(body?.validationFailed);
     error.missingEvidence = Array.isArray(body?.missingEvidence) ? body.missingEvidence : [];
+    error.missingObjectives = Array.isArray(body?.missingObjectives) ? body.missingObjectives : [];
     error.requestId = body?.requestId;
     throw error;
   }

@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useUser } from "../../auth/UserContext";
 import { useFrameworkWorkspace } from "../../framework/FrameworkWorkspaceContext";
 import { canManageWorkspace } from "../../auth/session";
+import BrandLogo from "../branding/BrandLogo";
 
 export default function Topbar() {
   const navigate = useNavigate();
@@ -57,7 +58,10 @@ export default function Topbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-white/70 bg-[#fffdf8]/76 px-5 py-4 shadow-lg shadow-slate-900/5 backdrop-blur-2xl sm:px-6 lg:px-8">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
-        <div className="min-w-0">
+        <Link to="/dashboard" className="shrink-0 lg:hidden" aria-label="Compvd.ai dashboard">
+          <BrandLogo compact className="h-9 w-9" alt="Compvd.ai" />
+        </Link>
+        <div className="min-w-0 flex-1 lg:flex-none">
           <p className="text-sm font-black text-slate-900">
             Compliance workspace
           </p>

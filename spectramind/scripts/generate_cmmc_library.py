@@ -168,7 +168,7 @@ def main() -> None:
             "category": "Cybersecurity maturity",
             "description": "CMMC Level 2 framework metadata generated from the official control evidence matrix workbook.",
             "libraryStatus": "source-of-truth",
-            "owner": "SpectraMind",
+            "owner": "Compvd.ai",
             "createdFor": "Framework Library",
             "source": source,
             "controlCount": len(controls),

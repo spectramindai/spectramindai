@@ -3,7 +3,7 @@ import { readScopedValue, writeScopedValue } from "../../auth/session";
 import { isApiEnabled } from "../../api/client";
 import { getCurrentOrganization } from "../../api/organizations";
 
-export const APP_NAME = "SpectraMind.ai";
+export const APP_NAME = "Compvd.ai";
 export const ORGANIZATION_LOGO_STORAGE_KEY = "spectramind:organization-logo";
 export const ORGANIZATION_BRANDING_EVENT = "spectramind:organization-branding-updated";
 

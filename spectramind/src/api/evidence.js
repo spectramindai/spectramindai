@@ -2,11 +2,11 @@ import { apiRequest, apiRequestRaw, isApiEnabled } from "./client";
 
 export const listEvidence = frameworkId => isApiEnabled ? apiRequest(`/api/v1/evidence?frameworkId=${encodeURIComponent(frameworkId)}`) : null;
 
-export async function uploadEvidenceFile({ frameworkId, file, title = file.name, description = "", controlIds = [], tags = [], testId = "", implementationId = "" }) {
+export async function uploadEvidenceFile({ frameworkId, file, title = file.name, description = "", controlIds = [], objectiveMappings = [], tags = [], testId = "", implementationId = "" }) {
   const checksum = await sha256(file);
   const intent = await apiRequest("/api/v1/evidence/upload-intents", {
     method: "POST",
-    body: JSON.stringify({ frameworkId, title, description, fileName: file.name, contentType: file.type || "application/octet-stream", fileSize: file.size, checksum, controlIds, tags, testId: testId || undefined, implementationId: implementationId || undefined }),
+    body: JSON.stringify({ frameworkId, title, description, fileName: file.name, contentType: file.type || "application/octet-stream", fileSize: file.size, checksum, controlIds, objectiveMappings, tags, testId: testId || undefined, implementationId: implementationId || undefined }),
   });
   await apiRequestRaw(intent.upload.url, { method: "PUT", headers: { "content-type": "application/octet-stream" }, body: file });
   await apiRequest(`/api/v1/evidence/${intent.evidence.id}/versions/${intent.version.id}/complete`, { method: "POST" });

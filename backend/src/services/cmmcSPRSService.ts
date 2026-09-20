@@ -26,6 +26,7 @@ type SPRSControlInput = {
   implementationUpdatedAt?: DateLike;
   workspaceState?: unknown;
   workspaceUpdatedAt?: DateLike;
+  evidenceEligible?: boolean;
 };
 
 type SPRSWorkspaceStatus = {
@@ -154,9 +155,10 @@ export const SPRS_MIN_SCORE = SPRS_MAX_SCORE - SPRS_TOTAL_DEDUCTION_POINTS;
 
 export async function getCMMCSPRSMetrics(
   organizationId: string,
-  frameworkId = CMMC_FRAMEWORK_ID
+  frameworkId = CMMC_FRAMEWORK_ID,
+  client: Prisma.TransactionClient = prisma
 ) {
-  const activeFramework = await prisma.organizationFramework.findUnique({
+  const activeFramework = await client.organizationFramework.findUnique({
     where: { organizationId_frameworkId: { organizationId, frameworkId } },
   });
   if (!activeFramework?.active) {
@@ -164,22 +166,27 @@ export async function getCMMCSPRSMetrics(
   }
 
   const [controls, workspaceRows] = await Promise.all([
-    prisma.control.findMany({
+    client.control.findMany({
       where: { frameworkId },
       include: { implementations: { where: { organizationId } } },
       orderBy: { externalId: "asc" },
     }),
-    prisma.workspaceItemState.findMany({
+    client.workspaceItemState.findMany({
       where: { organizationId, frameworkId },
     }),
   ]);
 
   const workspaceByItemId = new Map(workspaceRows.map((row) => [row.itemId, row]));
 
-  return calculateCMMCSPRSMetricsFromControls(
-    controls.map((control) => {
+  const { getEvidenceCompletionStatuses } = await import("./cmmcEvidenceValidationService.js");
+  const completionStatuses = await getEvidenceCompletionStatuses(client, organizationId);
+  const scoredInputs = await Promise.all(controls.map(async (control) => {
       const implementation = control.implementations[0];
       const workspaceState = workspaceByItemId.get(control.externalId);
+      const requestedStatus = implementation?.status || (isRecord(workspaceState?.state) ? workspaceState.state.status : undefined);
+      const evidenceEligible = normalizeWorkspaceImplementationStatus(requestedStatus) === "IMPLEMENTED"
+        ? completionStatuses.get(control.externalId)?.eligibleForCompletion === true
+        : undefined;
       return {
         id: control.id,
         externalId: control.externalId,
@@ -192,10 +199,10 @@ export async function getCMMCSPRSMetrics(
         implementationUpdatedAt: implementation?.updatedAt,
         workspaceState: implementation ? undefined : nonImplementedWorkspaceState(workspaceState?.state),
         workspaceUpdatedAt: implementation ? undefined : workspaceState?.updatedAt,
+        evidenceEligible,
       };
-    }),
-    frameworkId
-  );
+    }));
+  return calculateCMMCSPRSMetricsFromControls(scoredInputs, frameworkId);
 }
 
 export function calculateCMMCSPRSMetricsFromControls(
@@ -270,7 +277,7 @@ export function calculateCMMCSPRSMetricsFromControls(
     })),
     controls: scoredControls,
     assumptions: [
-      "SPRS scoring is calculated from requirement-level implementation status because the current schema does not store assessment-objective-level findings.",
+      "SPRS awards implemented/MET credit only when the centralized CMMC evidence service confirms every assessment objective has approved, uploaded, objective-mapped evidence.",
       "Partially implemented, planned, and in-progress controls are scored as not met unless future data captures one of the two explicit DoD partial-credit cases.",
       "Not Applicable is treated as no deduction, matching the DoD methodology only when the organization has documented approved non-applicability or an equivalent measure.",
       "Security requirement 3.12.4 has no numeric deduction in Annex A; if the SSP is absent, the assessment should be treated as incomplete outside this numeric score.",
@@ -290,7 +297,13 @@ export function normalizeWorkspaceImplementationStatus(value: unknown): Implemen
 function scoreControl(control: SPRSControlInput) {
   const requirementId = extractRequirementId(control.externalId);
   const points = requirementId ? SPRS_CONTROL_WEIGHTS[requirementId] ?? 1 : 1;
-  const { status, displayStatus } = resolveControlStatus(control);
+  let { status, displayStatus } = resolveControlStatus(control);
+  const declaredStatus = displayStatus;
+  const evidenceIncomplete = status === "IMPLEMENTED" && control.evidenceEligible === false;
+  if (status === "IMPLEMENTED" && control.evidenceEligible === false) {
+    status = "IN_PROGRESS";
+    displayStatus = "Evidence Incomplete";
+  }
   const isReady = status === "IMPLEMENTED" || status === "NOT_APPLICABLE";
   const pointsAtRisk = isReady ? 0 : points;
   const pointsSecured = isReady ? points : 0;
@@ -308,6 +321,8 @@ function scoreControl(control: SPRSControlInput) {
     controlFamily,
     status,
     displayStatus,
+    declaredStatus,
+    evidenceIncomplete,
     deduction: points,
     points,
     pointsSecured,

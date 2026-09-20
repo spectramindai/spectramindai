@@ -11,7 +11,8 @@ import { useFrameworkWorkspace } from "../framework/FrameworkWorkspaceContext";
 import { buildCrossModuleTarget } from "../navigation/crossModuleNavigation";
 import { isApiEnabled } from "../api/client";
 import { reviewAuditFinding, synchronizeAuditReadiness } from "../api/assurance";
-import { resolveFrameworkId } from "../core/engines/framework-engine/frameworkRegistry";
+import { CMMC_FRAMEWORK_ID, resolveFrameworkId } from "../core/engines/framework-engine/frameworkRegistry";
+import { useCMMCSPRSCalculation } from "../features/cmmc/hooks";
 
 const statusOptions = ["All", "Open", "Reviewed", "Resolved"];
 
@@ -43,6 +44,8 @@ function AuditCenter({ activeFramework }) {
   const navigate = useNavigate();
   const { user } = useUser();
   const { audit } = useComplianceState();
+  const isCMMC = resolveFrameworkId(activeFramework.id) === CMMC_FRAMEWORK_ID;
+  const cmmcMetrics = useCMMCSPRSCalculation(undefined, { enabled: isCMMC });
   const [status, setStatus] = useState("Open");
   const [severity, setSeverity] = useState("All");
   const [category, setCategory] = useState("All");
@@ -73,7 +76,7 @@ function AuditCenter({ activeFramework }) {
   }, [category, findings, query, severity, status]);
 
   const metrics = {
-    readiness: Math.round(audit.readiness || 0),
+    readiness: Math.round(isCMMC ? cmmcMetrics.readinessPercentage || 0 : audit.readiness || 0),
     open: findings.filter((finding) => finding.status === "Open").length,
     criticalHigh: findings.filter((finding) => finding.status !== "Resolved" && ["Critical", "High"].includes(finding.severity)).length,
     coverage: Math.round(audit.evidenceCoverage || 0),
@@ -100,7 +103,7 @@ function AuditCenter({ activeFramework }) {
   return <AppShell><div className="space-y-6">
     <header><p className="text-sm font-black uppercase tracking-widest text-amber-700">Assurance</p><h1 className="mt-2 text-4xl font-black text-slate-950">Audit readiness</h1><p className="mt-2 max-w-3xl text-sm font-semibold leading-6 text-slate-500">Review the real gaps preventing {activeFramework.name} readiness, document reviewer decisions, and open the exact compliance record that needs remediation.</p></header>
     {error ? <p role="alert" className="rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm font-bold text-rose-700">{error}</p> : null}
-    <section className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4"><Metric label="Readiness" value={`${metrics.readiness}%`} icon={ClipboardCheck}/><Metric label="Open findings" value={metrics.open} icon={ShieldAlert}/><Metric label="Critical & high" value={metrics.criticalHigh} icon={AlertTriangle} danger/><Metric label="Evidence coverage" value={`${metrics.coverage}%`} icon={FileCheck2}/></section>
+    <section className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4"><Metric label={isCMMC ? "Control readiness" : "Readiness"} value={`${metrics.readiness}%`} icon={ClipboardCheck}/><Metric label="Open findings" value={metrics.open} icon={ShieldAlert}/><Metric label="Critical & high" value={metrics.criticalHigh} icon={AlertTriangle} danger/><Metric label="Evidence coverage" value={`${metrics.coverage}%`} icon={FileCheck2}/></section>
     <section className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"><div className="grid gap-3 border-b border-slate-200 p-4 lg:grid-cols-[minmax(0,1fr)_150px_150px_190px]"><label className="relative"><Search size={17} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"/><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search findings, controls, owners..." className="h-11 w-full rounded-lg border border-slate-200 pl-10 pr-3 text-sm font-semibold outline-none focus:border-blue-500"/></label><Filter value={status} onChange={setStatus} options={statusOptions}/><Filter value={severity} onChange={setSeverity} options={["All",...AUDIT_SEVERITIES]}/><Filter value={category} onChange={setCategory} options={["All",...AUDIT_CATEGORIES]}/></div><div className="flex items-center justify-between border-b border-slate-100 px-5 py-4"><div><h2 className="font-black text-slate-950">Findings requiring attention</h2><p className="mt-1 text-xs font-semibold text-slate-500">{filtered.length} of {findings.length} findings shown</p></div>{status !== "All" || severity !== "All" || category !== "All" || query ? <button type="button" onClick={() => {setStatus("All");setSeverity("All");setCategory("All");setQuery("");}} className="text-xs font-black text-blue-700">Clear filters</button> : null}</div>
       <div className="divide-y divide-slate-100">{filtered.map((finding) => <article key={finding.id} className="grid gap-4 p-5 transition hover:bg-slate-50/50 xl:grid-cols-[minmax(0,1fr)_130px_150px_auto] xl:items-center"><div className="min-w-0"><div className="flex flex-wrap gap-2"><span className={`rounded-full px-2.5 py-1 text-[10px] font-black uppercase tracking-wider ${severityStyle(finding.severity)}`}>{finding.severity}</span><span className="text-xs font-bold text-slate-400">{finding.category} · {finding.relatedItemId}</span></div><h3 className="mt-2 font-black text-slate-950">{finding.name}</h3><p className="mt-1 line-clamp-2 text-sm font-semibold leading-6 text-slate-500">{finding.description}</p></div><Meta label="Owner" value={finding.owner || "Unassigned"}/><div><p className="text-[10px] font-black uppercase tracking-wider text-slate-400">Status</p><span className={`mt-1 inline-flex rounded-full px-2.5 py-1 text-xs font-black ${finding.status === "Resolved" ? "bg-emerald-50 text-emerald-700" : finding.status === "Reviewed" ? "bg-blue-50 text-blue-700" : "bg-amber-50 text-amber-700"}`}>{finding.status}</span>{finding.reviewer ? <p className="mt-1 text-[10px] font-bold text-slate-400">by {finding.reviewer}</p> : null}</div><div className="flex flex-wrap gap-2 xl:justify-end"><button type="button" onClick={() => openFinding(finding,"resolve")} className="inline-flex h-10 items-center gap-2 rounded-lg border border-slate-200 px-3 text-xs font-black text-slate-700 hover:bg-white"><ExternalLink size={15}/>Open record</button>{finding.status !== "Reviewed" && finding.status !== "Resolved" ? <button type="button" onClick={() => beginReview(finding)} className="inline-flex h-10 items-center gap-2 rounded-lg bg-slate-950 px-3 text-xs font-black text-white"><CheckCircle2 size={15}/>Review</button> : null}</div></article>)}{!filtered.length ? <div className="px-6 py-14 text-center"><CheckCircle2 size={34} className="mx-auto text-emerald-400"/><h2 className="mt-3 font-black text-slate-900">No findings match this view</h2><p className="mt-1 text-sm font-semibold text-slate-500">Change the filters or continue monitoring readiness.</p></div> : null}</div>
     </section>

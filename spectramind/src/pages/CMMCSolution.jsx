@@ -25,7 +25,7 @@ export default function CMMCSolution() {
                 Coordinate cybersecurity readiness without losing the thread.
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-                SpectraMind gives defense contractors and security teams a cleaner way
+                Compvd.ai gives defense contractors and security teams a cleaner way
                 to manage controls, evidence, suppliers, and audit readiness.
               </p>
 

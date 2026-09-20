@@ -4,7 +4,7 @@
   "shortName": "SOC 2",
   "version": "type-ii",
   "category": "Security and trust services",
-  "description": "SOC 2 Type II framework metadata for the SpectraMind framework library.",
+  "description": "SOC 2 Type II framework metadata for the Compvd.ai framework library.",
   "issuingBody": "AICPA",
   "assessmentType": "Type II",
   "trustServicesCriteria": [
@@ -15,7 +15,7 @@
     "Privacy"
   ],
   "libraryStatus": "draft",
-  "owner": "SpectraMind",
+  "owner": "Compvd.ai",
   "createdFor": "Framework Library",
   "notes": "Framework metadata only. Controls, risks, tests, policies, evidence requirements, questionnaire content, task rules, mappings, AI guidance, and audit rules are maintained in sibling JSON files."
 }

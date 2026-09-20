@@ -32,8 +32,13 @@ export async function authRoutes(app: FastifyInstance) {
 
     if (!input.organizationName) {
       const user = await prisma.user.create({ data: { name: input.name, email: input.email, passwordHash, requestedRole } });
+      const internalMembership = await acceptPendingInternalAccess(user.id, user.email);
       const token = app.jwt.sign({ sub: user.id, email: user.email }, { expiresIn: "30d" });
-      return reply.code(201).send({ token, user: { id: user.id, name: user.name, email: user.email, requestedRole }, organizations: [] });
+      return reply.code(201).send({
+        token,
+        user: { id: user.id, name: user.name, email: user.email, requestedRole },
+        organizations: internalMembership ? [membershipView(internalMembership)] : [],
+      });
     }
     const organizationName = input.organizationName;
     const organizationSlug = await uniqueOrganizationSlug(slugify(organizationName));
@@ -63,11 +68,15 @@ export async function authRoutes(app: FastifyInstance) {
     if (!user || !(await bcrypt.compare(input.password, user.passwordHash))) {
       return reply.code(401).send({ code: "INVALID_CREDENTIALS", message: "Invalid email or password" });
     }
+    const internalMembership = user.memberships.length
+      ? null
+      : await acceptPendingInternalAccess(user.id, user.email);
     const token = app.jwt.sign(
       { sub: user.id, email: user.email },
       { expiresIn: input.remember ? "30d" : "8h" },
     );
-    return { token, user: { id: user.id, name: user.name, email: user.email, requestedRole: user.requestedRole }, organizations: user.memberships.map(membershipView) };
+    const memberships = internalMembership ? [internalMembership] : user.memberships;
+    return { token, user: { id: user.id, name: user.name, email: user.email, requestedRole: user.requestedRole }, organizations: memberships.map(membershipView) };
   });
 
   app.post("/forgot-password", async (request) => {
@@ -108,6 +117,41 @@ export async function authRoutes(app: FastifyInstance) {
     });
     if (!user) return reply.code(404).send({ code: "USER_NOT_FOUND", message: "User not found" });
     return { user: { id: user.id, name: user.name, email: user.email, requestedRole: user.requestedRole }, organizations: user.memberships.map(membershipView) };
+  });
+}
+
+async function acceptPendingInternalAccess(userId: string, email: string) {
+  const invitation = await prisma.organizationInvitation.findFirst({
+    where: { email: email.toLowerCase(), status: "PENDING" },
+    include: { organization: true },
+    orderBy: { createdAt: "asc" },
+  });
+  if (!invitation) return null;
+
+  return prisma.$transaction(async tx => {
+    const membership = await tx.organizationMembership.create({
+      data: { organizationId: invitation.organizationId, userId, role: invitation.role },
+      include: { organization: true },
+    });
+    await tx.organizationInvitation.update({
+      where: { id: invitation.id },
+      data: { status: "ACCEPTED", acceptedById: userId, acceptedAt: new Date() },
+    });
+    await tx.employee.updateMany({
+      where: { organizationId: invitation.organizationId, email: invitation.email.toLowerCase() },
+      data: { membershipId: membership.id, accessRole: invitation.role, hasAccess: true, updatedBy: userId },
+    });
+    await tx.activityEvent.create({
+      data: {
+        organizationId: invitation.organizationId,
+        actorUserId: userId,
+        action: "internal_access.accepted",
+        entityType: "membership",
+        entityId: membership.id,
+        metadata: { email: invitation.email },
+      },
+    });
+    return membership;
   });
 }
 

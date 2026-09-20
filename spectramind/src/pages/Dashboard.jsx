@@ -11,12 +11,13 @@ import {
   X,
 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { useUser } from "../auth/UserContext";
 import { canManageWorkspace } from "../auth/session";
 import ActivityFeed from "../components/dashboard/ActivityFeed";
 import ComplianceChart from "../components/dashboard/ComplianceChart";
 import AppShell from "../components/layout/AppShell";
+import CMMCImplementationDashboard from "../features/cmmc/pages/CMMCImplementationDashboard";
 import { useComplianceState } from "../compliance/ComplianceStateContext";
 import { CMMC_FRAMEWORK_ID, resolveFrameworkId } from "../core/engines/framework-engine/frameworkRegistry";
 import { buildLocalDashboardScore } from "../dashboard/DashboardScoreService";
@@ -161,8 +162,9 @@ function readSetupBannerDismissal(storageKey) {
 
 function DashboardContent({ activeFramework, selectedFrameworks }) {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const { setActiveFramework } = useFrameworkWorkspace();
-  const [dashboardScope, setDashboardScope] = useState("all");
+  const [dashboardScope, setDashboardScope] = useState(() => selectedFrameworks.find(framework => framework.slug === searchParams.get("framework"))?.id || "all");
   const [apiDashboard, setApiDashboard] = useState(null);
   const [apiError, setApiError] = useState("");
   const [loadingDashboard, setLoadingDashboard] = useState(isApiEnabled);
@@ -463,6 +465,7 @@ function DashboardContent({ activeFramework, selectedFrameworks }) {
           </div>
         </section>
 
+        {scopedFramework && resolveFrameworkId(scopedFramework.id) === CMMC_FRAMEWORK_ID ? <CMMCImplementationDashboard embedded /> : <>
         <section className="overflow-hidden rounded-xl border border-slate-200 bg-white text-slate-900 shadow-sm">
           <div className="grid gap-6 p-6 lg:grid-cols-[1fr_320px]">
             <div>
@@ -553,6 +556,7 @@ function DashboardContent({ activeFramework, selectedFrameworks }) {
           <ComplianceChart data={chartData} delta={chartDelta} />
           <ActivityFeed activities={dashboardData?.recentActivity?.slice(0, 5).map(activity => ({ id: activity.id, name: activity.name || formatActivity(activity), timestamp: activity.createdAt || activity.timestamp }))} />
         </section>
+        </>}
       </div>
     </AppShell>
   );

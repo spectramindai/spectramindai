@@ -2,7 +2,7 @@ import { ArrowRight, BrainCircuit, FileCheck2, TriangleAlert } from "lucide-reac
 import { Link } from "react-router-dom";
 
 const queues = [
-  { label: "Evidence requests", value: "18", icon: FileCheck2, tone: "text-blue-700" },
+  { label: "Evidence requests", value: "18", icon: FileCheck2, tone: "text-emerald-700" },
   { label: "Open risks", value: "5", icon: TriangleAlert, tone: "text-rose-600" },
   { label: "AI answers", value: "43", icon: BrainCircuit, tone: "text-violet-600" },
 ];
@@ -19,7 +19,7 @@ export default function DashboardPreview() {
     <section className="px-6 py-24 lg:px-8">
       <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         <div>
-          <p className="text-sm font-black uppercase tracking-widest text-blue-700">
+          <p className="text-sm font-black uppercase tracking-widest text-emerald-700">
             Product Preview
           </p>
           <h2 className="mt-3 text-4xl font-black leading-tight text-slate-900 md:text-5xl">
@@ -33,7 +33,7 @@ export default function DashboardPreview() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
               to="/testimonials"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-blue-600/35 bg-[linear-gradient(135deg,rgba(255,246,216,.96),rgba(216,180,109,.74)_48%,rgba(168,117,52,.86))] px-6 font-bold text-slate-900 shadow-lg shadow-blue-600/20 transition hover:-translate-y-0.5"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-[#071a33] px-6 font-bold text-white shadow-lg shadow-slate-900/20 transition hover:-translate-y-0.5 hover:bg-[#0d294d]"
             >
               Explore the Product
               <ArrowRight size={18} />
@@ -58,7 +58,7 @@ export default function DashboardPreview() {
                   Today&apos;s audit queue
                 </h3>
               </div>
-              <div className="rounded-lg border border-blue-600/20 bg-blue-50 px-3 py-2 text-sm font-bold text-blue-700">
+              <div className="rounded-lg border border-emerald-500/20 bg-emerald-50 px-3 py-2 text-sm font-bold text-emerald-700">
                 12 items resolved
               </div>
             </div>

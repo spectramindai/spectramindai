@@ -17,6 +17,7 @@ export default function Frameworks() {
     cartFrameworks,
     isLoadingFrameworks,
     frameworkLoadError,
+    isCMMCOnlyMode,
   } = useFrameworkWorkspace();
 
   if (isLoadingFrameworks) {
@@ -49,6 +50,12 @@ export default function Frameworks() {
             Monitor progress across active compliance frameworks and prioritize the next control work.
           </p>
         </div>
+
+        {isCMMCOnlyMode && (
+          <div className="rounded-lg border border-violet-200 bg-violet-50 px-4 py-3 text-sm font-semibold text-violet-900">
+            CMMC-only demo mode is active. Other frameworks are temporarily inapplicable and their existing data is preserved.
+          </div>
+        )}
 
         <FrameworkSection
           title="Selected Frameworks"
@@ -123,6 +130,7 @@ function FrameworkSection({
 
 function FrameworkCard({ framework, isActive, selected, actionLabel, onAction, canManage, inCart }) {
   const implementationPath = framework.slug === "cmmc" ? "/cmmc" : `/implementation?framework=${framework.slug}`;
+  const isApplicable = framework.applicable !== false;
 
   return (
     <article className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900">
@@ -143,16 +151,21 @@ function FrameworkCard({ framework, isActive, selected, actionLabel, onAction, c
             Active
           </span>
         )}
+        {!isApplicable && (
+          <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-bold text-slate-600">
+            Inapplicable
+          </span>
+        )}
       </div>
 
       <button
         type="button"
         onClick={() => onAction(framework.id)}
-        disabled={!canManage || inCart}
-        title={!canManage ? "Only an Admin or Manager can manage frameworks" : undefined}
+        disabled={!isApplicable || !canManage || inCart}
+        title={!isApplicable ? framework.availabilityReason : !canManage ? "Only an Admin or Manager can manage frameworks" : undefined}
         className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-4 py-3 font-semibold text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:bg-slate-300 disabled:text-slate-600"
       >
-        {!canManage ? "Admin or Manager required" : inCart ? "Added to Cart" : isActive ? "Active Framework" : actionLabel}
+        {!isApplicable ? "Inapplicable for this demo" : !canManage ? "Admin or Manager required" : inCart ? "Added to Cart" : isActive ? "Active Framework" : actionLabel}
       </button>
 
       {selected && (

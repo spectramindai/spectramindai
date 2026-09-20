@@ -17,13 +17,13 @@ export default function About() {
         <section className="border-b border-slate-200 bg-slate-50 px-6 py-24 dark:border-slate-800 dark:bg-slate-900 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <p className="text-sm font-bold uppercase tracking-widest text-blue-600 dark:text-blue-300">
-              About SpectraMind
+              About Compvd.ai
             </p>
             <h1 className="mt-4 max-w-4xl text-5xl font-bold leading-tight text-slate-950 dark:text-white md:text-6xl">
               We help teams turn compliance into a trustworthy daily workflow.
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-              SpectraMind is an AI-powered compliance and trust platform for
+              Compvd.ai is an AI-powered compliance and trust platform for
               managing controls, evidence, risks, vendors, and customer-facing
               assurance from a single workspace.
             </p>

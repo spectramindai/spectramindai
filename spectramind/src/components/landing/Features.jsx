@@ -51,7 +51,7 @@ export default function Features() {
     <section className="px-6 py-24 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="max-w-3xl">
-          <p className="text-sm font-black uppercase tracking-widest text-blue-700">
+          <p className="text-sm font-black uppercase tracking-widest text-emerald-700">
             Platform
           </p>
           <h2 className="mt-3 text-4xl font-black text-slate-900 md:text-5xl">
@@ -70,9 +70,9 @@ export default function Features() {
             return (
               <div
                 key={feature.title}
-                className="group rounded-lg border border-white/75 bg-white/58 p-6 shadow-xl shadow-slate-900/5 backdrop-blur transition hover:-translate-y-1 hover:border-blue-600/25 hover:bg-white/78 hover:shadow-blue-600/10"
+                className="group rounded-xl border border-emerald-500/10 bg-white/72 p-6 shadow-xl shadow-slate-900/5 backdrop-blur transition hover:-translate-y-1 hover:border-emerald-500/35 hover:bg-white"
               >
-                <div className="mb-5 inline-flex h-11 w-11 items-center justify-center rounded-lg border border-blue-600/20 bg-blue-50 text-blue-700 transition group-hover:bg-[linear-gradient(135deg,rgba(255,246,216,.96),rgba(216,180,109,.68))] group-hover:text-slate-900">
+                <div className="mb-5 inline-flex h-11 w-11 items-center justify-center rounded-lg border border-emerald-500/20 bg-emerald-50 text-emerald-700 transition group-hover:bg-emerald-600 group-hover:text-white">
                   <Icon size={22} />
                 </div>
 

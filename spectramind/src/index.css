@@ -4,18 +4,18 @@
 
 @layer base {
   :root {
-    --sm-graphite: #25221d;
-    --sm-graphite-soft: #4d463b;
-    --sm-bronze: #9d6f38;
-    --sm-gold: #d8b46d;
-    --sm-pale-gold: #f4dfae;
-    --sm-ivory: #f8f4ea;
-    --sm-warm-white: #fffdf8;
-    --sm-pearl: #ece7dc;
-    --sm-silver: #c8c4ba;
-    --sm-line: rgba(92, 80, 62, 0.18);
-    --sm-panel: rgba(255, 253, 248, 0.76);
-    --sm-shadow: 0 28px 90px rgba(77, 65, 44, 0.14);
+    --sm-graphite: #071a33;
+    --sm-graphite-soft: #42526a;
+    --sm-bronze: #00a878;
+    --sm-gold: #19c89a;
+    --sm-pale-gold: #d9f8ef;
+    --sm-ivory: #f4faf8;
+    --sm-warm-white: #ffffff;
+    --sm-pearl: #e7f1ee;
+    --sm-silver: #b7c9c4;
+    --sm-line: rgba(7, 26, 51, 0.12);
+    --sm-panel: rgba(255, 255, 255, 0.84);
+    --sm-shadow: 0 28px 90px rgba(7, 26, 51, 0.12);
   }
 
   html {
@@ -26,12 +26,12 @@
     margin: 0;
     min-width: 320px;
     background:
-      radial-gradient(circle at 13% 8%, rgba(216, 180, 109, 0.28), transparent 28rem),
-      radial-gradient(circle at 82% 10%, rgba(200, 196, 186, 0.44), transparent 31rem),
-      radial-gradient(circle at 58% 78%, rgba(200, 131, 114, 0.12), transparent 30rem),
-      linear-gradient(120deg, rgba(157, 111, 56, 0.07) 0 1px, transparent 1px 82px),
+      radial-gradient(circle at 13% 8%, rgba(25, 200, 154, 0.18), transparent 28rem),
+      radial-gradient(circle at 82% 10%, rgba(7, 26, 51, 0.1), transparent 31rem),
+      radial-gradient(circle at 58% 78%, rgba(25, 200, 154, 0.08), transparent 30rem),
+      linear-gradient(120deg, rgba(7, 26, 51, 0.035) 0 1px, transparent 1px 82px),
       linear-gradient(28deg, rgba(255, 255, 255, 0.52) 0 1px, transparent 1px 96px),
-      linear-gradient(135deg, #fbf7ee 0%, #ece7dc 48%, #f7efe0 100%);
+      linear-gradient(135deg, #f8fcfb 0%, #eaf4f1 48%, #f6fbfa 100%);
     color: var(--sm-graphite);
     font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     letter-spacing: 0;
@@ -61,7 +61,7 @@
   input:focus-visible,
   textarea:focus-visible,
   select:focus-visible {
-    outline: 2px solid rgba(157, 111, 56, 0.65);
+    outline: 2px solid rgba(0, 168, 120, 0.7);
     outline-offset: 3px;
   }
 }
@@ -81,7 +81,7 @@
   .shadow-slate-900\/5,
   .shadow-slate-900\/10,
   .shadow-slate-900\/20 {
-    --tw-shadow-color: rgba(157, 111, 56, 0.16) !important;
+    --tw-shadow-color: rgba(7, 26, 51, 0.13) !important;
   }
 }
 

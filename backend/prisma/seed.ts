@@ -5,13 +5,13 @@ import "dotenv/config";
 
 const prisma = new PrismaClient();
 const root = resolve(process.cwd(), process.env.FRAMEWORK_LIBRARY_PATH ?? "../spectramind/src/core/framework-library");
-const folders = ["soc2", "iso27001", "cmmc", "tisax"];
+const folders = ["soc2", "iso27001", "cmmc"];
 
 for (const folder of folders) {
   const framework = JSON.parse(await readFile(resolve(root, folder, "framework.json"), "utf8"));
   const controlsFile = JSON.parse(await readFile(resolve(root, folder, "controls.json"), "utf8"));
   const id = framework.id;
-  const slug = folder === "soc2" ? "soc-2" : folder === "iso27001" ? "iso-27001" : folder === "cmmc" ? "cmmc" : "tisax";
+  const slug = folder === "soc2" ? "soc-2" : folder === "iso27001" ? "iso-27001" : "cmmc";
 
   await prisma.framework.upsert({
     where: { id },

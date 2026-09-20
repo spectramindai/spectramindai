@@ -1,55 +1,29 @@
 import {
   AlertTriangle,
-  BarChart3,
-  ClipboardList,
-  FileText,
-  Library,
   Search,
   ShieldCheck,
-  Target,
   X,
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import AppShell from "../../../components/layout/AppShell";
+import CMMCModuleNavigation from "./CMMCModuleNavigation";
 import { frameworkHasLibrary, useFrameworkWorkspace } from "../../../framework/FrameworkWorkspaceContext";
-import { CMMC_CONTROL_STATUS_VALIDATION_EVENT } from "../hooks";
+import { CMMC_CONTROL_STATUS_VALIDATION_EVENT, CMMC_PERSISTENCE_ERROR_EVENT } from "../hooks";
+import { cmmcDomains } from "../data/cmmcDomains";
 import { useCMMCWorkspaceFilters } from "./CMMCWorkspaceFilters";
 
-const navigationItems = [
-  { label: "Scope", path: "/cmmc", icon: Library, match: ["/cmmc", "/cmmc/scope"] },
-  { label: "Gap Wizard", path: "/cmmc/gap-wizard", icon: Target },
-  { label: "Organization", path: "/cmmc/organization", icon: ClipboardList },
-  { label: "SPRS Score", path: "/cmmc/sprs-score", icon: BarChart3 },
-  { label: "Auditor", path: "/cmmc/auditor", icon: Search },
-  { label: "Evidence", path: "/cmmc/evidence", icon: FileText },
-  { label: "Domains", path: "/cmmc/domains", icon: Library, matchPrefix: "/cmmc/domains" },
-];
+const domainOptions = [["all", "All Domains"], ...cmmcDomains.map(({ shortCode, name }) => [shortCode, name])];
 
-const domainOptions = [
-  ["all", "All Domains"],
-  ["AC", "Access Control"],
-  ["AT", "Awareness and Training"],
-  ["AU", "Audit and Accountability"],
-  ["IR", "Incident Response"],
-  ["MA", "Maintenance"],
-  ["MP", "Media Protection"],
-  ["PS", "Personnel Security"],
-  ["PE", "Physical Protection"],
-  ["RA", "Risk Assessment"],
-  ["CA", "Security Assessment"],
-  ["SC", "System and Communications Protection"],
-  ["SI", "System and Information Integrity"],
-];
-
-const statusOptions = ["All", "Not Started", "In Progress", "Completed"];
+const statusOptions = ["All", "Not Started", "In Progress", "Completed", "Not Applicable"];
 
 export default function CMMCImplementationLayout({ children }) {
   const location = useLocation();
   const navigate = useNavigate();
   const [evidenceValidation, setEvidenceValidation] = useState(null);
+  const [persistenceError, setPersistenceError] = useState(null);
   const frameworkWorkspace = useFrameworkWorkspace();
-  const shouldShowWorkspaceFilters = !["/cmmc", "/cmmc/scope", "/cmmc/gap-wizard"].includes(location.pathname);
+  const shouldShowWorkspaceFilters = !location.pathname.startsWith("/cmmc/operations/") && !["/cmmc", "/cmmc/uploaded-evidence", "/cmmc/overview", "/cmmc/scope", "/cmmc/gap-wizard"].includes(location.pathname);
   const {
     searchQuery,
     domainFilter,
@@ -66,12 +40,19 @@ export default function CMMCImplementationLayout({ children }) {
       setEvidenceValidation({
         controlId: String(detail.controlId || "").trim(),
         missingEvidence: Array.isArray(detail.missingEvidence) ? detail.missingEvidence : [],
+        missingObjectives: Array.isArray(detail.missingObjectives) ? detail.missingObjectives : [],
         message: detail.message || "Upload all required evidence before marking this control as Implemented.",
       });
     };
 
     window.addEventListener(CMMC_CONTROL_STATUS_VALIDATION_EVENT, handleValidationFailure);
     return () => window.removeEventListener(CMMC_CONTROL_STATUS_VALIDATION_EVENT, handleValidationFailure);
+  }, []);
+
+  useEffect(() => {
+    const handlePersistenceError = (event) => setPersistenceError(event.detail || { message: "Backend save failed." });
+    window.addEventListener(CMMC_PERSISTENCE_ERROR_EVENT, handlePersistenceError);
+    return () => window.removeEventListener(CMMC_PERSISTENCE_ERROR_EVENT, handlePersistenceError);
   }, []);
 
   return (
@@ -107,35 +88,10 @@ export default function CMMCImplementationLayout({ children }) {
                 />
               </div>
 
-              <nav className="grid grid-flow-col auto-cols-[124px] gap-1 overflow-x-auto rounded-lg border border-slate-200/70 bg-white/55 p-1 shadow-inner shadow-slate-900/[0.02]">
-                {navigationItems.map((item) => {
-                  const Icon = item.icon;
-                  const active =
-                    (item.match || [item.path]).includes(location.pathname) ||
-                    (item.matchPrefix && location.pathname.startsWith(item.matchPrefix)) ||
-                    (item.label === "Scope" && location.pathname === "/implementation");
-
-                  return (
-                    <Link
-                      key={item.label}
-                      to={item.path}
-                      className={`flex h-16 flex-col items-center justify-center gap-1 rounded-lg border px-2 text-center text-xs font-black leading-tight transition ${
-                        active
-                          ? "border-amber-700/20 bg-white text-slate-950 shadow-sm"
-                          : "border-transparent text-slate-500 hover:bg-white/70 hover:text-slate-900"
-                      }`}
-                    >
-                      <Icon size={19} className={active ? "text-amber-700" : "text-slate-500"} />
-                      <span className="flex min-h-7 items-center justify-center">
-                        {item.label}
-                      </span>
-                    </Link>
-                  );
-                })}
-              </nav>
             </div>
           </header>
 
+          <CMMCModuleNavigation />
           {shouldShowWorkspaceFilters && (
             <section className="rounded-lg border border-white/75 bg-[#fffdf8]/72 p-3 shadow-xl shadow-slate-900/5 backdrop-blur">
               <div className="flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-between">
@@ -200,6 +156,19 @@ export default function CMMCImplementationLayout({ children }) {
             />
           )}
 
+          {persistenceError && (
+            <section role="alert" className="flex items-start justify-between gap-3 rounded-lg border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-950 shadow-sm">
+              <div className="flex gap-3">
+                <AlertTriangle size={18} className="mt-0.5 shrink-0 text-rose-600" />
+                <div>
+                  <p className="font-black">{persistenceError.message || "Backend save failed."}</p>
+                  <p className="mt-1 font-semibold text-rose-800">{persistenceError.reason || "Check the API connection and sign in again."}</p>
+                </div>
+              </div>
+              <button type="button" onClick={() => setPersistenceError(null)} className="grid h-8 w-8 shrink-0 place-items-center rounded-md text-rose-500 hover:bg-rose-100" aria-label="Dismiss persistence error"><X size={16} /></button>
+            </section>
+          )}
+
         {children}
       </div>
     </AppShell>
@@ -207,10 +176,11 @@ export default function CMMCImplementationLayout({ children }) {
 }
 
 function EvidenceValidationBanner({ validation, onDismiss }) {
-  const evidencePath = `/cmmc/evidence?tab=ssp&controlId=${encodeURIComponent(validation.controlId)}`;
+  const evidencePath = `/cmmc/ssp?controlId=${encodeURIComponent(validation.controlId)}`;
   const missingEvidence = validation.missingEvidence.length
     ? validation.missingEvidence
     : ["Required evidence for this control"];
+  const missingObjectives = validation.missingObjectives || [];
 
   return (
     <section role="alert" className="rounded-lg border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-950 shadow-sm">
@@ -234,6 +204,18 @@ function EvidenceValidationBanner({ validation, onDismiss }) {
         </button>
       </div>
       <div className="mt-3 rounded-md border border-rose-100 bg-white/70 px-3 py-2">
+        {missingObjectives.length ? (
+          <>
+            <p className="text-xs font-black uppercase tracking-wide text-rose-500">Missing Assessment Objectives</p>
+            <ul className="mt-2 space-y-1">
+              {missingObjectives.map((objective) => (
+                <li key={objective.id} className="font-semibold text-rose-900">
+                  {objective.identifier ? `${objective.identifier} ` : ""}{objective.text}
+                </li>
+              ))}
+            </ul>
+          </>
+        ) : null}
         <p className="text-xs font-black uppercase tracking-wide text-rose-500">Missing Evidence</p>
         <ul className="mt-2 space-y-1">
           {missingEvidence.map((item, index) => (

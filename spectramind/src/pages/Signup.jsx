@@ -3,8 +3,8 @@ import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useUser } from "../auth/UserContext";
 import { isApiEnabled, registerWithApi } from "../api/client";
-import { APP_NAME } from "../core/adapters/useOrganizationBranding";
 import { findLocalInvitations, registerLocalAccount } from "../data/localAccounts";
+import BrandLogo from "../components/branding/BrandLogo";
 
 const roles = [
   { value: "Admin", title: "Admin", text: "Full workspace, people, settings, and framework access." },
@@ -29,7 +29,7 @@ export default function Signup() {
       if (isApiEnabled) {
         const account = await registerWithApi({ name: form.name.trim(), email: form.email.trim(), password: form.password, role: form.role });
         login(account, { remember: true });
-        navigate(form.role === "User" ? "/join-organization" : "/onboarding/organization");
+        navigate(account.onboardingComplete ? "/dashboard" : form.role === "User" ? "/join-organization" : "/onboarding/organization");
       } else {
         const pendingInvitations = findLocalInvitations(form.email);
         const assignedRole = pendingInvitations[0]?.role || form.role;
@@ -46,7 +46,7 @@ export default function Signup() {
     <main className="min-h-screen bg-[#fbfaf7] px-5 py-8 text-slate-900">
       <div className="mx-auto grid min-h-[calc(100vh-4rem)] max-w-6xl overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl lg:grid-cols-[.9fr_1.1fr]">
         <section className="hidden bg-slate-950 p-10 text-white lg:flex lg:flex-col">
-          <Link to="/" className="flex items-center gap-3 text-xl font-black"><span className="grid h-10 w-10 place-items-center rounded-xl bg-amber-500 text-slate-950">S</span>{APP_NAME}</Link>
+          <Link to="/" className="inline-flex w-fit rounded-xl bg-white px-3 py-2 shadow-lg"><BrandLogo className="h-14 w-auto max-w-[220px]" /></Link>
           <div className="my-auto">
             <ShieldCheck className="text-amber-400" size={42} />
             <h1 className="mt-6 text-4xl font-black leading-tight">Build your compliance workspace.</h1>
@@ -57,6 +57,7 @@ export default function Signup() {
           </div>
         </section>
         <section className="p-6 sm:p-10">
+          <Link to="/" className="mb-7 block w-fit lg:hidden"><BrandLogo className="h-14 w-auto max-w-[210px]" /></Link>
           <Link to="/login" className="inline-flex items-center gap-2 text-sm font-bold text-slate-500 hover:text-blue-700"><ArrowLeft size={16}/>Back to sign in</Link>
           <div className="mt-8"><p className="text-sm font-black uppercase tracking-widest text-blue-700">Step 1 of 3</p><h2 className="mt-2 text-4xl font-black">Create your account</h2><p className="mt-2 text-slate-500">Your details will appear in My Profile and Profile Settings.</p></div>
           {location.state?.notice && <p role="status" className="mt-5 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm font-bold text-amber-900">{location.state.notice}</p>}

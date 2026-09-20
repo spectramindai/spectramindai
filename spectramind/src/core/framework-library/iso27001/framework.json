@@ -4,7 +4,7 @@
   "shortName": "ISO 27001",
   "version": "2022",
   "category": "Information security management",
-  "description": "ISO/IEC 27001:2022 framework metadata for the SpectraMind framework library.",
+  "description": "ISO/IEC 27001:2022 framework metadata for the Compvd.ai framework library.",
   "issuingBody": "ISO/IEC",
   "assessmentType": "ISMS certification readiness",
   "securityDomains": [
@@ -14,7 +14,7 @@
     "Technological Controls"
   ],
   "libraryStatus": "draft",
-  "owner": "SpectraMind",
+  "owner": "Compvd.ai",
   "createdFor": "Framework Library",
   "notes": "Generated from the supplied ISO 27001 Annex A controls workbook. Risks, tests, policies, evidence, tasks, questionnaire content, mappings, AI guidance, and audit rules are maintained in sibling JSON files."
 }

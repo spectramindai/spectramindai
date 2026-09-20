@@ -1,8 +1,11 @@
-import { FileText, Pin, Printer, ScrollText } from "lucide-react";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { FileText, Pin, Printer, ScrollText, Trash2 } from "lucide-react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
 import { isApiEnabled } from "../../../api/client";
-import { uploadEvidenceFile } from "../../../api/evidence";
+import { deleteEvidenceApi, listEvidence, uploadEvidenceFile } from "../../../api/evidence";
+import { loadCMMCEvidenceCompletion } from "../../../api/cmmc";
+import { useUser } from "../../../auth/UserContext";
+import { canManageWorkspace } from "../../../auth/session";
 import {
   CMMC_FRAMEWORK_ID,
   getFrameworkLibrary,
@@ -51,13 +54,15 @@ const poamWorkflowFields = {
 export default function CMMCEvidencePage() {
   const { searchQuery, domainFilter, resetVersion, statusFilter } = useCMMCWorkspaceFilters();
   const [searchParams] = useSearchParams();
-  const requestedTab = searchParams.get("tab");
+  const { pathname } = useLocation();
+  const routeTab = { "/cmmc/ssp": "ssp", "/cmmc/poam": "poam", "/cmmc/policies": "policies" }[pathname];
+  const requestedTab = routeTab || searchParams.get("tab");
   const selectedPolicyKey = searchParams.get("item") || searchParams.get("itemId") || "";
   const selectedControlId = searchParams.get("controlId") || "";
   return (
     <CMMCImplementationLayout>
       <CMMCEvidenceContent
-        key={`${resetVersion}:${requestedTab || ""}:${selectedPolicyKey}:${selectedControlId}`}
+        key={`${resetVersion}:${selectedPolicyKey}:${selectedControlId}`}
         searchQuery={searchQuery}
         domainFilter={domainFilter}
         statusFilter={statusFilter}
@@ -70,6 +75,8 @@ export default function CMMCEvidencePage() {
 }
 
 function CMMCEvidenceContent({ searchQuery, domainFilter, statusFilter, requestedTab, selectedPolicyKey, selectedControlId }) {
+  const { user } = useUser();
+  const canDeleteEvidence = canManageWorkspace(user?.role);
   const {
     scopeAnswers,
     organizationProfile,
@@ -81,10 +88,19 @@ function CMMCEvidenceContent({ searchQuery, domainFilter, statusFilter, requeste
     updateEvidenceWorkflowField,
   } = useCMMCWorkflowState();
   const sprsMetrics = useCMMCSPRSCalculation();
-  const [activeTab, setActiveTab] = useState(() =>
-    tabs.some((tab) => tab.id === requestedTab) ? requestedTab : "ssp"
-  );
+  const [searchParams] = useSearchParams();
+  const navigate = useNavigate();
+  const activeTab = tabs.some((tab) => tab.id === requestedTab) ? requestedTab : "ssp";
+  const setActiveTab = (tab) => {
+    const next = new URLSearchParams(searchParams);
+    next.delete("tab");
+    if (tab !== "ssp") next.delete("controlId");
+    if (tab !== "policies") { next.delete("item"); next.delete("itemId"); }
+    navigate({ pathname: { ssp: "/cmmc/ssp", poam: "/cmmc/poam", policies: "/cmmc/policies" }[tab], search: next.toString() ? `?${next}` : "" });
+  };
   const [attachmentUploadStatusByControl, setAttachmentUploadStatusByControl] = useState({});
+  const [completionStatusByControl, setCompletionStatusByControl] = useState({});
+  const [apiAttachmentsByControl, setApiAttachmentsByControl] = useState({});
   const normalizedSearch = searchQuery.trim().toLowerCase();
   const workflowSspForm = useMemo(
     () => buildWorkflowSspForm(organizationProfile, scopeAnswers),
@@ -96,10 +112,14 @@ function CMMCEvidenceContent({ searchQuery, domainFilter, statusFilter, requeste
   );
   const workflowEvidenceRows = useMemo(
     () =>
-      evidenceRows.map((row) =>
-        applyEvidenceWorkflowFields(row, evidenceWorkflowFields[row.key], controlWorkflowFields[row.controlId])
-      ),
-    [controlWorkflowFields, evidenceWorkflowFields]
+      evidenceRows.map((row) => {
+        const workflowRow = applyEvidenceWorkflowFields(row, evidenceWorkflowFields[row.key], controlWorkflowFields[row.controlId]);
+        return {
+          ...workflowRow,
+          attachments: mergeAttachmentMetadata(workflowRow.attachments, apiAttachmentsByControl[row.controlId]),
+        };
+      }),
+    [apiAttachmentsByControl, controlWorkflowFields, evidenceWorkflowFields]
   );
   const policyDocumentRows = useMemo(
     () =>
@@ -210,6 +230,42 @@ function CMMCEvidenceContent({ searchQuery, domainFilter, statusFilter, requeste
     [domainFilter, normalizedSearch, workflowEvidenceRows]
   );
 
+  const refreshApiAttachments = useCallback(() => {
+    if (!isApiEnabled) return Promise.resolve({});
+    return listEvidence(CMMC_FRAMEWORK_ID)
+      .then((records) => {
+        const attachmentsByControl = buildApiAttachmentsByControl(records);
+        setApiAttachmentsByControl(attachmentsByControl);
+        Object.keys(attachmentsByControl).forEach((controlId) => {
+          updateControlWorkflowStatus(controlId, "In Progress", { onlyIfNotStarted: true });
+        });
+        return attachmentsByControl;
+      })
+      .catch(() => ({}));
+  }, [updateControlWorkflowStatus]);
+
+  useEffect(() => {
+    refreshApiAttachments();
+  }, [refreshApiAttachments]);
+
+  useEffect(() => {
+    if (!isApiEnabled) return;
+    let cancelled = false;
+    const visibleControls = uniqueRowsByControl(visibleSspControls);
+    Promise.all(visibleControls.map(async (row) => [row.controlId, await loadCMMCEvidenceCompletion(row.controlId)]))
+      .then((entries) => {
+        if (cancelled) return;
+        setCompletionStatusByControl((current) => ({ ...current, ...Object.fromEntries(entries) }));
+        entries.forEach(([controlId, completionStatus]) => {
+          if (hasUploadedObjectiveEvidence(completionStatus)) {
+            updateControlWorkflowStatus(controlId, "In Progress", { onlyIfNotStarted: true });
+          }
+        });
+      })
+      .catch(() => {});
+    return () => { cancelled = true; };
+  }, [updateControlWorkflowStatus, visibleSspControls]);
+
   const updateSspForm = (field, value) => {
     if (field === "currentSprs") return;
     const workflowAnswerId = sspWorkflowAnswerIds[field];
@@ -243,6 +299,7 @@ function CMMCEvidenceContent({ searchQuery, domainFilter, statusFilter, requeste
   const attachEvidenceFiles = async (controlId, currentAttachments, files) => {
     const selectedFiles = Array.from(files || []);
     if (!selectedFiles.length) return;
+    const uploadedEvidenceByFile = new Map();
 
     if (isApiEnabled) {
       const evidenceRow = workflowEvidenceRows.find((row) => row.controlId === controlId) || {};
@@ -253,17 +310,25 @@ function CMMCEvidenceContent({ searchQuery, domainFilter, statusFilter, requeste
 
       try {
         for (const file of selectedFiles) {
-          await uploadEvidenceFile({
+          const uploadedEvidence = await uploadEvidenceFile({
             frameworkId: CMMC_FRAMEWORK_ID,
             file,
             description: evidenceRow.evidence || evidenceRow.requirement || "",
             controlIds: [controlId],
             tags: ["cmmc", controlId].filter(Boolean),
           });
+          uploadedEvidenceByFile.set(file, uploadedEvidence);
         }
         setAttachmentUploadStatusByControl((current) => ({
           ...current,
           [controlId]: `${selectedFiles.length} evidence file${selectedFiles.length === 1 ? "" : "s"} uploaded and linked.`,
+        }));
+        setApiAttachmentsByControl((current) => ({
+          ...current,
+          [controlId]: mergeAttachmentMetadata(
+            current[controlId],
+            selectedFiles.map((file) => fileToAttachmentMetadata(file, uploadedEvidenceByFile.get(file)))
+          ),
         }));
         window.dispatchEvent(new Event("spectramind:workspace-updated"));
       } catch (error) {
@@ -277,10 +342,74 @@ function CMMCEvidenceContent({ searchQuery, domainFilter, statusFilter, requeste
 
     const nextAttachments = [
       ...(Array.isArray(currentAttachments) ? currentAttachments : []),
-      ...selectedFiles.map(fileToAttachmentMetadata).filter(Boolean),
+      ...selectedFiles.map((file) => fileToAttachmentMetadata(file, uploadedEvidenceByFile.get(file))).filter(Boolean),
     ];
 
-    updateControlAttachments(controlId, nextAttachments);
+    updateControlAttachments(controlId, nextAttachments, { markInProgress: true });
+  };
+
+  const deleteControlAttachment = async (controlId, currentAttachments, attachmentIndex) => {
+    if (!canDeleteEvidence) return;
+    const attachments = Array.isArray(currentAttachments) ? currentAttachments : [];
+    const attachment = attachments[attachmentIndex];
+    if (!attachment || !window.confirm(`Delete evidence "${attachment.fileName}"?`)) return;
+
+    setAttachmentUploadStatusByControl((current) => ({ ...current, [controlId]: "Deleting evidence..." }));
+    try {
+      if (isApiEnabled && attachment.evidenceId) {
+        await deleteEvidenceApi(attachment.evidenceId);
+        setApiAttachmentsByControl((current) => ({
+          ...current,
+          [controlId]: (current[controlId] || []).filter((item) => item.evidenceId !== attachment.evidenceId),
+        }));
+      }
+      updateControlAttachments(controlId, attachments.filter((_, index) => index !== attachmentIndex));
+      setAttachmentUploadStatusByControl((current) => ({ ...current, [controlId]: "Evidence deleted." }));
+      window.dispatchEvent(new Event("spectramind:workspace-updated"));
+    } catch (error) {
+      setAttachmentUploadStatusByControl((current) => ({ ...current, [controlId]: error.message || "Evidence could not be deleted." }));
+    }
+  };
+
+  const attachObjectiveEvidenceFiles = async (controlId, objectiveId, files) => {
+    const selectedFiles = Array.from(files || []);
+    if (!selectedFiles.length || !isApiEnabled) return;
+    const statusKey = `${controlId}:${objectiveId}`;
+    const evidenceRow = workflowEvidenceRows.find((row) => row.controlId === controlId) || {};
+    setAttachmentUploadStatusByControl((current) => ({ ...current, [statusKey]: "Uploading evidence..." }));
+    try {
+      for (const file of selectedFiles) {
+        await uploadEvidenceFile({
+          frameworkId: CMMC_FRAMEWORK_ID,
+          file,
+          description: evidenceRow.evidence || evidenceRow.requirement || "",
+          objectiveMappings: [{ controlId, objectiveId }],
+          tags: ["cmmc", controlId, `objective:${objectiveId}`],
+        });
+      }
+      const completionStatus = await loadCMMCEvidenceCompletion(controlId);
+      setCompletionStatusByControl((current) => ({ ...current, [controlId]: completionStatus }));
+      updateControlWorkflowStatus(controlId, "In Progress", { onlyIfNotStarted: true });
+      setAttachmentUploadStatusByControl((current) => ({ ...current, [statusKey]: "Evidence uploaded and mapped. Approval is required before this objective is satisfied." }));
+      window.dispatchEvent(new Event("spectramind:workspace-updated"));
+    } catch (error) {
+      setAttachmentUploadStatusByControl((current) => ({ ...current, [statusKey]: error.message || "Evidence upload failed." }));
+    }
+  };
+
+  const deleteObjectiveEvidence = async (controlId, objectiveId, evidence) => {
+    if (!canDeleteEvidence || !evidence?.id || !window.confirm(`Delete evidence "${evidence.title}"?`)) return;
+    const statusKey = `${controlId}:${objectiveId}`;
+    setAttachmentUploadStatusByControl((current) => ({ ...current, [statusKey]: "Deleting evidence..." }));
+    try {
+      await deleteEvidenceApi(evidence.id);
+      const completionStatus = await loadCMMCEvidenceCompletion(controlId);
+      setCompletionStatusByControl((current) => ({ ...current, [controlId]: completionStatus }));
+      setAttachmentUploadStatusByControl((current) => ({ ...current, [statusKey]: "Evidence deleted." }));
+      window.dispatchEvent(new Event("spectramind:workspace-updated"));
+    } catch (error) {
+      setAttachmentUploadStatusByControl((current) => ({ ...current, [statusKey]: error.message || "Evidence could not be deleted." }));
+    }
   };
 
   const exportSSPToPDF = () => {
@@ -332,8 +461,13 @@ function CMMCEvidenceContent({ searchQuery, domainFilter, statusFilter, requeste
             controls={visibleSspControls}
             onNoteChange={(evidenceKey, value) => updateEvidenceWorkflowField(evidenceKey, "implementationDescription", value)}
             onAttachFiles={attachEvidenceFiles}
+            onDeleteAttachment={deleteControlAttachment}
             selectedControlId={selectedControlId}
             uploadStatusByControl={attachmentUploadStatusByControl}
+            completionStatusByControl={completionStatusByControl}
+            onAttachObjectiveFiles={attachObjectiveEvidenceFiles}
+            onDeleteObjectiveEvidence={deleteObjectiveEvidence}
+            canDeleteEvidence={canDeleteEvidence}
             onExportPDF={exportSSPToPDF}
           />
         )}
@@ -345,7 +479,7 @@ function CMMCEvidenceContent({ searchQuery, domainFilter, statusFilter, requeste
   );
 }
 
-function SSPView({ form, onChange, controls, onNoteChange, onAttachFiles, selectedControlId, uploadStatusByControl, onExportPDF }) {
+function SSPView({ form, onChange, controls, onNoteChange, onAttachFiles, onDeleteAttachment, onAttachObjectiveFiles, onDeleteObjectiveEvidence, canDeleteEvidence, selectedControlId, uploadStatusByControl, completionStatusByControl, onExportPDF }) {
   const selectedControlRef = useRef(null);
 
   useEffect(() => {
@@ -420,6 +554,15 @@ function SSPView({ form, onChange, controls, onNoteChange, onAttachFiles, select
               <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
                 Evidence Required: {row.evidence}
               </p>
+              <AssessmentObjectivesSection
+                objectives={row.assessmentObjectives}
+                completionStatus={completionStatusByControl?.[row.controlId]}
+                evidenceRequirement={row.evidence}
+                onFilesSelected={(objectiveId, files) => onAttachObjectiveFiles(row.controlId, objectiveId, files)}
+                onDeleteEvidence={(objectiveId, evidence) => onDeleteObjectiveEvidence(row.controlId, objectiveId, evidence)}
+                canDeleteEvidence={canDeleteEvidence}
+                uploadStatusByObjective={Object.fromEntries((row.assessmentObjectives || []).map((objective) => [objective.id, uploadStatusByControl?.[`${row.controlId}:${objective.id}`]]))}
+              />
               <TextArea
                 label="Implementation Description"
                 value={row.implementationDescription}
@@ -429,6 +572,8 @@ function SSPView({ form, onChange, controls, onNoteChange, onAttachFiles, select
               <AttachmentSection
                 attachments={row.attachments}
                 onFilesSelected={(files) => onAttachFiles(row.controlId, row.attachments, files)}
+                onDelete={(attachmentIndex) => onDeleteAttachment(row.controlId, row.attachments, attachmentIndex)}
+                canDelete={canDeleteEvidence}
                 uploadStatus={uploadStatusByControl?.[row.controlId]}
               />
             </div>
@@ -746,7 +891,7 @@ function TextArea({ label, value, placeholder, onChange }) {
   );
 }
 
-function AttachmentSection({ attachments = [], onFilesSelected, uploadStatus }) {
+function AttachmentSection({ attachments = [], onFilesSelected, onDelete, canDelete = false, uploadStatus }) {
   return (
     <div className="mt-4 rounded border border-slate-200 bg-white px-3 py-3">
       <label className="block">
@@ -769,9 +914,16 @@ function AttachmentSection({ attachments = [], onFilesSelected, uploadStatus }) 
       ) : null}
       <div className="mt-3 space-y-2">
         {attachments.map((attachment, index) => (
-          <div key={`${attachment.fileName}-${attachment.uploadedAt}-${index}`} className="flex flex-col gap-1 rounded bg-slate-50 px-3 py-2 text-xs font-semibold text-slate-600 sm:flex-row sm:items-center sm:justify-between">
-            <span className="font-black text-slate-700">{attachment.fileName}</span>
-            <span>{attachment.fileType} | {formatFileSize(attachment.fileSize)} | {formatAttachmentDate(attachment.uploadedAt)}</span>
+          <div key={`${attachment.fileName}-${attachment.uploadedAt}-${index}`} className="flex flex-col gap-2 rounded bg-slate-50 px-3 py-2 text-xs font-semibold text-slate-600 sm:flex-row sm:items-center sm:justify-between">
+            <span className="min-w-0 truncate font-black text-slate-700">{attachment.fileName}</span>
+            <div className="flex shrink-0 items-center gap-2">
+              <span>{attachment.fileType} | {formatFileSize(attachment.fileSize)} | {formatAttachmentDate(attachment.uploadedAt)}</span>
+              {canDelete ? (
+                <button type="button" onClick={() => onDelete?.(index)} className="inline-flex items-center gap-1 rounded px-2 py-1 font-black text-red-600 hover:bg-red-50" aria-label={`Delete ${attachment.fileName}`}>
+                  <Trash2 size={13} /> Delete
+                </button>
+              ) : null}
+            </div>
           </div>
         ))}
         {!attachments.length && (
@@ -782,7 +934,59 @@ function AttachmentSection({ attachments = [], onFilesSelected, uploadStatus }) 
   );
 }
 
-function fileToAttachmentMetadata(file) {
+function AssessmentObjectivesSection({ objectives = [], completionStatus, evidenceRequirement, onFilesSelected, onDeleteEvidence, canDeleteEvidence = false, uploadStatusByObjective = {} }) {
+  const statusById = new Map((completionStatus?.objectives || []).map((objective) => [objective.id, objective]));
+  const satisfiedCount = completionStatus?.satisfiedObjectiveCount || 0;
+  return (
+    <section className="rounded-lg border border-slate-200 bg-slate-50 p-3">
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <h3 className="text-xs font-black uppercase tracking-wide text-slate-600">Assessment Objectives</h3>
+        <span className={`rounded px-2 py-1 text-xs font-black ${completionStatus?.eligibleForCompletion ? "bg-emerald-100 text-emerald-700" : "bg-amber-100 text-amber-700"}`}>
+          {completionStatus?.eligibleForCompletion ? "Ready to complete" : `Not ready to complete — ${Math.max(0, objectives.length - satisfiedCount)} objective(s) need approved evidence`}
+        </span>
+      </div>
+      <div className="mt-3 space-y-3">
+        {objectives.map((objective) => {
+          const status = statusById.get(objective.id);
+          const uploaded = status?.uploadedEvidence || [];
+          return (
+            <div key={objective.id} className="rounded border border-slate-200 bg-white p-3">
+              <div className="flex gap-2 text-sm font-semibold text-slate-700">
+                <span className={status?.satisfied ? "text-emerald-600" : uploaded.length ? "text-amber-600" : "text-red-500"}>{status?.satisfied ? "✓" : uploaded.length ? "⚠" : "✕"}</span>
+                <p><span className="font-black text-violet-700">{objective.identifier}</span> {objective.text}</p>
+              </div>
+              <p className="mt-2 text-xs font-semibold text-slate-500">Expected evidence: {evidenceRequirement || "Evidence mapped to this objective"}</p>
+              <p className="mt-1 text-xs font-black text-slate-600">
+                {status?.satisfied ? "Evidence satisfied" : uploaded.length ? "Evidence uploaded — approval required" : "Missing evidence"}
+              </p>
+              {uploaded.length ? (
+                <div className="mt-2 space-y-1">
+                  {uploaded.map((item) => (
+                    <div key={item.id} className="flex items-center justify-between gap-3 rounded bg-slate-50 px-2 py-1.5 text-xs text-slate-600">
+                      <span className="min-w-0 truncate">{item.title} ({item.status})</span>
+                      {canDeleteEvidence ? (
+                        <button type="button" onClick={() => onDeleteEvidence?.(objective.id, item)} className="inline-flex shrink-0 items-center gap-1 rounded px-2 py-1 font-black text-red-600 hover:bg-red-50" aria-label={`Delete ${item.title}`}>
+                          <Trash2 size={13} /> Delete
+                        </button>
+                      ) : null}
+                    </div>
+                  ))}
+                </div>
+              ) : null}
+              <label className="mt-2 inline-flex cursor-pointer items-center rounded bg-violet-100 px-3 py-2 text-xs font-black text-violet-700">
+                Upload evidence for {objective.identifier || "objective"}
+                <input type="file" multiple accept={attachmentAccept} className="hidden" onChange={(event) => { onFilesSelected?.(objective.id, event.target.files); event.target.value = ""; }} />
+              </label>
+              {uploadStatusByObjective[objective.id] ? <p className="mt-2 text-xs font-bold text-blue-700">{uploadStatusByObjective[objective.id]}</p> : null}
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
+function fileToAttachmentMetadata(file, evidenceRecord) {
   const fileType = getSupportedFileType(file);
   if (!fileType) return null;
 
@@ -791,7 +995,48 @@ function fileToAttachmentMetadata(file) {
     fileType,
     fileSize: file.size,
     uploadedAt: new Date().toISOString(),
+    evidenceId: evidenceRecord?.id || "",
   };
+}
+
+function buildApiAttachmentsByControl(records = []) {
+  return (Array.isArray(records) ? records : []).reduce((attachmentsByControl, record) => {
+    const version = (record.versions || []).find((item) => item.id === record.currentVersionId) || record.versions?.[0];
+    if (!version?.fileName || !version.uploadedAt) return attachmentsByControl;
+    const attachment = {
+      fileName: version.fileName,
+      fileType: attachmentTypeFromFileName(version.fileName, version.contentType),
+      fileSize: version.fileSize || 0,
+      uploadedAt: version.uploadedAt || version.createdAt,
+      evidenceId: record.id,
+    };
+    (record.mappings || []).forEach((mapping) => {
+      if (mapping.objectiveId) return;
+      const controlId = mapping.control?.externalId || "";
+      if (!controlId) return;
+      attachmentsByControl[controlId] = mergeAttachmentMetadata(attachmentsByControl[controlId], [attachment]);
+    });
+    return attachmentsByControl;
+  }, {});
+}
+
+function mergeAttachmentMetadata(...attachmentGroups) {
+  const merged = [];
+  const seen = new Set();
+  attachmentGroups.flatMap((group) => Array.isArray(group) ? group : []).forEach((attachment) => {
+    if (!attachment) return;
+    const key = attachment.evidenceId || `${attachment.fileName}:${attachment.uploadedAt}`;
+    if (seen.has(key)) return;
+    seen.add(key);
+    merged.push(attachment);
+  });
+  return merged;
+}
+
+function attachmentTypeFromFileName(fileName, contentType = "") {
+  const extension = String(fileName || "").split(".").pop().toUpperCase();
+  if (supportedAttachmentTypes.has(extension)) return extension === "JPEG" ? "JPG" : extension;
+  return String(contentType || "FILE").toUpperCase();
 }
 
 function getSupportedFileType(file) {
@@ -840,6 +1085,7 @@ function StatusStat({ value, label, tone }) {
 function buildEvidenceRows(library) {
   const controlsById = new Map((library.controls || []).map((control) => [control.controlId || control["Control ID"] || control.id, control]));
   const evidenceById = new Map((library.evidence || []).map((evidence) => [evidence.id, evidence]));
+  const objectivesByControlId = new Map((library.assessmentObjectives || []).map((requirement) => [requirement.requirementId, requirement.objectives || []]));
 
   return (library.mappings || []).flatMap((mapping, mappingIndex) => {
     const control = controlsById.get(mapping.controlId);
@@ -866,6 +1112,7 @@ function buildEvidenceRows(library) {
         dateCollected: evidence.dateCollected || evidence["Date Collected"] || "",
         sourceSystemTool: evidence.sourceSystemTool || evidence["Source System / Tool"] || "",
         notesGaps: evidence.notesGaps || evidence["Notes / Gaps"] || "",
+        assessmentObjectives: objectivesByControlId.get(controlId) || [],
         sourceOrder: mapping.sourceOrder ?? evidence._sourceOrder ?? control?._sourceOrder ?? mappingIndex,
       };
     });
@@ -891,6 +1138,12 @@ function uniqueRowsByControl(rows = []) {
   return Array.from(rowsByControl.values());
 }
 
+function hasUploadedObjectiveEvidence(completionStatus) {
+  return (completionStatus?.objectives || []).some(
+    (objective) => Array.isArray(objective.uploadedEvidence) && objective.uploadedEvidence.length > 0
+  );
+}
+
 function parseControlFamily(controlFamily, controlId) {
   const [domainPart, ...familyNameParts] = controlFamily.split(" - ");
   const domain = domainPart || controlId.split(".")[0] || "";
@@ -905,5 +1158,6 @@ function emptyFrameworkLibrary() {
     controls: [],
     evidence: [],
     mappings: [],
+    assessmentObjectives: [],
   };
 }

@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { isApiEnabled } from "../../../api/client";
+import { getApiSession, isApiEnabled } from "../../../api/client";
 import { loadCMMCSPRSMetrics } from "../../../api/cmmc";
 import {
   CMMC_FRAMEWORK_ID,
@@ -10,7 +10,7 @@ import { useCMMCWorkflowState } from "./useCMMCWorkflowState";
 
 const cmmcLibrary = getFrameworkLibrary(CMMC_FRAMEWORK_ID) || emptyFrameworkLibrary();
 
-export function useCMMCSPRSCalculation(frameworkLibrary = cmmcLibrary) {
+export function useCMMCSPRSCalculation(frameworkLibrary = cmmcLibrary, { enabled = true } = {}) {
   const { workflowState } = useCMMCWorkflowState();
   const [apiMetrics, setApiMetrics] = useState(null);
   const [apiState, setApiState] = useState({ isLoading: Boolean(isApiEnabled), error: null });
@@ -21,41 +21,51 @@ export function useCMMCSPRSCalculation(frameworkLibrary = cmmcLibrary) {
   );
 
   useEffect(() => {
-    if (!isApiEnabled) return undefined;
+    if (!isApiEnabled || !enabled) return undefined;
     let cancelled = false;
+    let requestSequence = 0;
 
     const refreshMetrics = () => {
+      const sequence = ++requestSequence;
+      const session = getApiSession();
+      if (!session?.token || !session?.organizationId) {
+        setApiMetrics(null);
+        setApiState({ isLoading: false, error: new Error("Sign in to load CMMC metrics.") });
+        return;
+      }
       setApiState({ isLoading: true, error: null });
       loadCMMCSPRSMetrics(CMMC_FRAMEWORK_ID)
         .then((metrics) => {
-          if (cancelled) return;
+          if (cancelled || sequence !== requestSequence) return;
           setApiMetrics(metrics);
           setApiState({ isLoading: false, error: null });
         })
         .catch((error) => {
-          if (cancelled) return;
+          if (cancelled || sequence !== requestSequence) return;
           setApiState({ isLoading: false, error });
         });
     };
 
     refreshMetrics();
+    window.addEventListener("spectramind:session-updated", refreshMetrics);
     window.addEventListener("spectramind:cmmc-sprs-updated", refreshMetrics);
     window.addEventListener("spectramind:workspace-updated", refreshMetrics);
 
     return () => {
       cancelled = true;
+      window.removeEventListener("spectramind:session-updated", refreshMetrics);
       window.removeEventListener("spectramind:cmmc-sprs-updated", refreshMetrics);
       window.removeEventListener("spectramind:workspace-updated", refreshMetrics);
     };
-  }, []);
+  }, [enabled]);
 
-  const resolvedMetrics = isApiEnabled ? apiMetrics || emptySPRSMetrics(CMMC_FRAMEWORK_ID) : fallbackMetrics;
+  const resolvedMetrics = isApiEnabled && enabled ? apiMetrics || emptySPRSMetrics(CMMC_FRAMEWORK_ID) : fallbackMetrics;
 
   return {
     ...resolvedMetrics,
-    isLoading: apiState.isLoading,
-    error: apiState.error,
-    source: isApiEnabled ? "api" : "local",
+    isLoading: isApiEnabled && enabled ? apiState.isLoading : false,
+    error: isApiEnabled && enabled ? apiState.error : null,
+    source: isApiEnabled && enabled ? "api" : "local",
   };
 }
 

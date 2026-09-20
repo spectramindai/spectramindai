@@ -39,3 +39,9 @@ export async function requireTenant(request: FastifyRequest) {
     role: membership.role,
   };
 }
+
+export function requireWorkspaceManager(request: FastifyRequest) {
+  if (!["OWNER", "ADMIN", "COMPLIANCE_MANAGER", "SECURITY_MANAGER", "HR_MANAGER"].includes(request.tenant.role)) {
+    throw Object.assign(new Error("Only workspace managers can change compliance records"), { statusCode: 403 });
+  }
+}

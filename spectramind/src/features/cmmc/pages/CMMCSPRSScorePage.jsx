@@ -57,6 +57,9 @@ function CMMCSPRSScoreContent({ searchQuery, domainFilter, statusFilter }) {
     [controls, domainFilter, normalizedSearch, statusFilter]
   );
 
+  if (sprsMetrics.isLoading) return <p role="status" className="rounded-lg bg-white p-6">Loading CMMC SPRS metrics…</p>;
+  if (sprsMetrics.error) return <p role="alert" className="rounded-lg bg-rose-50 p-6 text-rose-700">SPRS metrics could not be loaded. Refresh to retry; no unverified totals are shown.</p>;
+
   return (
     <div className="mx-auto max-w-6xl space-y-4">
       <section className="rounded-lg bg-[#16162d] p-4 text-white shadow-xl shadow-slate-950/20">

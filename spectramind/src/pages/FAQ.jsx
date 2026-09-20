@@ -4,8 +4,8 @@ import Navbar from "../components/layout/Navbar";
 
 const faqs = [
   [
-    "What does SpectraMind do?",
-    "SpectraMind helps organizations manage compliance controls, evidence, risks, vendor reviews, and trust reporting in one place.",
+    "What does Compvd.ai do?",
+    "Compvd.ai helps organizations manage compliance controls, evidence, risks, vendor reviews, and trust reporting in one place.",
   ],
   [
     "Can visitors access the full product?",
@@ -33,10 +33,10 @@ export default function FAQ() {
               FAQs
             </p>
             <h1 className="mt-4 max-w-4xl text-5xl font-bold leading-tight text-slate-950 dark:text-white md:text-6xl">
-              Answers for teams evaluating SpectraMind.
+              Answers for teams evaluating Compvd.ai.
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-              A quick guide to what SpectraMind does, who can access the product,
+              A quick guide to what Compvd.ai does, who can access the product,
               and how the platform supports compliance work.
             </p>
           </div>

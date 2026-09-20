@@ -1,7 +1,7 @@
 import Navbar from "../components/layout/Navbar";
 import Hero from "../components/landing/Hero";
 import Features from "../components/landing/Features";
-import WhySpectraMind from "../components/landing/WhySpectraMind";
+import WhyCompvd from "../components/landing/WhyCompvd";
 import DashboardPreview from "../components/landing/DashboardPreview";
 import ContactSection from "../components/landing/ContactSection";
 import Footer from "../components/Footer";
@@ -19,7 +19,7 @@ export default function Landing() {
 
       <Features />
 
-      <WhySpectraMind />
+      <WhyCompvd />
 
       <DashboardPreview />
 

@@ -37,9 +37,9 @@ export default function ContactSection() {
       <div className="mx-auto max-w-7xl overflow-hidden rounded-lg border border-white/80 bg-white/58 shadow-2xl shadow-slate-900/10 backdrop-blur">
         <div className="grid gap-0 lg:grid-cols-[0.92fr_1.08fr]">
           <div className="relative overflow-hidden border-b border-white/70 p-8 lg:border-b-0 lg:border-r lg:p-10">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_18%,rgba(216,180,109,.28),transparent_18rem),radial-gradient(circle_at_82%_26%,rgba(255,255,255,.9),transparent_16rem)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_18%,rgba(25,200,154,.20),transparent_18rem),radial-gradient(circle_at_82%_26%,rgba(255,255,255,.9),transparent_16rem)]" />
             <div className="relative">
-              <p className="text-sm font-black uppercase tracking-widest text-blue-700">
+              <p className="text-sm font-black uppercase tracking-widest text-emerald-700">
                 Contact us
               </p>
               <h2 className="mt-4 text-4xl font-black leading-tight text-slate-900 md:text-5xl">
@@ -102,7 +102,7 @@ export default function ContactSection() {
               <div className="flex flex-col gap-3 sm:flex-row">
                 <button
                   type="submit"
-                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-blue-600/35 bg-[linear-gradient(135deg,rgba(255,246,216,.96),rgba(216,180,109,.74)_48%,rgba(168,117,52,.86))] px-5 font-bold text-slate-900 shadow-lg shadow-blue-600/20 transition hover:-translate-y-0.5"
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-[#071a33] px-5 font-bold text-white shadow-lg shadow-slate-900/20 transition hover:-translate-y-0.5 hover:bg-[#0d294d]"
                 >
                   Send request
                   <ArrowRight size={18} />
@@ -127,14 +127,14 @@ export default function ContactSection() {
                     to={route.to}
                     className="group rounded-lg border border-white/75 bg-white/55 p-4 shadow-lg shadow-slate-900/5 transition hover:-translate-y-0.5 hover:border-blue-600/25 hover:bg-white/80"
                   >
-                    <Icon size={20} className="text-blue-700" />
+                    <Icon size={20} className="text-emerald-700" />
                     <h3 className="mt-3 font-black text-slate-900">
                       {route.title}
                     </h3>
                     <p className="mt-2 text-sm leading-6 text-slate-600">
                       {route.copy}
                     </p>
-                    <span className="mt-4 inline-flex items-center gap-1 text-sm font-black text-blue-700">
+                    <span className="mt-4 inline-flex items-center gap-1 text-sm font-black text-emerald-700">
                       {route.action}
                       <ArrowRight size={15} className="transition group-hover:translate-x-0.5" />
                     </span>

@@ -522,7 +522,7 @@ function PoliciesContent({ activeFramework }) {
   const openImplementationRecord = (itemId, itemType = "Control") => {
     if (isCMMCWorkspace) {
       const policyKey = selectedPolicy?.id || itemId;
-      navigate(`/cmmc/evidence?tab=policies&item=${encodeURIComponent(policyKey)}`);
+      navigate(`/cmmc/policies?item=${encodeURIComponent(policyKey)}`);
       return;
     }
 

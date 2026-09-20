@@ -26,7 +26,7 @@ export default function SOC2Solution() {
                 Keep your SOC 2 program audit-ready all year.
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-                SpectraMind helps teams manage controls, evidence, risks, vendors,
+                Compvd.ai helps teams manage controls, evidence, risks, vendors,
                 and trust reporting in one operating rhythm for SOC 2 readiness.
               </p>
 

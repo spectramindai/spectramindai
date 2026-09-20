@@ -1,6 +1,7 @@
 import { ChevronDown, Menu, Search, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import BrandLogo from "../branding/BrandLogo";
 
 const productColumns = [
   {
@@ -153,24 +154,15 @@ export default function Navbar() {
   return (
     <header
       ref={navRef}
-      className="sticky top-0 z-50 mx-auto mt-4 w-[min(1320px,calc(100%_-_32px))] rounded-lg border border-white/75 bg-[#fffdf8]/80 px-3 py-3 shadow-xl shadow-slate-900/10 backdrop-blur-2xl"
+      className="sticky top-0 z-50 mx-auto mt-4 w-[min(1320px,calc(100%_-_32px))] rounded-xl border border-emerald-500/15 bg-white/88 px-3 py-3 shadow-xl shadow-slate-900/10 backdrop-blur-2xl"
     >
       <div className="grid items-center gap-4 lg:grid-cols-[auto_1fr_auto]">
         <Link
           to="/"
-          className="flex min-w-max items-center gap-3 rounded-lg px-2 py-1.5 text-slate-900 transition hover:bg-white/50"
+          className="flex min-w-max items-center rounded-lg px-2 py-1 text-slate-900 transition hover:bg-white/50"
           onClick={handleBrandClick}
         >
-          <span className="grid h-9 w-9 place-items-center rounded-lg border border-blue-300 bg-[linear-gradient(135deg,rgba(255,255,255,.95),rgba(216,180,109,.44)),linear-gradient(45deg,transparent_34%,rgba(255,255,255,.88)_50%,transparent_66%)] text-lg font-black text-blue-700 shadow-lg shadow-blue-600/20">
-            S
-          </span>
-          <span className="text-lg font-black tracking-normal">
-            Spectra
-            <span className="bg-[linear-gradient(135deg,#8f5f24_0%,#b98232_30%,#d3a853_56%,#a76e29_82%,#6f491f_100%)] bg-clip-text text-transparent">
-              Mind
-            </span>
-            .ai
-          </span>
+          <BrandLogo className="h-11 w-auto max-w-[168px] sm:max-w-[190px]" />
         </Link>
 
         <nav className="hidden justify-center gap-1 text-sm font-semibold text-slate-600 lg:flex">
@@ -216,7 +208,7 @@ export default function Navbar() {
           </Link>
           <Link
             to="/contact"
-            className="inline-flex min-h-11 items-center justify-center rounded-lg border border-blue-600/35 bg-[linear-gradient(135deg,rgba(255,246,216,.96),rgba(216,180,109,.74)_48%,rgba(168,117,52,.86))] px-5 text-sm font-bold text-slate-900 shadow-lg shadow-blue-600/20 transition hover:-translate-y-0.5"
+            className="inline-flex min-h-11 items-center justify-center rounded-lg bg-[#071a33] px-5 text-sm font-bold text-white shadow-lg shadow-slate-900/20 transition hover:-translate-y-0.5 hover:bg-[#0d294d]"
           >
             Book a Demo
           </Link>
@@ -247,7 +239,7 @@ export default function Navbar() {
             <Link
               to="/contact"
               onClick={closeMenus}
-              className="rounded-lg border border-blue-600/35 bg-blue-300/30 px-4 py-3 text-center font-bold text-slate-900"
+              className="rounded-lg bg-[#071a33] px-4 py-3 text-center font-bold text-white"
             >
               Book a Demo
             </Link>

@@ -6,7 +6,7 @@ const contacts = [
   {
     icon: Mail,
     title: "Email",
-    copy: "contact@spectramind.ai",
+    copy: "contact@compvd.ai",
   },
   {
     icon: LifeBuoy,
@@ -51,7 +51,7 @@ export default function Contact() {
                 <p>Pricing, implementation, and product access</p>
               </div>
               <a
-                href="mailto:contact@spectramind.ai"
+                href="mailto:contact@compvd.ai"
                 className="mt-7 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-semibold text-white transition hover:bg-blue-700"
               >
                 Email Us

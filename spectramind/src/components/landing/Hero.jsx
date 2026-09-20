@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle2, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowRight, CheckCircle2, ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroArt from "../../assets/hero.png";
 
@@ -17,13 +17,13 @@ const activity = [
 export default function Hero() {
   return (
     <section className="relative overflow-hidden px-6 pb-20 pt-10 lg:px-8">
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-96 bg-[radial-gradient(circle_at_18%_18%,rgba(216,180,109,.28),transparent_26rem),radial-gradient(circle_at_82%_14%,rgba(255,255,255,.9),transparent_25rem)]" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-[34rem] bg-[radial-gradient(circle_at_18%_18%,rgba(25,200,154,.22),transparent_26rem),radial-gradient(circle_at_82%_14%,rgba(7,26,51,.10),transparent_25rem)]" />
 
       <div className="relative mx-auto grid min-h-[calc(100vh-96px)] max-w-7xl items-center gap-12 lg:grid-cols-[0.92fr_1.08fr]">
         <div>
-          <div className="inline-flex items-center gap-2 rounded-lg border border-blue-600/20 bg-white/55 px-4 py-2 text-sm font-black uppercase tracking-widest text-blue-700 shadow-lg shadow-blue-600/10 backdrop-blur">
-            <Sparkles size={16} />
-            Compliance operations, ready for audit week
+          <div className="inline-flex items-center gap-2 rounded-full border border-emerald-500/25 bg-emerald-50/80 px-4 py-2 text-sm font-black uppercase tracking-widest text-emerald-700 shadow-lg shadow-emerald-900/5 backdrop-blur">
+            <ShieldCheck size={16} />
+            Compliance verified. Continuously.
           </div>
 
           <h1 className="mt-7 max-w-4xl text-5xl font-black leading-[1.03] tracking-normal text-slate-900 md:text-6xl">
@@ -31,7 +31,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-            SpectraMind gives security teams a live operating system for
+            Compvd.ai gives security teams a live operating system for
             controls, evidence, risk decisions, vendor reviews, and customer
             trust reporting.
           </p>
@@ -39,7 +39,7 @@ export default function Hero() {
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Link
               to="/login"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-blue-600/35 bg-[linear-gradient(135deg,rgba(255,246,216,.96),rgba(216,180,109,.74)_48%,rgba(168,117,52,.86))] px-6 font-bold text-slate-900 shadow-lg shadow-blue-600/20 transition hover:-translate-y-0.5"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-[#071a33] px-6 font-bold text-white shadow-xl shadow-slate-900/20 transition hover:-translate-y-0.5 hover:bg-[#0d294d]"
             >
               Get Started
               <ArrowRight size={18} />
@@ -47,7 +47,7 @@ export default function Hero() {
 
             <Link
               to="/testimonials"
-              className="inline-flex min-h-12 items-center justify-center rounded-lg border border-blue-600/25 bg-white/60 px-6 font-bold text-slate-800 shadow-lg shadow-slate-900/5 backdrop-blur transition hover:-translate-y-0.5 hover:bg-white/85 hover:text-blue-700"
+              className="inline-flex min-h-12 items-center justify-center rounded-lg border border-emerald-500/30 bg-white/70 px-6 font-bold text-[#071a33] shadow-lg shadow-slate-900/5 backdrop-blur transition hover:-translate-y-0.5 hover:border-emerald-500 hover:bg-white hover:text-emerald-700"
             >
               View Product
             </Link>
@@ -70,8 +70,8 @@ export default function Hero() {
             className="absolute right-2 top-4 hidden w-32 opacity-55 lg:block"
           />
 
-          <div className="absolute inset-0 overflow-hidden rounded-lg border border-white/80 bg-[#fffdf8] shadow-2xl shadow-slate-900/20">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_52%,rgba(255,255,255,.95),transparent_12rem),radial-gradient(circle_at_52%_58%,rgba(216,180,109,.24),transparent_18rem),linear-gradient(135deg,rgba(255,255,255,.64),rgba(236,231,220,.55))]" />
+          <div className="absolute inset-0 overflow-hidden rounded-2xl border border-emerald-500/15 bg-white shadow-2xl shadow-slate-900/15">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_52%,rgba(255,255,255,.96),transparent_12rem),radial-gradient(circle_at_52%_58%,rgba(25,200,154,.18),transparent_18rem),linear-gradient(135deg,rgba(255,255,255,.76),rgba(231,245,241,.72))]" />
             <div className="absolute right-5 top-5 h-24 w-24 border border-blue-300/60 bg-[linear-gradient(135deg,rgba(255,255,255,.74),rgba(216,180,109,.18)),linear-gradient(45deg,transparent_47%,rgba(255,255,255,.78)_50%,transparent_53%)] opacity-80 [clip-path:polygon(50%_0,92%_24%,78%_84%,50%_100%,22%_84%,8%_24%)]" />
 
             <div className="absolute left-[11%] top-[18%] h-52 w-40 rotate-[-9deg] rounded-lg border border-white/85 bg-[linear-gradient(135deg,rgba(255,255,255,.76),rgba(244,223,174,.2)),repeating-linear-gradient(0deg,transparent_0_18px,rgba(157,111,56,.08)_19px_20px)] shadow-xl shadow-slate-900/10" />
@@ -107,10 +107,10 @@ export default function Hero() {
                   <div key={name} className="rounded-lg border border-slate-200 bg-white/62 p-3">
                     <div className="mb-2 flex items-center justify-between">
                       <span className="font-bold text-slate-900">{name}</span>
-                      <span className="text-sm font-black text-blue-700">{value}</span>
+                      <span className="text-sm font-black text-emerald-700">{value}</span>
                     </div>
                     <div className="h-2 rounded-full bg-slate-100">
-                      <div className="h-2 rounded-full bg-[linear-gradient(90deg,#8eaf99,#d8b46d)]" style={{ width: value }} />
+                      <div className="h-2 rounded-full bg-[linear-gradient(90deg,#071a33,#19c89a)]" style={{ width: value }} />
                     </div>
                     <p className="mt-2 text-sm text-slate-500">{note}</p>
                   </div>
@@ -120,13 +120,13 @@ export default function Hero() {
 
             <div className="absolute bottom-5 left-1/2 hidden w-[min(340px,calc(100%_-_40px))] -translate-x-1/2 rounded-lg border border-white/80 bg-white/65 p-4 shadow-lg shadow-slate-900/10 backdrop-blur md:block">
               <div className="mb-3 flex items-center gap-2">
-                <ShieldCheck size={18} className="text-blue-700" />
+                <ShieldCheck size={18} className="text-emerald-600" />
                 <h3 className="font-black text-slate-900">Recent Activity</h3>
               </div>
               <div className="grid gap-2">
                 {activity.map((item) => (
                   <div key={item} className="flex gap-3 text-sm text-slate-600">
-                    <span className="mt-1.5 h-2 w-2 rounded-full bg-blue-500" />
+                    <span className="mt-1.5 h-2 w-2 rounded-full bg-emerald-500" />
                     <span>{item}</span>
                   </div>
                 ))}
@@ -141,10 +141,10 @@ export default function Hero() {
 
 function ArtifactCard({ className, label, value }) {
   return (
-    <div className={`absolute z-20 w-36 gap-1 rounded-lg border border-blue-600/30 bg-[#fffdf8]/80 p-4 shadow-xl shadow-slate-900/15 backdrop-blur ${className}`}>
+    <div className={`absolute z-20 w-36 gap-1 rounded-lg border border-emerald-500/25 bg-white/85 p-4 shadow-xl shadow-slate-900/15 backdrop-blur ${className}`}>
       <small className="text-xs font-bold text-slate-500">{label}</small>
-      <strong className="text-2xl font-black text-blue-700">{value}</strong>
-      <span className="block h-1.5 rounded-full bg-[linear-gradient(90deg,#d8b46d,rgba(255,255,255,.9))]" />
+      <strong className="text-2xl font-black text-[#071a33]">{value}</strong>
+      <span className="block h-1.5 rounded-full bg-[linear-gradient(90deg,#19c89a,rgba(25,200,154,.12))]" />
     </div>
   );
 }

@@ -4,7 +4,6 @@ import {
   CheckCircle2,
   LockKeyhole,
   ShieldCheck,
-  Sparkles,
 } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -12,6 +11,7 @@ import { useUser } from "../auth/UserContext";
 import { APP_NAME } from "../core/adapters/useOrganizationBranding";
 import { isApiEnabled } from "../api/client";
 import { findLocalAccount, findLocalInvitations } from "../data/localAccounts";
+import BrandLogo from "../components/branding/BrandLogo";
 
 const googleClientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
 
@@ -134,36 +134,33 @@ export default function Login() {
   return (
     <div className="min-h-screen text-slate-900">
       <div className="grid min-h-screen lg:grid-cols-[1.05fr_0.95fr]">
-        <section className="relative hidden overflow-hidden border-r border-white/70 bg-[#fffdf8]/68 px-12 py-8 shadow-2xl shadow-slate-900/5 backdrop-blur lg:flex lg:flex-col">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(216,180,109,.34),transparent_30%),radial-gradient(circle_at_85%_30%,rgba(255,255,255,.76),transparent_28%),linear-gradient(135deg,rgba(255,255,255,.46),rgba(236,231,220,.48))]" />
+        <section className="relative hidden overflow-hidden border-r border-emerald-400/15 bg-[#071a33] px-12 py-8 text-white shadow-2xl shadow-slate-900/10 lg:flex lg:flex-col">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(25,200,154,.28),transparent_30%),radial-gradient(circle_at_90%_70%,rgba(25,200,154,.12),transparent_28%),linear-gradient(135deg,rgba(7,26,51,.45),rgba(3,14,29,.82))]" />
 
-          <Link to="/" className="relative flex items-center gap-3">
-            <span className="flex h-11 w-11 items-center justify-center rounded-lg border border-blue-600/30 bg-[linear-gradient(135deg,rgba(255,255,255,.95),rgba(216,180,109,.52))] text-xl font-black text-blue-700 shadow-lg shadow-blue-600/20">
-              S
-            </span>
-            <span className="text-2xl font-black">{APP_NAME}</span>
+          <Link to="/" className="relative inline-flex w-fit rounded-xl bg-white px-3 py-2 shadow-xl transition hover:-translate-y-0.5">
+            <BrandLogo className="h-16 w-auto max-w-[245px]" />
           </Link>
 
           <div className="relative flex flex-1 flex-col justify-center py-8">
             <div className="max-w-xl">
-              <div className="inline-flex items-center gap-2 rounded-lg border border-blue-600/20 bg-white/52 px-4 py-2 text-sm font-bold text-blue-700 shadow-lg shadow-blue-600/10 backdrop-blur">
-                <Sparkles size={16} />
-                Secure access for compliance teams
+              <div className="inline-flex items-center gap-2 rounded-full border border-emerald-300/25 bg-emerald-400/10 px-4 py-2 text-sm font-bold text-emerald-300 backdrop-blur">
+                <ShieldCheck size={16} />
+                Verified access for compliance teams
               </div>
 
               <h1 className="mt-6 text-5xl font-black leading-tight">
                 Welcome back to your trust workspace.
               </h1>
 
-              <p className="mt-5 text-lg leading-8 text-slate-600">
+              <p className="mt-5 text-lg leading-8 text-slate-300">
                 Sign in to manage controls, evidence, risks, vendors, and trust
                 reporting from one focused operating system.
               </p>
 
               <div className="mt-7 space-y-3">
                 {highlights.map((item) => (
-                  <div key={item} className="flex items-center gap-3 text-slate-700">
-                    <CheckCircle2 size={20} className="text-emerald-600" />
+                  <div key={item} className="flex items-center gap-3 text-slate-200">
+                    <CheckCircle2 size={20} className="text-emerald-400" />
                     <span>{item}</span>
                   </div>
                 ))}
@@ -171,12 +168,12 @@ export default function Login() {
             </div>
           </div>
 
-          <div className="relative rounded-lg border border-white/75 bg-white/58 p-4 shadow-xl shadow-slate-900/5 backdrop-blur [@media(max-height:760px)]:hidden">
+          <div className="relative rounded-xl border border-white/10 bg-white/[.06] p-4 backdrop-blur [@media(max-height:760px)]:hidden">
             <div className="flex items-center gap-3">
-              <ShieldCheck className="text-blue-700" size={24} />
+              <ShieldCheck className="text-emerald-400" size={24} />
               <div>
                 <p className="font-black">Protected product access</p>
-                <p className="mt-1 text-sm leading-6 text-slate-600">
+                <p className="mt-1 text-sm leading-6 text-slate-300">
                   Public visitors can view testimonials. Authorized users can enter the dashboard.
                 </p>
               </div>
@@ -185,7 +182,10 @@ export default function Login() {
         </section>
 
         <section className="flex items-center justify-center px-6 py-10 lg:px-12">
-          <div className="w-full max-w-md rounded-lg border border-white/75 bg-white/68 p-6 shadow-2xl shadow-slate-900/10 backdrop-blur">
+          <div className="w-full max-w-md rounded-2xl border border-emerald-500/15 bg-white/90 p-7 shadow-2xl shadow-slate-900/10 backdrop-blur">
+            <Link to="/" className="mb-7 block w-fit lg:hidden">
+              <BrandLogo className="h-14 w-auto max-w-[210px]" />
+            </Link>
             <Link
               to="/"
               className="mb-10 inline-flex items-center gap-2 text-sm font-semibold text-slate-600 transition hover:text-blue-700"
@@ -195,7 +195,7 @@ export default function Login() {
             </Link>
 
             <div className="mb-8">
-              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-lg border border-blue-600/20 bg-blue-50 text-blue-700">
+              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-lg border border-emerald-500/20 bg-emerald-50 text-emerald-700">
                 <LockKeyhole size={24} />
               </div>
               <h2 className="text-4xl font-black">Sign in</h2>
@@ -244,7 +244,7 @@ export default function Login() {
                   required
                   value={email}
                   onChange={(event) => setEmail(event.target.value)}
-                  className="w-full rounded-lg border border-slate-300 bg-white/78 px-4 py-3 text-slate-900 outline-none transition focus:border-blue-600 focus:ring-4 focus:ring-blue-100"
+                  className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-emerald-500 focus:ring-4 focus:ring-emerald-100"
                 />
               </label>
 
@@ -258,7 +258,7 @@ export default function Login() {
                   required
                   value={password}
                   onChange={(event) => setPassword(event.target.value)}
-                  className="w-full rounded-lg border border-slate-300 bg-white/78 px-4 py-3 text-slate-900 outline-none transition focus:border-blue-600 focus:ring-4 focus:ring-blue-100"
+                  className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-emerald-500 focus:ring-4 focus:ring-emerald-100"
                 />
               </label>
 
@@ -270,7 +270,7 @@ export default function Login() {
 
               <div className="flex items-center justify-between gap-4 text-sm">
                 <label className="flex items-center gap-2 text-slate-600">
-                  <input type="checkbox" checked={remember} onChange={(event) => setRemember(event.target.checked)} className="h-4 w-4 rounded border-slate-300 accent-blue-700" />
+                  <input type="checkbox" checked={remember} onChange={(event) => setRemember(event.target.checked)} className="h-4 w-4 rounded border-slate-300 accent-emerald-600" />
                   Remember me
                 </label>
                 <Link to="/forgot-password" state={{ email }} className="font-semibold text-blue-700 hover:text-blue-800">
@@ -281,7 +281,7 @@ export default function Login() {
               <button
                 type="submit"
                 disabled={submitting}
-                className="flex w-full items-center justify-center gap-2 rounded-lg border border-blue-600/35 bg-[linear-gradient(135deg,rgba(255,246,216,.96),rgba(216,180,109,.74)_48%,rgba(168,117,52,.86))] px-4 py-3 font-bold text-slate-900 shadow-lg shadow-blue-600/20 transition hover:-translate-y-0.5"
+                className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#071a33] px-4 py-3 font-bold text-white shadow-lg shadow-slate-900/20 transition hover:-translate-y-0.5 hover:bg-[#0d294d]"
               >
                 {submitting ? "Signing in..." : "Sign In"}
                 <ArrowRight size={18} />

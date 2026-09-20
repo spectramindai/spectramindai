@@ -3,7 +3,7 @@ import { resolve } from "node:path";
 import { config } from "../../config.js";
 
 const folderByFramework: Record<string, string> = {
-  "soc2-type-ii": "soc2", "iso27001-2022": "iso27001", "cmmc-level-2": "cmmc", "tisax-isa-2027": "tisax",
+  "soc2-type-ii": "soc2", "iso27001-2022": "iso27001", "cmmc-level-2": "cmmc",
 };
 
 export async function readFrameworkCollection(frameworkId: string, file: string, property: string) {

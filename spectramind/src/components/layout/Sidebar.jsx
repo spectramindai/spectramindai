@@ -15,7 +15,7 @@ import {
   Wrench,
 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import { APP_NAME, useOrganizationLogo } from "../../core/adapters/useOrganizationBranding";
+import { useOrganizationLogo } from "../../core/adapters/useOrganizationBranding";
 import { useFrameworkWorkspace } from "../../framework/FrameworkWorkspaceContext";
 import { useUser } from "../../auth/UserContext";
 
@@ -46,6 +46,8 @@ export default function Sidebar() {
   const organizationLogo = useOrganizationLogo();
   const { activeFramework } = useFrameworkWorkspace();
   const { user } = useUser();
+  const organizationName = user?.organizationName?.trim() || "Your organization";
+  const organizationInitial = organizationName.charAt(0).toUpperCase();
   const complianceItems = activeFramework
     ? [frameworkItem, ...frameworkScopedComplianceItems]
     : [frameworkItem];
@@ -56,23 +58,19 @@ export default function Sidebar() {
         to="/dashboard"
         className="flex items-center gap-3 rounded-lg px-3 py-2 transition hover:bg-white/60"
       >
-        <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-lg border border-blue-600/30 bg-blue-600 text-lg font-black text-white shadow-lg shadow-blue-600/20">
-          {organizationLogo ? (
-            <img
-              src={organizationLogo}
-              alt="Organization logo"
-              className="h-full w-full bg-white object-contain p-1"
-            />
-          ) : (
-            "S"
-          )}
-        </span>
-        <div>
-          <p className="text-xl font-black leading-tight text-slate-950">
-            {user?.organizationName || APP_NAME}
+        {organizationLogo ? (
+          <img src={organizationLogo} alt={`${organizationName} logo`} className="h-11 w-11 shrink-0 rounded-lg border border-slate-200 bg-white object-contain p-1" />
+        ) : (
+          <span className="grid h-11 w-11 shrink-0 place-items-center rounded-lg bg-[#071a33] text-lg font-black text-white shadow-md">
+            {organizationInitial}
+          </span>
+        )}
+        <div className="min-w-0">
+          <p className="truncate text-lg font-black leading-tight text-slate-950">
+            {organizationName}
           </p>
-          <p className="text-[10px] font-bold text-slate-400">
-            Compliance workspace
+          <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.16em] text-emerald-600">
+            Compvd.ai
           </p>
         </div>
       </Link>
@@ -105,11 +103,14 @@ function NavGroup({ title, items, activePath }) {
 
 function NavItem({ item, activePath }) {
   const Icon = item.icon;
-  const isActive = activePath === item.path;
+  const isActive = activePath === item.path
+    || activePath.startsWith(`${item.path}/`)
+    || (item.path === "/implementation" && (activePath === "/cmmc" || activePath.startsWith("/cmmc/")));
 
   return (
     <Link
       to={item.path}
+      aria-current={isActive ? "page" : undefined}
       className={`flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-semibold transition ${
         isActive
           ? "border border-blue-600/20 bg-blue-50 text-blue-800 shadow-sm shadow-blue-600/10"

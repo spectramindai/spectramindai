@@ -651,12 +651,14 @@ model EvidenceMapping {
   id         String         @id @default(uuid()) @db.Uuid
   evidenceId String         @db.Uuid
   controlId  String         @db.Uuid
+  objectiveId String?
   evidence   EvidenceRecord @relation(fields: [evidenceId], references: [id], onDelete: Cascade)
   control    Control        @relation(fields: [controlId], references: [id], onDelete: Cascade)
   createdAt  DateTime       @default(now())
 
-  @@unique([evidenceId, controlId])
+  @@unique([evidenceId, controlId, objectiveId])
   @@index([controlId])
+  @@index([controlId, objectiveId])
 }
 
 model OrganizationFramework {

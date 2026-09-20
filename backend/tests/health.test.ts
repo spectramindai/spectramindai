@@ -29,4 +29,18 @@ describe("health endpoint", () => {
     expect(response.headers["access-control-allow-methods"]).toContain("PUT");
     expect(response.headers["access-control-allow-headers"]).toContain("authorization");
   });
+
+  it("allows Vite fallback ports during local development and tests", async () => {
+    const response = await app.inject({
+      method: "OPTIONS",
+      url: "/api/v1/auth/login",
+      headers: {
+        origin: "http://localhost:5174",
+        "access-control-request-method": "POST",
+        "access-control-request-headers": "content-type",
+      },
+    });
+    expect(response.statusCode).toBe(204);
+    expect(response.headers["access-control-allow-origin"]).toBe("http://localhost:5174");
+  });
 });

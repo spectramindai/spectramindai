@@ -14,7 +14,31 @@ const schema = z.object({
   LOCAL_FILE_ROOT: z.string().default("./data/files"),
   AZURE_STORAGE_ACCOUNT_NAME: z.string().min(3).max(24).optional(),
   AZURE_STORAGE_CONTAINER_NAME: z.string().min(3).default("cmmc-evidence"),
+  CMMC_ONLY_MODE: z.string().default("true").transform(value => value.toLowerCase() === "true"),
+  ALL_FRAMEWORK_ACCESS_EMAILS: z.string().default("vijay@spectramindsolutions.com"),
 });
 
 export const config = schema.parse(process.env);
 export const corsOrigins = config.CORS_ORIGINS.split(",").map((origin) => origin.trim().replace(/\/$/, "")).filter(Boolean);
+export const allFrameworkAccessEmails = new Set(
+  config.ALL_FRAMEWORK_ACCESS_EMAILS.split(",").map((email) => email.trim().toLowerCase()).filter(Boolean),
+);
+
+export function hasAllFrameworkAccess(email?: string) {
+  return allFrameworkAccessEmails.has(String(email || "").trim().toLowerCase());
+}
+
+export function isAllowedCorsOrigin(origin?: string) {
+  if (!origin) return true;
+  const normalizedOrigin = origin.replace(/\/$/, "");
+  if (corsOrigins.includes(normalizedOrigin)) return true;
+  if (config.NODE_ENV !== "production") {
+    try {
+      const url = new URL(normalizedOrigin);
+      return url.protocol === "http:" && ["localhost", "127.0.0.1"].includes(url.hostname);
+    } catch {
+      return false;
+    }
+  }
+  return false;
+}

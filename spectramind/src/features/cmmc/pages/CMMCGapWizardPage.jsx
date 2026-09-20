@@ -48,7 +48,7 @@ export default function CMMCGapWizardPage() {
             </p>
           </div>
           <Link
-            to="/cmmc"
+            to="/cmmc/scope"
             className="inline-flex min-h-8 shrink-0 items-center justify-center rounded-md border border-amber-200 bg-white px-3 text-[12px] font-black text-slate-700 shadow-sm transition hover:bg-amber-50"
           >
             Complete Scoping →

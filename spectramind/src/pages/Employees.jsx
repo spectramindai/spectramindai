@@ -256,7 +256,7 @@ export default function Employees() {
         ? await createInvitation({ email: employee.email, role: apiRole(employee.role) })
         : createLocalInvitations({ emails: [employee.email], role: employee.role, organizationId: user.organizationId, organizationName: user.organizationName, invitedBy: user.email })[0];
       setEmployees((current) => current.map((item) => item.id === employee.id ? { ...item, employeeStatus: "Invited", invitationId: invitation?.id, tags: [...new Set([...(item.tags || []), "Invited"])] } : item));
-      setActionNotice(`Invitation sent internally to ${employee.email}.`);
+      setActionNotice(`Workspace access prepared for ${employee.email}. They will join this organization automatically when they sign in.`);
     } catch (error) { setApiError(error.message || "Could not prepare this invitation."); }
   };
 
@@ -278,7 +278,7 @@ export default function Employees() {
         hasAccess: false,
         tags: (item.tags || []).filter((tag) => tag !== "Invited"),
       } : item));
-      setActionNotice(`Invitation removed. ${employee.email} no longer has workspace access and can be invited again.`);
+      setActionNotice(`Pending workspace access removed for ${employee.email}.`);
     } catch (error) { setApiError(error.message || "Could not remove this invitation."); }
   };
 
@@ -699,13 +699,13 @@ export default function Employees() {
                         <div className="flex items-center gap-1">
                           <button
                             type="button"
-                            title={emp.employeeStatus === "Invited" ? "Remove pending invitation" : emp.membershipId ? "Remove workspace access" : "Send workspace invitation"}
+                            title={emp.employeeStatus === "Invited" ? "Cancel pending workspace access" : emp.membershipId ? "Remove workspace access" : "Prepare workspace access"}
                             disabled={!canManagePeople || (Boolean(emp.membershipId) && !canRemoveEmployee(emp))}
                             onClick={() => emp.employeeStatus === "Invited" ? handleRevokeInvitation(emp) : emp.membershipId ? handleRemoveAccess(emp) : handleInviteEmployee(emp)}
                             className={`inline-flex items-center gap-1 rounded-lg px-2 py-1.5 text-xs font-black disabled:cursor-not-allowed disabled:text-slate-400 ${emp.employeeStatus === "Invited" || emp.membershipId ? "text-rose-700 hover:bg-rose-50" : "text-blue-700 hover:bg-blue-50"}`}
                           >
                             <Mail size={14} />
-                            {emp.employeeStatus === "Invited" ? "Remove invite" : emp.membershipId ? "Remove access" : "Send invite"}
+                            {emp.employeeStatus === "Invited" ? "Cancel access" : emp.membershipId ? "Remove access" : "Grant access"}
                           </button>
                           <button
                             type="button"

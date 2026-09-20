@@ -100,12 +100,12 @@ export default function Settings() {
                         className="h-full w-full bg-white object-contain p-1"
                       />
                     ) : (
-                      "S"
+                      (organizationName.trim().charAt(0) || "O").toUpperCase()
                     )}
                   </div>
                   <div>
                     <p className="text-sm font-black text-slate-900 dark:text-white">
-                      {logoValue ? "Custom logo active" : `${APP_NAME} default logo`}
+                      {logoValue ? "Custom logo active" : "Organization initial shown"}
                     </p>
                     <p className="mt-1 text-sm font-semibold text-slate-500 dark:text-slate-400">
                       {isApiEnabled ? "Shared securely with this organization." : "Stored locally for this development browser."}

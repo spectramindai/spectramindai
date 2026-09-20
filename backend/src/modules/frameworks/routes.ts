@@ -1,8 +1,10 @@
-import type { FastifyInstance, FastifyRequest } from "fastify";
+import type { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
 import { z } from "zod";
 import { prisma } from "../../lib/prisma.js";
 import { requireTenant } from "../../plugins/auth.js";
-import { validateCMMCImplementedEvidence } from "../../services/cmmcEvidenceValidationService.js";
+import { getEvidenceCompletionStatus, validateCMMCImplementedEvidence } from "../../services/cmmcEvidenceValidationService.js";
+import { config, hasAllFrameworkAccess } from "../../config.js";
+import { CMMC_FRAMEWORK_ID, getCMMCSPRSMetrics } from "../../services/cmmcSPRSService.js";
 
 const activateSchema = z.object({ frameworkId: z.string().min(1) });
 const checkoutSchema = z.object({ frameworkIds: z.array(z.string().min(1)).min(1).max(20).transform(values => [...new Set(values)]) });
@@ -17,19 +19,28 @@ const updateSchema = z.object({
 export async function frameworkRoutes(app: FastifyInstance) {
   app.addHook("preHandler", requireTenant);
 
-  app.get("/frameworks", async () => prisma.framework.findMany({ orderBy: { name: "asc" } }));
+  app.get("/frameworks", async (request) => {
+    const frameworks = await prisma.framework.findMany({ orderBy: { name: "asc" } });
+    return frameworks.map(framework => ({
+      ...framework,
+      applicable: isFrameworkApplicable(framework.id, request.user.email),
+      availabilityReason: isFrameworkApplicable(framework.id, request.user.email) ? null : "Inapplicable for this CMMC-only client demo",
+    }));
+  });
 
   app.get("/organization-frameworks", async (request) => {
-    return prisma.organizationFramework.findMany({
+    const records = await prisma.organizationFramework.findMany({
       where: { organizationId: request.tenant.organizationId },
       include: { framework: true },
       orderBy: { createdAt: "asc" },
     });
+    return records.filter((record) => isFrameworkApplicable(record.frameworkId, request.user.email));
   });
 
   app.post("/organization-frameworks", async (request, reply) => {
     requireWorkspaceManager(request);
     const { frameworkId } = activateSchema.parse(request.body);
+    if (!isFrameworkApplicable(frameworkId, request.user.email)) return frameworkInapplicable(reply);
     const framework = await prisma.framework.findUnique({ where: { id: frameworkId } });
     if (!framework) return reply.code(404).send({ code: "FRAMEWORK_NOT_FOUND", message: "Framework not found" });
 
@@ -51,6 +62,7 @@ export async function frameworkRoutes(app: FastifyInstance) {
   app.post("/organization-frameworks/checkout", async (request, reply) => {
     requireWorkspaceManager(request);
     const { frameworkIds } = checkoutSchema.parse(request.body);
+    if (frameworkIds.some(frameworkId => !isFrameworkApplicable(frameworkId, request.user.email))) return frameworkInapplicable(reply);
     const frameworkCount = await prisma.framework.count({ where: { id: { in: frameworkIds } } });
     if (frameworkCount !== frameworkIds.length) return reply.code(404).send({ code: "FRAMEWORK_NOT_FOUND", message: "One or more frameworks were not found" });
 
@@ -74,6 +86,7 @@ export async function frameworkRoutes(app: FastifyInstance) {
 
   app.get("/controls", async (request) => {
     const query = z.object({ frameworkId: z.string(), status: z.enum(["NOT_STARTED", "IN_PROGRESS", "IMPLEMENTED", "NOT_APPLICABLE"]).optional() }).parse(request.query);
+    if (!isFrameworkApplicable(query.frameworkId, request.user.email)) throw Object.assign(new Error("Framework is inapplicable while CMMC-only demo mode is active"), { statusCode: 403 });
     const active = await prisma.organizationFramework.findUnique({ where: { organizationId_frameworkId: { organizationId: request.tenant.organizationId, frameworkId: query.frameworkId } } });
     if (!active?.active) throw Object.assign(new Error("Framework is not active for this organization"), { statusCode: 403 });
 
@@ -84,11 +97,17 @@ export async function frameworkRoutes(app: FastifyInstance) {
     });
   });
 
+  app.get("/cmmc/requirements/:requirementId/evidence-completion", async (request) => {
+    const { requirementId } = z.object({ requirementId: z.string().min(1).max(100) }).parse(request.params);
+    return getEvidenceCompletionStatus(prisma, requirementId, request.tenant.organizationId);
+  });
+
   app.patch("/controls/:controlId/implementation", async (request, reply) => {
     const { controlId } = z.object({ controlId: z.uuid() }).parse(request.params);
     const input = updateSchema.parse(request.body);
     const control = await prisma.control.findUnique({ where: { id: controlId } });
     if (!control) return reply.code(404).send({ code: "CONTROL_NOT_FOUND", message: "Control not found" });
+    if (!isFrameworkApplicable(control.frameworkId, request.user.email)) return frameworkInapplicable(reply);
 
     const active = await prisma.organizationFramework.findUnique({ where: { organizationId_frameworkId: { organizationId: request.tenant.organizationId, frameworkId: control.frameworkId } } });
     if (!active?.active) return reply.code(403).send({ code: "FRAMEWORK_NOT_ACTIVE", message: "Framework is not active" });
@@ -118,7 +137,9 @@ export async function frameworkRoutes(app: FastifyInstance) {
 
   app.get("/dashboard", async (request) => {
     const query = z.object({ frameworkId: z.string().optional() }).parse(request.query);
-    const activated = await prisma.organizationFramework.findMany({ where: { organizationId: request.tenant.organizationId, active: true, frameworkId: query.frameworkId }, include: { framework: { select: { name: true, slug: true } } }, orderBy: { createdAt: "asc" } });
+    if (query.frameworkId && !isFrameworkApplicable(query.frameworkId, request.user.email)) throw Object.assign(new Error("Framework is inapplicable while CMMC-only demo mode is active"), { statusCode: 403 });
+    const frameworkId = config.CMMC_ONLY_MODE && !hasAllFrameworkAccess(request.user.email) ? CMMC_FRAMEWORK_ID : query.frameworkId;
+    const activated = await prisma.organizationFramework.findMany({ where: { organizationId: request.tenant.organizationId, active: true, frameworkId }, include: { framework: { select: { name: true, slug: true } } }, orderBy: { createdAt: "asc" } });
     const frameworkIds = activated.map((item) => item.frameworkId);
     const [totalControls, implementations, recentActivity, evidenceTotal, approvedEvidenceControls, policiesTotal, policiesPublished, openRisks, highRisks, openTasks, auditFindings, employeesTotal, trainingAssigned, trainingCompleted] = await Promise.all([
       prisma.control.count({ where: { frameworkId: { in: frameworkIds } } }),
@@ -152,7 +173,12 @@ export async function frameworkRoutes(app: FastifyInstance) {
       prisma.trainingAssignment.count({ where: { course: { organizationId: request.tenant.organizationId } } }),
       prisma.trainingAssignment.count({ where: { course: { organizationId: request.tenant.organizationId }, status: "COMPLETED" } }),
     ]);
-    const implemented = implementations.find((row) => row.status === "IMPLEMENTED")?._count ?? 0;
+    const rawImplemented = implementations.find((row) => row.status === "IMPLEMENTED")?._count ?? 0;
+    const cmmcMetrics = frameworkIds.includes(CMMC_FRAMEWORK_ID)
+      ? await getCMMCSPRSMetrics(request.tenant.organizationId, CMMC_FRAMEWORK_ID)
+      : null;
+    const isCMMCOnlyDashboard = frameworkIds.length === 1 && frameworkIds[0] === CMMC_FRAMEWORK_ID;
+    const implemented = isCMMCOnlyDashboard ? cmmcMetrics?.implementedControls ?? 0 : rawImplemented;
     const frameworkProgress = await Promise.all(activated.map(async item => {
       const [controls, implementedControls, approvedControlEvidence, totalPolicies, publishedPolicies] = await Promise.all([
         prisma.control.count({ where: { frameworkId: item.frameworkId } }),
@@ -165,13 +191,44 @@ export async function frameworkRoutes(app: FastifyInstance) {
         prisma.policy.count({ where: { organizationId: request.tenant.organizationId, frameworkId: item.frameworkId } }),
         prisma.policy.count({ where: { organizationId: request.tenant.organizationId, frameworkId: item.frameworkId, status: "ACTIVE" } }),
       ]);
+      if (item.frameworkId === CMMC_FRAMEWORK_ID && cmmcMetrics) {
+        return {
+          id: item.frameworkId,
+          name: item.framework.name,
+          slug: item.framework.slug,
+          totalControls: cmmcMetrics.totalControls,
+          implementedControls: cmmcMetrics.implementedControls,
+          approvedEvidenceControls: approvedControlEvidence.length,
+          totalPolicies,
+          publishedPolicies,
+          progressPercent: cmmcMetrics.readinessPercentage,
+        };
+      }
       const scoreTotal = controls * 2 + totalPolicies;
       const scoreCompleted = implementedControls + approvedControlEvidence.length + publishedPolicies;
       return { id: item.frameworkId, name: item.framework.name, slug: item.framework.slug, totalControls: controls, implementedControls, approvedEvidenceControls: approvedControlEvidence.length, totalPolicies, publishedPolicies, progressPercent: scoreTotal ? Math.round(scoreCompleted / scoreTotal * 100) : 0 };
     }));
     const scoreTotal = totalControls * 2 + policiesTotal;
     const scoreCompleted = implemented + approvedEvidenceControls.length + policiesPublished;
-    return { totalControls, implementedControls: implemented, approvedEvidenceControls: approvedEvidenceControls.length, progressPercent: scoreTotal ? Math.round(scoreCompleted / scoreTotal * 100) : 0, frameworkProgress, byStatus: implementations, recentActivity, evidenceTotal, policiesTotal, policiesPublished, openRisks, highRisks, openTasks, auditFindings, employeesTotal, trainingAssigned, trainingCompleted, trainingCompletionPercent: trainingAssigned ? Math.round(trainingCompleted / trainingAssigned * 100) : 0 };
+    const progressPercent = isCMMCOnlyDashboard ? cmmcMetrics?.readinessPercentage ?? 0 : scoreTotal ? Math.round(scoreCompleted / scoreTotal * 100) : 0;
+    const byStatus = isCMMCOnlyDashboard && cmmcMetrics ? [
+      { status: "IMPLEMENTED", _count: cmmcMetrics.implementedControls },
+      { status: "IN_PROGRESS", _count: cmmcMetrics.inProgressControls },
+      { status: "NOT_STARTED", _count: cmmcMetrics.notStartedControls },
+      { status: "NOT_APPLICABLE", _count: cmmcMetrics.notApplicableControls },
+    ] : implementations;
+    return { totalControls, implementedControls: implemented, approvedEvidenceControls: approvedEvidenceControls.length, progressPercent, frameworkProgress, byStatus, recentActivity, evidenceTotal, policiesTotal, policiesPublished, openRisks, highRisks, openTasks, auditFindings, employeesTotal, trainingAssigned, trainingCompleted, trainingCompletionPercent: trainingAssigned ? Math.round(trainingCompleted / trainingAssigned * 100) : 0 };
+  });
+}
+
+function isFrameworkApplicable(frameworkId: string, email?: string) {
+  return !config.CMMC_ONLY_MODE || hasAllFrameworkAccess(email) || frameworkId === CMMC_FRAMEWORK_ID;
+}
+
+function frameworkInapplicable(reply: FastifyReply) {
+  return reply.code(403).send({
+    code: "FRAMEWORK_INAPPLICABLE",
+    message: "This framework is temporarily inapplicable while CMMC-only demo mode is active",
   });
 }
 

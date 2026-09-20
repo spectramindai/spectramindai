@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { APP_NAME } from "../core/adapters/useOrganizationBranding";
+import BrandLogo from "./branding/BrandLogo";
 
 export default function Footer() {
   return (
@@ -7,9 +8,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-4">
           <div>
-            <h2 className="text-3xl font-black">
-              {APP_NAME}
-            </h2>
+            <BrandLogo className="h-16 w-auto max-w-[230px]" />
             <p className="mt-4 max-w-sm leading-relaxed text-slate-600">
               A unified platform for compliance management, evidence
               collection, risk monitoring, vendor oversight, and trust

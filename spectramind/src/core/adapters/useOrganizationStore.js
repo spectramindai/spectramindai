@@ -146,14 +146,25 @@ export function useOrganizationStore(frameworkId = null) {
   useEffect(() => {
     if (!isApiEnabled || !activeFrameworkId) return;
     let cancelled = false;
-    loadApiWorkspace(activeFrameworkId)
-      .then((data) => {
-        if (!cancelled) {
-          setApiWorkspaceData(data);
-        }
-      })
-      .catch(() => {});
-    return () => { cancelled = true; };
+    let requestSequence = 0;
+    const refreshApiWorkspace = () => {
+      const sequence = ++requestSequence;
+      loadApiWorkspace(activeFrameworkId)
+        .then((data) => {
+          if (!cancelled && sequence === requestSequence) setApiWorkspaceData(data);
+        })
+        .catch(() => {});
+    };
+    refreshApiWorkspace();
+    window.addEventListener("spectramind:workspace-updated", refreshApiWorkspace);
+    window.addEventListener("spectramind:session-updated", refreshApiWorkspace);
+    window.addEventListener("focus", refreshApiWorkspace);
+    return () => {
+      cancelled = true;
+      window.removeEventListener("spectramind:workspace-updated", refreshApiWorkspace);
+      window.removeEventListener("spectramind:session-updated", refreshApiWorkspace);
+      window.removeEventListener("focus", refreshApiWorkspace);
+    };
   }, [activeFrameworkId, user]);
 
   // Sync workspace state automatically across all components/pages in real-time

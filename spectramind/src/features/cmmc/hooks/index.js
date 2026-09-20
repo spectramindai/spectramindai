@@ -5,6 +5,7 @@ export { useCMMCSPRSCalculation } from "./useCMMCSPRSCalculation";
 export {
   CMMC_CONTROL_WORKFLOW_STATUS_OPTIONS,
   CMMC_CONTROL_STATUS_VALIDATION_EVENT,
+  CMMC_PERSISTENCE_ERROR_EVENT,
   getCMMCControlWorkflowFields,
   getCMMCEvidenceWorkflowFields,
   getCMMCOrganizationProfile,

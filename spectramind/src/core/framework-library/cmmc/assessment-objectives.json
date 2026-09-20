@@ -1,0 +1,2271 @@
+{
+  "source": {
+    "cmmcGuide": "CMMC Assessment Guide – Level 2, Version 2.13 (September 2024)",
+    "cmmcGuideUrl": "https://dodcio.defense.gov/Portals/0/Documents/CMMC/AssessmentGuideL2v2.pdf",
+    "objectiveDataset": "NIST SP 800-171A Assessment Procedures CSV",
+    "objectiveDatasetUrl": "https://csrc.nist.gov/csrc/media/Publications/sp/800-171a/final/documents/sp800-171A-assessment-procedures.csv",
+    "note": "CMMC Level 2 assessment objectives are the NIST SP 800-171A assessment objectives identified by requirement and bracketed objective identifier."
+  },
+  "requirements": [
+    {
+      "requirementId": "AC.L2-3.1.1",
+      "requirementNumber": "3.1.1",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "authorized users are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "processes acting on behalf of authorized users are identified."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "devices (including other systems) authorized to connect to the system are identified."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "system access is limited to authorized users."
+        },
+        {
+          "id": "e",
+          "identifier": "[e]",
+          "text": "system access is limited to processes acting on behalf of authorized users."
+        },
+        {
+          "id": "f",
+          "identifier": "[f]",
+          "text": "system access is limited to authorized devices (including other systems)."
+        }
+      ]
+    },
+    {
+      "requirementId": "AC.L2-3.1.2",
+      "requirementNumber": "3.1.2",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "the types of transactions and functions that authorized users are permitted to execute are defined"
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "system access is limited to the defined types of transactions and functions for authorized users."
+        }
+      ]
+    },
+    {
+      "requirementId": "AC.L2-3.1.3",
+      "requirementNumber": "3.1.3",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "information flow control policies are defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "methods and enforcement mechanisms for controlling the flow of CUI are defined."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "designated sources and destinations (e.g., networks, individuals, and devices) for CUI within systems and between interconnected systems are identified."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "authorizations for controlling the flow of CUI are defined."
+        },
+        {
+          "id": "e",
+          "identifier": "[e]",
+          "text": "approved authorizations for controlling the flow of CUI are enforced."
+        }
+      ]
+    },
+    {
+      "requirementId": "AC.L2-3.1.4",
+      "requirementNumber": "3.1.4",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "the duties of individuals requiring separation to reduce the risk of malevolent activity are defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "organization-defined duties of individuals requiring separation are separated."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "separate accounts for individuals whose duties and accesses must be separated to reduce the risk of malevolent activity or collusion are established"
+        }
+      ]
+    },
+    {
+      "requirementId": "AC.L2-3.1.5",
+      "requirementNumber": "3.1.5",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "privileged accounts are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "access to privileged accounts is authorized in accordance with the principle of least privilege."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "security functions are identified."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "access to security functions is authorized in accordance with the principle of least privilege."
+        }
+      ]
+    },
+    {
+      "requirementId": "AC.L2-3.1.6",
+      "requirementNumber": "3.1.6",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "nonsecurity functions are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "users are required to use non-privileged accounts or roles when accessing nonsecurity functions."
+        }
+      ]
+    },
+    {
+      "requirementId": "AC.L2-3.1.7",
+      "requirementNumber": "3.1.7",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "privileged functions are defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "non-privileged users are defined."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "non-privileged users are prevented from executing privileged functions."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "the execution of privileged functions is captured in audit logs."
+        }
+      ]
+    },
+    {
+      "requirementId": "AC.L2-3.1.8",
+      "requirementNumber": "3.1.8",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "the means of limiting unsuccessful logon attempts is defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "the defined means of limiting unsuccessful logon attempts is implemented."
+        }
+      ]
+    },
+    {
+      "requirementId": "AC.L2-3.1.9",
+      "requirementNumber": "3.1.9",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "privacy and security notices required by CUI-specified rules are identified, consistent, and associated with the specific CUI category"
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "privacy and security notices are displayed."
+        }
+      ]
+    },
+    {
+      "requirementId": "AC.L2-3.1.10",
+      "requirementNumber": "3.1.10",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "the period of inactivity after which the system initiates a session lock is defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "access to the system and viewing of data is prevented by initiating a session lock after the defined period of inactivity."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "previously visible information is concealed via a pattern-hiding display after the defined period of inactivity."
+        }
+      ]
+    },
+    {
+      "requirementId": "AC.L2-3.1.11",
+      "requirementNumber": "3.1.11",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "conditions requiring a user session to terminate are defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "a user session is automatically terminated after any of the defined conditions occur."
+        }
+      ]
+    },
+    {
+      "requirementId": "AC.L2-3.1.12",
+      "requirementNumber": "3.1.12",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "remote access sessions are permitted."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "the types of permitted remote access are identified."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "remote access sessions are controlled."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "remote access sessions are monitored."
+        }
+      ]
+    },
+    {
+      "requirementId": "AC.L2-3.1.13",
+      "requirementNumber": "3.1.13",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "cryptographic mechanisms to protect the confidentiality of remote access sessions are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "cryptographic mechanisms to protect the confidentiality of remote access sessions are implemented."
+        }
+      ]
+    },
+    {
+      "requirementId": "AC.L2-3.1.14",
+      "requirementNumber": "3.1.14",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "managed access control points are identified and implemented."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "remote access is routed through managed network access control points."
+        }
+      ]
+    },
+    {
+      "requirementId": "AC.L2-3.1.15",
+      "requirementNumber": "3.1.15",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "privileged commands authorized for remote execution are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "security-relevant information authorized to be accessed remotely is identified."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "the execution of the identified privileged commands via remote access is authorized."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "access to the identified security-relevant information via remote access is authorized."
+        }
+      ]
+    },
+    {
+      "requirementId": "AC.L2-3.1.16",
+      "requirementNumber": "3.1.16",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "wireless access points are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "wireless access is authorized prior to allowing such connections."
+        }
+      ]
+    },
+    {
+      "requirementId": "AC.L2-3.1.17",
+      "requirementNumber": "3.1.17",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "wireless access to the system is protected using encryption."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "wireless access to the system is protected using authentication."
+        }
+      ]
+    },
+    {
+      "requirementId": "AC.L2-3.1.18",
+      "requirementNumber": "3.1.18",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "mobile devices that process, store, or transmit CUI are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "the connection of mobile devices is authorized."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "mobile device connections are monitored and logged."
+        }
+      ]
+    },
+    {
+      "requirementId": "AC.L2-3.1.19",
+      "requirementNumber": "3.1.19",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "mobile devices and mobile computing platforms that process, store, or transmit CUI are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "encryption is employed to protect CUI on identified mobile devices and mobile computing platforms."
+        }
+      ]
+    },
+    {
+      "requirementId": "AC.L2-3.1.20",
+      "requirementNumber": "3.1.20",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "connections to external systems are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "use of external systems is identified."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "connections to external systems are verified."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "use of external systems is verified."
+        },
+        {
+          "id": "e",
+          "identifier": "[e]",
+          "text": "connections to external systems are controlled/limited."
+        },
+        {
+          "id": "f",
+          "identifier": "[f]",
+          "text": "use of external systems is controlled/limited."
+        }
+      ]
+    },
+    {
+      "requirementId": "AC.L2-3.1.21",
+      "requirementNumber": "3.1.21",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "use of organizational portable storage devices containing CUI on external systems is identified and documented."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "limits on the use of organizational portable storage devices containing CUI on external systems are defined."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "use of organizational portable storage devices containing CUI on external systems is limited as defined."
+        }
+      ]
+    },
+    {
+      "requirementId": "AC.L2-3.1.22",
+      "requirementNumber": "3.1.22",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "individuals authorized to post or process information on publicly accessible systems are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "procedures to ensure CUI is not posted or processed on publicly accessible systems are identified."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "a review process in in place prior to posting of any content to publicly accessible systems."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "content on publicly accessible information systems is reviewed to ensure that it does not include CUI."
+        },
+        {
+          "id": "e",
+          "identifier": "[e]",
+          "text": "mechanisms are in place to remove and address improper posting of CUI."
+        }
+      ]
+    },
+    {
+      "requirementId": "AT.L2-3.2.1",
+      "requirementNumber": "3.2.1",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "security risks associated with organizational activities involving CUI are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "policies, standards, and procedures related to the security of the system are identified."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "managers, systems administrators, and users of the system are made aware of the security risks associated with their activities."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "managers, systems administrators, and users of the system are made aware of the applicable policies, standards, and procedures related to the security of the system."
+        }
+      ]
+    },
+    {
+      "requirementId": "AT.L2-3.2.2",
+      "requirementNumber": "3.2.2",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "information security-related duties, roles, and responsibilities are defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "information security-related duties, roles, and responsibilities are assigned to designated personnel."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "personnel are adequately trained to carry out their assigned information security-related duties, roles, and responsibilities."
+        }
+      ]
+    },
+    {
+      "requirementId": "AT.L2-3.2.3",
+      "requirementNumber": "3.2.3",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "potential indicators associated with insider threats are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "security awareness training on recognizing and reporting potential indicators of insider threat is provided to managers and employees."
+        }
+      ]
+    },
+    {
+      "requirementId": "AU.L2-3.3.1",
+      "requirementNumber": "3.3.1",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "audit logs needed (i.e., event types to be logged) to enable the monitoring, analysis, investigation, and reporting of unlawful or unauthorized system activity are specified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "the content of audit records needed to support monitoring, analysis, investigation, and reporting of unlawful or unauthorized system activity is defined."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "audit records are created (generated)."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "audit records, once created, contain the defined content."
+        },
+        {
+          "id": "e",
+          "identifier": "[e]",
+          "text": "retention requirements for audit records are defined."
+        },
+        {
+          "id": "f",
+          "identifier": "[f]",
+          "text": "audit records are retained as defined."
+        }
+      ]
+    },
+    {
+      "requirementId": "AU.L2-3.3.2",
+      "requirementNumber": "3.3.2",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "the content of the audit records needed to support the ability to uniquely trace users to their actions is defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "audit records, once created, contain the defined content."
+        }
+      ]
+    },
+    {
+      "requirementId": "AU.L2-3.3.3",
+      "requirementNumber": "3.3.3",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "a process for determining when to review logged events is defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "event types being logged are reviewed in accordance with the defined review process."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "event types being logged are updated based on the review."
+        }
+      ]
+    },
+    {
+      "requirementId": "AU.L2-3.3.4",
+      "requirementNumber": "3.3.4",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "personnel or roles to be alerted in the event of an audit logging process failure are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "types of audit logging process failures for which alert will be generated are defined."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "identified personnel or roles are alerted in the event of an audit logging process failure."
+        }
+      ]
+    },
+    {
+      "requirementId": "AU.L2-3.3.5",
+      "requirementNumber": "3.3.5",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "audit record review, analysis, and reporting processes for investigation and response to indications of unlawful, unauthorized, suspicious, or unusual activity are defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "defined audit record review, analysis, and reporting processes are correlated."
+        }
+      ]
+    },
+    {
+      "requirementId": "AU.L2-3.3.6",
+      "requirementNumber": "3.3.6",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "an audit record reduction capability that supports on-demand analysis is provided."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "a report generation capability that supports on-demand reporting is provided."
+        }
+      ]
+    },
+    {
+      "requirementId": "AU.L2-3.3.7",
+      "requirementNumber": "3.3.7",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "internal system clocks are used to generate time stamps for audit records."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "an authoritative source with which to compare and synchronize internal system clocks is specified."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "internal system clocks used to generate time stamps for audit records are compared to and synchronized with the specified authoritative time source."
+        }
+      ]
+    },
+    {
+      "requirementId": "AU.L2-3.3.8",
+      "requirementNumber": "3.3.8",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "audit information is protected from unauthorized access."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "audit information is protected from unauthorized modification."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "audit information is protected from unauthorized deletion."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "audit logging tools are protected from unauthorized access."
+        },
+        {
+          "id": "e",
+          "identifier": "[e]",
+          "text": "audit logging tools are protected from unauthorized modification."
+        },
+        {
+          "id": "f",
+          "identifier": "[f]",
+          "text": "audit logging tools are protected from unauthorized deletion."
+        }
+      ]
+    },
+    {
+      "requirementId": "AU.L2-3.3.9",
+      "requirementNumber": "3.3.9",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "a subset of privileged users granted access to manage audit logging functionality is defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "management of audit logging functionality is limited to the defined subset of privileged users."
+        }
+      ]
+    },
+    {
+      "requirementId": "CM.L2-3.4.1",
+      "requirementNumber": "3.4.1",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "a baseline configuration is established."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "the baseline configuration includes hardware, software, firmware, and documentation."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "the baseline configuration is maintained (reviewed and updated) throughout the system development life cycle."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "a system inventory is established."
+        },
+        {
+          "id": "e",
+          "identifier": "[e]",
+          "text": "the system inventory includes hardware, software, firmware, and documentation."
+        },
+        {
+          "id": "f",
+          "identifier": "[f]",
+          "text": "the inventory is maintained (reviewed and updated) throughout the system development life cycle."
+        }
+      ]
+    },
+    {
+      "requirementId": "CM.L2-3.4.2",
+      "requirementNumber": "3.4.2",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "security configuration settings for information technology products employed in the system are established and included in the baseline configuration."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "security configuration settings for information technology products employed in the system are enforced."
+        }
+      ]
+    },
+    {
+      "requirementId": "CM.L2-3.4.3",
+      "requirementNumber": "3.4.3",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "changes to the system are tracked."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "changes to the system are reviewed."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "changes to the system are approved or disapproved."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "changes to the system are logged."
+        }
+      ]
+    },
+    {
+      "requirementId": "CM.L2-3.4.5",
+      "requirementNumber": "3.4.5",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "physical access restrictions associated with changes to the system are defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "physical access restrictions associated with changes to the system are documented."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "physical access restrictions associated with changes to the system are approved."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "physical access restrictions associated with changes to the system are enforced."
+        },
+        {
+          "id": "e",
+          "identifier": "[e]",
+          "text": "logical access restrictions associated with changes to the system are defined."
+        },
+        {
+          "id": "f",
+          "identifier": "[f]",
+          "text": "logical access restrictions associated with changes to the system are documented."
+        },
+        {
+          "id": "g",
+          "identifier": "[g]",
+          "text": "logical access restrictions associated with changes to the system are approved."
+        },
+        {
+          "id": "h",
+          "identifier": "[h]",
+          "text": "logical access restrictions associated with changes to the system are enforced."
+        }
+      ]
+    },
+    {
+      "requirementId": "CM.L2-3.4.6",
+      "requirementNumber": "3.4.6",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "essential system capabilities are defined based on the principle of least functionality."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "the system is configured to provide only the defined essential capabilities."
+        }
+      ]
+    },
+    {
+      "requirementId": "CM.L2-3.4.7",
+      "requirementNumber": "3.4.7",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "essential programs are defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "the use of nonessential programs is defined."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "the use of nonessential programs is restricted, disabled, or prevented as defined."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "essential functions are defined."
+        },
+        {
+          "id": "e",
+          "identifier": "[e]",
+          "text": "the use of nonessential functions is defined."
+        },
+        {
+          "id": "f",
+          "identifier": "[f]",
+          "text": "the use of nonessential functions is restricted, disabled, or prevented as defined."
+        },
+        {
+          "id": "g",
+          "identifier": "[g]",
+          "text": "essential ports are defined."
+        },
+        {
+          "id": "h",
+          "identifier": "[h]",
+          "text": "the use of nonessential ports is defined."
+        },
+        {
+          "id": "i",
+          "identifier": "[i]",
+          "text": "the use of nonessential ports is restricted, disabled, or prevented as defined."
+        },
+        {
+          "id": "j",
+          "identifier": "[j]",
+          "text": "essential protocols are defined."
+        },
+        {
+          "id": "k",
+          "identifier": "[k]",
+          "text": "the use of nonessential protocols is defined."
+        },
+        {
+          "id": "l",
+          "identifier": "[l]",
+          "text": "the use of nonessential protocols is restricted, disabled, or prevented as defined."
+        },
+        {
+          "id": "m",
+          "identifier": "[m]",
+          "text": "essential services are defined."
+        },
+        {
+          "id": "n",
+          "identifier": "[n]",
+          "text": "the use of nonessential services is defined."
+        },
+        {
+          "id": "o",
+          "identifier": "[o]",
+          "text": "the use of nonessential services is restricted, disabled, or prevented as defined."
+        }
+      ]
+    },
+    {
+      "requirementId": "CM.L2-3.4.8",
+      "requirementNumber": "3.4.8",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "a policy specifying whether whitelisting or blacklisting is to be implemented is specified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "the software allowed to execute under whitelisting or denied use under blacklisting is specified."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "whitelisting to allow the execution of authorized software or blacklisting to prevent the use of unauthorized software is implemented as specified."
+        }
+      ]
+    },
+    {
+      "requirementId": "CM.L2-3.4.9",
+      "requirementNumber": "3.4.9",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "a policy for controlling the installation of software by users is established."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "installation of software by users is controlled based on the established policy."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "installation of software by users is monitored."
+        }
+      ]
+    },
+    {
+      "requirementId": "IA.L2-3.5.1",
+      "requirementNumber": "3.5.1",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "system users are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "processes acting on behalf of users are identified."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "devices accessing the system are identified."
+        }
+      ]
+    },
+    {
+      "requirementId": "IA.L2-3.5.2",
+      "requirementNumber": "3.5.2",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "the identity of each user is authenticated or verified as a prerequisite to system access."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "the identity of each process acting on behalf of a user is authenticated or verified as a prerequisite to system access."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "the identity of each device accessing or connecting to the system is authenticated or verified as a prerequisite to system access."
+        }
+      ]
+    },
+    {
+      "requirementId": "IA.L2-3.5.3",
+      "requirementNumber": "3.5.3",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "privileged accounts are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "multifactor authentication is implemented for local access to privileged accounts."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "multifactor authentication is implemented for network access to privileged accounts."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "multifactor authentication is implemented for network access to non-privileged accounts."
+        }
+      ]
+    },
+    {
+      "requirementId": "IA.L2-3.5.5",
+      "requirementNumber": "3.5.5",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "a period within which identifiers cannot be reused is defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "reuse of identifiers is prevented within the defined period."
+        }
+      ]
+    },
+    {
+      "requirementId": "IA.L2-3.5.6",
+      "requirementNumber": "3.5.6",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "a period of inactivity after which an identifier is disabled is defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "identifiers are disabled after the defined period of inactivity."
+        }
+      ]
+    },
+    {
+      "requirementId": "IA.L2-3.5.7",
+      "requirementNumber": "3.5.7",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "password complexity requirements are defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "password change of character requirements are defined."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "minimum password complexity requirements as defined are enforced when new passwords are created."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "minimum password change of character requirements as defined are enforced when new passwords are created."
+        }
+      ]
+    },
+    {
+      "requirementId": "IA.L2-3.5.8",
+      "requirementNumber": "3.5.8",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "the number of generations during which a password cannot be reused is specified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "reuse of passwords is prohibited during the specified number of generations."
+        }
+      ]
+    },
+    {
+      "requirementId": "IA.L2-3.5.10",
+      "requirementNumber": "3.5.10",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "passwords are cryptographically protected in storage."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "passwords are cryptographically protected in transit."
+        }
+      ]
+    },
+    {
+      "requirementId": "IR.L2-3.6.1",
+      "requirementNumber": "3.6.1",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "an operational incident-handling capability is established."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "the operational incident-handling capability includes preparation."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "the operational incident-handling capability includes detection."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "the operational incident-handling capability includes analysis."
+        },
+        {
+          "id": "e",
+          "identifier": "[e]",
+          "text": "the operational incident-handling capability includes containment."
+        },
+        {
+          "id": "f",
+          "identifier": "[f]",
+          "text": "the operational incident-handling capability includes recovery."
+        },
+        {
+          "id": "g",
+          "identifier": "[g]",
+          "text": "the operational incident-handling capability includes user response activities."
+        }
+      ]
+    },
+    {
+      "requirementId": "IR.L2-3.6.2",
+      "requirementNumber": "3.6.2",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "incidents are tracked."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "incidents are documented."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "authorities to whom incidents are to be reported are identified."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "organizational officials to whom incidents are to be reported are identified."
+        },
+        {
+          "id": "e",
+          "identifier": "[e]",
+          "text": "identified authorities are notified of incidents."
+        },
+        {
+          "id": "f",
+          "identifier": "[f]",
+          "text": "identified organizational officials are notified of incidents."
+        }
+      ]
+    },
+    {
+      "requirementId": "MA.L2-3.7.2",
+      "requirementNumber": "3.7.2",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "tools used to conduct system maintenance are controlled."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "techniques used to conduct system maintenance are controlled."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "mechanisms used to conduct system maintenance are controlled."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "personnel used to conduct system maintenance are controlled."
+        }
+      ]
+    },
+    {
+      "requirementId": "MA.L2-3.7.5",
+      "requirementNumber": "3.7.5",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "multifactor authentication is required to establish nonlocal maintenance sessions via external network connections."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "nonlocal maintenance sessions established via external network connections are terminated when nonlocal maintenance is complete."
+        }
+      ]
+    },
+    {
+      "requirementId": "MP.L2-3.8.1",
+      "requirementNumber": "3.8.1",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "paper media containing CUI is physically controlled."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "digital media containing CUI is physically controlled."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "paper media containing CUI is securely stored."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "digital media containing CUI is securely stored."
+        }
+      ]
+    },
+    {
+      "requirementId": "MP.L2-3.8.3",
+      "requirementNumber": "3.8.3",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "system media containing CUI is sanitized or destroyed before disposal."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "system media containing CUI is sanitized before it is released for reuse."
+        }
+      ]
+    },
+    {
+      "requirementId": "MP.L2-3.8.4",
+      "requirementNumber": "3.8.4",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "media containing CUI is marked with applicable CUI markings."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "media containing CUI is marked with distribution limitations."
+        }
+      ]
+    },
+    {
+      "requirementId": "MP.L2-3.8.5",
+      "requirementNumber": "3.8.5",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "access to media containing CUI is controlled."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "accountability for media containing CUI is maintained during transport outside of controlled areas."
+        }
+      ]
+    },
+    {
+      "requirementId": "PS.L2-3.9.2",
+      "requirementNumber": "3.9.2",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "a policy and/or process for terminating system access authorization and any credentials coincident with personnel actions is established."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "system access and credentials are terminated consistent with personnel actions such as termination or transfer."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "the system is protected during and after personnel transfer actions."
+        }
+      ]
+    },
+    {
+      "requirementId": "PE.L2-3.10.1",
+      "requirementNumber": "3.10.1",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "authorized individuals allowed physical access are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "physical access to organizational systems is limited to authorized individuals."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "physical access to equipment is limited to authorized individuals."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "physical access to operating environments is limited to authorized individuals."
+        }
+      ]
+    },
+    {
+      "requirementId": "PE.L2-3.10.2",
+      "requirementNumber": "3.10.2",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "the physical facility where that system resides is protected."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "the support infrastructure for that system is protected."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "the physical facility where that system resides is monitored."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "the support infrastructure for that system is monitored."
+        }
+      ]
+    },
+    {
+      "requirementId": "PE.L2-3.10.3",
+      "requirementNumber": "3.10.3",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "visitors are escorted."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "visitor activity is monitored."
+        }
+      ]
+    },
+    {
+      "requirementId": "PE.L2-3.10.5",
+      "requirementNumber": "3.10.5",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "physical access devices are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "physical access devices are controlled."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "physical access devices are managed."
+        }
+      ]
+    },
+    {
+      "requirementId": "PE.L2-3.10.6",
+      "requirementNumber": "3.10.6",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "safeguarding measures for CUI are defined for alternate work sites."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "safeguarding measures for CUI are enforced for alternate work sites."
+        }
+      ]
+    },
+    {
+      "requirementId": "RA.L2-3.11.1",
+      "requirementNumber": "3.11.1",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "the frequency to assess risk to organizational operations, organizational assets, and individuals is defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "risk to organizational operations, organizational assets, and individuals resulting from the operation of an organizational system that processes, stores, or transmits CUI is assessed with the defined frequency."
+        }
+      ]
+    },
+    {
+      "requirementId": "RA.L2-3.11.2",
+      "requirementNumber": "3.11.2",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "the frequency to scan for vulnerabilities in an organizational system and its applications that process, store, or transmit CUI is defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "vulnerability scans are performed in an organizational system that processes, stores, or transmits CUI with the defined frequency."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "vulnerability scans are performed in an application that contains CUI with the defined frequency."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "vulnerability scans are performed in an organizational system that processes, stores, or transmits CUI when new vulnerabilities are identified."
+        },
+        {
+          "id": "e",
+          "identifier": "[e]",
+          "text": "vulnerability scans are performed in an application that contains CUI when new vulnerabilities are identified."
+        }
+      ]
+    },
+    {
+      "requirementId": "RA.L2-3.11.3",
+      "requirementNumber": "3.11.3",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "vulnerabilities are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "vulnerabilities are remediated in accordance with risk assessments."
+        }
+      ]
+    },
+    {
+      "requirementId": "CA.L2-3.12.1",
+      "requirementNumber": "3.12.1",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "the frequency of security control assessments is defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "security controls are assessed with the defined frequency to determine if the controls are effective in their application."
+        }
+      ]
+    },
+    {
+      "requirementId": "CA.L2-3.12.2",
+      "requirementNumber": "3.12.2",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "deficiencies and vulnerabilities to be addressed by the plan of action are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "a plan of action is developed to correct identified deficiencies and reduce or eliminate identified vulnerabilities."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "the plan of action is implemented to correct identified deficiencies and reduce or eliminate identified vulnerabilities."
+        }
+      ]
+    },
+    {
+      "requirementId": "CA.L2-3.12.4",
+      "requirementNumber": "3.12.4",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "a system security plan is developed."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "the system boundary is described and documented in the system security plan."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "the system environment of operation is described and documented in the system security plan."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "the security requirements identified and approved by the designated authority as non-applicable are identified."
+        },
+        {
+          "id": "e",
+          "identifier": "[e]",
+          "text": "the method of security requirement implementation is described and documented in the system security plan."
+        },
+        {
+          "id": "f",
+          "identifier": "[f]",
+          "text": "the relationship with or connection to other systems is described and documented in the system security plan."
+        },
+        {
+          "id": "g",
+          "identifier": "[g]",
+          "text": "the frequency to update the system security plan is defined."
+        },
+        {
+          "id": "h",
+          "identifier": "[h]",
+          "text": "system security plan is updated with the defined frequency."
+        }
+      ]
+    },
+    {
+      "requirementId": "SC.L2-3.13.1",
+      "requirementNumber": "3.13.1",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "the external system boundary is defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "key internal system boundaries are defined."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "communications are monitored at the external system boundary."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "communications are monitored at key internal boundaries."
+        },
+        {
+          "id": "e",
+          "identifier": "[e]",
+          "text": "communications are controlled at the external system boundary."
+        },
+        {
+          "id": "f",
+          "identifier": "[f]",
+          "text": "communications are controlled at key internal boundaries."
+        },
+        {
+          "id": "g",
+          "identifier": "[g]",
+          "text": "communications are protected at the external system boundary."
+        },
+        {
+          "id": "h",
+          "identifier": "[h]",
+          "text": "communications are protected at key internal boundaries."
+        }
+      ]
+    },
+    {
+      "requirementId": "SC.L2-3.13.2",
+      "requirementNumber": "3.13.2",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "architectural designs that promote effective information security are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "software development techniques that promote effective information security are identified."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "systems engineering principles that promote effective information security are identified."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "identified architectural designs that promote effective information security are employed."
+        },
+        {
+          "id": "e",
+          "identifier": "[e]",
+          "text": "identified software development techniques that promote effective information security are employed."
+        },
+        {
+          "id": "f",
+          "identifier": "[f]",
+          "text": "identified systems engineering principles that promote effective information security are employed."
+        }
+      ]
+    },
+    {
+      "requirementId": "SC.L2-3.13.3",
+      "requirementNumber": "3.13.3",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "user functionality is identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "system management functionality is identified."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "user functionality is separated from system management functionality."
+        }
+      ]
+    },
+    {
+      "requirementId": "SC.L2-3.13.5",
+      "requirementNumber": "3.13.5",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "publicly accessible system components are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "subnetworks for publicly accessible system components are physically or logically separated from internal networks."
+        }
+      ]
+    },
+    {
+      "requirementId": "SC.L2-3.13.6",
+      "requirementNumber": "3.13.6",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "network communications traffic is denied by default."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "network communications traffic is allowed by exception."
+        }
+      ]
+    },
+    {
+      "requirementId": "SC.L2-3.13.8",
+      "requirementNumber": "3.13.8",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "cryptographic mechanisms intended to prevent unauthorized disclosure of CUI are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "alternative physical safeguards intended to prevent unauthorized disclosure of CUI are identified."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "either cryptographic mechanisms or alternative physical safeguards are implemented to prevent unauthorized disclosure of CUI during transmission."
+        }
+      ]
+    },
+    {
+      "requirementId": "SC.L2-3.13.9",
+      "requirementNumber": "3.13.9",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "a period of inactivity to terminate network connections associated with communications sessions is defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "network connections associated with communications sessions are terminated at the end of the sessions."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "network connections associated with communications sessions are terminated after the defined period of inactivity."
+        }
+      ]
+    },
+    {
+      "requirementId": "SC.L2-3.13.10",
+      "requirementNumber": "3.13.10",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "cryptographic keys are established whenever cryptography is employed."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "cryptographic keys are managed whenever cryptography is employed."
+        }
+      ]
+    },
+    {
+      "requirementId": "SC.L2-3.13.12",
+      "requirementNumber": "3.13.12",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "collaborative computing devices are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "collaborative computing devices provide indication to users of devices in use."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "remote activation of collaborative computing devices is prohibited."
+        }
+      ]
+    },
+    {
+      "requirementId": "SC.L2-3.13.13",
+      "requirementNumber": "3.13.13",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "use of mobile code is controlled."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "use of mobile code is monitored."
+        }
+      ]
+    },
+    {
+      "requirementId": "SC.L2-3.13.14",
+      "requirementNumber": "3.13.14",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "use of Voice over Internet Protocol (VoIP) technologies is controlled."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "use of Voice over Internet Protocol (VoIP) technologies is monitored."
+        }
+      ]
+    },
+    {
+      "requirementId": "SI.L2-3.14.1",
+      "requirementNumber": "3.14.1",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "the time within which to identify system flaws is specified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "system flaws are identified within the specified time frame."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "the time within which to report system flaws is specified."
+        },
+        {
+          "id": "d",
+          "identifier": "[d]",
+          "text": "system flaws are reported within the specified time frame."
+        },
+        {
+          "id": "e",
+          "identifier": "[e]",
+          "text": "the time within which to correct system flaws is specified."
+        },
+        {
+          "id": "f",
+          "identifier": "[f]",
+          "text": "system flaws are corrected within the specified time frame."
+        }
+      ]
+    },
+    {
+      "requirementId": "SI.L2-3.14.2",
+      "requirementNumber": "3.14.2",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "designated locations for malicious code protection are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "protection from malicious code at designated locations is provided."
+        }
+      ]
+    },
+    {
+      "requirementId": "SI.L2-3.14.3",
+      "requirementNumber": "3.14.3",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "response actions to system security alerts and advisories are identified."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "system security alerts and advisories are monitored."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "actions in response to system security alerts and advisories are taken."
+        }
+      ]
+    },
+    {
+      "requirementId": "SI.L2-3.14.5",
+      "requirementNumber": "3.14.5",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "the frequency for malicious code scans is defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "malicious code scans are performed with the defined frequency."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "real-time malicious code scans of files from external sources as files are downloaded, opened, or executed are performed."
+        }
+      ]
+    },
+    {
+      "requirementId": "SI.L2-3.14.6",
+      "requirementNumber": "3.14.6",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "the system is monitored to detect attacks and indicators of potential attacks."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "inbound communications traffic is monitored to detect attacks and indicators of potential attacks."
+        },
+        {
+          "id": "c",
+          "identifier": "[c]",
+          "text": "outbound communications traffic is monitored to detect attacks and indicators of potential attacks."
+        }
+      ]
+    },
+    {
+      "requirementId": "SI.L2-3.14.7",
+      "requirementNumber": "3.14.7",
+      "objectives": [
+        {
+          "id": "a",
+          "identifier": "[a]",
+          "text": "authorized use of the system is defined."
+        },
+        {
+          "id": "b",
+          "identifier": "[b]",
+          "text": "unauthorized use of the system is identified."
+        }
+      ]
+    },
+    {
+      "requirementId": "CM.L2-3.4.4",
+      "requirementNumber": "3.4.4",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "the security impact of changes to each organizational system is analyzed prior to implementation."
+        }
+      ]
+    },
+    {
+      "requirementId": "IA.L2-3.5.4",
+      "requirementNumber": "3.5.4",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "replay-resistant authentication mechanisms are implemented for all network account access to privileged and non-privileged accounts."
+        }
+      ]
+    },
+    {
+      "requirementId": "IA.L2-3.5.9",
+      "requirementNumber": "3.5.9",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "an immediate change to a permanent password is required when a temporary password is used for system logon."
+        }
+      ]
+    },
+    {
+      "requirementId": "IA.L2-3.5.11",
+      "requirementNumber": "3.5.11",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "authentication information is obscured during the authentication process."
+        }
+      ]
+    },
+    {
+      "requirementId": "IR.L2-3.6.3",
+      "requirementNumber": "3.6.3",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "the incident response capability is tested."
+        }
+      ]
+    },
+    {
+      "requirementId": "MA.L2-3.7.1",
+      "requirementNumber": "3.7.1",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "system maintenance is performed."
+        }
+      ]
+    },
+    {
+      "requirementId": "MA.L2-3.7.3",
+      "requirementNumber": "3.7.3",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "equipment to be removed from organizational spaces for off-site maintenance is sanitized of any CUI."
+        }
+      ]
+    },
+    {
+      "requirementId": "MA.L2-3.7.4",
+      "requirementNumber": "3.7.4",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "media containing diagnostic and test programs are checked for malicious code before being used in organizational systems that process, store, or transmit CUI."
+        }
+      ]
+    },
+    {
+      "requirementId": "MA.L2-3.7.6",
+      "requirementNumber": "3.7.6",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "maintenance personnel without required access authorization are supervised during maintenance activities."
+        }
+      ]
+    },
+    {
+      "requirementId": "MP.L2-3.8.2",
+      "requirementNumber": "3.8.2",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "access to CUI on system media is limited to authorized users."
+        }
+      ]
+    },
+    {
+      "requirementId": "MP.L2-3.8.6",
+      "requirementNumber": "3.8.6",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "the confidentiality of CUI stored on digital media is protected during transport using cryptographic mechanisms or alternative physical safeguards."
+        }
+      ]
+    },
+    {
+      "requirementId": "MP.L2-3.8.7",
+      "requirementNumber": "3.8.7",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "the use of removable media on system components containing CUI is controlled."
+        }
+      ]
+    },
+    {
+      "requirementId": "MP.L2-3.8.8",
+      "requirementNumber": "3.8.8",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "the use of portable storage devices is prohibited when such devices have no identifiable owner."
+        }
+      ]
+    },
+    {
+      "requirementId": "MP.L2-3.8.9",
+      "requirementNumber": "3.8.9",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "the confidentiality of backup CUI is protected at storage locations."
+        }
+      ]
+    },
+    {
+      "requirementId": "PS.L2-3.9.1",
+      "requirementNumber": "3.9.1",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "individuals are screened prior to authorizing access to organizational systems."
+        }
+      ]
+    },
+    {
+      "requirementId": "PE.L2-3.10.4",
+      "requirementNumber": "3.10.4",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "audit logs of physical access are maintained."
+        }
+      ]
+    },
+    {
+      "requirementId": "CA.L2-3.12.3",
+      "requirementNumber": "3.12.3",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "security controls are monitored on an ongoing basis to ensure the continued effectiveness of those controls."
+        }
+      ]
+    },
+    {
+      "requirementId": "SC.L2-3.13.4",
+      "requirementNumber": "3.13.4",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "unauthorized and unintended information transfer via shared system resources is prevented."
+        }
+      ]
+    },
+    {
+      "requirementId": "SC.L2-3.13.7",
+      "requirementNumber": "3.13.7",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "remote devices are prevented from simultaneously establishing non-remote connections with the system and communicating via some other connection to resources in external networks (i.e., split tunneling)."
+        }
+      ]
+    },
+    {
+      "requirementId": "SC.L2-3.13.11",
+      "requirementNumber": "3.13.11",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "FIPS-validated cryptography is employed to protect the confidentiality of CUI."
+        }
+      ]
+    },
+    {
+      "requirementId": "SC.L2-3.13.15",
+      "requirementNumber": "3.13.15",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "the authenticity of communications sessions is protected."
+        }
+      ]
+    },
+    {
+      "requirementId": "SC.L2-3.13.16",
+      "requirementNumber": "3.13.16",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "the confidentiality of CUI at rest is protected."
+        }
+      ]
+    },
+    {
+      "requirementId": "SI.L2-3.14.4",
+      "requirementNumber": "3.14.4",
+      "objectives": [
+        {
+          "id": "requirement",
+          "identifier": "",
+          "text": "malicious code protection mechanisms are updated when new releases are available."
+        }
+      ]
+    }
+  ]
+}

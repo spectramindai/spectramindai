@@ -27,8 +27,8 @@ export default function ComplianceChart({ data = [], delta = 0 }) {
         </span>
       </div>
 
-      <div className="h-80 w-full">
-        <ResponsiveContainer width="100%" height="100%">
+      <div className="h-80 min-h-80 min-w-0 w-full">
+        <ResponsiveContainer width="100%" height="100%" minWidth={1} minHeight={1}>
           <LineChart data={chartData}>
             <CartesianGrid strokeDasharray="3 3" stroke="rgba(92,80,62,.16)" />
             <XAxis dataKey="label" stroke="#746b5d" />

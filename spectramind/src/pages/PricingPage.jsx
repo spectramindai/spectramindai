@@ -40,7 +40,7 @@ export default function PricingPage() {
             </h1>
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-600 dark:text-slate-300">
               Choose a starting point for your program, then work with our team
-              to fit SpectraMind to your frameworks, workflows, and company size.
+              to fit Compvd.ai to your frameworks, workflows, and company size.
             </p>
           </div>
         </section>
