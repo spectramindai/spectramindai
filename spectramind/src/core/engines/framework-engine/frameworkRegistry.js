@@ -31,6 +31,7 @@ import cmmcTasksData from "../../framework-library/cmmc/tasks.json";
 import cmmcMappingsData from "../../framework-library/cmmc/mappings.json";
 import cmmcAIGuidanceData from "../../framework-library/cmmc/ai-guidance.json";
 import cmmcAuditRulesData from "../../framework-library/cmmc/audit-rules.json";
+import cmmcAssessmentObjectivesData from "../../framework-library/cmmc/assessment-objectives.json";
 import tisaxFramework from "../../framework-library/tisax/framework.json";
 import tisaxControlsData from "../../framework-library/tisax/controls.json";
 import tisaxRisksData from "../../framework-library/tisax/risks.json";
@@ -89,6 +90,7 @@ const frameworkLibraries = {
     mappings: cmmcMappingsData.mappings,
     aiGuidance: cmmcAIGuidanceData.aiGuidance,
     auditRules: cmmcAuditRulesData.auditRules,
+    assessmentObjectives: cmmcAssessmentObjectivesData.requirements,
   },
   [TISAX_FRAMEWORK_ID]: {
     framework: tisaxFramework,
