@@ -12,7 +12,9 @@ const schema = z.object({
   CORS_ORIGINS: z.string().default("http://localhost:5173"),
   FRAMEWORK_LIBRARY_PATH: z.string().default("../spectramind/src/core/framework-library"),
   LOCAL_FILE_ROOT: z.string().default("./data/files"),
-  CMMC_ONLY_MODE: z.string().default("true").transform(value => value.toLowerCase() === "true"),
+  AZURE_STORAGE_ACCOUNT_NAME: z.string().min(3).max(24).optional(),
+  AZURE_STORAGE_CONTAINER_NAME: z.string().min(3).default("cmmc-evidence"),
+  CMMC_ONLY_MODE: z.string().default("false").transform(value => value.toLowerCase() === "true"),
   ALL_FRAMEWORK_ACCESS_EMAILS: z.string().default("vijay@spectramindsolutions.com"),
 });
 
@@ -23,7 +25,7 @@ export const allFrameworkAccessEmails = new Set(
 );
 
 export function hasAllFrameworkAccess(email?: string) {
-  return allFrameworkAccessEmails.has(String(email || "").trim().toLowerCase());
+  return !config.CMMC_ONLY_MODE || allFrameworkAccessEmails.has(String(email || "").trim().toLowerCase());
 }
 
 export function isAllowedCorsOrigin(origin?: string) {
