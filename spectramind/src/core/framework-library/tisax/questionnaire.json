@@ -1,0 +1,154 @@
+{
+  "questionnaireSections": [
+    {
+      "id": "QS-TISAX-IS",
+      "title": "Information Security",
+      "questions": [
+        {
+          "id": "Q-TISAX-IS-001",
+          "question": "Is information security included in the current TISAX assessment scope?",
+          "type": "single_select",
+          "options": [
+            "Yes",
+            "No",
+            "Not sure"
+          ],
+          "rules": [
+            {
+              "condition": "answer equals No",
+              "action": "mark information security controls as not applicable only when the assessment objective permits exclusion"
+            }
+          ],
+          "relatedControls": [
+            "1.1.1",
+            "1.2.1",
+            "1.2.2",
+            "1.2.3",
+            "1.3.1",
+            "1.3.2",
+            "1.3.3",
+            "1.3.4",
+            "1.4.1",
+            "1.5.1",
+            "1.5.2",
+            "1.6.1",
+            "1.6.2",
+            "1.6.3",
+            "2.1.1",
+            "2.1.2",
+            "2.1.3",
+            "2.1.4",
+            "3.1.1",
+            "3.1.2",
+            "3.1.3",
+            "3.1.4",
+            "4.1.1",
+            "4.1.2",
+            "4.1.3",
+            "4.2.1",
+            "5.1.1",
+            "5.1.2",
+            "5.2.1",
+            "5.2.2",
+            "5.2.3",
+            "5.2.4",
+            "5.2.5",
+            "5.2.6",
+            "5.2.7",
+            "5.2.8",
+            "5.2.9",
+            "5.3.1",
+            "5.3.2",
+            "5.3.3",
+            "5.3.4",
+            "6.1.1",
+            "6.1.2",
+            "6.1.3",
+            "7.1.1",
+            "7.1.2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QS-TISAX-PP",
+      "title": "Prototype Protection",
+      "questions": [
+        {
+          "id": "Q-TISAX-PP-001",
+          "question": "Is prototype protection included in the current TISAX assessment scope?",
+          "type": "single_select",
+          "options": [
+            "Yes",
+            "No",
+            "Not sure"
+          ],
+          "rules": [
+            {
+              "condition": "answer equals No",
+              "action": "mark prototype protection controls as not applicable only when the assessment objective permits exclusion"
+            }
+          ],
+          "relatedControls": [
+            "8.1.1",
+            "8.1.2",
+            "8.1.3",
+            "8.1.4",
+            "8.1.5",
+            "8.1.6",
+            "8.1.7",
+            "8.1.8",
+            "8.1.9",
+            "8.1.10",
+            "8.1.11",
+            "8.1.12",
+            "8.1.13",
+            "8.2.1",
+            "8.2.2",
+            "8.2.3",
+            "8.2.4",
+            "8.2.5",
+            "8.2.6",
+            "8.2.7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QS-TISAX-DP",
+      "title": "Data Protection",
+      "questions": [
+        {
+          "id": "Q-TISAX-DP-001",
+          "question": "Is data protection included in the current TISAX assessment scope?",
+          "type": "single_select",
+          "options": [
+            "Yes",
+            "No",
+            "Not sure"
+          ],
+          "rules": [
+            {
+              "condition": "answer equals No",
+              "action": "mark data protection controls as not applicable only when the assessment objective permits exclusion"
+            }
+          ],
+          "relatedControls": [
+            "9.1.1",
+            "9.2.1",
+            "9.3.1",
+            "9.4.1",
+            "9.5.1",
+            "9.5.2",
+            "9.5.3",
+            "9.6.1",
+            "9.6.2",
+            "9.7.1",
+            "9.7.2",
+            "9.8.1"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "aiGuidance": [
+    {
+      "controlId": "CC1.1",
+      "purpose": "Ensure integrity and ethical values are defined, communicated, and enforced.",
+      "implementationGuidance": "Maintain a code of conduct, communicate expectations during onboarding and annually, and document how violations are reported and addressed.",
+      "commonMistakes": ["Having a policy that employees never acknowledge", "Not documenting ethics exceptions or disciplinary follow-up"],
+      "auditTips": ["Provide the current code of conduct", "Show acknowledgement records", "Show evidence that exceptions are tracked"],
+      "bestPractices": ["Require annual acknowledgements", "Include ethics training in onboarding", "Maintain a confidential reporting path"],
+      "suggestedEvidence": ["Code of conduct", "Acknowledgement report", "Ethics training records"],
+      "suggestedNextAction": "Collect the latest code of conduct and employee acknowledgement report."
+    },
+    {
+      "controlId": "CC1.2",
+      "purpose": "Establish independent oversight over management and internal control.",
+      "implementationGuidance": "Define governance responsibilities and provide leadership with regular risk, security, and compliance updates.",
+      "commonMistakes": ["No formal governance cadence", "No documented security reporting to leadership"],
+      "auditTips": ["Show board or leadership meeting minutes", "Include risk and compliance reporting artifacts"],
+      "bestPractices": ["Schedule recurring governance reviews", "Track decisions and action items", "Escalate significant control issues"],
+      "suggestedEvidence": ["Governance charter", "Meeting minutes", "Security reporting package"],
+      "suggestedNextAction": "Upload recent governance meeting minutes or leadership security review evidence."
+    },
+    {
+      "controlId": "CC1.3",
+      "purpose": "Define authority, responsibility, and reporting lines for operating controls.",
+      "implementationGuidance": "Maintain an organization chart and responsibility matrix that assigns ownership for security, compliance, operations, and risk.",
+      "commonMistakes": ["Control owners are unclear", "Org charts are outdated", "Responsibilities are informal"],
+      "auditTips": ["Show named owners for key control areas", "Confirm responsibilities match current roles"],
+      "bestPractices": ["Use a RACI matrix", "Review ownership quarterly", "Assign backups for critical controls"],
+      "suggestedEvidence": ["Organization chart", "Control ownership matrix", "Role descriptions"],
+      "suggestedNextAction": "Assign owners for each SOC 2 domain and upload the responsibility matrix."
+    },
+    {
+      "controlId": "CC1.4",
+      "purpose": "Ensure personnel have the competence required to perform their responsibilities.",
+      "implementationGuidance": "Define role requirements, provide onboarding and ongoing training, and retain completion records.",
+      "commonMistakes": ["Training completion is not tracked", "Role requirements are missing", "Contractors are excluded from training"],
+      "auditTips": ["Provide training reports", "Show onboarding checklists", "Include role-specific training where relevant"],
+      "bestPractices": ["Automate training reminders", "Track contractor training", "Review role requirements annually"],
+      "suggestedEvidence": ["Training completion report", "Onboarding checklist", "Job descriptions"],
+      "suggestedNextAction": "Export the latest security awareness training completion report."
+    },
+    {
+      "controlId": "CC1.5",
+      "purpose": "Hold personnel accountable for internal control responsibilities.",
+      "implementationGuidance": "Tie control responsibilities to roles, performance expectations, escalation, and corrective action processes.",
+      "commonMistakes": ["No accountability for missed controls", "Corrective actions are not tracked", "Owners are assigned but not notified"],
+      "auditTips": ["Show owner assignments", "Provide remediation tracking", "Demonstrate leadership review of overdue items"],
+      "bestPractices": ["Track control health by owner", "Escalate overdue tasks", "Review accountability during management meetings"],
+      "suggestedEvidence": ["Control owner list", "Remediation tracker", "Management review records"],
+      "suggestedNextAction": "Confirm every key control has an owner and escalation path."
+    },
+    {
+      "controlId": "CC2.1",
+      "purpose": "Use relevant and reliable information to support control operation.",
+      "implementationGuidance": "Define information sources used for control activities and ensure reports are complete, accurate, and timely.",
+      "commonMistakes": ["Using stale exports", "No validation of source data", "Reports do not match control scope"],
+      "auditTips": ["Show source system exports", "Explain report generation timing", "Tie reports to control operation"],
+      "bestPractices": ["Document report owners", "Validate key reports before reviews", "Retain report parameters"],
+      "suggestedEvidence": ["Control reports", "Data source inventory", "Report review evidence"],
+      "suggestedNextAction": "Document the data sources used for key SOC 2 evidence reports."
+    },
+    {
+      "controlId": "CC2.2",
+      "purpose": "Communicate control responsibilities and security information internally.",
+      "implementationGuidance": "Use documented channels to communicate policies, security updates, responsibilities, and incident expectations.",
+      "commonMistakes": ["Policy updates are not communicated", "Employees do not know reporting channels", "No evidence of internal communication"],
+      "auditTips": ["Provide policy announcements", "Show training communications", "Show incident reporting instructions"],
+      "bestPractices": ["Centralize policy communications", "Use recurring security reminders", "Track acknowledgement where required"],
+      "suggestedEvidence": ["Policy announcement", "Security awareness communications", "Acknowledgement report"],
+      "suggestedNextAction": "Upload recent security or policy communication evidence."
+    },
+    {
+      "controlId": "CC2.3",
+      "purpose": "Communicate relevant security and control information to external parties.",
+      "implementationGuidance": "Define customer, vendor, auditor, and regulator communication responsibilities, including incident notification paths.",
+      "commonMistakes": ["No external notification procedure", "Vendor communications are informal", "Customer security responses are not tracked"],
+      "auditTips": ["Show external communication procedures", "Provide examples of vendor or customer security communications"],
+      "bestPractices": ["Use approved response templates", "Define notification timelines", "Track external requests"],
+      "suggestedEvidence": ["External communication procedure", "Customer security response examples", "Vendor communication records"],
+      "suggestedNextAction": "Document external security communication ownership and escalation."
+    },
+    {
+      "controlId": "CC3.1",
+      "purpose": "Define objectives clearly enough to identify relevant risks.",
+      "implementationGuidance": "Document security, availability, confidentiality, processing integrity, and privacy objectives that apply to the system.",
+      "commonMistakes": ["Objectives are generic", "Scope is unclear", "Trust Services Criteria are not mapped to system commitments"],
+      "auditTips": ["Show service commitments", "Explain in-scope systems", "Map objectives to risk assessment scope"],
+      "bestPractices": ["Define scope before risk assessment", "Review objectives annually", "Tie objectives to customer commitments"],
+      "suggestedEvidence": ["SOC 2 scope", "Service commitments", "Security objectives"],
+      "suggestedNextAction": "Confirm the SOC 2 scope and Trust Services Criteria in scope."
+    },
+    {
+      "controlId": "CC3.2",
+      "purpose": "Identify and analyze risks that could affect objectives.",
+      "implementationGuidance": "Maintain a risk register with likelihood, impact, treatment decisions, owners, and review cadence.",
+      "commonMistakes": ["Risk register is not updated", "Risks are not tied to controls", "No treatment decision is documented"],
+      "auditTips": ["Show risk methodology", "Provide recent risk review evidence", "Map key risks to controls"],
+      "bestPractices": ["Review risks quarterly", "Use consistent scoring", "Track risk treatment plans"],
+      "suggestedEvidence": ["Risk register", "Risk assessment methodology", "Risk review minutes"],
+      "suggestedNextAction": "Review and update the SOC 2 risk register."
+    },
+    {
+      "controlId": "CC3.3",
+      "purpose": "Consider fraud risk when assessing risks.",
+      "implementationGuidance": "Include fraud, misuse, management override, and privilege abuse scenarios in the risk assessment.",
+      "commonMistakes": ["Fraud risk is skipped", "Only external threats are considered", "Privileged misuse is not assessed"],
+      "auditTips": ["Show fraud risk considerations", "Include segregation of duties and privileged access risks"],
+      "bestPractices": ["Review fraud scenarios annually", "Connect fraud risks to monitoring and access controls"],
+      "suggestedEvidence": ["Fraud risk assessment", "Segregation of duties review", "Privileged access review"],
+      "suggestedNextAction": "Add fraud and privileged misuse scenarios to the risk assessment."
+    },
+    {
+      "controlId": "CC3.4",
+      "purpose": "Assess significant changes that could affect controls.",
+      "implementationGuidance": "Evaluate business, technology, vendor, regulatory, and organizational changes for risk and control impact.",
+      "commonMistakes": ["Major changes do not trigger risk review", "Vendor changes are missed", "Change impact is undocumented"],
+      "auditTips": ["Show major change reviews", "Tie changes to risk reassessment", "Include system architecture changes"],
+      "bestPractices": ["Embed risk review into change management", "Track major changes", "Review scope after acquisitions or migrations"],
+      "suggestedEvidence": ["Change impact assessment", "Risk reassessment records", "Major change approval"],
+      "suggestedNextAction": "Identify recent significant changes and document control impact."
+    },
+    {
+      "controlId": "CC4.1",
+      "purpose": "Monitor whether controls are designed and operating effectively.",
+      "implementationGuidance": "Define control monitoring activities, testing cadence, reviewers, and evidence retention expectations.",
+      "commonMistakes": ["Controls are documented but not tested", "Monitoring has no owner", "Testing evidence is inconsistent"],
+      "auditTips": ["Show control testing results", "Provide management review evidence", "Track exceptions"],
+      "bestPractices": ["Use a control testing calendar", "Review evidence monthly", "Escalate failed controls"],
+      "suggestedEvidence": ["Control testing plan", "Control test results", "Management review records"],
+      "suggestedNextAction": "Create or update the control monitoring calendar."
+    },
+    {
+      "controlId": "CC4.2",
+      "purpose": "Evaluate, communicate, and remediate control deficiencies.",
+      "implementationGuidance": "Track deficiencies with severity, owner, due date, remediation plan, and closure evidence.",
+      "commonMistakes": ["Exceptions are not tracked", "No remediation owner", "Closure lacks evidence"],
+      "auditTips": ["Show issue register", "Provide remediation evidence", "Demonstrate escalation of overdue issues"],
+      "bestPractices": ["Categorize deficiencies by severity", "Review open issues regularly", "Document risk acceptance"],
+      "suggestedEvidence": ["Issue register", "Remediation tracker", "Closure evidence"],
+      "suggestedNextAction": "Review open control exceptions and assign remediation owners."
+    },
+    {
+      "controlId": "CC5.1",
+      "purpose": "Select and develop controls that mitigate identified risks.",
+      "implementationGuidance": "Map risks to controls and define control owners, frequency, operation, and evidence requirements.",
+      "commonMistakes": ["Controls are not linked to risks", "Control operation is vague", "Evidence requirements are unclear"],
+      "auditTips": ["Show a risk-control matrix", "Explain why each key control exists", "Provide control design documentation"],
+      "bestPractices": ["Maintain a control library", "Review control design annually", "Map each risk to at least one control"],
+      "suggestedEvidence": ["Risk-control matrix", "Control descriptions", "Control design review"],
+      "suggestedNextAction": "Verify every high-risk scenario maps to a control and test."
+    },
+    {
+      "controlId": "CC5.2",
+      "purpose": "Establish technology controls over infrastructure, systems, and applications.",
+      "implementationGuidance": "Define controls for access, change management, vulnerability management, monitoring, endpoint protection, and operations.",
+      "commonMistakes": ["Technology controls are informal", "Evidence is spread across tools", "Cloud controls are not included"],
+      "auditTips": ["Show IT control matrix", "Provide evidence from cloud, endpoint, and engineering systems"],
+      "bestPractices": ["Centralize evidence collection", "Automate control evidence where possible", "Review technology controls quarterly"],
+      "suggestedEvidence": ["IT control matrix", "Cloud configuration report", "Patch report", "Code review records"],
+      "suggestedNextAction": "Map technology controls to evidence sources and owners."
+    },
+    {
+      "controlId": "CC5.3",
+      "purpose": "Deploy controls through documented policies and procedures.",
+      "implementationGuidance": "Maintain approved policies, review them at least annually, communicate them, and retain acknowledgements where required.",
+      "commonMistakes": ["Policies are outdated", "Policies are not approved", "Employees never acknowledge policies"],
+      "auditTips": ["Show approval dates", "Provide policy review history", "Provide acknowledgement reports"],
+      "bestPractices": ["Use version control for policies", "Assign policy owners", "Review policies annually"],
+      "suggestedEvidence": ["Approved policies", "Policy review records", "Acknowledgement report"],
+      "suggestedNextAction": "Review all SOC 2 policies for approval date and owner."
+    },
+    {
+      "controlId": "CC6.1",
+      "purpose": "Restrict logical access to authorized users.",
+      "implementationGuidance": "Use centralized identity, MFA, role-based access, least privilege, and periodic access reviews.",
+      "commonMistakes": ["Admin roles are not reviewed", "MFA exceptions are unmanaged", "Access is granted outside approval workflow"],
+      "auditTips": ["Provide identity exports", "Show MFA configuration", "Show user and privileged access reviews"],
+      "bestPractices": ["Automate access reviews", "Require MFA everywhere possible", "Limit standing admin access"],
+      "suggestedEvidence": ["User access export", "Access review report", "MFA configuration"],
+      "suggestedNextAction": "Run a current access export and complete user access review."
+    },
+    {
+      "controlId": "CC6.2",
+      "purpose": "Authorize users and devices before granting access.",
+      "implementationGuidance": "Require documented approval for new users, privileged access, service accounts, and registered devices.",
+      "commonMistakes": ["Access approvals are missing", "Approvals happen after provisioning", "Service accounts are unmanaged"],
+      "auditTips": ["Sample new access grants", "Tie access grants to approvals", "Include privileged and service accounts"],
+      "bestPractices": ["Use ticketed access requests", "Standardize role bundles", "Review service accounts periodically"],
+      "suggestedEvidence": ["Access request tickets", "Approval records", "Provisioning logs"],
+      "suggestedNextAction": "Collect access request samples for the audit period."
+    },
+    {
+      "controlId": "CC6.3",
+      "purpose": "Modify and remove access when roles change or users leave.",
+      "implementationGuidance": "Connect HR changes to access updates and verify removals for terminated or transferred personnel.",
+      "commonMistakes": ["Terminated users remain active", "Transfers retain old access", "Manual deprovisioning is not evidenced"],
+      "auditTips": ["Compare HR termination lists to access removal logs", "Show removal dates", "Include application access"],
+      "bestPractices": ["Automate deprovisioning", "Use offboarding checklists", "Review dormant accounts"],
+      "suggestedEvidence": ["Termination report", "Deprovisioning checklist", "Access removal logs"],
+      "suggestedNextAction": "Perform an access deprovisioning review for recent terminations."
+    },
+    {
+      "controlId": "CC6.4",
+      "purpose": "Restrict physical access to facilities and protected assets.",
+      "implementationGuidance": "Manage badge access, visitor controls, secure areas, and cloud provider physical security reliance where applicable.",
+      "commonMistakes": ["Office access is not reviewed", "Visitor logs are missing", "Cloud provider reports are not retained"],
+      "auditTips": ["Show badge access review", "Provide visitor logs", "Use cloud provider SOC reports for hosted infrastructure"],
+      "bestPractices": ["Review physical access quarterly", "Remove access during offboarding", "Document cloud physical security inheritance"],
+      "suggestedEvidence": ["Physical access review", "Visitor log", "Cloud provider SOC report"],
+      "suggestedNextAction": "Collect physical access review evidence or cloud provider physical security report."
+    },
+    {
+      "controlId": "CC6.5",
+      "purpose": "Protect information assets from unauthorized access, disclosure, modification, or destruction.",
+      "implementationGuidance": "Maintain asset inventory, data classification, encryption, secure handling, retention, and disposal practices.",
+      "commonMistakes": ["Asset inventory is incomplete", "Sensitive data is not classified", "Disposal records are missing"],
+      "auditTips": ["Show asset inventory", "Show encryption and data handling evidence", "Provide retention or disposal records"],
+      "bestPractices": ["Assign asset owners", "Classify sensitive data", "Review asset inventory quarterly"],
+      "suggestedEvidence": ["Asset inventory", "Encryption configuration", "Data retention schedule"],
+      "suggestedNextAction": "Update the asset inventory and identify sensitive data stores."
+    },
+    {
+      "controlId": "CC6.6",
+      "purpose": "Protect system boundaries from unauthorized external access.",
+      "implementationGuidance": "Review firewall rules, cloud security groups, remote access controls, and exposed services.",
+      "commonMistakes": ["Public access is not reviewed", "Firewall exceptions lack approval", "Network diagrams are outdated"],
+      "auditTips": ["Provide firewall exports", "Show rule review evidence", "Include cloud security group reviews"],
+      "bestPractices": ["Use least privilege network access", "Review internet-facing assets", "Track firewall exceptions"],
+      "suggestedEvidence": ["Firewall rule export", "Firewall review record", "Network architecture diagram"],
+      "suggestedNextAction": "Run a firewall and cloud network access review."
+    },
+    {
+      "controlId": "CC6.7",
+      "purpose": "Restrict transmission and movement of sensitive information.",
+      "implementationGuidance": "Use encryption, approved transfer methods, DLP controls, and restricted export permissions.",
+      "commonMistakes": ["Data exports are not reviewed", "Unencrypted transfer paths exist", "Log retention is undefined"],
+      "auditTips": ["Show encryption in transit", "Provide data flow documentation", "Show log retention settings"],
+      "bestPractices": ["Document data flows", "Use TLS for transmission", "Restrict bulk exports"],
+      "suggestedEvidence": ["Encryption configuration", "Data flow documentation", "Log retention settings"],
+      "suggestedNextAction": "Document sensitive data flows and confirm encryption requirements."
+    },
+    {
+      "controlId": "CC6.8",
+      "purpose": "Protect systems from malicious software.",
+      "implementationGuidance": "Deploy endpoint protection, monitor malware alerts, patch systems, and respond to detections.",
+      "commonMistakes": ["Endpoint coverage gaps", "Alerts are not reviewed", "Servers are excluded from protection"],
+      "auditTips": ["Show endpoint protection coverage", "Provide malware alert records", "Show remediation for unhealthy devices"],
+      "bestPractices": ["Monitor endpoint health", "Automate alert escalation", "Include servers and workstations"],
+      "suggestedEvidence": ["Endpoint protection report", "Malware alert records", "Patch report"],
+      "suggestedNextAction": "Export endpoint protection coverage for in-scope devices."
+    },
+    {
+      "controlId": "CC7.1",
+      "purpose": "Detect vulnerabilities and configuration changes that could affect security.",
+      "implementationGuidance": "Run vulnerability scans, cloud configuration reviews, and remediation tracking for in-scope assets.",
+      "commonMistakes": ["Scans exclude key assets", "Findings are not tracked", "Exceptions lack approval"],
+      "auditTips": ["Provide scan reports", "Show remediation tracker", "Explain unresolved critical findings"],
+      "bestPractices": ["Scan continuously or monthly", "Define remediation SLAs", "Validate remediation closure"],
+      "suggestedEvidence": ["Vulnerability scan report", "Cloud posture report", "Remediation tracker"],
+      "suggestedNextAction": "Review open vulnerability findings and assign remediation owners."
+    },
+    {
+      "controlId": "CC7.2",
+      "purpose": "Monitor systems for anomalies and security events.",
+      "implementationGuidance": "Centralize logs, define alerts, assign reviewers, and retain evidence of alert review.",
+      "commonMistakes": ["Critical logs are missing", "Alerts have no owner", "Review evidence is not retained"],
+      "auditTips": ["Show alert rules", "Provide log review records", "Show alert investigation tickets"],
+      "bestPractices": ["Monitor privileged activity", "Review alerts regularly", "Tune noisy alerts"],
+      "suggestedEvidence": ["Alert rule list", "Log review record", "Alert review tickets"],
+      "suggestedNextAction": "Confirm critical systems are logging to the monitoring platform."
+    },
+    {
+      "controlId": "CC7.3",
+      "purpose": "Evaluate security events to determine impact and response.",
+      "implementationGuidance": "Define triage criteria, severity levels, investigation steps, and escalation procedures.",
+      "commonMistakes": ["Events are closed without investigation", "Severity is inconsistent", "No escalation evidence"],
+      "auditTips": ["Show sampled alert investigations", "Explain severity assignment", "Provide escalation records"],
+      "bestPractices": ["Use incident severity matrix", "Document triage decisions", "Track investigation timelines"],
+      "suggestedEvidence": ["Alert review tickets", "Incident tickets", "Escalation records"],
+      "suggestedNextAction": "Review recent security events for documented triage and closure."
+    },
+    {
+      "controlId": "CC7.4",
+      "purpose": "Respond to security incidents effectively.",
+      "implementationGuidance": "Maintain an incident response plan, assign roles, escalate incidents, communicate appropriately, and document response actions.",
+      "commonMistakes": ["Incident plan is untested", "Roles are unclear", "Communication records are missing"],
+      "auditTips": ["Show incident response plan", "Provide tabletop evidence", "Provide incident tickets"],
+      "bestPractices": ["Run annual tabletop exercises", "Define escalation paths", "Keep incident templates ready"],
+      "suggestedEvidence": ["Incident response plan", "Tabletop exercise report", "Incident tickets"],
+      "suggestedNextAction": "Schedule or upload the latest incident response tabletop exercise."
+    },
+    {
+      "controlId": "CC7.5",
+      "purpose": "Recover from security incidents and disruptions.",
+      "implementationGuidance": "Define recovery procedures, perform post-incident reviews, track corrective actions, and test backup or recovery processes.",
+      "commonMistakes": ["No post-incident review", "Corrective actions remain open", "Recovery procedures are not tested"],
+      "auditTips": ["Show recovery evidence", "Provide post-incident review records", "Show corrective action closure"],
+      "bestPractices": ["Track lessons learned", "Test restore procedures", "Review recovery objectives"],
+      "suggestedEvidence": ["Post-incident review", "Corrective action tracker", "Backup restore test report"],
+      "suggestedNextAction": "Confirm incident recovery and backup restore evidence are available."
+    },
+    {
+      "controlId": "CC8.1",
+      "purpose": "Authorize, test, approve, and implement system changes.",
+      "implementationGuidance": "Use change tickets, pull request reviews, testing evidence, deployment logs, and emergency change review.",
+      "commonMistakes": ["Production changes lack approval", "Testing evidence is missing", "Emergency changes are not reviewed"],
+      "auditTips": ["Provide sampled change tickets", "Show approvals before deployment", "Tie deployments to code reviews"],
+      "bestPractices": ["Protect production branches", "Require approvals", "Retain deployment history"],
+      "suggestedEvidence": ["Change tickets", "Pull request review records", "Deployment logs", "Release test results"],
+      "suggestedNextAction": "Collect a sample of production changes with approval and testing evidence."
+    },
+    {
+      "controlId": "CC9.1",
+      "purpose": "Mitigate risks from business disruptions.",
+      "implementationGuidance": "Maintain backup, disaster recovery, business continuity, availability monitoring, and recovery testing processes.",
+      "commonMistakes": ["Backups are not tested", "Recovery objectives are undefined", "Continuity plans are outdated"],
+      "auditTips": ["Show backup reports", "Provide restore or DR test results", "Explain recovery objectives"],
+      "bestPractices": ["Test restores annually", "Monitor backup failures", "Review continuity plans annually"],
+      "suggestedEvidence": ["Backup job report", "Backup restore test report", "Disaster recovery test report"],
+      "suggestedNextAction": "Complete or upload the latest backup restore test evidence."
+    },
+    {
+      "controlId": "CC9.2",
+      "purpose": "Assess and manage vendor and business partner risks.",
+      "implementationGuidance": "Maintain vendor inventory, perform due diligence, collect security reports, review vendor access, and reassess critical vendors.",
+      "commonMistakes": ["Vendor inventory is incomplete", "Critical vendors lack review", "Vendor access is not reviewed"],
+      "auditTips": ["Provide vendor inventory", "Show vendor risk assessments", "Provide vendor SOC reports and access review evidence"],
+      "bestPractices": ["Classify vendors by risk", "Review critical vendors annually", "Track vendor access separately"],
+      "suggestedEvidence": ["Vendor inventory", "Vendor risk assessment", "Vendor SOC report", "Vendor access review"],
+      "suggestedNextAction": "Review critical vendors and upload current vendor due diligence evidence."
+    }
+  ]
+}

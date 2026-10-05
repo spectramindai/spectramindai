@@ -1,0 +1,3486 @@
+{
+  "tests": [
+    {
+      "id": "T-OP.1",
+      "title": "Evidence of policies for information security",
+      "description": "Verify that policies for information security is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current policies for information security evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.1"
+      ],
+      "relatedRisks": [
+        "R-OP.1",
+        "R-OP.26"
+      ],
+      "requiredEvidence": [
+        "Policies for information security evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.2",
+      "title": "Operating review for policies for information security",
+      "description": "Verify that policies for information security is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current policies for information security evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.1"
+      ],
+      "relatedRisks": [
+        "R-OP.1",
+        "R-OP.26"
+      ],
+      "requiredEvidence": [
+        "Policies for information security evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.3",
+      "title": "Evidence of information security roles and responsibilities",
+      "description": "Verify that information security roles and responsibilities is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current information security roles and responsibilities evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.2"
+      ],
+      "relatedRisks": [
+        "R-OP.1",
+        "R-OP.2"
+      ],
+      "requiredEvidence": [
+        "Information security roles and responsibilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.4",
+      "title": "Operating review for information security roles and responsibilities",
+      "description": "Verify that information security roles and responsibilities is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current information security roles and responsibilities evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.2"
+      ],
+      "relatedRisks": [
+        "R-OP.1",
+        "R-OP.2"
+      ],
+      "requiredEvidence": [
+        "Information security roles and responsibilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.5",
+      "title": "Evidence of segregation of duties",
+      "description": "Verify that segregation of duties is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current segregation of duties evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.3"
+      ],
+      "relatedRisks": [
+        "R-OP.1"
+      ],
+      "requiredEvidence": [
+        "Segregation of duties evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.6",
+      "title": "Operating review for segregation of duties",
+      "description": "Verify that segregation of duties is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current segregation of duties evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.3"
+      ],
+      "relatedRisks": [
+        "R-OP.1"
+      ],
+      "requiredEvidence": [
+        "Segregation of duties evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.7",
+      "title": "Evidence of management responsibilities",
+      "description": "Verify that management responsibilities is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current management responsibilities evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.4"
+      ],
+      "relatedRisks": [
+        "R-OP.3"
+      ],
+      "requiredEvidence": [
+        "Management Responsibilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.8",
+      "title": "Operating review for management responsibilities",
+      "description": "Verify that management responsibilities is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current management responsibilities evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.4"
+      ],
+      "relatedRisks": [
+        "R-OP.3"
+      ],
+      "requiredEvidence": [
+        "Management Responsibilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.9",
+      "title": "Evidence of contact with authorities",
+      "description": "Verify that contact with authorities is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current contact with authorities evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.5"
+      ],
+      "relatedRisks": [
+        "R-OP.4"
+      ],
+      "requiredEvidence": [
+        "Contact with Authorities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.10",
+      "title": "Operating review for contact with authorities",
+      "description": "Verify that contact with authorities is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current contact with authorities evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.5"
+      ],
+      "relatedRisks": [
+        "R-OP.4"
+      ],
+      "requiredEvidence": [
+        "Contact with Authorities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.11",
+      "title": "Evidence of contact with special interest groups",
+      "description": "Verify that contact with special interest groups is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current contact with special interest groups evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.6"
+      ],
+      "relatedRisks": [
+        "R-OP.4"
+      ],
+      "requiredEvidence": [
+        "Contact with special interest groups evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.12",
+      "title": "Operating review for contact with special interest groups",
+      "description": "Verify that contact with special interest groups is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current contact with special interest groups evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.6"
+      ],
+      "relatedRisks": [
+        "R-OP.4"
+      ],
+      "requiredEvidence": [
+        "Contact with special interest groups evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.13",
+      "title": "Evidence of threat intelligence",
+      "description": "Verify that threat intelligence is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current threat intelligence evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.7"
+      ],
+      "relatedRisks": [
+        "R-OP.5"
+      ],
+      "requiredEvidence": [
+        "Threat intelligence evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.14",
+      "title": "Operating review for threat intelligence",
+      "description": "Verify that threat intelligence is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current threat intelligence evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.7"
+      ],
+      "relatedRisks": [
+        "R-OP.5"
+      ],
+      "requiredEvidence": [
+        "Threat intelligence evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.15",
+      "title": "Evidence of information security in project management",
+      "description": "Verify that information security in project management is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current information security in project management evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.8"
+      ],
+      "relatedRisks": [
+        "R-OP.6"
+      ],
+      "requiredEvidence": [
+        "Information security in project management evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.16",
+      "title": "Operating review for information security in project management",
+      "description": "Verify that information security in project management is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current information security in project management evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.8"
+      ],
+      "relatedRisks": [
+        "R-OP.6"
+      ],
+      "requiredEvidence": [
+        "Information security in project management evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.17",
+      "title": "Evidence of inventory of information and other associated assets",
+      "description": "Verify that inventory of information and other associated assets is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current inventory of information and other associated assets evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.9"
+      ],
+      "relatedRisks": [
+        "R-OP.6"
+      ],
+      "requiredEvidence": [
+        "Inventory of information and other associated assets evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.18",
+      "title": "Operating review for inventory of information and other associated assets",
+      "description": "Verify that inventory of information and other associated assets is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current inventory of information and other associated assets evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.9"
+      ],
+      "relatedRisks": [
+        "R-OP.6"
+      ],
+      "requiredEvidence": [
+        "Inventory of information and other associated assets evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.19",
+      "title": "Evidence of acceptable use of information and other associated assets",
+      "description": "Verify that acceptable use of information and other associated assets is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current acceptable use of information and other associated assets evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.10"
+      ],
+      "relatedRisks": [
+        "R-OP.7"
+      ],
+      "requiredEvidence": [
+        "Acceptable use of information and other associated assets evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.20",
+      "title": "Operating review for acceptable use of information and other associated assets",
+      "description": "Verify that acceptable use of information and other associated assets is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current acceptable use of information and other associated assets evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.10"
+      ],
+      "relatedRisks": [
+        "R-OP.7"
+      ],
+      "requiredEvidence": [
+        "Acceptable use of information and other associated assets evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.21",
+      "title": "Evidence of return of assets",
+      "description": "Verify that return of assets is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current return of assets evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.11"
+      ],
+      "relatedRisks": [
+        "R-OP.7",
+        "R-OP.8"
+      ],
+      "requiredEvidence": [
+        "Return of Assets evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.22",
+      "title": "Operating review for return of assets",
+      "description": "Verify that return of assets is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current return of assets evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.11"
+      ],
+      "relatedRisks": [
+        "R-OP.7",
+        "R-OP.8"
+      ],
+      "requiredEvidence": [
+        "Return of Assets evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.23",
+      "title": "Evidence of classification of information",
+      "description": "Verify that classification of information is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current classification of information evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.12"
+      ],
+      "relatedRisks": [
+        "R-OP.9"
+      ],
+      "requiredEvidence": [
+        "Classification Of Information evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.24",
+      "title": "Operating review for classification of information",
+      "description": "Verify that classification of information is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current classification of information evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.12"
+      ],
+      "relatedRisks": [
+        "R-OP.9"
+      ],
+      "requiredEvidence": [
+        "Classification Of Information evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.25",
+      "title": "Evidence of labelling of information",
+      "description": "Verify that labelling of information is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current labelling of information evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.13"
+      ],
+      "relatedRisks": [
+        "R-OP.1"
+      ],
+      "requiredEvidence": [
+        "Labelling of Information evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.26",
+      "title": "Operating review for labelling of information",
+      "description": "Verify that labelling of information is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current labelling of information evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.13"
+      ],
+      "relatedRisks": [
+        "R-OP.1"
+      ],
+      "requiredEvidence": [
+        "Labelling of Information evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.27",
+      "title": "Evidence of information transfer",
+      "description": "Verify that information transfer is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current information transfer evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.14"
+      ],
+      "relatedRisks": [
+        "R-OP.10"
+      ],
+      "requiredEvidence": [
+        "Information Transfer evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.28",
+      "title": "Operating review for information transfer",
+      "description": "Verify that information transfer is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current information transfer evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.14"
+      ],
+      "relatedRisks": [
+        "R-OP.10"
+      ],
+      "requiredEvidence": [
+        "Information Transfer evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.29",
+      "title": "Evidence of access control",
+      "description": "Verify that access control is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current access control evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.15"
+      ],
+      "relatedRisks": [
+        "R-OP.10",
+        "R-OP.11"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ]
+    },
+    {
+      "id": "T-OP.30",
+      "title": "Operating review for access control",
+      "description": "Verify that access control is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current access control evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.15"
+      ],
+      "relatedRisks": [
+        "R-OP.10",
+        "R-OP.11"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ]
+    },
+    {
+      "id": "T-OP.31",
+      "title": "Evidence of identity management",
+      "description": "Verify that identity management is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current identity management evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.16"
+      ],
+      "relatedRisks": [
+        "R-OP.11"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ]
+    },
+    {
+      "id": "T-OP.32",
+      "title": "Operating review for identity management",
+      "description": "Verify that identity management is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current identity management evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.16"
+      ],
+      "relatedRisks": [
+        "R-OP.11"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ]
+    },
+    {
+      "id": "T-OP.33",
+      "title": "Evidence of authentication information",
+      "description": "Verify that authentication information is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current authentication information evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.17"
+      ],
+      "relatedRisks": [
+        "R-OP.12"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ]
+    },
+    {
+      "id": "T-OP.34",
+      "title": "Operating review for authentication information",
+      "description": "Verify that authentication information is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current authentication information evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.17"
+      ],
+      "relatedRisks": [
+        "R-OP.12"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ]
+    },
+    {
+      "id": "T-OP.35",
+      "title": "Evidence of access rights",
+      "description": "Verify that access rights is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current access rights evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.18"
+      ],
+      "relatedRisks": [
+        "R-OP.13"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ]
+    },
+    {
+      "id": "T-OP.36",
+      "title": "Operating review for access rights",
+      "description": "Verify that access rights is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current access rights evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.18"
+      ],
+      "relatedRisks": [
+        "R-OP.13"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ]
+    },
+    {
+      "id": "T-OP.37",
+      "title": "Evidence of information security in supplier relationships",
+      "description": "Verify that information security in supplier relationships is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current information security in supplier relationships evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.19"
+      ],
+      "relatedRisks": [
+        "R-OP.13",
+        "R-OP.14"
+      ],
+      "requiredEvidence": [
+        "Supplier register",
+        "Supplier review record",
+        "Contract security requirements"
+      ]
+    },
+    {
+      "id": "T-OP.38",
+      "title": "Operating review for information security in supplier relationships",
+      "description": "Verify that information security in supplier relationships is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current information security in supplier relationships evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.19"
+      ],
+      "relatedRisks": [
+        "R-OP.13",
+        "R-OP.14"
+      ],
+      "requiredEvidence": [
+        "Supplier register",
+        "Supplier review record",
+        "Contract security requirements"
+      ]
+    },
+    {
+      "id": "T-OP.39",
+      "title": "Evidence of addressing information security within supplier agreements",
+      "description": "Verify that addressing information security within supplier agreements is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current addressing information security within supplier agreements evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.20"
+      ],
+      "relatedRisks": [
+        "R-OP.2"
+      ],
+      "requiredEvidence": [
+        "Supplier register",
+        "Supplier review record",
+        "Contract security requirements"
+      ]
+    },
+    {
+      "id": "T-OP.40",
+      "title": "Operating review for addressing information security within supplier agreements",
+      "description": "Verify that addressing information security within supplier agreements is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current addressing information security within supplier agreements evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.20"
+      ],
+      "relatedRisks": [
+        "R-OP.2"
+      ],
+      "requiredEvidence": [
+        "Supplier register",
+        "Supplier review record",
+        "Contract security requirements"
+      ]
+    },
+    {
+      "id": "T-OP.41",
+      "title": "Evidence of managing information security in the ict supply chain",
+      "description": "Verify that managing information security in the ict supply chain is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current managing information security in the ict supply chain evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.21"
+      ],
+      "relatedRisks": [
+        "R-OP.15"
+      ],
+      "requiredEvidence": [
+        "Managing information security in the ICT supply chain evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.42",
+      "title": "Operating review for managing information security in the ict supply chain",
+      "description": "Verify that managing information security in the ict supply chain is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current managing information security in the ict supply chain evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.21"
+      ],
+      "relatedRisks": [
+        "R-OP.15"
+      ],
+      "requiredEvidence": [
+        "Managing information security in the ICT supply chain evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.43",
+      "title": "Evidence of monitoring, review and change management of supplier services",
+      "description": "Verify that monitoring, review and change management of supplier services is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current monitoring, review and change management of supplier services evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.22"
+      ],
+      "relatedRisks": [
+        "R-OP.16"
+      ],
+      "requiredEvidence": [
+        "Supplier register",
+        "Supplier review record",
+        "Contract security requirements"
+      ]
+    },
+    {
+      "id": "T-OP.44",
+      "title": "Operating review for monitoring, review and change management of supplier services",
+      "description": "Verify that monitoring, review and change management of supplier services is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current monitoring, review and change management of supplier services evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.22"
+      ],
+      "relatedRisks": [
+        "R-OP.16"
+      ],
+      "requiredEvidence": [
+        "Supplier register",
+        "Supplier review record",
+        "Contract security requirements"
+      ]
+    },
+    {
+      "id": "T-OP.45",
+      "title": "Evidence of information security for use of cloud services",
+      "description": "Verify that information security for use of cloud services is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current information security for use of cloud services evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.23"
+      ],
+      "relatedRisks": [
+        "R-OP.16"
+      ],
+      "requiredEvidence": [
+        "Information security for use of cloud services evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.46",
+      "title": "Operating review for information security for use of cloud services",
+      "description": "Verify that information security for use of cloud services is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current information security for use of cloud services evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.23"
+      ],
+      "relatedRisks": [
+        "R-OP.16"
+      ],
+      "requiredEvidence": [
+        "Information security for use of cloud services evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.47",
+      "title": "Evidence of information security incident management planning and preparation",
+      "description": "Verify that information security incident management planning and preparation is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current information security incident management planning and preparation evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.24"
+      ],
+      "relatedRisks": [
+        "R-OP.16",
+        "R-OP.17"
+      ],
+      "requiredEvidence": [
+        "Information security incident management planning and preparation evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.48",
+      "title": "Operating review for information security incident management planning and preparation",
+      "description": "Verify that information security incident management planning and preparation is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current information security incident management planning and preparation evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.24"
+      ],
+      "relatedRisks": [
+        "R-OP.16",
+        "R-OP.17"
+      ],
+      "requiredEvidence": [
+        "Information security incident management planning and preparation evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.49",
+      "title": "Evidence of assessment and decision on information security events",
+      "description": "Verify that assessment and decision on information security events is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current assessment and decision on information security events evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.25"
+      ],
+      "relatedRisks": [
+        "R-OP.18"
+      ],
+      "requiredEvidence": [
+        "Assessment and decision on information security events evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.50",
+      "title": "Operating review for assessment and decision on information security events",
+      "description": "Verify that assessment and decision on information security events is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current assessment and decision on information security events evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.25"
+      ],
+      "relatedRisks": [
+        "R-OP.18"
+      ],
+      "requiredEvidence": [
+        "Assessment and decision on information security events evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.51",
+      "title": "Evidence of response to information security incidents",
+      "description": "Verify that response to information security incidents is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current response to information security incidents evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.26"
+      ],
+      "relatedRisks": [
+        "R-OP.3"
+      ],
+      "requiredEvidence": [
+        "Response to information security incidents evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.52",
+      "title": "Operating review for response to information security incidents",
+      "description": "Verify that response to information security incidents is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current response to information security incidents evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.26"
+      ],
+      "relatedRisks": [
+        "R-OP.3"
+      ],
+      "requiredEvidence": [
+        "Response to information security incidents evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.53",
+      "title": "Evidence of learning from information security incidents",
+      "description": "Verify that learning from information security incidents is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current learning from information security incidents evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.27"
+      ],
+      "relatedRisks": [
+        "R-OP.19"
+      ],
+      "requiredEvidence": [
+        "Learning from information security incidents evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.54",
+      "title": "Operating review for learning from information security incidents",
+      "description": "Verify that learning from information security incidents is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current learning from information security incidents evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.27"
+      ],
+      "relatedRisks": [
+        "R-OP.19"
+      ],
+      "requiredEvidence": [
+        "Learning from information security incidents evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.55",
+      "title": "Evidence of collection of evidence",
+      "description": "Verify that collection of evidence is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current collection of evidence evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.28"
+      ],
+      "relatedRisks": [
+        "R-OP.19",
+        "R-OP.20"
+      ],
+      "requiredEvidence": [
+        "Collection of evidence evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.56",
+      "title": "Operating review for collection of evidence",
+      "description": "Verify that collection of evidence is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current collection of evidence evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.28"
+      ],
+      "relatedRisks": [
+        "R-OP.19",
+        "R-OP.20"
+      ],
+      "requiredEvidence": [
+        "Collection of evidence evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.57",
+      "title": "Evidence of information security during disruption",
+      "description": "Verify that information security during disruption is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current information security during disruption evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.29"
+      ],
+      "relatedRisks": [
+        "R-OP.21"
+      ],
+      "requiredEvidence": [
+        "Information security during disruption evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.58",
+      "title": "Operating review for information security during disruption",
+      "description": "Verify that information security during disruption is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current information security during disruption evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.29"
+      ],
+      "relatedRisks": [
+        "R-OP.21"
+      ],
+      "requiredEvidence": [
+        "Information security during disruption evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.59",
+      "title": "Evidence of ict readiness for business continuity",
+      "description": "Verify that ict readiness for business continuity is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current ict readiness for business continuity evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.30"
+      ],
+      "relatedRisks": [
+        "R-OP.21"
+      ],
+      "requiredEvidence": [
+        "Backup configuration",
+        "Restore test evidence",
+        "Continuity plan review"
+      ]
+    },
+    {
+      "id": "T-OP.60",
+      "title": "Operating review for ict readiness for business continuity",
+      "description": "Verify that ict readiness for business continuity is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current ict readiness for business continuity evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.30"
+      ],
+      "relatedRisks": [
+        "R-OP.21"
+      ],
+      "requiredEvidence": [
+        "Backup configuration",
+        "Restore test evidence",
+        "Continuity plan review"
+      ]
+    },
+    {
+      "id": "T-OP.61",
+      "title": "Evidence of legal, statutory, regulatory and contractual requirements",
+      "description": "Verify that legal, statutory, regulatory and contractual requirements is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current legal, statutory, regulatory and contractual requirements evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.31"
+      ],
+      "relatedRisks": [
+        "R-OP.22"
+      ],
+      "requiredEvidence": [
+        "Legal, statutory, regulatory and contractual requirements evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.62",
+      "title": "Operating review for legal, statutory, regulatory and contractual requirements",
+      "description": "Verify that legal, statutory, regulatory and contractual requirements is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current legal, statutory, regulatory and contractual requirements evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.31"
+      ],
+      "relatedRisks": [
+        "R-OP.22"
+      ],
+      "requiredEvidence": [
+        "Legal, statutory, regulatory and contractual requirements evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.63",
+      "title": "Evidence of intellectual property rights",
+      "description": "Verify that intellectual property rights is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current intellectual property rights evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.32"
+      ],
+      "relatedRisks": [
+        "R-OP.22",
+        "R-OP.23"
+      ],
+      "requiredEvidence": [
+        "Intellectual property rights evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.64",
+      "title": "Operating review for intellectual property rights",
+      "description": "Verify that intellectual property rights is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current intellectual property rights evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.32"
+      ],
+      "relatedRisks": [
+        "R-OP.22",
+        "R-OP.23"
+      ],
+      "requiredEvidence": [
+        "Intellectual property rights evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.65",
+      "title": "Evidence of protection of records",
+      "description": "Verify that protection of records is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current protection of records evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.33"
+      ],
+      "relatedRisks": [
+        "R-OP.4"
+      ],
+      "requiredEvidence": [
+        "Protection of records evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.66",
+      "title": "Operating review for protection of records",
+      "description": "Verify that protection of records is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current protection of records evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.33"
+      ],
+      "relatedRisks": [
+        "R-OP.4"
+      ],
+      "requiredEvidence": [
+        "Protection of records evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.67",
+      "title": "Evidence of privacy and protection of pii",
+      "description": "Verify that privacy and protection of pii is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current privacy and protection of pii evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.34"
+      ],
+      "relatedRisks": [
+        "R-OP.24"
+      ],
+      "requiredEvidence": [
+        "Privacy and protection of PII evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.68",
+      "title": "Operating review for privacy and protection of pii",
+      "description": "Verify that privacy and protection of pii is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current privacy and protection of pii evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.34"
+      ],
+      "relatedRisks": [
+        "R-OP.24"
+      ],
+      "requiredEvidence": [
+        "Privacy and protection of PII evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.69",
+      "title": "Evidence of independent review of information security",
+      "description": "Verify that independent review of information security is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current independent review of information security evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.35"
+      ],
+      "relatedRisks": [
+        "R-OP.25"
+      ],
+      "requiredEvidence": [
+        "Independent review of information security evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.70",
+      "title": "Operating review for independent review of information security",
+      "description": "Verify that independent review of information security is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current independent review of information security evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.35"
+      ],
+      "relatedRisks": [
+        "R-OP.25"
+      ],
+      "requiredEvidence": [
+        "Independent review of information security evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.71",
+      "title": "Evidence of compliance with policies, rules and standards for information security",
+      "description": "Verify that compliance with policies, rules and standards for information security is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current compliance with policies, rules and standards for information security evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.36"
+      ],
+      "relatedRisks": [
+        "R-OP.25"
+      ],
+      "requiredEvidence": [
+        "Compliance with policies, rules and standards for information security evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.72",
+      "title": "Operating review for compliance with policies, rules and standards for information security",
+      "description": "Verify that compliance with policies, rules and standards for information security is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current compliance with policies, rules and standards for information security evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.36"
+      ],
+      "relatedRisks": [
+        "R-OP.25"
+      ],
+      "requiredEvidence": [
+        "Compliance with policies, rules and standards for information security evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.73",
+      "title": "Documented operating procedures document",
+      "description": "Verify that documented operating procedures is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Annually",
+      "procedure": "Inspect the current documented operating procedures evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.37"
+      ],
+      "relatedRisks": [
+        "R-OP.26"
+      ],
+      "requiredEvidence": [
+        "Documented operating procedures evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-OP.74",
+      "title": "Operating review for documented operating procedures",
+      "description": "Verify that documented operating procedures is implemented and supported by suitable evidence.",
+      "category": "Operations",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current documented operating procedures evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "5.37"
+      ],
+      "relatedRisks": [
+        "R-OP.26"
+      ],
+      "requiredEvidence": [
+        "Documented operating procedures evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PE.1",
+      "title": "Evidence of screening",
+      "description": "Verify that screening is implemented and supported by suitable evidence.",
+      "category": "People",
+      "frequency": "Annually",
+      "procedure": "Inspect the current screening evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "6.1"
+      ],
+      "relatedRisks": [
+        "R-PE.1"
+      ],
+      "requiredEvidence": [
+        "Screening evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PE.2",
+      "title": "Operating review for screening",
+      "description": "Verify that screening is implemented and supported by suitable evidence.",
+      "category": "People",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current screening evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "6.1"
+      ],
+      "relatedRisks": [
+        "R-PE.1"
+      ],
+      "requiredEvidence": [
+        "Screening evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PE.3",
+      "title": "Evidence of terms and conditions of employment",
+      "description": "Verify that terms and conditions of employment is implemented and supported by suitable evidence.",
+      "category": "People",
+      "frequency": "Annually",
+      "procedure": "Inspect the current terms and conditions of employment evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "6.2"
+      ],
+      "relatedRisks": [
+        "R-PE.1",
+        "R-PE.2"
+      ],
+      "requiredEvidence": [
+        "Terms and conditions of employment evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PE.4",
+      "title": "Operating review for terms and conditions of employment",
+      "description": "Verify that terms and conditions of employment is implemented and supported by suitable evidence.",
+      "category": "People",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current terms and conditions of employment evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "6.2"
+      ],
+      "relatedRisks": [
+        "R-PE.1",
+        "R-PE.2"
+      ],
+      "requiredEvidence": [
+        "Terms and conditions of employment evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PE.5",
+      "title": "Evidence of information security awareness, education and training",
+      "description": "Verify that information security awareness, education and training is implemented and supported by suitable evidence.",
+      "category": "People",
+      "frequency": "Annually",
+      "procedure": "Inspect the current information security awareness, education and training evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "6.3"
+      ],
+      "relatedRisks": [
+        "R-PE.1",
+        "R-PE.3"
+      ],
+      "requiredEvidence": [
+        "Information security awareness, education and training evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PE.6",
+      "title": "Operating review for information security awareness, education and training",
+      "description": "Verify that information security awareness, education and training is implemented and supported by suitable evidence.",
+      "category": "People",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current information security awareness, education and training evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "6.3"
+      ],
+      "relatedRisks": [
+        "R-PE.1",
+        "R-PE.3"
+      ],
+      "requiredEvidence": [
+        "Information security awareness, education and training evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PE.7",
+      "title": "Evidence of disciplinary process",
+      "description": "Verify that disciplinary process is implemented and supported by suitable evidence.",
+      "category": "People",
+      "frequency": "Annually",
+      "procedure": "Inspect the current disciplinary process evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "6.4"
+      ],
+      "relatedRisks": [
+        "R-PE.4"
+      ],
+      "requiredEvidence": [
+        "Disciplinary process evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PE.8",
+      "title": "Operating review for disciplinary process",
+      "description": "Verify that disciplinary process is implemented and supported by suitable evidence.",
+      "category": "People",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current disciplinary process evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "6.4"
+      ],
+      "relatedRisks": [
+        "R-PE.4"
+      ],
+      "requiredEvidence": [
+        "Disciplinary process evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PE.9",
+      "title": "Evidence of responsibilities after termination or change of employment",
+      "description": "Verify that responsibilities after termination or change of employment is implemented and supported by suitable evidence.",
+      "category": "People",
+      "frequency": "Annually",
+      "procedure": "Inspect the current responsibilities after termination or change of employment evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "6.5"
+      ],
+      "relatedRisks": [
+        "R-PE.4",
+        "R-PE.5"
+      ],
+      "requiredEvidence": [
+        "Responsibilities after termination or change of employment evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PE.10",
+      "title": "Operating review for responsibilities after termination or change of employment",
+      "description": "Verify that responsibilities after termination or change of employment is implemented and supported by suitable evidence.",
+      "category": "People",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current responsibilities after termination or change of employment evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "6.5"
+      ],
+      "relatedRisks": [
+        "R-PE.4",
+        "R-PE.5"
+      ],
+      "requiredEvidence": [
+        "Responsibilities after termination or change of employment evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PE.11",
+      "title": "Evidence of confidentiality or non-disclosure agreements",
+      "description": "Verify that confidentiality or non-disclosure agreements is implemented and supported by suitable evidence.",
+      "category": "People",
+      "frequency": "Annually",
+      "procedure": "Inspect the current confidentiality or non-disclosure agreements evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "6.6"
+      ],
+      "relatedRisks": [
+        "R-PE.6"
+      ],
+      "requiredEvidence": [
+        "Confidentiality or non-disclosure agreements evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PE.12",
+      "title": "Operating review for confidentiality or non-disclosure agreements",
+      "description": "Verify that confidentiality or non-disclosure agreements is implemented and supported by suitable evidence.",
+      "category": "People",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current confidentiality or non-disclosure agreements evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "6.6"
+      ],
+      "relatedRisks": [
+        "R-PE.6"
+      ],
+      "requiredEvidence": [
+        "Confidentiality or non-disclosure agreements evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PE.13",
+      "title": "Evidence of remote working",
+      "description": "Verify that remote working is implemented and supported by suitable evidence.",
+      "category": "People",
+      "frequency": "Annually",
+      "procedure": "Inspect the current remote working evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "6.7"
+      ],
+      "relatedRisks": [
+        "R-PE.6",
+        "R-PE.7"
+      ],
+      "requiredEvidence": [
+        "Remote working evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PE.14",
+      "title": "Operating review for remote working",
+      "description": "Verify that remote working is implemented and supported by suitable evidence.",
+      "category": "People",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current remote working evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "6.7"
+      ],
+      "relatedRisks": [
+        "R-PE.6",
+        "R-PE.7"
+      ],
+      "requiredEvidence": [
+        "Remote working evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PE.15",
+      "title": "Evidence of information security event reporting",
+      "description": "Verify that information security event reporting is implemented and supported by suitable evidence.",
+      "category": "People",
+      "frequency": "Annually",
+      "procedure": "Inspect the current information security event reporting evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "6.8"
+      ],
+      "relatedRisks": [
+        "R-PE.7",
+        "R-PE.8"
+      ],
+      "requiredEvidence": [
+        "Information security event reporting evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PE.16",
+      "title": "Operating review for information security event reporting",
+      "description": "Verify that information security event reporting is implemented and supported by suitable evidence.",
+      "category": "People",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current information security event reporting evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "6.8"
+      ],
+      "relatedRisks": [
+        "R-PE.7",
+        "R-PE.8"
+      ],
+      "requiredEvidence": [
+        "Information security event reporting evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.1",
+      "title": "Evidence of physical security perimeters",
+      "description": "Verify that physical security perimeters is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Annually",
+      "procedure": "Inspect the current physical security perimeters evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.1"
+      ],
+      "relatedRisks": [
+        "R-PH.1"
+      ],
+      "requiredEvidence": [
+        "Physical security perimeters evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.2",
+      "title": "Operating review for physical security perimeters",
+      "description": "Verify that physical security perimeters is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current physical security perimeters evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.1"
+      ],
+      "relatedRisks": [
+        "R-PH.1"
+      ],
+      "requiredEvidence": [
+        "Physical security perimeters evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.3",
+      "title": "Evidence of physical entry",
+      "description": "Verify that physical entry is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Annually",
+      "procedure": "Inspect the current physical entry evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.2"
+      ],
+      "relatedRisks": [
+        "R-PH.1"
+      ],
+      "requiredEvidence": [
+        "Physical entry evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.4",
+      "title": "Operating review for physical entry",
+      "description": "Verify that physical entry is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current physical entry evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.2"
+      ],
+      "relatedRisks": [
+        "R-PH.1"
+      ],
+      "requiredEvidence": [
+        "Physical entry evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.5",
+      "title": "Evidence of securing offices, rooms and facilities",
+      "description": "Verify that securing offices, rooms and facilities is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Annually",
+      "procedure": "Inspect the current securing offices, rooms and facilities evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.3"
+      ],
+      "relatedRisks": [
+        "R-PH.1",
+        "R-PH.2"
+      ],
+      "requiredEvidence": [
+        "Securing offices, rooms and facilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.6",
+      "title": "Operating review for securing offices, rooms and facilities",
+      "description": "Verify that securing offices, rooms and facilities is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current securing offices, rooms and facilities evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.3"
+      ],
+      "relatedRisks": [
+        "R-PH.1",
+        "R-PH.2"
+      ],
+      "requiredEvidence": [
+        "Securing offices, rooms and facilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.7",
+      "title": "Evidence of physical security monitoring",
+      "description": "Verify that physical security monitoring is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Annually",
+      "procedure": "Inspect the current physical security monitoring evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.4"
+      ],
+      "relatedRisks": [
+        "R-PH.1"
+      ],
+      "requiredEvidence": [
+        "Physical security monitoring evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.8",
+      "title": "Operating review for physical security monitoring",
+      "description": "Verify that physical security monitoring is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current physical security monitoring evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.4"
+      ],
+      "relatedRisks": [
+        "R-PH.1"
+      ],
+      "requiredEvidence": [
+        "Physical security monitoring evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.9",
+      "title": "Evidence of protecting against physical and environmental threats",
+      "description": "Verify that protecting against physical and environmental threats is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Annually",
+      "procedure": "Inspect the current protecting against physical and environmental threats evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.5"
+      ],
+      "relatedRisks": [
+        "R-PH.3"
+      ],
+      "requiredEvidence": [
+        "Protecting against physical and environmental threats evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.10",
+      "title": "Operating review for protecting against physical and environmental threats",
+      "description": "Verify that protecting against physical and environmental threats is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current protecting against physical and environmental threats evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.5"
+      ],
+      "relatedRisks": [
+        "R-PH.3"
+      ],
+      "requiredEvidence": [
+        "Protecting against physical and environmental threats evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.11",
+      "title": "Evidence of working in secure areas",
+      "description": "Verify that working in secure areas is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Annually",
+      "procedure": "Inspect the current working in secure areas evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.6"
+      ],
+      "relatedRisks": [
+        "R-PH.4"
+      ],
+      "requiredEvidence": [
+        "Working in secure areas evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.12",
+      "title": "Operating review for working in secure areas",
+      "description": "Verify that working in secure areas is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current working in secure areas evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.6"
+      ],
+      "relatedRisks": [
+        "R-PH.4"
+      ],
+      "requiredEvidence": [
+        "Working in secure areas evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.13",
+      "title": "Evidence of clear desk and clear screen",
+      "description": "Verify that clear desk and clear screen is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Annually",
+      "procedure": "Inspect the current clear desk and clear screen evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.7"
+      ],
+      "relatedRisks": [
+        "R-PH.4"
+      ],
+      "requiredEvidence": [
+        "Clear desk and clear screen evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.14",
+      "title": "Operating review for clear desk and clear screen",
+      "description": "Verify that clear desk and clear screen is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current clear desk and clear screen evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.7"
+      ],
+      "relatedRisks": [
+        "R-PH.4"
+      ],
+      "requiredEvidence": [
+        "Clear desk and clear screen evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.15",
+      "title": "Evidence of equipment siting and protection",
+      "description": "Verify that equipment siting and protection is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Annually",
+      "procedure": "Inspect the current equipment siting and protection evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.8"
+      ],
+      "relatedRisks": [
+        "R-PH.5"
+      ],
+      "requiredEvidence": [
+        "Equipment siting and protection evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.16",
+      "title": "Operating review for equipment siting and protection",
+      "description": "Verify that equipment siting and protection is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current equipment siting and protection evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.8"
+      ],
+      "relatedRisks": [
+        "R-PH.5"
+      ],
+      "requiredEvidence": [
+        "Equipment siting and protection evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.17",
+      "title": "Evidence of security of assets off-premises",
+      "description": "Verify that security of assets off-premises is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Annually",
+      "procedure": "Inspect the current security of assets off-premises evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.9"
+      ],
+      "relatedRisks": [
+        "R-PH.2"
+      ],
+      "requiredEvidence": [
+        "Security of assets off-premises evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.18",
+      "title": "Operating review for security of assets off-premises",
+      "description": "Verify that security of assets off-premises is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current security of assets off-premises evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.9"
+      ],
+      "relatedRisks": [
+        "R-PH.2"
+      ],
+      "requiredEvidence": [
+        "Security of assets off-premises evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.19",
+      "title": "Evidence of storage media",
+      "description": "Verify that storage media is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Annually",
+      "procedure": "Inspect the current storage media evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.10"
+      ],
+      "relatedRisks": [
+        "R-PH.6"
+      ],
+      "requiredEvidence": [
+        "Storage media evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.20",
+      "title": "Operating review for storage media",
+      "description": "Verify that storage media is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current storage media evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.10"
+      ],
+      "relatedRisks": [
+        "R-PH.6"
+      ],
+      "requiredEvidence": [
+        "Storage media evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.21",
+      "title": "Evidence of supporting utilities",
+      "description": "Verify that supporting utilities is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Annually",
+      "procedure": "Inspect the current supporting utilities evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.11"
+      ],
+      "relatedRisks": [
+        "R-PH.6",
+        "R-PH.7"
+      ],
+      "requiredEvidence": [
+        "Supporting utilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.22",
+      "title": "Operating review for supporting utilities",
+      "description": "Verify that supporting utilities is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current supporting utilities evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.11"
+      ],
+      "relatedRisks": [
+        "R-PH.6",
+        "R-PH.7"
+      ],
+      "requiredEvidence": [
+        "Supporting utilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.23",
+      "title": "Evidence of cabling security",
+      "description": "Verify that cabling security is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Annually",
+      "procedure": "Inspect the current cabling security evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.12"
+      ],
+      "relatedRisks": [
+        "R-PH.7"
+      ],
+      "requiredEvidence": [
+        "Cabling security evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.24",
+      "title": "Operating review for cabling security",
+      "description": "Verify that cabling security is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current cabling security evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.12"
+      ],
+      "relatedRisks": [
+        "R-PH.7"
+      ],
+      "requiredEvidence": [
+        "Cabling security evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.25",
+      "title": "Evidence of equipment maintenance",
+      "description": "Verify that equipment maintenance is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Annually",
+      "procedure": "Inspect the current equipment maintenance evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.13"
+      ],
+      "relatedRisks": [
+        "R-PH.8"
+      ],
+      "requiredEvidence": [
+        "Equipment maintenance evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.26",
+      "title": "Operating review for equipment maintenance",
+      "description": "Verify that equipment maintenance is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current equipment maintenance evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.13"
+      ],
+      "relatedRisks": [
+        "R-PH.8"
+      ],
+      "requiredEvidence": [
+        "Equipment maintenance evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.27",
+      "title": "Evidence of secure disposal or re-use of equipment",
+      "description": "Verify that secure disposal or re-use of equipment is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Annually",
+      "procedure": "Inspect the current secure disposal or re-use of equipment evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.14"
+      ],
+      "relatedRisks": [
+        "R-PH.3"
+      ],
+      "requiredEvidence": [
+        "Secure disposal or re-use of equipment evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-PH.28",
+      "title": "Operating review for secure disposal or re-use of equipment",
+      "description": "Verify that secure disposal or re-use of equipment is implemented and supported by suitable evidence.",
+      "category": "Physical",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current secure disposal or re-use of equipment evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "7.14"
+      ],
+      "relatedRisks": [
+        "R-PH.3"
+      ],
+      "requiredEvidence": [
+        "Secure disposal or re-use of equipment evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.1",
+      "title": "Evidence of user endpoint devices",
+      "description": "Verify that user endpoint devices is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current user endpoint devices evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.1"
+      ],
+      "relatedRisks": [
+        "R-TC.1",
+        "R-TC.25"
+      ],
+      "requiredEvidence": [
+        "User endpoint devices evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.2",
+      "title": "Operating review for user endpoint devices",
+      "description": "Verify that user endpoint devices is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current user endpoint devices evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.1"
+      ],
+      "relatedRisks": [
+        "R-TC.1",
+        "R-TC.25"
+      ],
+      "requiredEvidence": [
+        "User endpoint devices evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.3",
+      "title": "Evidence of privileged access rights",
+      "description": "Verify that privileged access rights is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current privileged access rights evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.2"
+      ],
+      "relatedRisks": [
+        "R-TC.1",
+        "R-TC.2"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ]
+    },
+    {
+      "id": "T-TC.4",
+      "title": "Operating review for privileged access rights",
+      "description": "Verify that privileged access rights is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current privileged access rights evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.2"
+      ],
+      "relatedRisks": [
+        "R-TC.1",
+        "R-TC.2"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ]
+    },
+    {
+      "id": "T-TC.5",
+      "title": "Evidence of information access restriction",
+      "description": "Verify that information access restriction is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current information access restriction evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.3"
+      ],
+      "relatedRisks": [
+        "R-TC.1"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ]
+    },
+    {
+      "id": "T-TC.6",
+      "title": "Operating review for information access restriction",
+      "description": "Verify that information access restriction is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current information access restriction evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.3"
+      ],
+      "relatedRisks": [
+        "R-TC.1"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ]
+    },
+    {
+      "id": "T-TC.7",
+      "title": "Evidence of access to source code",
+      "description": "Verify that access to source code is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current access to source code evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.4"
+      ],
+      "relatedRisks": [
+        "R-TC.3"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ]
+    },
+    {
+      "id": "T-TC.8",
+      "title": "Operating review for access to source code",
+      "description": "Verify that access to source code is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current access to source code evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.4"
+      ],
+      "relatedRisks": [
+        "R-TC.3"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ]
+    },
+    {
+      "id": "T-TC.9",
+      "title": "Evidence of secure authentication",
+      "description": "Verify that secure authentication is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current secure authentication evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.5"
+      ],
+      "relatedRisks": [
+        "R-TC.4"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ]
+    },
+    {
+      "id": "T-TC.10",
+      "title": "Operating review for secure authentication",
+      "description": "Verify that secure authentication is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current secure authentication evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.5"
+      ],
+      "relatedRisks": [
+        "R-TC.4"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ]
+    },
+    {
+      "id": "T-TC.11",
+      "title": "Evidence of capacity management",
+      "description": "Verify that capacity management is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current capacity management evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.6"
+      ],
+      "relatedRisks": [
+        "R-TC.4",
+        "R-TC.5"
+      ],
+      "requiredEvidence": [
+        "Capacity management evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.12",
+      "title": "Operating review for capacity management",
+      "description": "Verify that capacity management is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current capacity management evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.6"
+      ],
+      "relatedRisks": [
+        "R-TC.4",
+        "R-TC.5"
+      ],
+      "requiredEvidence": [
+        "Capacity management evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.13",
+      "title": "Evidence of protection against malware",
+      "description": "Verify that protection against malware is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current protection against malware evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.7"
+      ],
+      "relatedRisks": [
+        "R-TC.1"
+      ],
+      "requiredEvidence": [
+        "Protection against malware evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.14",
+      "title": "Operating review for protection against malware",
+      "description": "Verify that protection against malware is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current protection against malware evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.7"
+      ],
+      "relatedRisks": [
+        "R-TC.1"
+      ],
+      "requiredEvidence": [
+        "Protection against malware evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.15",
+      "title": "Evidence of management of technical vulnerabilities",
+      "description": "Verify that management of technical vulnerabilities is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current management of technical vulnerabilities evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.8"
+      ],
+      "relatedRisks": [
+        "R-TC.6"
+      ],
+      "requiredEvidence": [
+        "Management of technical vulnerabilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.16",
+      "title": "Operating review for management of technical vulnerabilities",
+      "description": "Verify that management of technical vulnerabilities is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current management of technical vulnerabilities evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.8"
+      ],
+      "relatedRisks": [
+        "R-TC.6"
+      ],
+      "requiredEvidence": [
+        "Management of technical vulnerabilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.17",
+      "title": "Evidence of configuration management",
+      "description": "Verify that configuration management is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current configuration management evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.9"
+      ],
+      "relatedRisks": [
+        "R-TC.6",
+        "R-TC.7"
+      ],
+      "requiredEvidence": [
+        "Configuration management evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.18",
+      "title": "Operating review for configuration management",
+      "description": "Verify that configuration management is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current configuration management evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.9"
+      ],
+      "relatedRisks": [
+        "R-TC.6",
+        "R-TC.7"
+      ],
+      "requiredEvidence": [
+        "Configuration management evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.19",
+      "title": "Evidence of information deletion",
+      "description": "Verify that information deletion is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current information deletion evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.10"
+      ],
+      "relatedRisks": [
+        "R-TC.7"
+      ],
+      "requiredEvidence": [
+        "Information deletion evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.20",
+      "title": "Operating review for information deletion",
+      "description": "Verify that information deletion is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current information deletion evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.10"
+      ],
+      "relatedRisks": [
+        "R-TC.7"
+      ],
+      "requiredEvidence": [
+        "Information deletion evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.21",
+      "title": "Evidence of data masking",
+      "description": "Verify that data masking is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current data masking evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.11"
+      ],
+      "relatedRisks": [
+        "R-TC.8"
+      ],
+      "requiredEvidence": [
+        "Data masking evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.22",
+      "title": "Operating review for data masking",
+      "description": "Verify that data masking is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current data masking evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.11"
+      ],
+      "relatedRisks": [
+        "R-TC.8"
+      ],
+      "requiredEvidence": [
+        "Data masking evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.23",
+      "title": "Evidence of data leakage prevention",
+      "description": "Verify that data leakage prevention is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current data leakage prevention evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.12"
+      ],
+      "relatedRisks": [
+        "R-TC.9"
+      ],
+      "requiredEvidence": [
+        "Data leakage prevention evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.24",
+      "title": "Operating review for data leakage prevention",
+      "description": "Verify that data leakage prevention is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current data leakage prevention evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.12"
+      ],
+      "relatedRisks": [
+        "R-TC.9"
+      ],
+      "requiredEvidence": [
+        "Data leakage prevention evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.25",
+      "title": "Evidence of information backup",
+      "description": "Verify that information backup is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current information backup evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.13"
+      ],
+      "relatedRisks": [
+        "R-TC.10"
+      ],
+      "requiredEvidence": [
+        "Backup configuration",
+        "Restore test evidence",
+        "Continuity plan review"
+      ]
+    },
+    {
+      "id": "T-TC.26",
+      "title": "Operating review for information backup",
+      "description": "Verify that information backup is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current information backup evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.13"
+      ],
+      "relatedRisks": [
+        "R-TC.10"
+      ],
+      "requiredEvidence": [
+        "Backup configuration",
+        "Restore test evidence",
+        "Continuity plan review"
+      ]
+    },
+    {
+      "id": "T-TC.27",
+      "title": "Evidence of redundancy of information processing facilities",
+      "description": "Verify that redundancy of information processing facilities is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current redundancy of information processing facilities evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.14"
+      ],
+      "relatedRisks": [
+        "R-TC.10"
+      ],
+      "requiredEvidence": [
+        "Redundancy of information processing facilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.28",
+      "title": "Operating review for redundancy of information processing facilities",
+      "description": "Verify that redundancy of information processing facilities is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current redundancy of information processing facilities evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.14"
+      ],
+      "relatedRisks": [
+        "R-TC.10"
+      ],
+      "requiredEvidence": [
+        "Redundancy of information processing facilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.29",
+      "title": "Evidence of logging",
+      "description": "Verify that logging is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current logging evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.15"
+      ],
+      "relatedRisks": [
+        "R-TC.11"
+      ],
+      "requiredEvidence": [
+        "Logging evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.30",
+      "title": "Operating review for logging",
+      "description": "Verify that logging is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current logging evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.15"
+      ],
+      "relatedRisks": [
+        "R-TC.11"
+      ],
+      "requiredEvidence": [
+        "Logging evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.31",
+      "title": "Evidence of monitoring activities",
+      "description": "Verify that monitoring activities is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current monitoring activities evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.16"
+      ],
+      "relatedRisks": [
+        "R-TC.11",
+        "R-TC.12"
+      ],
+      "requiredEvidence": [
+        "Monitoring activities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.32",
+      "title": "Operating review for monitoring activities",
+      "description": "Verify that monitoring activities is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current monitoring activities evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.16"
+      ],
+      "relatedRisks": [
+        "R-TC.11",
+        "R-TC.12"
+      ],
+      "requiredEvidence": [
+        "Monitoring activities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.33",
+      "title": "Evidence of clock synchronization",
+      "description": "Verify that clock synchronization is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current clock synchronization evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.17"
+      ],
+      "relatedRisks": [
+        "R-TC.13"
+      ],
+      "requiredEvidence": [
+        "Clock synchronization evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.34",
+      "title": "Operating review for clock synchronization",
+      "description": "Verify that clock synchronization is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current clock synchronization evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.17"
+      ],
+      "relatedRisks": [
+        "R-TC.13"
+      ],
+      "requiredEvidence": [
+        "Clock synchronization evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.35",
+      "title": "Evidence of use of privileged utility programs",
+      "description": "Verify that use of privileged utility programs is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current use of privileged utility programs evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.18"
+      ],
+      "relatedRisks": [
+        "R-TC.13"
+      ],
+      "requiredEvidence": [
+        "Use of privileged utility programs evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.36",
+      "title": "Operating review for use of privileged utility programs",
+      "description": "Verify that use of privileged utility programs is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current use of privileged utility programs evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.18"
+      ],
+      "relatedRisks": [
+        "R-TC.13"
+      ],
+      "requiredEvidence": [
+        "Use of privileged utility programs evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.37",
+      "title": "Evidence of installation of software on operational systems",
+      "description": "Verify that installation of software on operational systems is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current installation of software on operational systems evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.19"
+      ],
+      "relatedRisks": [
+        "R-TC.14"
+      ],
+      "requiredEvidence": [
+        "Installation of software on operational systems evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.38",
+      "title": "Operating review for installation of software on operational systems",
+      "description": "Verify that installation of software on operational systems is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current installation of software on operational systems evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.19"
+      ],
+      "relatedRisks": [
+        "R-TC.14"
+      ],
+      "requiredEvidence": [
+        "Installation of software on operational systems evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.39",
+      "title": "Evidence of networks security",
+      "description": "Verify that networks security is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current networks security evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.20"
+      ],
+      "relatedRisks": [
+        "R-TC.15"
+      ],
+      "requiredEvidence": [
+        "Networks security evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.40",
+      "title": "Operating review for networks security",
+      "description": "Verify that networks security is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Quarterly",
+      "procedure": "Inspect the current networks security evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.20"
+      ],
+      "relatedRisks": [
+        "R-TC.15"
+      ],
+      "requiredEvidence": [
+        "Networks security evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.41",
+      "title": "Evidence of security of network services",
+      "description": "Verify that security of network services is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current security of network services evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.21"
+      ],
+      "relatedRisks": [
+        "R-TC.16"
+      ],
+      "requiredEvidence": [
+        "Security of network services evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.42",
+      "title": "Evidence of segregation of networks",
+      "description": "Verify that segregation of networks is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current segregation of networks evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.22"
+      ],
+      "relatedRisks": [
+        "R-TC.16"
+      ],
+      "requiredEvidence": [
+        "Segregation of networks evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.43",
+      "title": "Evidence of web filtering",
+      "description": "Verify that web filtering is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current web filtering evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.23"
+      ],
+      "relatedRisks": [
+        "R-TC.16",
+        "R-TC.17"
+      ],
+      "requiredEvidence": [
+        "Web filtering evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.44",
+      "title": "Evidence of use of cryptography",
+      "description": "Verify that use of cryptography is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current use of cryptography evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.24"
+      ],
+      "relatedRisks": [
+        "R-TC.18"
+      ],
+      "requiredEvidence": [
+        "Use of cryptography evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.45",
+      "title": "Evidence of secure development life cycle",
+      "description": "Verify that secure development life cycle is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current secure development life cycle evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.25"
+      ],
+      "relatedRisks": [
+        "R-TC.19"
+      ],
+      "requiredEvidence": [
+        "Secure development life cycle evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.46",
+      "title": "Evidence of application security requirements",
+      "description": "Verify that application security requirements is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current application security requirements evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.26"
+      ],
+      "relatedRisks": [
+        "R-TC.19"
+      ],
+      "requiredEvidence": [
+        "Application security requirements evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.47",
+      "title": "Evidence of secure system architecture and engineering principles",
+      "description": "Verify that secure system architecture and engineering principles is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current secure system architecture and engineering principles evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.27"
+      ],
+      "relatedRisks": [
+        "R-TC.20"
+      ],
+      "requiredEvidence": [
+        "Secure system architecture and engineering principles evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.48",
+      "title": "Evidence of secure coding",
+      "description": "Verify that secure coding is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current secure coding evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.28"
+      ],
+      "relatedRisks": [
+        "R-TC.21"
+      ],
+      "requiredEvidence": [
+        "Secure coding evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.49",
+      "title": "Evidence of security testing in development and acceptance",
+      "description": "Verify that security testing in development and acceptance is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current security testing in development and acceptance evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.29"
+      ],
+      "relatedRisks": [
+        "R-TC.21"
+      ],
+      "requiredEvidence": [
+        "Security testing in development and acceptance evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.50",
+      "title": "Evidence of outsourced development",
+      "description": "Verify that outsourced development is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current outsourced development evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.30"
+      ],
+      "relatedRisks": [
+        "R-TC.22"
+      ],
+      "requiredEvidence": [
+        "Outsourced development evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.51",
+      "title": "Evidence of separation of development, test and production environments",
+      "description": "Verify that separation of development, test and production environments is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current separation of development, test and production environments evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.31"
+      ],
+      "relatedRisks": [
+        "R-TC.22",
+        "R-TC.23"
+      ],
+      "requiredEvidence": [
+        "Separation of development, test and production environments evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.52",
+      "title": "Evidence of change management",
+      "description": "Verify that change management is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current change management evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.32"
+      ],
+      "relatedRisks": [
+        "R-TC.24"
+      ],
+      "requiredEvidence": [
+        "Change management evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.53",
+      "title": "Evidence of test information",
+      "description": "Verify that test information is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current test information evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.33"
+      ],
+      "relatedRisks": [
+        "R-TC.2"
+      ],
+      "requiredEvidence": [
+        "Test information evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    },
+    {
+      "id": "T-TC.54",
+      "title": "Evidence of protection of information systems during audit testing",
+      "description": "Verify that protection of information systems during audit testing is implemented and supported by suitable evidence.",
+      "category": "Technology",
+      "frequency": "Annually",
+      "procedure": "Inspect the current protection of information systems during audit testing evidence, confirm ownership, review date, approval, and sampled implementation where applicable.",
+      "expectedResult": "Evidence is current, approved where required, and aligned to the mapped ISO 27001 control.",
+      "relatedControls": [
+        "8.34"
+      ],
+      "relatedRisks": [
+        "R-TC.25"
+      ],
+      "requiredEvidence": [
+        "Protection of information systems during audit testing evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ]
+    }
+  ]
+}

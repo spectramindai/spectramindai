@@ -1,0 +1,1860 @@
+{
+  "mappings": [
+    {
+      "controlId": "5.1",
+      "riskIds": [
+        "R-OP.1",
+        "R-OP.26"
+      ],
+      "testIds": [
+        "T-OP.1",
+        "T-OP.2"
+      ],
+      "policyIds": [
+        "DOC-002",
+        "DOC-003",
+        "DOC-006"
+      ],
+      "evidenceIds": [
+        "EV-ISO-001",
+        "EV-ISO-002"
+      ],
+      "taskIds": [
+        "TASK-ISO-001"
+      ],
+      "questionIds": [
+        "Q-ISO-GEN-001",
+        "Q-ISO-GEN-003"
+      ]
+    },
+    {
+      "controlId": "5.2",
+      "riskIds": [
+        "R-OP.1",
+        "R-OP.2"
+      ],
+      "testIds": [
+        "T-OP.3",
+        "T-OP.4"
+      ],
+      "policyIds": [
+        "DOC-003",
+        "DOC-006"
+      ],
+      "evidenceIds": [
+        "EV-ISO-003",
+        "EV-ISO-004"
+      ],
+      "taskIds": [
+        "TASK-ISO-002"
+      ],
+      "questionIds": [
+        "Q-ISO-GEN-001",
+        "Q-ISO-GEN-002",
+        "Q-ISO-TEC-001"
+      ]
+    },
+    {
+      "controlId": "5.3",
+      "riskIds": [
+        "R-OP.1"
+      ],
+      "testIds": [
+        "T-OP.5",
+        "T-OP.6"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-005",
+        "EV-ISO-006"
+      ],
+      "taskIds": [
+        "TASK-ISO-003"
+      ],
+      "questionIds": [
+        "Q-ISO-GEN-002",
+        "Q-ISO-TEC-001"
+      ]
+    },
+    {
+      "controlId": "5.4",
+      "riskIds": [
+        "R-OP.3"
+      ],
+      "testIds": [
+        "T-OP.7",
+        "T-OP.8"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-007",
+        "EV-ISO-008"
+      ],
+      "taskIds": [
+        "TASK-ISO-004"
+      ],
+      "questionIds": [
+        "Q-ISO-GEN-001",
+        "Q-ISO-GEN-002",
+        "Q-ISO-GEN-003",
+        "Q-ISO-TEC-001"
+      ]
+    },
+    {
+      "controlId": "5.5",
+      "riskIds": [
+        "R-OP.4"
+      ],
+      "testIds": [
+        "T-OP.10",
+        "T-OP.9"
+      ],
+      "policyIds": [
+        "DOC-005"
+      ],
+      "evidenceIds": [
+        "EV-ISO-009",
+        "EV-ISO-010"
+      ],
+      "taskIds": [
+        "TASK-ISO-005"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.6",
+      "riskIds": [
+        "R-OP.4"
+      ],
+      "testIds": [
+        "T-OP.11",
+        "T-OP.12"
+      ],
+      "policyIds": [
+        "DOC-005"
+      ],
+      "evidenceIds": [
+        "EV-ISO-011",
+        "EV-ISO-012"
+      ],
+      "taskIds": [
+        "TASK-ISO-006"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.7",
+      "riskIds": [
+        "R-OP.5"
+      ],
+      "testIds": [
+        "T-OP.13",
+        "T-OP.14"
+      ],
+      "policyIds": [
+        "DOC-007"
+      ],
+      "evidenceIds": [
+        "EV-ISO-013",
+        "EV-ISO-014"
+      ],
+      "taskIds": [
+        "TASK-ISO-007"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.8",
+      "riskIds": [
+        "R-OP.6"
+      ],
+      "testIds": [
+        "T-OP.15",
+        "T-OP.16"
+      ],
+      "policyIds": [
+        "DOC-007"
+      ],
+      "evidenceIds": [
+        "EV-ISO-015",
+        "EV-ISO-016"
+      ],
+      "taskIds": [
+        "TASK-ISO-008"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.9",
+      "riskIds": [
+        "R-OP.6"
+      ],
+      "testIds": [
+        "T-OP.17",
+        "T-OP.18"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-017",
+        "EV-ISO-018"
+      ],
+      "taskIds": [
+        "TASK-ISO-009"
+      ],
+      "questionIds": [
+        "Q-ISO-TEC-005"
+      ]
+    },
+    {
+      "controlId": "5.10",
+      "riskIds": [
+        "R-OP.7"
+      ],
+      "testIds": [
+        "T-OP.19",
+        "T-OP.20"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-019",
+        "EV-ISO-020"
+      ],
+      "taskIds": [
+        "TASK-ISO-010"
+      ],
+      "questionIds": [
+        "Q-ISO-GEN-005",
+        "Q-ISO-GEN-006"
+      ]
+    },
+    {
+      "controlId": "5.11",
+      "riskIds": [
+        "R-OP.7",
+        "R-OP.8"
+      ],
+      "testIds": [
+        "T-OP.21",
+        "T-OP.22"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-021",
+        "EV-ISO-022"
+      ],
+      "taskIds": [
+        "TASK-ISO-011"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.12",
+      "riskIds": [
+        "R-OP.9"
+      ],
+      "testIds": [
+        "T-OP.23",
+        "T-OP.24"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-023",
+        "EV-ISO-024"
+      ],
+      "taskIds": [
+        "TASK-ISO-012"
+      ],
+      "questionIds": [
+        "Q-ISO-GEN-005",
+        "Q-ISO-TEC-003"
+      ]
+    },
+    {
+      "controlId": "5.13",
+      "riskIds": [
+        "R-OP.1"
+      ],
+      "testIds": [
+        "T-OP.25",
+        "T-OP.26"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-025",
+        "EV-ISO-026"
+      ],
+      "taskIds": [
+        "TASK-ISO-013"
+      ],
+      "questionIds": [
+        "Q-ISO-TEC-003"
+      ]
+    },
+    {
+      "controlId": "5.14",
+      "riskIds": [
+        "R-OP.10"
+      ],
+      "testIds": [
+        "T-OP.27",
+        "T-OP.28"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-027",
+        "EV-ISO-028"
+      ],
+      "taskIds": [
+        "TASK-ISO-014"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.15",
+      "riskIds": [
+        "R-OP.10",
+        "R-OP.11"
+      ],
+      "testIds": [
+        "T-OP.29",
+        "T-OP.30"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-029",
+        "EV-ISO-030"
+      ],
+      "taskIds": [
+        "TASK-ISO-015"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.16",
+      "riskIds": [
+        "R-OP.11"
+      ],
+      "testIds": [
+        "T-OP.31",
+        "T-OP.32"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-031",
+        "EV-ISO-032"
+      ],
+      "taskIds": [
+        "TASK-ISO-016"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.17",
+      "riskIds": [
+        "R-OP.12"
+      ],
+      "testIds": [
+        "T-OP.33",
+        "T-OP.34"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-033",
+        "EV-ISO-034"
+      ],
+      "taskIds": [
+        "TASK-ISO-017"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.18",
+      "riskIds": [
+        "R-OP.13"
+      ],
+      "testIds": [
+        "T-OP.35",
+        "T-OP.36"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-035",
+        "EV-ISO-036"
+      ],
+      "taskIds": [
+        "TASK-ISO-018"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.19",
+      "riskIds": [
+        "R-OP.13",
+        "R-OP.14"
+      ],
+      "testIds": [
+        "T-OP.37",
+        "T-OP.38"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-037",
+        "EV-ISO-038"
+      ],
+      "taskIds": [
+        "TASK-ISO-019"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.20",
+      "riskIds": [
+        "R-OP.2"
+      ],
+      "testIds": [
+        "T-OP.39",
+        "T-OP.40"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-039",
+        "EV-ISO-040"
+      ],
+      "taskIds": [
+        "TASK-ISO-020"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.21",
+      "riskIds": [
+        "R-OP.15"
+      ],
+      "testIds": [
+        "T-OP.41",
+        "T-OP.42"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-041",
+        "EV-ISO-042"
+      ],
+      "taskIds": [
+        "TASK-ISO-021"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.22",
+      "riskIds": [
+        "R-OP.16"
+      ],
+      "testIds": [
+        "T-OP.43",
+        "T-OP.44"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-043",
+        "EV-ISO-044"
+      ],
+      "taskIds": [
+        "TASK-ISO-022"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.23",
+      "riskIds": [
+        "R-OP.16"
+      ],
+      "testIds": [
+        "T-OP.45",
+        "T-OP.46"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-045",
+        "EV-ISO-046"
+      ],
+      "taskIds": [
+        "TASK-ISO-023"
+      ],
+      "questionIds": [
+        "Q-ISO-TEC-005"
+      ]
+    },
+    {
+      "controlId": "5.24",
+      "riskIds": [
+        "R-OP.16",
+        "R-OP.17"
+      ],
+      "testIds": [
+        "T-OP.47",
+        "T-OP.48"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-047",
+        "EV-ISO-048"
+      ],
+      "taskIds": [
+        "TASK-ISO-024"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.25",
+      "riskIds": [
+        "R-OP.18"
+      ],
+      "testIds": [
+        "T-OP.49",
+        "T-OP.50"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-049",
+        "EV-ISO-050"
+      ],
+      "taskIds": [
+        "TASK-ISO-025"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.26",
+      "riskIds": [
+        "R-OP.3"
+      ],
+      "testIds": [
+        "T-OP.51",
+        "T-OP.52"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-051",
+        "EV-ISO-052"
+      ],
+      "taskIds": [
+        "TASK-ISO-026"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.27",
+      "riskIds": [
+        "R-OP.19"
+      ],
+      "testIds": [
+        "T-OP.53",
+        "T-OP.54"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-053",
+        "EV-ISO-054"
+      ],
+      "taskIds": [
+        "TASK-ISO-027"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.28",
+      "riskIds": [
+        "R-OP.19",
+        "R-OP.20"
+      ],
+      "testIds": [
+        "T-OP.55",
+        "T-OP.56"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-055",
+        "EV-ISO-056"
+      ],
+      "taskIds": [
+        "TASK-ISO-028"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.29",
+      "riskIds": [
+        "R-OP.21"
+      ],
+      "testIds": [
+        "T-OP.57",
+        "T-OP.58"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-057",
+        "EV-ISO-058"
+      ],
+      "taskIds": [
+        "TASK-ISO-029"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.30",
+      "riskIds": [
+        "R-OP.21"
+      ],
+      "testIds": [
+        "T-OP.59",
+        "T-OP.60"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-059",
+        "EV-ISO-060"
+      ],
+      "taskIds": [
+        "TASK-ISO-030"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.31",
+      "riskIds": [
+        "R-OP.22"
+      ],
+      "testIds": [
+        "T-OP.61",
+        "T-OP.62"
+      ],
+      "policyIds": [
+        "DOC-002"
+      ],
+      "evidenceIds": [
+        "EV-ISO-061",
+        "EV-ISO-062"
+      ],
+      "taskIds": [
+        "TASK-ISO-031"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.32",
+      "riskIds": [
+        "R-OP.22",
+        "R-OP.23"
+      ],
+      "testIds": [
+        "T-OP.63",
+        "T-OP.64"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-063",
+        "EV-ISO-064"
+      ],
+      "taskIds": [
+        "TASK-ISO-032"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.33",
+      "riskIds": [
+        "R-OP.4"
+      ],
+      "testIds": [
+        "T-OP.65",
+        "T-OP.66"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-065",
+        "EV-ISO-066"
+      ],
+      "taskIds": [
+        "TASK-ISO-033"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.34",
+      "riskIds": [
+        "R-OP.24"
+      ],
+      "testIds": [
+        "T-OP.67",
+        "T-OP.68"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-067",
+        "EV-ISO-068"
+      ],
+      "taskIds": [
+        "TASK-ISO-034"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.35",
+      "riskIds": [
+        "R-OP.25"
+      ],
+      "testIds": [
+        "T-OP.69",
+        "T-OP.70"
+      ],
+      "policyIds": [
+        "DOC-001",
+        "DOC-003",
+        "DOC-004",
+        "DOC-006"
+      ],
+      "evidenceIds": [
+        "EV-ISO-069",
+        "EV-ISO-070"
+      ],
+      "taskIds": [
+        "TASK-ISO-035"
+      ],
+      "questionIds": [
+        "Q-ISO-GEN-003"
+      ]
+    },
+    {
+      "controlId": "5.36",
+      "riskIds": [
+        "R-OP.25"
+      ],
+      "testIds": [
+        "T-OP.71",
+        "T-OP.72"
+      ],
+      "policyIds": [
+        "DOC-001",
+        "DOC-002",
+        "DOC-003",
+        "DOC-004",
+        "DOC-006"
+      ],
+      "evidenceIds": [
+        "EV-ISO-071",
+        "EV-ISO-072"
+      ],
+      "taskIds": [
+        "TASK-ISO-036"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "5.37",
+      "riskIds": [
+        "R-OP.26"
+      ],
+      "testIds": [
+        "T-OP.73",
+        "T-OP.74"
+      ],
+      "policyIds": [
+        "DOC-001",
+        "DOC-002"
+      ],
+      "evidenceIds": [
+        "EV-ISO-073",
+        "EV-ISO-074"
+      ],
+      "taskIds": [
+        "TASK-ISO-037"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "6.1",
+      "riskIds": [
+        "R-PE.1"
+      ],
+      "testIds": [
+        "T-PE.1",
+        "T-PE.2"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-075",
+        "EV-ISO-076"
+      ],
+      "taskIds": [
+        "TASK-ISO-038"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "6.2",
+      "riskIds": [
+        "R-PE.1",
+        "R-PE.2"
+      ],
+      "testIds": [
+        "T-PE.3",
+        "T-PE.4"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-077",
+        "EV-ISO-078"
+      ],
+      "taskIds": [
+        "TASK-ISO-039"
+      ],
+      "questionIds": [
+        "Q-ISO-GEN-004"
+      ]
+    },
+    {
+      "controlId": "6.3",
+      "riskIds": [
+        "R-PE.1",
+        "R-PE.3"
+      ],
+      "testIds": [
+        "T-PE.5",
+        "T-PE.6"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-079",
+        "EV-ISO-080"
+      ],
+      "taskIds": [
+        "TASK-ISO-040"
+      ],
+      "questionIds": [
+        "Q-ISO-GEN-004"
+      ]
+    },
+    {
+      "controlId": "6.4",
+      "riskIds": [
+        "R-PE.4"
+      ],
+      "testIds": [
+        "T-PE.7",
+        "T-PE.8"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-081",
+        "EV-ISO-082"
+      ],
+      "taskIds": [
+        "TASK-ISO-041"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "6.5",
+      "riskIds": [
+        "R-PE.4",
+        "R-PE.5"
+      ],
+      "testIds": [
+        "T-PE.10",
+        "T-PE.9"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-083",
+        "EV-ISO-084"
+      ],
+      "taskIds": [
+        "TASK-ISO-042"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "6.6",
+      "riskIds": [
+        "R-PE.6"
+      ],
+      "testIds": [
+        "T-PE.11",
+        "T-PE.12"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-085",
+        "EV-ISO-086"
+      ],
+      "taskIds": [
+        "TASK-ISO-043"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "6.7",
+      "riskIds": [
+        "R-PE.6",
+        "R-PE.7"
+      ],
+      "testIds": [
+        "T-PE.13",
+        "T-PE.14"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-087",
+        "EV-ISO-088"
+      ],
+      "taskIds": [
+        "TASK-ISO-044"
+      ],
+      "questionIds": [
+        "Q-ISO-GEN-006"
+      ]
+    },
+    {
+      "controlId": "6.8",
+      "riskIds": [
+        "R-PE.7",
+        "R-PE.8"
+      ],
+      "testIds": [
+        "T-PE.15",
+        "T-PE.16"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-089",
+        "EV-ISO-090"
+      ],
+      "taskIds": [
+        "TASK-ISO-045"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "7.1",
+      "riskIds": [
+        "R-PH.1"
+      ],
+      "testIds": [
+        "T-PH.1",
+        "T-PH.2"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-091",
+        "EV-ISO-092"
+      ],
+      "taskIds": [
+        "TASK-ISO-046"
+      ],
+      "questionIds": [
+        "Q-ISO-GEN-004"
+      ]
+    },
+    {
+      "controlId": "7.2",
+      "riskIds": [
+        "R-PH.1"
+      ],
+      "testIds": [
+        "T-PH.3",
+        "T-PH.4"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-093",
+        "EV-ISO-094"
+      ],
+      "taskIds": [
+        "TASK-ISO-047"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "7.3",
+      "riskIds": [
+        "R-PH.1",
+        "R-PH.2"
+      ],
+      "testIds": [
+        "T-PH.5",
+        "T-PH.6"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-095",
+        "EV-ISO-096"
+      ],
+      "taskIds": [
+        "TASK-ISO-048"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "7.4",
+      "riskIds": [
+        "R-PH.1"
+      ],
+      "testIds": [
+        "T-PH.7",
+        "T-PH.8"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-097",
+        "EV-ISO-098"
+      ],
+      "taskIds": [
+        "TASK-ISO-049"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "7.5",
+      "riskIds": [
+        "R-PH.3"
+      ],
+      "testIds": [
+        "T-PH.10",
+        "T-PH.9"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-099",
+        "EV-ISO-100"
+      ],
+      "taskIds": [
+        "TASK-ISO-050"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "7.6",
+      "riskIds": [
+        "R-PH.4"
+      ],
+      "testIds": [
+        "T-PH.11",
+        "T-PH.12"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-101",
+        "EV-ISO-102"
+      ],
+      "taskIds": [
+        "TASK-ISO-051"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "7.7",
+      "riskIds": [
+        "R-PH.4"
+      ],
+      "testIds": [
+        "T-PH.13",
+        "T-PH.14"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-103",
+        "EV-ISO-104"
+      ],
+      "taskIds": [
+        "TASK-ISO-052"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "7.8",
+      "riskIds": [
+        "R-PH.5"
+      ],
+      "testIds": [
+        "T-PH.15",
+        "T-PH.16"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-105",
+        "EV-ISO-106"
+      ],
+      "taskIds": [
+        "TASK-ISO-053"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "7.9",
+      "riskIds": [
+        "R-PH.2"
+      ],
+      "testIds": [
+        "T-PH.17",
+        "T-PH.18"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-107",
+        "EV-ISO-108"
+      ],
+      "taskIds": [
+        "TASK-ISO-054"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "7.10",
+      "riskIds": [
+        "R-PH.6"
+      ],
+      "testIds": [
+        "T-PH.19",
+        "T-PH.20"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-109",
+        "EV-ISO-110"
+      ],
+      "taskIds": [
+        "TASK-ISO-055"
+      ],
+      "questionIds": [
+        "Q-ISO-GEN-007"
+      ]
+    },
+    {
+      "controlId": "7.11",
+      "riskIds": [
+        "R-PH.6",
+        "R-PH.7"
+      ],
+      "testIds": [
+        "T-PH.21",
+        "T-PH.22"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-111",
+        "EV-ISO-112"
+      ],
+      "taskIds": [
+        "TASK-ISO-056"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "7.12",
+      "riskIds": [
+        "R-PH.7"
+      ],
+      "testIds": [
+        "T-PH.23",
+        "T-PH.24"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-113",
+        "EV-ISO-114"
+      ],
+      "taskIds": [
+        "TASK-ISO-057"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "7.13",
+      "riskIds": [
+        "R-PH.8"
+      ],
+      "testIds": [
+        "T-PH.25",
+        "T-PH.26"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-115",
+        "EV-ISO-116"
+      ],
+      "taskIds": [
+        "TASK-ISO-058"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "7.14",
+      "riskIds": [
+        "R-PH.3"
+      ],
+      "testIds": [
+        "T-PH.27",
+        "T-PH.28"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-117",
+        "EV-ISO-118"
+      ],
+      "taskIds": [
+        "TASK-ISO-059"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.1",
+      "riskIds": [
+        "R-TC.1",
+        "R-TC.25"
+      ],
+      "testIds": [
+        "T-TC.1",
+        "T-TC.2"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-119",
+        "EV-ISO-120"
+      ],
+      "taskIds": [
+        "TASK-ISO-060"
+      ],
+      "questionIds": [
+        "Q-ISO-GEN-005",
+        "Q-ISO-GEN-006"
+      ]
+    },
+    {
+      "controlId": "8.2",
+      "riskIds": [
+        "R-TC.1",
+        "R-TC.2"
+      ],
+      "testIds": [
+        "T-TC.3",
+        "T-TC.4"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-121",
+        "EV-ISO-122"
+      ],
+      "taskIds": [
+        "TASK-ISO-061"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.3",
+      "riskIds": [
+        "R-TC.1"
+      ],
+      "testIds": [
+        "T-TC.5",
+        "T-TC.6"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-123",
+        "EV-ISO-124"
+      ],
+      "taskIds": [
+        "TASK-ISO-062"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.4",
+      "riskIds": [
+        "R-TC.3"
+      ],
+      "testIds": [
+        "T-TC.7",
+        "T-TC.8"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-125",
+        "EV-ISO-126"
+      ],
+      "taskIds": [
+        "TASK-ISO-063"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.5",
+      "riskIds": [
+        "R-TC.4"
+      ],
+      "testIds": [
+        "T-TC.10",
+        "T-TC.9"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-127",
+        "EV-ISO-128"
+      ],
+      "taskIds": [
+        "TASK-ISO-064"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.6",
+      "riskIds": [
+        "R-TC.4",
+        "R-TC.5"
+      ],
+      "testIds": [
+        "T-TC.11",
+        "T-TC.12"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-129",
+        "EV-ISO-130"
+      ],
+      "taskIds": [
+        "TASK-ISO-065"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.7",
+      "riskIds": [
+        "R-TC.1"
+      ],
+      "testIds": [
+        "T-TC.13",
+        "T-TC.14"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-131",
+        "EV-ISO-132"
+      ],
+      "taskIds": [
+        "TASK-ISO-066"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.8",
+      "riskIds": [
+        "R-TC.6"
+      ],
+      "testIds": [
+        "T-TC.15",
+        "T-TC.16"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-133",
+        "EV-ISO-134"
+      ],
+      "taskIds": [
+        "TASK-ISO-067"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.9",
+      "riskIds": [
+        "R-TC.6",
+        "R-TC.7"
+      ],
+      "testIds": [
+        "T-TC.17",
+        "T-TC.18"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-135",
+        "EV-ISO-136"
+      ],
+      "taskIds": [
+        "TASK-ISO-068"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.10",
+      "riskIds": [
+        "R-TC.7"
+      ],
+      "testIds": [
+        "T-TC.19",
+        "T-TC.20"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-137",
+        "EV-ISO-138"
+      ],
+      "taskIds": [
+        "TASK-ISO-069"
+      ],
+      "questionIds": [
+        "Q-ISO-GEN-007"
+      ]
+    },
+    {
+      "controlId": "8.11",
+      "riskIds": [
+        "R-TC.8"
+      ],
+      "testIds": [
+        "T-TC.21",
+        "T-TC.22"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-139",
+        "EV-ISO-140"
+      ],
+      "taskIds": [
+        "TASK-ISO-070"
+      ],
+      "questionIds": [
+        "Q-ISO-TEC-003"
+      ]
+    },
+    {
+      "controlId": "8.12",
+      "riskIds": [
+        "R-TC.9"
+      ],
+      "testIds": [
+        "T-TC.23",
+        "T-TC.24"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-141",
+        "EV-ISO-142"
+      ],
+      "taskIds": [
+        "TASK-ISO-071"
+      ],
+      "questionIds": [
+        "Q-ISO-GEN-005",
+        "Q-ISO-TEC-003"
+      ]
+    },
+    {
+      "controlId": "8.13",
+      "riskIds": [
+        "R-TC.10"
+      ],
+      "testIds": [
+        "T-TC.25",
+        "T-TC.26"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-143",
+        "EV-ISO-144"
+      ],
+      "taskIds": [
+        "TASK-ISO-072"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.14",
+      "riskIds": [
+        "R-TC.10"
+      ],
+      "testIds": [
+        "T-TC.27",
+        "T-TC.28"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-145",
+        "EV-ISO-146"
+      ],
+      "taskIds": [
+        "TASK-ISO-073"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.15",
+      "riskIds": [
+        "R-TC.11"
+      ],
+      "testIds": [
+        "T-TC.29",
+        "T-TC.30"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-147",
+        "EV-ISO-148"
+      ],
+      "taskIds": [
+        "TASK-ISO-074"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.16",
+      "riskIds": [
+        "R-TC.11",
+        "R-TC.12"
+      ],
+      "testIds": [
+        "T-TC.31",
+        "T-TC.32"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-149",
+        "EV-ISO-150"
+      ],
+      "taskIds": [
+        "TASK-ISO-075"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.17",
+      "riskIds": [
+        "R-TC.13"
+      ],
+      "testIds": [
+        "T-TC.33",
+        "T-TC.34"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-151",
+        "EV-ISO-152"
+      ],
+      "taskIds": [
+        "TASK-ISO-076"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.18",
+      "riskIds": [
+        "R-TC.13"
+      ],
+      "testIds": [
+        "T-TC.35",
+        "T-TC.36"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-153",
+        "EV-ISO-154"
+      ],
+      "taskIds": [
+        "TASK-ISO-077"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.19",
+      "riskIds": [
+        "R-TC.14"
+      ],
+      "testIds": [
+        "T-TC.37",
+        "T-TC.38"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-155",
+        "EV-ISO-156"
+      ],
+      "taskIds": [
+        "TASK-ISO-078"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.20",
+      "riskIds": [
+        "R-TC.15"
+      ],
+      "testIds": [
+        "T-TC.39",
+        "T-TC.40"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-157",
+        "EV-ISO-158"
+      ],
+      "taskIds": [
+        "TASK-ISO-079"
+      ],
+      "questionIds": [
+        "Q-ISO-TEC-004",
+        "Q-ISO-TEC-005"
+      ]
+    },
+    {
+      "controlId": "8.21",
+      "riskIds": [
+        "R-TC.16"
+      ],
+      "testIds": [
+        "T-TC.41"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-159"
+      ],
+      "taskIds": [
+        "TASK-ISO-080"
+      ],
+      "questionIds": [
+        "Q-ISO-TEC-004"
+      ]
+    },
+    {
+      "controlId": "8.22",
+      "riskIds": [
+        "R-TC.16"
+      ],
+      "testIds": [
+        "T-TC.42"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-160"
+      ],
+      "taskIds": [
+        "TASK-ISO-081"
+      ],
+      "questionIds": [
+        "Q-ISO-TEC-004"
+      ]
+    },
+    {
+      "controlId": "8.23",
+      "riskIds": [
+        "R-TC.16",
+        "R-TC.17"
+      ],
+      "testIds": [
+        "T-TC.43"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-161"
+      ],
+      "taskIds": [
+        "TASK-ISO-082"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.24",
+      "riskIds": [
+        "R-TC.18"
+      ],
+      "testIds": [
+        "T-TC.44"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-162"
+      ],
+      "taskIds": [
+        "TASK-ISO-083"
+      ],
+      "questionIds": [
+        "Q-ISO-GEN-007"
+      ]
+    },
+    {
+      "controlId": "8.25",
+      "riskIds": [
+        "R-TC.19"
+      ],
+      "testIds": [
+        "T-TC.45"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-163"
+      ],
+      "taskIds": [
+        "TASK-ISO-084"
+      ],
+      "questionIds": [
+        "Q-ISO-TEC-002"
+      ]
+    },
+    {
+      "controlId": "8.26",
+      "riskIds": [
+        "R-TC.19"
+      ],
+      "testIds": [
+        "T-TC.46"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-164"
+      ],
+      "taskIds": [
+        "TASK-ISO-085"
+      ],
+      "questionIds": [
+        "Q-ISO-TEC-002"
+      ]
+    },
+    {
+      "controlId": "8.27",
+      "riskIds": [
+        "R-TC.20"
+      ],
+      "testIds": [
+        "T-TC.47"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-165"
+      ],
+      "taskIds": [
+        "TASK-ISO-086"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.28",
+      "riskIds": [
+        "R-TC.21"
+      ],
+      "testIds": [
+        "T-TC.48"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-166"
+      ],
+      "taskIds": [
+        "TASK-ISO-087"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.29",
+      "riskIds": [
+        "R-TC.21"
+      ],
+      "testIds": [
+        "T-TC.49"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-167"
+      ],
+      "taskIds": [
+        "TASK-ISO-088"
+      ],
+      "questionIds": [
+        "Q-ISO-TEC-002"
+      ]
+    },
+    {
+      "controlId": "8.30",
+      "riskIds": [
+        "R-TC.22"
+      ],
+      "testIds": [
+        "T-TC.50"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-168"
+      ],
+      "taskIds": [
+        "TASK-ISO-089"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.31",
+      "riskIds": [
+        "R-TC.22",
+        "R-TC.23"
+      ],
+      "testIds": [
+        "T-TC.51"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-169"
+      ],
+      "taskIds": [
+        "TASK-ISO-090"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.32",
+      "riskIds": [
+        "R-TC.24"
+      ],
+      "testIds": [
+        "T-TC.52"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-170"
+      ],
+      "taskIds": [
+        "TASK-ISO-091"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.33",
+      "riskIds": [
+        "R-TC.2"
+      ],
+      "testIds": [
+        "T-TC.53"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-171"
+      ],
+      "taskIds": [
+        "TASK-ISO-092"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "8.34",
+      "riskIds": [
+        "R-TC.25"
+      ],
+      "testIds": [
+        "T-TC.54"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-ISO-172"
+      ],
+      "taskIds": [
+        "TASK-ISO-093"
+      ],
+      "questionIds": []
+    }
+  ]
+}

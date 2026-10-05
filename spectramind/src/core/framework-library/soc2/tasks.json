@@ -1,0 +1,310 @@
+{
+  "taskTemplates": [
+    {
+      "id": "TASK-001",
+      "title": "Assign Owner",
+      "trigger": "A framework item has no assigned owner in the organization workspace.",
+      "priority": "High",
+      "recommendedOwner": "Compliance Manager",
+      "relatedControls": ["CC1.3", "CC1.5", "CC5.1"],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-002",
+      "title": "Assign Reviewer",
+      "trigger": "A framework item requires review but has no reviewer assigned in the organization workspace.",
+      "priority": "Medium",
+      "recommendedOwner": "Compliance Manager",
+      "relatedControls": ["CC1.5", "CC4.1", "CC4.2"],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-003",
+      "title": "Upload Evidence",
+      "trigger": "A required evidence item has not been uploaded for a test, control, or policy.",
+      "priority": "High",
+      "recommendedOwner": "Control Owner",
+      "relatedControls": ["CC4.1", "CC5.1"],
+      "relatedTests": []
+    },
+    {
+      "id": "TASK-004",
+      "title": "Review Policy",
+      "trigger": "A required policy has not been reviewed within its defined review frequency.",
+      "priority": "High",
+      "recommendedOwner": "Policy Owner",
+      "relatedControls": ["CC1.1", "CC2.2", "CC5.3"],
+      "relatedTests": ["T-HR-002"]
+    },
+    {
+      "id": "TASK-005",
+      "title": "Approve Policy",
+      "trigger": "A required policy is drafted or reviewed but not approved in the organization workspace.",
+      "priority": "High",
+      "recommendedOwner": "Executive Sponsor",
+      "relatedControls": ["CC1.2", "CC1.5", "CC5.3"],
+      "relatedTests": ["T-HR-002"]
+    },
+    {
+      "id": "TASK-006",
+      "title": "Perform Access Review",
+      "trigger": "Quarterly user access review evidence is missing or access review has not been completed.",
+      "priority": "Critical",
+      "recommendedOwner": "IT Administrator",
+      "relatedControls": ["CC6.1", "CC6.2", "CC6.3"],
+      "relatedTests": ["T-ID-001"]
+    },
+    {
+      "id": "TASK-007",
+      "title": "Perform Privileged Access Review",
+      "trigger": "Privileged access review evidence is missing or privileged access has not been reviewed.",
+      "priority": "Critical",
+      "recommendedOwner": "Security Engineer",
+      "relatedControls": ["CC6.1", "CC6.2", "CC6.3"],
+      "relatedTests": ["T-ID-002"]
+    },
+    {
+      "id": "TASK-008",
+      "title": "Verify MFA Enforcement",
+      "trigger": "MFA configuration or enrollment evidence is missing, incomplete, or indicates unenrolled users.",
+      "priority": "Critical",
+      "recommendedOwner": "IT Administrator",
+      "relatedControls": ["CC6.1", "CC6.6"],
+      "relatedTests": ["T-ID-003"]
+    },
+    {
+      "id": "TASK-009",
+      "title": "Review Access Provisioning",
+      "trigger": "Access provisioning approvals are missing for sampled new users or access changes.",
+      "priority": "High",
+      "recommendedOwner": "IT Administrator",
+      "relatedControls": ["CC6.2"],
+      "relatedTests": ["T-ID-004"]
+    },
+    {
+      "id": "TASK-010",
+      "title": "Review Access Deprovisioning",
+      "trigger": "Terminated or transferred user access removal evidence is missing or incomplete.",
+      "priority": "Critical",
+      "recommendedOwner": "IT Administrator",
+      "relatedControls": ["CC6.3", "CC6.4"],
+      "relatedTests": ["T-ID-005"]
+    },
+    {
+      "id": "TASK-011",
+      "title": "Complete Patch Verification",
+      "trigger": "Patch compliance evidence is missing or critical patches remain unresolved beyond policy expectations.",
+      "priority": "Critical",
+      "recommendedOwner": "IT Operations",
+      "relatedControls": ["CC5.2", "CC6.8", "CC7.1"],
+      "relatedTests": ["T-INF-001"]
+    },
+    {
+      "id": "TASK-012",
+      "title": "Review Vulnerability Scan",
+      "trigger": "Vulnerability scan report or remediation tracker is missing for the review period.",
+      "priority": "Critical",
+      "recommendedOwner": "Security Engineer",
+      "relatedControls": ["CC7.1", "CC4.2"],
+      "relatedTests": ["T-INF-002"]
+    },
+    {
+      "id": "TASK-013",
+      "title": "Complete Firewall Review",
+      "trigger": "Firewall rule review evidence is missing or broad access rules have not been justified.",
+      "priority": "High",
+      "recommendedOwner": "Security Engineer",
+      "relatedControls": ["CC6.6", "CC7.1"],
+      "relatedTests": ["T-INF-003"]
+    },
+    {
+      "id": "TASK-014",
+      "title": "Complete Cloud Configuration Review",
+      "trigger": "Cloud security posture evidence is missing or open misconfiguration findings are not remediated.",
+      "priority": "Critical",
+      "recommendedOwner": "Cloud Security Owner",
+      "relatedControls": ["CC5.2", "CC6.6", "CC7.1"],
+      "relatedTests": ["T-INF-004"]
+    },
+    {
+      "id": "TASK-015",
+      "title": "Update Asset Inventory",
+      "trigger": "Asset inventory evidence is missing, stale, or does not include ownership information.",
+      "priority": "High",
+      "recommendedOwner": "IT Operations",
+      "relatedControls": ["CC5.2", "CC6.5", "CC7.1"],
+      "relatedTests": ["T-INF-005"]
+    },
+    {
+      "id": "TASK-016",
+      "title": "Review Endpoint Protection",
+      "trigger": "Endpoint protection report is missing or shows unmanaged or unhealthy endpoints.",
+      "priority": "High",
+      "recommendedOwner": "IT Operations",
+      "relatedControls": ["CC6.5", "CC6.8", "CC7.2"],
+      "relatedTests": ["T-INF-006"]
+    },
+    {
+      "id": "TASK-017",
+      "title": "Review Production Change",
+      "trigger": "Production change approval, testing, or deployment evidence is missing.",
+      "priority": "High",
+      "recommendedOwner": "Engineering Manager",
+      "relatedControls": ["CC8.1"],
+      "relatedTests": ["T-APP-001", "T-APP-004"]
+    },
+    {
+      "id": "TASK-018",
+      "title": "Review Code Approval Evidence",
+      "trigger": "Pull request review or branch protection evidence is missing.",
+      "priority": "High",
+      "recommendedOwner": "Engineering Manager",
+      "relatedControls": ["CC5.2", "CC8.1"],
+      "relatedTests": ["T-APP-002"]
+    },
+    {
+      "id": "TASK-019",
+      "title": "Review Dependency Scan",
+      "trigger": "Dependency scan evidence is missing or critical vulnerable dependencies are unresolved.",
+      "priority": "High",
+      "recommendedOwner": "Security Engineer",
+      "relatedControls": ["CC7.1", "CC8.1", "CC9.2"],
+      "relatedTests": ["T-APP-003"]
+    },
+    {
+      "id": "TASK-020",
+      "title": "Review Security Logs",
+      "trigger": "Log review evidence is missing for the review period.",
+      "priority": "High",
+      "recommendedOwner": "Security Operations",
+      "relatedControls": ["CC7.2", "CC7.3"],
+      "relatedTests": ["T-MON-001"]
+    },
+    {
+      "id": "TASK-021",
+      "title": "Verify Security Alerts",
+      "trigger": "Alert rule list, alert review tickets, or escalation evidence is missing.",
+      "priority": "High",
+      "recommendedOwner": "Security Operations",
+      "relatedControls": ["CC7.2", "CC7.3", "CC7.4"],
+      "relatedTests": ["T-MON-002"]
+    },
+    {
+      "id": "TASK-022",
+      "title": "Review Log Retention",
+      "trigger": "Log retention configuration or log access review evidence is missing.",
+      "priority": "Medium",
+      "recommendedOwner": "Security Operations",
+      "relatedControls": ["CC6.7", "CC7.2"],
+      "relatedTests": ["T-MON-003"]
+    },
+    {
+      "id": "TASK-023",
+      "title": "Complete Incident Response Tabletop",
+      "trigger": "Incident response tabletop exercise has not been completed within the expected review period.",
+      "priority": "High",
+      "recommendedOwner": "Security Leadership",
+      "relatedControls": ["CC7.4", "CC7.5"],
+      "relatedTests": ["T-IR-001"]
+    },
+    {
+      "id": "TASK-024",
+      "title": "Review Incident Tickets",
+      "trigger": "Incident tickets are missing required investigation, containment, remediation, or closure evidence.",
+      "priority": "High",
+      "recommendedOwner": "Security Operations",
+      "relatedControls": ["CC7.3", "CC7.4", "CC7.5"],
+      "relatedTests": ["T-IR-002"]
+    },
+    {
+      "id": "TASK-025",
+      "title": "Complete Post-Incident Review",
+      "trigger": "A significant incident is closed without post-incident review or corrective action tracking.",
+      "priority": "Medium",
+      "recommendedOwner": "Security Leadership",
+      "relatedControls": ["CC4.2", "CC7.5"],
+      "relatedTests": ["T-IR-003"]
+    },
+    {
+      "id": "TASK-026",
+      "title": "Complete Vendor Review",
+      "trigger": "Vendor due diligence or annual vendor review evidence is missing for an in-scope vendor.",
+      "priority": "High",
+      "recommendedOwner": "Vendor Manager",
+      "relatedControls": ["CC2.3", "CC9.2"],
+      "relatedTests": ["T-VND-001", "T-VND-002"]
+    },
+    {
+      "id": "TASK-027",
+      "title": "Review Vendor Access",
+      "trigger": "Vendor access export, approval, or periodic review evidence is missing.",
+      "priority": "High",
+      "recommendedOwner": "IT Administrator",
+      "relatedControls": ["CC6.1", "CC6.2", "CC6.3", "CC9.2"],
+      "relatedTests": ["T-VND-003"]
+    },
+    {
+      "id": "TASK-028",
+      "title": "Complete Backup Verification",
+      "trigger": "Backup job report or backup failure remediation evidence is missing.",
+      "priority": "High",
+      "recommendedOwner": "IT Operations",
+      "relatedControls": ["CC7.5", "CC9.1"],
+      "relatedTests": ["T-BC-001"]
+    },
+    {
+      "id": "TASK-029",
+      "title": "Complete Backup Test",
+      "trigger": "Backup restore test has not been completed within the expected review period.",
+      "priority": "High",
+      "recommendedOwner": "IT Operations",
+      "relatedControls": ["CC7.5", "CC9.1"],
+      "relatedTests": ["T-BC-002"]
+    },
+    {
+      "id": "TASK-030",
+      "title": "Complete Disaster Recovery Test",
+      "trigger": "Disaster recovery test report or recovery objective evidence is missing.",
+      "priority": "High",
+      "recommendedOwner": "IT Operations",
+      "relatedControls": ["CC7.5", "CC9.1"],
+      "relatedTests": ["T-BC-003"]
+    },
+    {
+      "id": "TASK-031",
+      "title": "Review Security Awareness Training",
+      "trigger": "Security awareness training content or completion report is missing.",
+      "priority": "Medium",
+      "recommendedOwner": "Human Resources",
+      "relatedControls": ["CC1.4", "CC2.2"],
+      "relatedTests": ["T-HR-001"]
+    },
+    {
+      "id": "TASK-032",
+      "title": "Review Policy Acknowledgements",
+      "trigger": "Policy acknowledgement report or policy distribution evidence is missing.",
+      "priority": "Medium",
+      "recommendedOwner": "Human Resources",
+      "relatedControls": ["CC1.1", "CC2.2", "CC5.3"],
+      "relatedTests": ["T-HR-002"]
+    },
+    {
+      "id": "TASK-033",
+      "title": "Review Encryption Configuration",
+      "trigger": "Encryption configuration or data flow documentation is missing.",
+      "priority": "High",
+      "recommendedOwner": "Security Engineer",
+      "relatedControls": ["CC6.5", "CC6.7"],
+      "relatedTests": ["T-DP-001"]
+    },
+    {
+      "id": "TASK-034",
+      "title": "Review Data Retention",
+      "trigger": "Data retention schedule or deletion and archival records are missing.",
+      "priority": "Medium",
+      "recommendedOwner": "Data Governance",
+      "relatedControls": ["CC5.3", "CC6.5"],
+      "relatedTests": ["T-DP-002"]
+    }
+  ]
+}

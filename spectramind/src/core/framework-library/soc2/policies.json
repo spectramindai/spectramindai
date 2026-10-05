@@ -1,0 +1,204 @@
+{
+  "policies": [
+    {
+      "id": "POL-001",
+      "title": "Information Security Policy",
+      "description": "Defines the organization's overall information security program, governance expectations, control responsibilities, and security objectives.",
+      "ownerRole": "Security Leadership",
+      "reviewFrequency": "Annually",
+      "relatedControls": ["CC1.1", "CC1.2", "CC1.3", "CC1.5", "CC3.1", "CC5.3"],
+      "templateSections": ["Purpose", "Scope", "Security Objectives", "Governance", "Roles and Responsibilities", "Policy Compliance", "Review and Approval"],
+      "aiSummary": "This policy anchors the SOC 2 control environment by defining security governance, accountability, and high-level control expectations."
+    },
+    {
+      "id": "POL-002",
+      "title": "Access Control Policy",
+      "description": "Establishes requirements for granting, reviewing, modifying, and removing logical and physical access.",
+      "ownerRole": "Security Leadership",
+      "reviewFrequency": "Annually",
+      "relatedControls": ["CC6.1", "CC6.2", "CC6.3", "CC6.4"],
+      "templateSections": ["Purpose", "Scope", "Access Approval", "Least Privilege", "Privileged Access", "Access Reviews", "Access Removal", "Exceptions"],
+      "aiSummary": "This policy supports access governance by requiring approval, least privilege, periodic review, and timely removal of access."
+    },
+    {
+      "id": "POL-003",
+      "title": "Password Policy",
+      "description": "Defines password and authentication requirements for user, privileged, and service accounts.",
+      "ownerRole": "Security Leadership",
+      "reviewFrequency": "Annually",
+      "relatedControls": ["CC6.1", "CC6.2"],
+      "templateSections": ["Purpose", "Scope", "Password Requirements", "Credential Storage", "Service Accounts", "Account Lockout", "Exceptions"],
+      "aiSummary": "This policy reduces credential compromise risk by defining password and account authentication expectations."
+    },
+    {
+      "id": "POL-004",
+      "title": "Multi-Factor Authentication Policy",
+      "description": "Defines where MFA is required and how MFA exceptions are approved, reviewed, and monitored.",
+      "ownerRole": "Security Leadership",
+      "reviewFrequency": "Annually",
+      "relatedControls": ["CC6.1", "CC6.6"],
+      "templateSections": ["Purpose", "Scope", "MFA Requirements", "Privileged Access", "Remote Access", "Exception Handling", "Monitoring"],
+      "aiSummary": "This policy supports SOC 2 access security by requiring stronger authentication for sensitive and remote access."
+    },
+    {
+      "id": "POL-005",
+      "title": "Acceptable Use Policy",
+      "description": "Defines acceptable use requirements for company systems, devices, networks, data, and communication tools.",
+      "ownerRole": "Human Resources",
+      "reviewFrequency": "Annually",
+      "relatedControls": ["CC1.1", "CC1.4", "CC2.2", "CC6.5"],
+      "templateSections": ["Purpose", "Scope", "Acceptable Use", "Prohibited Activities", "Data Handling", "Monitoring", "Disciplinary Action"],
+      "aiSummary": "This policy communicates expected employee behavior and supports consistent enforcement of security rules."
+    },
+    {
+      "id": "POL-006",
+      "title": "Asset Management Policy",
+      "description": "Defines requirements for identifying, classifying, owning, maintaining, and retiring information assets.",
+      "ownerRole": "IT Operations",
+      "reviewFrequency": "Annually",
+      "relatedControls": ["CC5.2", "CC6.5", "CC7.1"],
+      "templateSections": ["Purpose", "Scope", "Asset Inventory", "Asset Ownership", "Classification", "Asset Handling", "Disposal", "Review"],
+      "aiSummary": "This policy helps ensure assets are known, owned, protected, and included in monitoring and control activities."
+    },
+    {
+      "id": "POL-007",
+      "title": "Backup Policy",
+      "description": "Defines backup requirements for systems and data, including frequency, monitoring, retention, and restoration testing.",
+      "ownerRole": "IT Operations",
+      "reviewFrequency": "Annually",
+      "relatedControls": ["CC7.5", "CC9.1"],
+      "templateSections": ["Purpose", "Scope", "Backup Frequency", "Backup Monitoring", "Retention", "Restore Testing", "Roles and Responsibilities"],
+      "aiSummary": "This policy supports resilience by requiring backups to be performed, monitored, retained, and tested."
+    },
+    {
+      "id": "POL-008",
+      "title": "Disaster Recovery Policy",
+      "description": "Defines disaster recovery planning, recovery objectives, testing, and improvement requirements.",
+      "ownerRole": "IT Operations",
+      "reviewFrequency": "Annually",
+      "relatedControls": ["CC7.5", "CC9.1"],
+      "templateSections": ["Purpose", "Scope", "Recovery Objectives", "Recovery Procedures", "Testing", "Issue Remediation", "Review and Approval"],
+      "aiSummary": "This policy supports recovery readiness by defining how critical services are restored after major disruptions."
+    },
+    {
+      "id": "POL-009",
+      "title": "Business Continuity Policy",
+      "description": "Defines business continuity planning, continuity roles, exercise requirements, and disruption response expectations.",
+      "ownerRole": "Business Operations",
+      "reviewFrequency": "Annually",
+      "relatedControls": ["CC3.4", "CC7.5", "CC9.1"],
+      "templateSections": ["Purpose", "Scope", "Continuity Planning", "Critical Processes", "Roles and Responsibilities", "Exercises", "Maintenance"],
+      "aiSummary": "This policy supports continuity of operations by requiring planning and periodic validation for business disruptions."
+    },
+    {
+      "id": "POL-010",
+      "title": "Incident Response Policy",
+      "description": "Defines how security incidents are identified, escalated, investigated, contained, remediated, and reviewed.",
+      "ownerRole": "Security Leadership",
+      "reviewFrequency": "Annually",
+      "relatedControls": ["CC2.2", "CC2.3", "CC7.3", "CC7.4", "CC7.5"],
+      "templateSections": ["Purpose", "Scope", "Incident Classification", "Roles and Responsibilities", "Escalation", "Communication", "Containment", "Post-Incident Review"],
+      "aiSummary": "This policy supports incident readiness by defining response ownership, escalation, investigation, and lessons learned."
+    },
+    {
+      "id": "POL-011",
+      "title": "Change Management Policy",
+      "description": "Defines requirements for requesting, approving, testing, deploying, and reviewing system changes.",
+      "ownerRole": "Engineering Leadership",
+      "reviewFrequency": "Annually",
+      "relatedControls": ["CC3.4", "CC8.1"],
+      "templateSections": ["Purpose", "Scope", "Change Classification", "Approval", "Testing", "Deployment", "Emergency Changes", "Rollback"],
+      "aiSummary": "This policy supports controlled production change by requiring authorization, testing, traceability, and review."
+    },
+    {
+      "id": "POL-012",
+      "title": "Vendor Management Policy",
+      "description": "Defines requirements for vendor due diligence, risk assessment, contract review, monitoring, and periodic reassessment.",
+      "ownerRole": "Vendor Management",
+      "reviewFrequency": "Annually",
+      "relatedControls": ["CC2.3", "CC9.2"],
+      "templateSections": ["Purpose", "Scope", "Vendor Classification", "Due Diligence", "Contract Requirements", "Ongoing Monitoring", "Offboarding"],
+      "aiSummary": "This policy supports third-party risk management by requiring vendor evaluation before and during vendor relationships."
+    },
+    {
+      "id": "POL-013",
+      "title": "Data Classification Policy",
+      "description": "Defines data classification levels and handling expectations based on sensitivity and business impact.",
+      "ownerRole": "Data Governance",
+      "reviewFrequency": "Annually",
+      "relatedControls": ["CC6.5", "CC6.7"],
+      "templateSections": ["Purpose", "Scope", "Classification Levels", "Handling Requirements", "Labeling", "Storage", "Transmission", "Disposal"],
+      "aiSummary": "This policy helps protect sensitive data by defining classification and handling requirements."
+    },
+    {
+      "id": "POL-014",
+      "title": "Encryption Policy",
+      "description": "Defines encryption requirements for data at rest, data in transit, backups, and cryptographic key handling.",
+      "ownerRole": "Security Leadership",
+      "reviewFrequency": "Annually",
+      "relatedControls": ["CC6.5", "CC6.7"],
+      "templateSections": ["Purpose", "Scope", "Encryption at Rest", "Encryption in Transit", "Key Management", "Exceptions", "Review"],
+      "aiSummary": "This policy supports confidentiality and data protection by defining when and how encryption must be used."
+    },
+    {
+      "id": "POL-015",
+      "title": "Logging and Monitoring Policy",
+      "description": "Defines logging, monitoring, alerting, review, retention, and escalation requirements.",
+      "ownerRole": "Security Operations",
+      "reviewFrequency": "Annually",
+      "relatedControls": ["CC6.7", "CC7.1", "CC7.2", "CC7.3"],
+      "templateSections": ["Purpose", "Scope", "Log Sources", "Alerting", "Review Responsibilities", "Retention", "Escalation", "Access Protection"],
+      "aiSummary": "This policy supports detection and investigation by requiring logs and alerts to be retained, reviewed, and protected."
+    },
+    {
+      "id": "POL-016",
+      "title": "Secure Development Policy",
+      "description": "Defines secure software development lifecycle requirements, including review, testing, dependency management, and release controls.",
+      "ownerRole": "Engineering Leadership",
+      "reviewFrequency": "Annually",
+      "relatedControls": ["CC5.2", "CC7.1", "CC8.1"],
+      "templateSections": ["Purpose", "Scope", "Secure Design", "Code Review", "Security Testing", "Dependency Management", "Release Approval"],
+      "aiSummary": "This policy supports secure application delivery by embedding security review and testing into engineering workflows."
+    },
+    {
+      "id": "POL-017",
+      "title": "Remote Work Policy",
+      "description": "Defines security expectations for remote work, remote access, endpoint protection, and secure handling of company data.",
+      "ownerRole": "Human Resources",
+      "reviewFrequency": "Annually",
+      "relatedControls": ["CC2.2", "CC6.1", "CC6.5", "CC6.6"],
+      "templateSections": ["Purpose", "Scope", "Remote Access", "Device Security", "Data Handling", "Network Security", "Reporting Issues"],
+      "aiSummary": "This policy supports secure remote operations by defining access, endpoint, and data handling expectations."
+    },
+    {
+      "id": "POL-018",
+      "title": "Employee Onboarding Policy",
+      "description": "Defines onboarding security requirements including training, policy acknowledgement, role assignment, and access approval.",
+      "ownerRole": "Human Resources",
+      "reviewFrequency": "Annually",
+      "relatedControls": ["CC1.4", "CC2.2", "CC6.2"],
+      "templateSections": ["Purpose", "Scope", "Pre-Employment Requirements", "Training", "Policy Acknowledgement", "Access Requests", "Role Assignment"],
+      "aiSummary": "This policy supports consistent onboarding by requiring security training, policy acknowledgement, and approved access."
+    },
+    {
+      "id": "POL-019",
+      "title": "Employee Offboarding Policy",
+      "description": "Defines offboarding requirements for access removal, asset return, knowledge transfer, and termination processing.",
+      "ownerRole": "Human Resources",
+      "reviewFrequency": "Annually",
+      "relatedControls": ["CC6.3", "CC6.4", "CC6.5"],
+      "templateSections": ["Purpose", "Scope", "Termination Notification", "Access Removal", "Asset Return", "Physical Access Removal", "Verification"],
+      "aiSummary": "This policy reduces post-employment access risk by requiring timely deprovisioning and offboarding verification."
+    },
+    {
+      "id": "POL-020",
+      "title": "Risk Management Policy",
+      "description": "Defines the risk management process for identifying, assessing, treating, monitoring, and reporting risks.",
+      "ownerRole": "Risk Management",
+      "reviewFrequency": "Annually",
+      "relatedControls": ["CC3.1", "CC3.2", "CC3.3", "CC3.4", "CC4.1", "CC4.2", "CC5.1"],
+      "templateSections": ["Purpose", "Scope", "Risk Methodology", "Risk Identification", "Risk Assessment", "Risk Treatment", "Monitoring", "Reporting"],
+      "aiSummary": "This policy supports SOC 2 risk assessment by defining how risks are identified, evaluated, treated, and monitored."
+    }
+  ]
+}

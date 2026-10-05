@@ -1,0 +1,56 @@
+name: Deploy Compvd to Azure
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  frontend:
+    if: ${{ vars.DEPLOY_FRONTEND == 'true' }}
+    name: Frontend · Azure Static Web Apps
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: upload
+          app_location: /spectramind
+          api_location: ""
+          output_location: dist
+          app_build_command: npm run build
+
+  backend:
+    name: Backend · Azure App Service
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: backend/package-lock.json
+      - name: Install and build backend
+        working-directory: backend
+        run: |
+          npm ci
+          npm run build:azure
+          npm prune --omit=dev
+      - name: Sign in to Azure
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      - name: Deploy backend
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: app-compvd-api-prod
+          package: backend
