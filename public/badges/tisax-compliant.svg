@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 130" width="100%" height="100%" fill="none">
+  <!-- Shield Frame -->
+  <path d="M 12 7 C 12 3.1 15.1 0 19 0 L 81 0 C 84.9 0 88 3.1 88 7 L 88 92 C 88 94.6 86.6 97 84.3 98.4 L 51.8 127 C 50.7 127.9 49.3 127.9 48.2 127 L 15.7 98.4 C 13.4 97 12 94.6 12 92 Z" fill="#ffffff" stroke="#0f172a" stroke-width="2.5" stroke-linejoin="round"/>
+  
+  <!-- Proper ENX Automotive Information Security Emblem -->
+  <g transform="translate(50, 18)">
+    <path d="M -9.5 -5 L 0 -10.5 L 9.5 -5 L 9.5 5 L 0 10.5 L -9.5 5 Z" fill="#0f172a"/>
+    <circle cx="0" cy="0" r="5.5" fill="none" stroke="#ffffff" stroke-width="1.2"/>
+    <path d="M -4.5 -2 C -2 -5.5 4 -5.5 5 -1.5 C 5.5 2 -1 3.5 -3 4.5" fill="none" stroke="#38bdf8" stroke-width="1.2" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="1.6" fill="#ffffff"/>
+  </g>
+
+  <!-- Typography -->
+  <text x="50" y="49" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="900" fill="#0f172a" text-anchor="middle" letter-spacing="0.5">TISAX</text>
+  
+  <!-- Green Ribbon Pill -->
+  <rect x="8" y="57" width="84" height="15" rx="3.5" fill="#0d7853"/>
+  <text x="50" y="67.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="1">ASSESSED</text>
+  
+  <!-- Subtext -->
+  <text x="50" y="79.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="5" font-weight="700" fill="#0f172a" text-anchor="middle" letter-spacing="0.4">ENX / VDA ISA</text>
+  <text x="50" y="87.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="6.5" font-weight="800" fill="#0f172a" text-anchor="middle" letter-spacing="0.5">AL3 READY</text>
+
+  <!-- Bottom Emerald Chevron -->
+  <path d="M 17 96 L 50 123.5 L 83 96 L 85.5 101 L 50 128 L 14.5 101 Z" fill="#0d7853"/>
+</svg>

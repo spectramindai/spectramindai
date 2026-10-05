@@ -1,0 +1,972 @@
+{
+  "mappings": [
+    {
+      "controlId": "CC1.1",
+      "riskIds": [
+        "R-HR-004"
+      ],
+      "testIds": [
+        "T-HR-002"
+      ],
+      "policyIds": [
+        "POL-001",
+        "POL-005",
+        "POL-018",
+        "POL-020"
+      ],
+      "evidenceIds": [
+        "EV-056"
+      ],
+      "taskIds": [
+        "TASK-004",
+        "TASK-005",
+        "TASK-032"
+      ],
+      "questionIds": [
+        "Q-ORG-003",
+        "Q-EMP-002"
+      ]
+    },
+    {
+      "controlId": "CC1.2",
+      "riskIds": [],
+      "testIds": [],
+      "policyIds": [
+        "POL-001"
+      ],
+      "evidenceIds": [],
+      "taskIds": [
+        "TASK-005"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "CC1.3",
+      "riskIds": [],
+      "testIds": [],
+      "policyIds": [
+        "POL-001"
+      ],
+      "evidenceIds": [],
+      "taskIds": [
+        "TASK-001"
+      ],
+      "questionIds": [
+        "Q-ORG-004"
+      ]
+    },
+    {
+      "controlId": "CC1.4",
+      "riskIds": [
+        "R-HR-001",
+        "R-HR-003"
+      ],
+      "testIds": [
+        "T-HR-001"
+      ],
+      "policyIds": [
+        "POL-005",
+        "POL-018"
+      ],
+      "evidenceIds": [
+        "EV-054",
+        "EV-055"
+      ],
+      "taskIds": [
+        "TASK-031"
+      ],
+      "questionIds": [
+        "Q-EMP-001"
+      ]
+    },
+    {
+      "controlId": "CC1.5",
+      "riskIds": [
+        "R-ID-005",
+        "R-HR-004"
+      ],
+      "testIds": [],
+      "policyIds": [
+        "POL-001",
+        "POL-020"
+      ],
+      "evidenceIds": [],
+      "taskIds": [
+        "TASK-001",
+        "TASK-002",
+        "TASK-005"
+      ],
+      "questionIds": [
+        "Q-ORG-004"
+      ]
+    },
+    {
+      "controlId": "CC2.1",
+      "riskIds": [],
+      "testIds": [],
+      "policyIds": [],
+      "evidenceIds": [],
+      "taskIds": [],
+      "questionIds": []
+    },
+    {
+      "controlId": "CC2.2",
+      "riskIds": [
+        "R-IR-002",
+        "R-HR-001",
+        "R-HR-003"
+      ],
+      "testIds": [
+        "T-HR-001",
+        "T-HR-002"
+      ],
+      "policyIds": [
+        "POL-005",
+        "POL-010",
+        "POL-017",
+        "POL-018"
+      ],
+      "evidenceIds": [
+        "EV-054",
+        "EV-055",
+        "EV-056",
+        "EV-057"
+      ],
+      "taskIds": [
+        "TASK-031",
+        "TASK-032"
+      ],
+      "questionIds": [
+        "Q-ORG-003",
+        "Q-EMP-001",
+        "Q-EMP-002"
+      ]
+    },
+    {
+      "controlId": "CC2.3",
+      "riskIds": [
+        "R-IR-002",
+        "R-VND-001"
+      ],
+      "testIds": [
+        "T-VND-001"
+      ],
+      "policyIds": [
+        "POL-010",
+        "POL-012"
+      ],
+      "evidenceIds": [
+        "EV-046"
+      ],
+      "taskIds": [
+        "TASK-026"
+      ],
+      "questionIds": [
+        "Q-VENDOR-002"
+      ]
+    },
+    {
+      "controlId": "CC3.1",
+      "riskIds": [],
+      "testIds": [],
+      "policyIds": [
+        "POL-001",
+        "POL-020"
+      ],
+      "evidenceIds": [],
+      "taskIds": [],
+      "questionIds": [
+        "Q-ORG-001",
+        "Q-ORG-002"
+      ]
+    },
+    {
+      "controlId": "CC3.2",
+      "riskIds": [],
+      "testIds": [],
+      "policyIds": [
+        "POL-020"
+      ],
+      "evidenceIds": [],
+      "taskIds": [],
+      "questionIds": []
+    },
+    {
+      "controlId": "CC3.3",
+      "riskIds": [],
+      "testIds": [],
+      "policyIds": [
+        "POL-020"
+      ],
+      "evidenceIds": [],
+      "taskIds": [],
+      "questionIds": []
+    },
+    {
+      "controlId": "CC3.4",
+      "riskIds": [],
+      "testIds": [],
+      "policyIds": [
+        "POL-009",
+        "POL-011",
+        "POL-020"
+      ],
+      "evidenceIds": [],
+      "taskIds": [],
+      "questionIds": []
+    },
+    {
+      "controlId": "CC4.1",
+      "riskIds": [
+        "R-VND-003"
+      ],
+      "testIds": [
+        "T-VND-002"
+      ],
+      "policyIds": [
+        "POL-020"
+      ],
+      "evidenceIds": [
+        "EV-019",
+        "EV-024"
+      ],
+      "taskIds": [
+        "TASK-002",
+        "TASK-003"
+      ],
+      "questionIds": [
+        "Q-IDP-003",
+        "Q-VENDOR-003"
+      ]
+    },
+    {
+      "controlId": "CC4.2",
+      "riskIds": [
+        "R-IR-003"
+      ],
+      "testIds": [
+        "T-INF-002",
+        "T-IR-003"
+      ],
+      "policyIds": [
+        "POL-020"
+      ],
+      "evidenceIds": [
+        "EV-003",
+        "EV-008",
+        "EV-015",
+        "EV-017",
+        "EV-022",
+        "EV-033",
+        "EV-043",
+        "EV-044",
+        "EV-050"
+      ],
+      "taskIds": [
+        "TASK-002",
+        "TASK-012",
+        "TASK-025"
+      ],
+      "questionIds": [
+        "Q-IR-003"
+      ]
+    },
+    {
+      "controlId": "CC5.1",
+      "riskIds": [],
+      "testIds": [],
+      "policyIds": [
+        "POL-020"
+      ],
+      "evidenceIds": [],
+      "taskIds": [
+        "TASK-001",
+        "TASK-003"
+      ],
+      "questionIds": [
+        "Q-ORG-001"
+      ]
+    },
+    {
+      "controlId": "CC5.2",
+      "riskIds": [
+        "R-INF-001",
+        "R-INF-002",
+        "R-INF-005",
+        "R-APP-002"
+      ],
+      "testIds": [
+        "T-INF-001",
+        "T-INF-004",
+        "T-INF-005",
+        "T-APP-002"
+      ],
+      "policyIds": [
+        "POL-006",
+        "POL-016"
+      ],
+      "evidenceIds": [
+        "EV-014",
+        "EV-021",
+        "EV-023",
+        "EV-024",
+        "EV-030"
+      ],
+      "taskIds": [
+        "TASK-011",
+        "TASK-014",
+        "TASK-015",
+        "TASK-018"
+      ],
+      "questionIds": [
+        "Q-CLOUD-001",
+        "Q-CLOUD-002",
+        "Q-SCM-001",
+        "Q-INFRA-001"
+      ]
+    },
+    {
+      "controlId": "CC5.3",
+      "riskIds": [
+        "R-DP-004"
+      ],
+      "testIds": [
+        "T-HR-002",
+        "T-DP-002"
+      ],
+      "policyIds": [
+        "POL-001",
+        "POL-011",
+        "POL-020"
+      ],
+      "evidenceIds": [
+        "EV-056",
+        "EV-057",
+        "EV-060",
+        "EV-061"
+      ],
+      "taskIds": [
+        "TASK-004",
+        "TASK-005",
+        "TASK-032",
+        "TASK-034"
+      ],
+      "questionIds": [
+        "Q-ORG-003",
+        "Q-EMP-002"
+      ]
+    },
+    {
+      "controlId": "CC6.1",
+      "riskIds": [
+        "R-ID-001",
+        "R-ID-002",
+        "R-ID-003",
+        "R-ID-005",
+        "R-MON-002",
+        "R-VND-002",
+        "R-HR-004",
+        "R-DP-001",
+        "R-DP-003"
+      ],
+      "testIds": [
+        "T-ID-001",
+        "T-ID-002",
+        "T-ID-003",
+        "T-VND-003"
+      ],
+      "policyIds": [
+        "POL-002",
+        "POL-003",
+        "POL-004",
+        "POL-017"
+      ],
+      "evidenceIds": [
+        "EV-001",
+        "EV-002",
+        "EV-004",
+        "EV-006",
+        "EV-007",
+        "EV-008",
+        "EV-039",
+        "EV-048"
+      ],
+      "taskIds": [
+        "TASK-006",
+        "TASK-007",
+        "TASK-008",
+        "TASK-027"
+      ],
+      "questionIds": [
+        "Q-CLOUD-001",
+        "Q-CLOUD-003",
+        "Q-IDP-001",
+        "Q-IDP-002",
+        "Q-IDP-003",
+        "Q-EMP-003"
+      ]
+    },
+    {
+      "controlId": "CC6.2",
+      "riskIds": [
+        "R-ID-001",
+        "R-ID-002",
+        "R-ID-004",
+        "R-ID-005",
+        "R-HR-001",
+        "R-VND-002"
+      ],
+      "testIds": [
+        "T-ID-001",
+        "T-ID-002",
+        "T-ID-004",
+        "T-VND-003"
+      ],
+      "policyIds": [
+        "POL-002",
+        "POL-003",
+        "POL-018"
+      ],
+      "evidenceIds": [
+        "EV-001",
+        "EV-004",
+        "EV-005",
+        "EV-009",
+        "EV-010",
+        "EV-048"
+      ],
+      "taskIds": [
+        "TASK-006",
+        "TASK-007",
+        "TASK-009",
+        "TASK-027"
+      ],
+      "questionIds": [
+        "Q-CLOUD-003",
+        "Q-IDP-001",
+        "Q-IDP-003"
+      ]
+    },
+    {
+      "controlId": "CC6.3",
+      "riskIds": [
+        "R-ID-001",
+        "R-ID-002",
+        "R-ID-004",
+        "R-HR-002",
+        "R-DP-003",
+        "R-VND-002"
+      ],
+      "testIds": [
+        "T-ID-001",
+        "T-ID-002",
+        "T-ID-005",
+        "T-VND-003"
+      ],
+      "policyIds": [
+        "POL-002",
+        "POL-019"
+      ],
+      "evidenceIds": [
+        "EV-001",
+        "EV-002",
+        "EV-003",
+        "EV-004",
+        "EV-011",
+        "EV-012",
+        "EV-013",
+        "EV-048"
+      ],
+      "taskIds": [
+        "TASK-006",
+        "TASK-007",
+        "TASK-010",
+        "TASK-027"
+      ],
+      "questionIds": [
+        "Q-IDP-001",
+        "Q-IDP-003",
+        "Q-EMP-003"
+      ]
+    },
+    {
+      "controlId": "CC6.4",
+      "riskIds": [
+        "R-HR-002"
+      ],
+      "testIds": [
+        "T-ID-005"
+      ],
+      "policyIds": [
+        "POL-002",
+        "POL-019"
+      ],
+      "evidenceIds": [
+        "EV-012"
+      ],
+      "taskIds": [
+        "TASK-010"
+      ],
+      "questionIds": [
+        "Q-EMP-003"
+      ]
+    },
+    {
+      "controlId": "CC6.5",
+      "riskIds": [
+        "R-INF-004",
+        "R-INF-005",
+        "R-DP-001",
+        "R-DP-002",
+        "R-DP-004"
+      ],
+      "testIds": [
+        "T-INF-005",
+        "T-INF-006",
+        "T-DP-001",
+        "T-DP-002"
+      ],
+      "policyIds": [
+        "POL-005",
+        "POL-006",
+        "POL-013",
+        "POL-014",
+        "POL-017",
+        "POL-019"
+      ],
+      "evidenceIds": [
+        "EV-023",
+        "EV-025",
+        "EV-058",
+        "EV-059",
+        "EV-060",
+        "EV-061"
+      ],
+      "taskIds": [
+        "TASK-015",
+        "TASK-016",
+        "TASK-033",
+        "TASK-034"
+      ],
+      "questionIds": [
+        "Q-ORG-002",
+        "Q-INFRA-001",
+        "Q-EMP-003"
+      ]
+    },
+    {
+      "controlId": "CC6.6",
+      "riskIds": [
+        "R-INF-001",
+        "R-INF-003",
+        "R-ID-003"
+      ],
+      "testIds": [
+        "T-ID-003",
+        "T-INF-003",
+        "T-INF-004"
+      ],
+      "policyIds": [
+        "POL-004",
+        "POL-017"
+      ],
+      "evidenceIds": [
+        "EV-006",
+        "EV-018",
+        "EV-019",
+        "EV-020",
+        "EV-021"
+      ],
+      "taskIds": [
+        "TASK-008",
+        "TASK-013",
+        "TASK-014"
+      ],
+      "questionIds": [
+        "Q-CLOUD-001",
+        "Q-CLOUD-002",
+        "Q-INFRA-003"
+      ]
+    },
+    {
+      "controlId": "CC6.7",
+      "riskIds": [
+        "R-MON-002",
+        "R-DP-001",
+        "R-DP-002"
+      ],
+      "testIds": [
+        "T-MON-003",
+        "T-DP-001"
+      ],
+      "policyIds": [
+        "POL-013",
+        "POL-014",
+        "POL-015"
+      ],
+      "evidenceIds": [
+        "EV-038",
+        "EV-039",
+        "EV-058",
+        "EV-059"
+      ],
+      "taskIds": [
+        "TASK-022",
+        "TASK-033"
+      ],
+      "questionIds": [
+        "Q-MON-003",
+        "Q-ORG-002"
+      ]
+    },
+    {
+      "controlId": "CC6.8",
+      "riskIds": [
+        "R-INF-002",
+        "R-INF-004"
+      ],
+      "testIds": [
+        "T-INF-001",
+        "T-INF-006"
+      ],
+      "policyIds": [],
+      "evidenceIds": [
+        "EV-014",
+        "EV-025",
+        "EV-026"
+      ],
+      "taskIds": [
+        "TASK-011",
+        "TASK-016"
+      ],
+      "questionIds": []
+    },
+    {
+      "controlId": "CC7.1",
+      "riskIds": [
+        "R-INF-001",
+        "R-INF-002",
+        "R-INF-003",
+        "R-INF-005",
+        "R-APP-003",
+        "R-MON-001"
+      ],
+      "testIds": [
+        "T-INF-001",
+        "T-INF-002",
+        "T-INF-003",
+        "T-INF-004",
+        "T-INF-005",
+        "T-APP-003"
+      ],
+      "policyIds": [
+        "POL-006",
+        "POL-015",
+        "POL-016"
+      ],
+      "evidenceIds": [
+        "EV-014",
+        "EV-015",
+        "EV-016",
+        "EV-017",
+        "EV-018",
+        "EV-021",
+        "EV-022",
+        "EV-023",
+        "EV-032",
+        "EV-033"
+      ],
+      "taskIds": [
+        "TASK-011",
+        "TASK-012",
+        "TASK-013",
+        "TASK-014",
+        "TASK-015",
+        "TASK-019"
+      ],
+      "questionIds": [
+        "Q-CLOUD-001",
+        "Q-CLOUD-002",
+        "Q-MON-001",
+        "Q-SCM-003",
+        "Q-INFRA-001",
+        "Q-INFRA-002",
+        "Q-INFRA-003"
+      ]
+    },
+    {
+      "controlId": "CC7.2",
+      "riskIds": [
+        "R-MON-001",
+        "R-MON-002",
+        "R-MON-003",
+        "R-INF-004",
+        "R-BC-003",
+        "R-HR-004",
+        "R-DP-002",
+        "R-DP-003"
+      ],
+      "testIds": [
+        "T-INF-006",
+        "T-MON-001",
+        "T-MON-002",
+        "T-MON-003"
+      ],
+      "policyIds": [
+        "POL-015"
+      ],
+      "evidenceIds": [
+        "EV-025",
+        "EV-026",
+        "EV-035",
+        "EV-036",
+        "EV-037",
+        "EV-038"
+      ],
+      "taskIds": [
+        "TASK-016",
+        "TASK-020",
+        "TASK-021",
+        "TASK-022"
+      ],
+      "questionIds": [
+        "Q-ORG-001",
+        "Q-CLOUD-001",
+        "Q-MON-001",
+        "Q-MON-002",
+        "Q-MON-003"
+      ]
+    },
+    {
+      "controlId": "CC7.3",
+      "riskIds": [
+        "R-MON-001",
+        "R-MON-003",
+        "R-IR-001"
+      ],
+      "testIds": [
+        "T-MON-001",
+        "T-MON-002",
+        "T-IR-002"
+      ],
+      "policyIds": [
+        "POL-010",
+        "POL-015"
+      ],
+      "evidenceIds": [
+        "EV-026",
+        "EV-035",
+        "EV-037",
+        "EV-042"
+      ],
+      "taskIds": [
+        "TASK-020",
+        "TASK-021",
+        "TASK-024"
+      ],
+      "questionIds": [
+        "Q-MON-001",
+        "Q-MON-002",
+        "Q-IR-001",
+        "Q-IR-003"
+      ]
+    },
+    {
+      "controlId": "CC7.4",
+      "riskIds": [
+        "R-MON-003",
+        "R-IR-001",
+        "R-IR-002"
+      ],
+      "testIds": [
+        "T-MON-002",
+        "T-IR-001",
+        "T-IR-002"
+      ],
+      "policyIds": [
+        "POL-010"
+      ],
+      "evidenceIds": [
+        "EV-037",
+        "EV-040",
+        "EV-041",
+        "EV-042"
+      ],
+      "taskIds": [
+        "TASK-021",
+        "TASK-023",
+        "TASK-024"
+      ],
+      "questionIds": [
+        "Q-MON-002",
+        "Q-IR-001",
+        "Q-IR-002",
+        "Q-IR-003"
+      ]
+    },
+    {
+      "controlId": "CC7.5",
+      "riskIds": [
+        "R-IR-001",
+        "R-IR-003",
+        "R-BC-001",
+        "R-BC-002"
+      ],
+      "testIds": [
+        "T-IR-001",
+        "T-IR-002",
+        "T-IR-003",
+        "T-BC-001",
+        "T-BC-002",
+        "T-BC-003"
+      ],
+      "policyIds": [
+        "POL-007",
+        "POL-008",
+        "POL-009",
+        "POL-010"
+      ],
+      "evidenceIds": [
+        "EV-040",
+        "EV-041",
+        "EV-042",
+        "EV-043",
+        "EV-044",
+        "EV-049",
+        "EV-051",
+        "EV-052"
+      ],
+      "taskIds": [
+        "TASK-023",
+        "TASK-024",
+        "TASK-025",
+        "TASK-028",
+        "TASK-029",
+        "TASK-030"
+      ],
+      "questionIds": [
+        "Q-ORG-002",
+        "Q-IR-001",
+        "Q-IR-002",
+        "Q-IR-003",
+        "Q-BACKUP-001",
+        "Q-BACKUP-002",
+        "Q-BACKUP-003"
+      ]
+    },
+    {
+      "controlId": "CC8.1",
+      "riskIds": [
+        "R-APP-001",
+        "R-APP-002",
+        "R-APP-003",
+        "R-DP-003"
+      ],
+      "testIds": [
+        "T-APP-001",
+        "T-APP-002",
+        "T-APP-003",
+        "T-APP-004"
+      ],
+      "policyIds": [
+        "POL-011",
+        "POL-016"
+      ],
+      "evidenceIds": [
+        "EV-027",
+        "EV-028",
+        "EV-029",
+        "EV-030",
+        "EV-031",
+        "EV-032",
+        "EV-034"
+      ],
+      "taskIds": [
+        "TASK-017",
+        "TASK-018",
+        "TASK-019"
+      ],
+      "questionIds": [
+        "Q-ORG-001",
+        "Q-SCM-001",
+        "Q-SCM-002",
+        "Q-SCM-003"
+      ]
+    },
+    {
+      "controlId": "CC9.1",
+      "riskIds": [
+        "R-BC-001",
+        "R-BC-002",
+        "R-BC-003"
+      ],
+      "testIds": [
+        "T-BC-001",
+        "T-BC-002",
+        "T-BC-003"
+      ],
+      "policyIds": [
+        "POL-007",
+        "POL-008",
+        "POL-009"
+      ],
+      "evidenceIds": [
+        "EV-049",
+        "EV-050",
+        "EV-051",
+        "EV-052",
+        "EV-053"
+      ],
+      "taskIds": [
+        "TASK-028",
+        "TASK-029",
+        "TASK-030"
+      ],
+      "questionIds": [
+        "Q-ORG-001",
+        "Q-ORG-002",
+        "Q-BACKUP-001",
+        "Q-BACKUP-002",
+        "Q-BACKUP-003"
+      ]
+    },
+    {
+      "controlId": "CC9.2",
+      "riskIds": [
+        "R-APP-003",
+        "R-VND-001",
+        "R-VND-002",
+        "R-VND-003"
+      ],
+      "testIds": [
+        "T-APP-003",
+        "T-VND-001",
+        "T-VND-002",
+        "T-VND-003"
+      ],
+      "policyIds": [
+        "POL-012",
+        "POL-016"
+      ],
+      "evidenceIds": [
+        "EV-032",
+        "EV-045",
+        "EV-046",
+        "EV-047",
+        "EV-048"
+      ],
+      "taskIds": [
+        "TASK-019",
+        "TASK-026",
+        "TASK-027"
+      ],
+      "questionIds": [
+        "Q-ORG-002",
+        "Q-SCM-003",
+        "Q-VENDOR-001",
+        "Q-VENDOR-002",
+        "Q-VENDOR-003"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2275 @@
+{
+  "controls": [
+    {
+      "id": "5.1",
+      "title": "Policies for information security",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Information security policy and topic-specific policies should be defined, approved by management, published, communicated to and acknowledged by relevant personnel and relevant interested parties, and reviewed at planned intervals and if significant changes occur.",
+      "description": "Information security policy and topic-specific policies should be defined, approved by management, published, communicated to and acknowledged by relevant personnel and relevant interested parties, and reviewed at planned intervals and if significant changes occur.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review policies for information security at planned intervals.",
+      "relatedPolicies": [
+        "DOC-002",
+        "DOC-003",
+        "DOC-006"
+      ],
+      "relatedTests": [
+        "T-OP.1",
+        "T-OP.2"
+      ],
+      "relatedRisks": [
+        "R-OP.1",
+        "R-OP.26"
+      ],
+      "requiredEvidence": [
+        "Policies for information security evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that policies for information security is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.2",
+      "title": "Information security roles and responsibilities",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Information security roles and responsibilities should be defined and allocated according to the organization needs",
+      "description": "Information security roles and responsibilities should be defined and allocated according to the organization needs",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review information security roles and responsibilities at planned intervals.",
+      "relatedPolicies": [
+        "DOC-003",
+        "DOC-006"
+      ],
+      "relatedTests": [
+        "T-OP.3",
+        "T-OP.4"
+      ],
+      "relatedRisks": [
+        "R-OP.1",
+        "R-OP.2"
+      ],
+      "requiredEvidence": [
+        "Information security roles and responsibilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that information security roles and responsibilities is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.3",
+      "title": "Segregation of duties",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Conflicting duties and conflicting areas of responsibility should be segregated.",
+      "description": "Conflicting duties and conflicting areas of responsibility should be segregated.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review segregation of duties at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.5",
+        "T-OP.6"
+      ],
+      "relatedRisks": [
+        "R-OP.1"
+      ],
+      "requiredEvidence": [
+        "Segregation of duties evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that segregation of duties is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.4",
+      "title": "Management Responsibilities",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Management should require all personnel to apply information security in accordance with the established information security policy, topic-specific policies and procedures of the organization.",
+      "description": "Management should require all personnel to apply information security in accordance with the established information security policy, topic-specific policies and procedures of the organization.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review management responsibilities at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.7",
+        "T-OP.8"
+      ],
+      "relatedRisks": [
+        "R-OP.3"
+      ],
+      "requiredEvidence": [
+        "Management Responsibilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that management responsibilities is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.5",
+      "title": "Contact with Authorities",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "The organization should establish and maintain contact with relevant authorities.",
+      "description": "The organization should establish and maintain contact with relevant authorities.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review contact with authorities at planned intervals.",
+      "relatedPolicies": [
+        "DOC-005"
+      ],
+      "relatedTests": [
+        "T-OP.10",
+        "T-OP.9"
+      ],
+      "relatedRisks": [
+        "R-OP.4"
+      ],
+      "requiredEvidence": [
+        "Contact with Authorities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that contact with authorities is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.6",
+      "title": "Contact with special interest groups",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "The organization should establish and maintain contact with special interest groups or other specialist security forums and professional associations.",
+      "description": "The organization should establish and maintain contact with special interest groups or other specialist security forums and professional associations.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review contact with special interest groups at planned intervals.",
+      "relatedPolicies": [
+        "DOC-005"
+      ],
+      "relatedTests": [
+        "T-OP.11",
+        "T-OP.12"
+      ],
+      "relatedRisks": [
+        "R-OP.4"
+      ],
+      "requiredEvidence": [
+        "Contact with special interest groups evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that contact with special interest groups is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.7",
+      "title": "Threat intelligence",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Information relating to information security threats should be collected and analysed to produce threat intelligence.",
+      "description": "Information relating to information security threats should be collected and analysed to produce threat intelligence.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review threat intelligence at planned intervals.",
+      "relatedPolicies": [
+        "DOC-007"
+      ],
+      "relatedTests": [
+        "T-OP.13",
+        "T-OP.14"
+      ],
+      "relatedRisks": [
+        "R-OP.5"
+      ],
+      "requiredEvidence": [
+        "Threat intelligence evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that threat intelligence is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.8",
+      "title": "Information security in project management",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Information security should be integrated into project management.",
+      "description": "Information security should be integrated into project management.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review information security in project management at planned intervals.",
+      "relatedPolicies": [
+        "DOC-007"
+      ],
+      "relatedTests": [
+        "T-OP.15",
+        "T-OP.16"
+      ],
+      "relatedRisks": [
+        "R-OP.6"
+      ],
+      "requiredEvidence": [
+        "Information security in project management evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that information security in project management is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.9",
+      "title": "Inventory of information and other associated assets",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "An inventory of information and other associated assets, including owners, should be developed and maintained.",
+      "description": "An inventory of information and other associated assets, including owners, should be developed and maintained.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review inventory of information and other associated assets at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.17",
+        "T-OP.18"
+      ],
+      "relatedRisks": [
+        "R-OP.6"
+      ],
+      "requiredEvidence": [
+        "Inventory of information and other associated assets evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that inventory of information and other associated assets is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.10",
+      "title": "Acceptable use of information and other associated assets",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Rules for the acceptable use and procedures for handling information and other associated assets should be identified, documented and implemented.",
+      "description": "Rules for the acceptable use and procedures for handling information and other associated assets should be identified, documented and implemented.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review acceptable use of information and other associated assets at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.19",
+        "T-OP.20"
+      ],
+      "relatedRisks": [
+        "R-OP.7"
+      ],
+      "requiredEvidence": [
+        "Acceptable use of information and other associated assets evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that acceptable use of information and other associated assets is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.11",
+      "title": "Return of Assets",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Personnel and other interested parties as appropriate should return all the organization\u2019s assets in their possession upon change or termination of their employment, contract or agreement.",
+      "description": "Personnel and other interested parties as appropriate should return all the organization\u2019s assets in their possession upon change or termination of their employment, contract or agreement.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review return of assets at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.21",
+        "T-OP.22"
+      ],
+      "relatedRisks": [
+        "R-OP.7",
+        "R-OP.8"
+      ],
+      "requiredEvidence": [
+        "Return of Assets evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that return of assets is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.12",
+      "title": "Classification Of Information",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Information should be classified according to the information security needs of the organization based on confidentiality, integrity, availability and relevant interested party requirements.",
+      "description": "Information should be classified according to the information security needs of the organization based on confidentiality, integrity, availability and relevant interested party requirements.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review classification of information at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.23",
+        "T-OP.24"
+      ],
+      "relatedRisks": [
+        "R-OP.9"
+      ],
+      "requiredEvidence": [
+        "Classification Of Information evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that classification of information is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.13",
+      "title": "Labelling of Information",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "An appropriate set of procedures for information labelling should be developed and implemented in accordance with the information classification scheme adopted by the organization.",
+      "description": "An appropriate set of procedures for information labelling should be developed and implemented in accordance with the information classification scheme adopted by the organization.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review labelling of information at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.25",
+        "T-OP.26"
+      ],
+      "relatedRisks": [
+        "R-OP.1"
+      ],
+      "requiredEvidence": [
+        "Labelling of Information evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that labelling of information is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.14",
+      "title": "Information Transfer",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Information transfer rules, procedures, or agreements should be in place for all types of transfer facilities within the organization and between the organization and other parties.",
+      "description": "Information transfer rules, procedures, or agreements should be in place for all types of transfer facilities within the organization and between the organization and other parties.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review information transfer at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.27",
+        "T-OP.28"
+      ],
+      "relatedRisks": [
+        "R-OP.10"
+      ],
+      "requiredEvidence": [
+        "Information Transfer evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that information transfer is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.15",
+      "title": "Access Control",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Rules to control physical and logical access to information and other associated assets should be established and implemented based on business and information security requirements.",
+      "description": "Rules to control physical and logical access to information and other associated assets should be established and implemented based on business and information security requirements.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review access control at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.29",
+        "T-OP.30"
+      ],
+      "relatedRisks": [
+        "R-OP.10",
+        "R-OP.11"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ],
+      "aiGuidance": "Confirm that access control is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.16",
+      "title": "Identity Management",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "The full life cycle of identities should be managed.",
+      "description": "The full life cycle of identities should be managed.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review identity management at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.31",
+        "T-OP.32"
+      ],
+      "relatedRisks": [
+        "R-OP.11"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ],
+      "aiGuidance": "Confirm that identity management is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.17",
+      "title": "Authentication information",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Allocation and management of authentication information should be controlled by a management process, including advising personnel on the appropriate handling of authentication information.",
+      "description": "Allocation and management of authentication information should be controlled by a management process, including advising personnel on the appropriate handling of authentication information.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review authentication information at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.33",
+        "T-OP.34"
+      ],
+      "relatedRisks": [
+        "R-OP.12"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ],
+      "aiGuidance": "Confirm that authentication information is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.18",
+      "title": "Access rights",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Access rights to information and other associated assets should be provisioned, reviewed, modified and removed in accordance with the organization\u2019s topic-specific policy on and rules for access control.",
+      "description": "Access rights to information and other associated assets should be provisioned, reviewed, modified and removed in accordance with the organization\u2019s topic-specific policy on and rules for access control.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review access rights at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.35",
+        "T-OP.36"
+      ],
+      "relatedRisks": [
+        "R-OP.13"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ],
+      "aiGuidance": "Confirm that access rights is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.19",
+      "title": "Information security in supplier relationships",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Processes and procedures should be defined and implemented to manage the information security risks associated with the use of supplier\u2019s products or services.",
+      "description": "Processes and procedures should be defined and implemented to manage the information security risks associated with the use of supplier\u2019s products or services.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review information security in supplier relationships at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.37",
+        "T-OP.38"
+      ],
+      "relatedRisks": [
+        "R-OP.13",
+        "R-OP.14"
+      ],
+      "requiredEvidence": [
+        "Supplier register",
+        "Supplier review record",
+        "Contract security requirements"
+      ],
+      "aiGuidance": "Confirm that information security in supplier relationships is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.20",
+      "title": "Addressing information security within supplier agreements",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Relevant information security requirements should be established and agreed with each supplier based on the type of supplier relationship.",
+      "description": "Relevant information security requirements should be established and agreed with each supplier based on the type of supplier relationship.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review addressing information security within supplier agreements at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.39",
+        "T-OP.40"
+      ],
+      "relatedRisks": [
+        "R-OP.2"
+      ],
+      "requiredEvidence": [
+        "Supplier register",
+        "Supplier review record",
+        "Contract security requirements"
+      ],
+      "aiGuidance": "Confirm that addressing information security within supplier agreements is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.21",
+      "title": "Managing information security in the ICT supply chain",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Processes and procedures should be defined and implemented to manage the information security risks associated with the ICT products and services supply chain.",
+      "description": "Processes and procedures should be defined and implemented to manage the information security risks associated with the ICT products and services supply chain.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review managing information security in the ict supply chain at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.41",
+        "T-OP.42"
+      ],
+      "relatedRisks": [
+        "R-OP.15"
+      ],
+      "requiredEvidence": [
+        "Managing information security in the ICT supply chain evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that managing information security in the ict supply chain is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.22",
+      "title": "Monitoring, review and change management of supplier services",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "The organization should regularly monitor, review, evaluate and manage change in supplier information security practices and service delivery.",
+      "description": "The organization should regularly monitor, review, evaluate and manage change in supplier information security practices and service delivery.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review monitoring, review and change management of supplier services at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.43",
+        "T-OP.44"
+      ],
+      "relatedRisks": [
+        "R-OP.16"
+      ],
+      "requiredEvidence": [
+        "Supplier register",
+        "Supplier review record",
+        "Contract security requirements"
+      ],
+      "aiGuidance": "Confirm that monitoring, review and change management of supplier services is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.23",
+      "title": "Information security for use of cloud services",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Processes for acquisition, use, management and exit from cloud services should be established in accordance with the organization\u2019s information security requirements.",
+      "description": "Processes for acquisition, use, management and exit from cloud services should be established in accordance with the organization\u2019s information security requirements.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review information security for use of cloud services at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.45",
+        "T-OP.46"
+      ],
+      "relatedRisks": [
+        "R-OP.16"
+      ],
+      "requiredEvidence": [
+        "Information security for use of cloud services evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that information security for use of cloud services is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.24",
+      "title": "Information security incident management planning and preparation",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "The organization should plan and prepare for managing information security incidents by defining, establishing and communicating information security incident management processes, roles and responsibilities",
+      "description": "The organization should plan and prepare for managing information security incidents by defining, establishing and communicating information security incident management processes, roles and responsibilities",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review information security incident management planning and preparation at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.47",
+        "T-OP.48"
+      ],
+      "relatedRisks": [
+        "R-OP.16",
+        "R-OP.17"
+      ],
+      "requiredEvidence": [
+        "Information security incident management planning and preparation evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that information security incident management planning and preparation is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.25",
+      "title": "Assessment and decision on information security events",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "The organization should assess information security events and decide if they are to be categorized as information security incidents.",
+      "description": "The organization should assess information security events and decide if they are to be categorized as information security incidents.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review assessment and decision on information security events at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.49",
+        "T-OP.50"
+      ],
+      "relatedRisks": [
+        "R-OP.18"
+      ],
+      "requiredEvidence": [
+        "Assessment and decision on information security events evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that assessment and decision on information security events is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.26",
+      "title": "Response to information security incidents",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Information security incidents should be responded to in accordance with the documented procedures.",
+      "description": "Information security incidents should be responded to in accordance with the documented procedures.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review response to information security incidents at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.51",
+        "T-OP.52"
+      ],
+      "relatedRisks": [
+        "R-OP.3"
+      ],
+      "requiredEvidence": [
+        "Response to information security incidents evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that response to information security incidents is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.27",
+      "title": "Learning from information security incidents",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Knowledge gained from information security incidents should be used to strengthen and improve the information security controls.",
+      "description": "Knowledge gained from information security incidents should be used to strengthen and improve the information security controls.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review learning from information security incidents at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.53",
+        "T-OP.54"
+      ],
+      "relatedRisks": [
+        "R-OP.19"
+      ],
+      "requiredEvidence": [
+        "Learning from information security incidents evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that learning from information security incidents is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.28",
+      "title": "Collection of evidence",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "The organization should establish and implement procedures for the identification, collection, acquisition and preservation of evidence related to information security events.",
+      "description": "The organization should establish and implement procedures for the identification, collection, acquisition and preservation of evidence related to information security events.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review collection of evidence at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.55",
+        "T-OP.56"
+      ],
+      "relatedRisks": [
+        "R-OP.19",
+        "R-OP.20"
+      ],
+      "requiredEvidence": [
+        "Collection of evidence evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that collection of evidence is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.29",
+      "title": "Information security during disruption",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "The organization should plan how to maintain information security at an appropriate level during disruption.",
+      "description": "The organization should plan how to maintain information security at an appropriate level during disruption.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review information security during disruption at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.57",
+        "T-OP.58"
+      ],
+      "relatedRisks": [
+        "R-OP.21"
+      ],
+      "requiredEvidence": [
+        "Information security during disruption evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that information security during disruption is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.30",
+      "title": "ICT readiness for business continuity",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "ICT readiness should be planned, implemented, maintained and tested based on business continuity objectives and ICT continuity requirements.",
+      "description": "ICT readiness should be planned, implemented, maintained and tested based on business continuity objectives and ICT continuity requirements.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review ict readiness for business continuity at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.59",
+        "T-OP.60"
+      ],
+      "relatedRisks": [
+        "R-OP.21"
+      ],
+      "requiredEvidence": [
+        "Backup configuration",
+        "Restore test evidence",
+        "Continuity plan review"
+      ],
+      "aiGuidance": "Confirm that ict readiness for business continuity is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.31",
+      "title": "Legal, statutory, regulatory and contractual requirements",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Legal, statutory, regulatory and contractual requirements relevant to information security and the organization\u2019s approach to meet these requirements should be identified, documented and kept up to date.",
+      "description": "Legal, statutory, regulatory and contractual requirements relevant to information security and the organization\u2019s approach to meet these requirements should be identified, documented and kept up to date.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review legal, statutory, regulatory and contractual requirements at planned intervals.",
+      "relatedPolicies": [
+        "DOC-002"
+      ],
+      "relatedTests": [
+        "T-OP.61",
+        "T-OP.62"
+      ],
+      "relatedRisks": [
+        "R-OP.22"
+      ],
+      "requiredEvidence": [
+        "Legal, statutory, regulatory and contractual requirements evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that legal, statutory, regulatory and contractual requirements is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.32",
+      "title": "Intellectual property rights",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "The organization should implement appropriate procedures to protect intellectual property rights.",
+      "description": "The organization should implement appropriate procedures to protect intellectual property rights.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review intellectual property rights at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.63",
+        "T-OP.64"
+      ],
+      "relatedRisks": [
+        "R-OP.22",
+        "R-OP.23"
+      ],
+      "requiredEvidence": [
+        "Intellectual property rights evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that intellectual property rights is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.33",
+      "title": "Protection of records",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Records should be protected from loss, destruction, falsification, unauthorized access and unauthorized release.",
+      "description": "Records should be protected from loss, destruction, falsification, unauthorized access and unauthorized release.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review protection of records at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.65",
+        "T-OP.66"
+      ],
+      "relatedRisks": [
+        "R-OP.4"
+      ],
+      "requiredEvidence": [
+        "Protection of records evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that protection of records is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.34",
+      "title": "Privacy and protection of PII",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "The organization should identify and meet the requirements regarding the preservation of privacy and protection of PII according to applicable laws and regulations and contractual requirements.",
+      "description": "The organization should identify and meet the requirements regarding the preservation of privacy and protection of PII according to applicable laws and regulations and contractual requirements.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review privacy and protection of pii at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-OP.67",
+        "T-OP.68"
+      ],
+      "relatedRisks": [
+        "R-OP.24"
+      ],
+      "requiredEvidence": [
+        "Privacy and protection of PII evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that privacy and protection of pii is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.35",
+      "title": "Independent review of information security",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "The organization\u2019s approach to managing information security and its implementation including people, processes and technologies should be reviewed independently at planned intervals, or when significant changes occur.",
+      "description": "The organization\u2019s approach to managing information security and its implementation including people, processes and technologies should be reviewed independently at planned intervals, or when significant changes occur.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review independent review of information security at planned intervals.",
+      "relatedPolicies": [
+        "DOC-001",
+        "DOC-003",
+        "DOC-004",
+        "DOC-006"
+      ],
+      "relatedTests": [
+        "T-OP.69",
+        "T-OP.70"
+      ],
+      "relatedRisks": [
+        "R-OP.25"
+      ],
+      "requiredEvidence": [
+        "Independent review of information security evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that independent review of information security is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.36",
+      "title": "Compliance with policies, rules and standards for information security",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Compliance with the organization\u2019s information security policy, topic-specific policies, rules and standards should be regularly reviewed.",
+      "description": "Compliance with the organization\u2019s information security policy, topic-specific policies, rules and standards should be regularly reviewed.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review compliance with policies, rules and standards for information security at planned intervals.",
+      "relatedPolicies": [
+        "DOC-001",
+        "DOC-002",
+        "DOC-003",
+        "DOC-004",
+        "DOC-006"
+      ],
+      "relatedTests": [
+        "T-OP.71",
+        "T-OP.72"
+      ],
+      "relatedRisks": [
+        "R-OP.25"
+      ],
+      "requiredEvidence": [
+        "Compliance with policies, rules and standards for information security evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that compliance with policies, rules and standards for information security is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "5.37",
+      "title": "Documented operating procedures",
+      "category": "Operations",
+      "annexDomain": "Organizational Controls",
+      "objective": "Operating procedures for information processing facilities should be documented and made available to personnel who need them.",
+      "description": "Operating procedures for information processing facilities should be documented and made available to personnel who need them.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review documented operating procedures at planned intervals.",
+      "relatedPolicies": [
+        "DOC-001",
+        "DOC-002"
+      ],
+      "relatedTests": [
+        "T-OP.73",
+        "T-OP.74"
+      ],
+      "relatedRisks": [
+        "R-OP.26"
+      ],
+      "requiredEvidence": [
+        "Documented operating procedures evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that documented operating procedures is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "6.1",
+      "title": "Screening",
+      "category": "People",
+      "annexDomain": "People Controls",
+      "objective": "Background verification checks on all candidates to become personnel should be carried out prior to joining the organization and on an ongoing basis taking into consideration applicable laws, regulations and ethics and be proportional to the business requirements, the classification of the information to be accessed and the perceived risks.",
+      "description": "Background verification checks on all candidates to become personnel should be carried out prior to joining the organization and on an ongoing basis taking into consideration applicable laws, regulations and ethics and be proportional to the business requirements, the classification of the information to be accessed and the perceived risks.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review screening at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-PE.1",
+        "T-PE.2"
+      ],
+      "relatedRisks": [
+        "R-PE.1"
+      ],
+      "requiredEvidence": [
+        "Screening evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that screening is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "6.2",
+      "title": "Terms and conditions of employment",
+      "category": "People",
+      "annexDomain": "People Controls",
+      "objective": "The employment contractual agreements should state the personnel\u2019s and the organization\u2019s responsibilities for information security.",
+      "description": "The employment contractual agreements should state the personnel\u2019s and the organization\u2019s responsibilities for information security.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review terms and conditions of employment at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-PE.3",
+        "T-PE.4"
+      ],
+      "relatedRisks": [
+        "R-PE.1",
+        "R-PE.2"
+      ],
+      "requiredEvidence": [
+        "Terms and conditions of employment evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that terms and conditions of employment is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "6.3",
+      "title": "Information security awareness, education and training",
+      "category": "People",
+      "annexDomain": "People Controls",
+      "objective": "Personnel of the organization and relevant interested parties should receive appropriate information security awareness, education and training and regular updates of the organization's information security policy, topic-specific policies and procedures, as relevant for their job function.",
+      "description": "Personnel of the organization and relevant interested parties should receive appropriate information security awareness, education and training and regular updates of the organization's information security policy, topic-specific policies and procedures, as relevant for their job function.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review information security awareness, education and training at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-PE.5",
+        "T-PE.6"
+      ],
+      "relatedRisks": [
+        "R-PE.1",
+        "R-PE.3"
+      ],
+      "requiredEvidence": [
+        "Information security awareness, education and training evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that information security awareness, education and training is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "6.4",
+      "title": "Disciplinary process",
+      "category": "People",
+      "annexDomain": "People Controls",
+      "objective": "A disciplinary process should be formalized and communicated to take actions against personnel and other relevant interested parties who have committed an information security policy violation.",
+      "description": "A disciplinary process should be formalized and communicated to take actions against personnel and other relevant interested parties who have committed an information security policy violation.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review disciplinary process at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-PE.7",
+        "T-PE.8"
+      ],
+      "relatedRisks": [
+        "R-PE.4"
+      ],
+      "requiredEvidence": [
+        "Disciplinary process evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that disciplinary process is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "6.5",
+      "title": "Responsibilities after termination or change of employment",
+      "category": "People",
+      "annexDomain": "People Controls",
+      "objective": "Information security responsibilities and duties that remain valid after termination or change of employment should be defined, enforced and communicated to relevant personnel and other interested parties.",
+      "description": "Information security responsibilities and duties that remain valid after termination or change of employment should be defined, enforced and communicated to relevant personnel and other interested parties.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review responsibilities after termination or change of employment at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-PE.10",
+        "T-PE.9"
+      ],
+      "relatedRisks": [
+        "R-PE.4",
+        "R-PE.5"
+      ],
+      "requiredEvidence": [
+        "Responsibilities after termination or change of employment evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that responsibilities after termination or change of employment is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "6.6",
+      "title": "Confidentiality or non-disclosure agreements",
+      "category": "People",
+      "annexDomain": "People Controls",
+      "objective": "Confidentiality or non-disclosure agreements reflecting the organization\u2019s needs for the protection of information should be identified, documented, regularly reviewed and signed by personnel and other relevant interested parties.",
+      "description": "Confidentiality or non-disclosure agreements reflecting the organization\u2019s needs for the protection of information should be identified, documented, regularly reviewed and signed by personnel and other relevant interested parties.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review confidentiality or non-disclosure agreements at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-PE.11",
+        "T-PE.12"
+      ],
+      "relatedRisks": [
+        "R-PE.6"
+      ],
+      "requiredEvidence": [
+        "Confidentiality or non-disclosure agreements evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that confidentiality or non-disclosure agreements is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "6.7",
+      "title": "Remote working",
+      "category": "People",
+      "annexDomain": "People Controls",
+      "objective": "Security measures should be implemented when personnel are working remotely to protect information accessed, processed or stored outside the organization\u2019s premises.",
+      "description": "Security measures should be implemented when personnel are working remotely to protect information accessed, processed or stored outside the organization\u2019s premises.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review remote working at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-PE.13",
+        "T-PE.14"
+      ],
+      "relatedRisks": [
+        "R-PE.6",
+        "R-PE.7"
+      ],
+      "requiredEvidence": [
+        "Remote working evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that remote working is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "6.8",
+      "title": "Information security event reporting",
+      "category": "People",
+      "annexDomain": "People Controls",
+      "objective": "The organization should provide a mechanism for personnel to report observed or suspected information security events through appropriate channels in a timely manner.",
+      "description": "The organization should provide a mechanism for personnel to report observed or suspected information security events through appropriate channels in a timely manner.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review information security event reporting at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-PE.15",
+        "T-PE.16"
+      ],
+      "relatedRisks": [
+        "R-PE.7",
+        "R-PE.8"
+      ],
+      "requiredEvidence": [
+        "Information security event reporting evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that information security event reporting is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "7.1",
+      "title": "Physical security perimeters",
+      "category": "Physical",
+      "annexDomain": "Physical Controls",
+      "objective": "Security perimeters should be defined and used to protect areas that contain information and other associated assets.",
+      "description": "Security perimeters should be defined and used to protect areas that contain information and other associated assets.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review physical security perimeters at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-PH.1",
+        "T-PH.2"
+      ],
+      "relatedRisks": [
+        "R-PH.1"
+      ],
+      "requiredEvidence": [
+        "Physical security perimeters evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that physical security perimeters is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "7.2",
+      "title": "Physical entry",
+      "category": "Physical",
+      "annexDomain": "Physical Controls",
+      "objective": "Secure areas should be protected by appropriate entry controls and access points.",
+      "description": "Secure areas should be protected by appropriate entry controls and access points.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review physical entry at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-PH.3",
+        "T-PH.4"
+      ],
+      "relatedRisks": [
+        "R-PH.1"
+      ],
+      "requiredEvidence": [
+        "Physical entry evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that physical entry is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "7.3",
+      "title": "Securing offices, rooms and facilities",
+      "category": "Physical",
+      "annexDomain": "Physical Controls",
+      "objective": "Physical security for offices, rooms and facilities should be designed and implemented.",
+      "description": "Physical security for offices, rooms and facilities should be designed and implemented.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review securing offices, rooms and facilities at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-PH.5",
+        "T-PH.6"
+      ],
+      "relatedRisks": [
+        "R-PH.1",
+        "R-PH.2"
+      ],
+      "requiredEvidence": [
+        "Securing offices, rooms and facilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that securing offices, rooms and facilities is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "7.4",
+      "title": "Physical security monitoring",
+      "category": "Physical",
+      "annexDomain": "Physical Controls",
+      "objective": "Premises should be continuously monitored for unauthorized physical access.",
+      "description": "Premises should be continuously monitored for unauthorized physical access.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review physical security monitoring at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-PH.7",
+        "T-PH.8"
+      ],
+      "relatedRisks": [
+        "R-PH.1"
+      ],
+      "requiredEvidence": [
+        "Physical security monitoring evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that physical security monitoring is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "7.5",
+      "title": "Protecting against physical and environmental threats",
+      "category": "Physical",
+      "annexDomain": "Physical Controls",
+      "objective": "Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure should be designed and implemented.",
+      "description": "Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure should be designed and implemented.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review protecting against physical and environmental threats at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-PH.10",
+        "T-PH.9"
+      ],
+      "relatedRisks": [
+        "R-PH.3"
+      ],
+      "requiredEvidence": [
+        "Protecting against physical and environmental threats evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that protecting against physical and environmental threats is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "7.6",
+      "title": "Working in secure areas",
+      "category": "Physical",
+      "annexDomain": "Physical Controls",
+      "objective": "Security measures for working in secure areas should be designed and implemented.",
+      "description": "Security measures for working in secure areas should be designed and implemented.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review working in secure areas at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-PH.11",
+        "T-PH.12"
+      ],
+      "relatedRisks": [
+        "R-PH.4"
+      ],
+      "requiredEvidence": [
+        "Working in secure areas evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that working in secure areas is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "7.7",
+      "title": "Clear desk and clear screen",
+      "category": "Physical",
+      "annexDomain": "Physical Controls",
+      "objective": "Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities should be defined and appropriately enforced.",
+      "description": "Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities should be defined and appropriately enforced.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review clear desk and clear screen at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-PH.13",
+        "T-PH.14"
+      ],
+      "relatedRisks": [
+        "R-PH.4"
+      ],
+      "requiredEvidence": [
+        "Clear desk and clear screen evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that clear desk and clear screen is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "7.8",
+      "title": "Equipment siting and protection",
+      "category": "Physical",
+      "annexDomain": "Physical Controls",
+      "objective": "Equipment should be sited securely and protected.",
+      "description": "Equipment should be sited securely and protected.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review equipment siting and protection at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-PH.15",
+        "T-PH.16"
+      ],
+      "relatedRisks": [
+        "R-PH.5"
+      ],
+      "requiredEvidence": [
+        "Equipment siting and protection evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that equipment siting and protection is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "7.9",
+      "title": "Security of assets off-premises",
+      "category": "Physical",
+      "annexDomain": "Physical Controls",
+      "objective": "Off-site assets should be protected.",
+      "description": "Off-site assets should be protected.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review security of assets off-premises at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-PH.17",
+        "T-PH.18"
+      ],
+      "relatedRisks": [
+        "R-PH.2"
+      ],
+      "requiredEvidence": [
+        "Security of assets off-premises evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that security of assets off-premises is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "7.10",
+      "title": "Storage media",
+      "category": "Physical",
+      "annexDomain": "Physical Controls",
+      "objective": "Storage media should be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization\u2019s classification scheme and handling requirements.",
+      "description": "Storage media should be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization\u2019s classification scheme and handling requirements.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review storage media at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-PH.19",
+        "T-PH.20"
+      ],
+      "relatedRisks": [
+        "R-PH.6"
+      ],
+      "requiredEvidence": [
+        "Storage media evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that storage media is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "7.11",
+      "title": "Supporting utilities",
+      "category": "Physical",
+      "annexDomain": "Physical Controls",
+      "objective": "Information processing facilities should be protected from power failures and other disruptions caused by failures in supporting utilities.",
+      "description": "Information processing facilities should be protected from power failures and other disruptions caused by failures in supporting utilities.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review supporting utilities at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-PH.21",
+        "T-PH.22"
+      ],
+      "relatedRisks": [
+        "R-PH.6",
+        "R-PH.7"
+      ],
+      "requiredEvidence": [
+        "Supporting utilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that supporting utilities is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "7.12",
+      "title": "Cabling security",
+      "category": "Physical",
+      "annexDomain": "Physical Controls",
+      "objective": "Cables carrying power, data or supporting information services should be protected from interception, interference or damage.",
+      "description": "Cables carrying power, data or supporting information services should be protected from interception, interference or damage.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review cabling security at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-PH.23",
+        "T-PH.24"
+      ],
+      "relatedRisks": [
+        "R-PH.7"
+      ],
+      "requiredEvidence": [
+        "Cabling security evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that cabling security is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "7.13",
+      "title": "Equipment maintenance",
+      "category": "Physical",
+      "annexDomain": "Physical Controls",
+      "objective": "Equipment should be maintained correctly to ensure availability, integrity and confidentiality of information.",
+      "description": "Equipment should be maintained correctly to ensure availability, integrity and confidentiality of information.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review equipment maintenance at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-PH.25",
+        "T-PH.26"
+      ],
+      "relatedRisks": [
+        "R-PH.8"
+      ],
+      "requiredEvidence": [
+        "Equipment maintenance evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that equipment maintenance is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "7.14",
+      "title": "Secure disposal or re-use of equipment",
+      "category": "Physical",
+      "annexDomain": "Physical Controls",
+      "objective": "Items of equipment containing storage media should be verified to ensure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use.",
+      "description": "Items of equipment containing storage media should be verified to ensure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review secure disposal or re-use of equipment at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-PH.27",
+        "T-PH.28"
+      ],
+      "relatedRisks": [
+        "R-PH.3"
+      ],
+      "requiredEvidence": [
+        "Secure disposal or re-use of equipment evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that secure disposal or re-use of equipment is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.1",
+      "title": "User endpoint devices",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Information stored on, processed by or accessible via user endpoint devices should be protected.",
+      "description": "Information stored on, processed by or accessible via user endpoint devices should be protected.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review user endpoint devices at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.1",
+        "T-TC.2"
+      ],
+      "relatedRisks": [
+        "R-TC.1",
+        "R-TC.25"
+      ],
+      "requiredEvidence": [
+        "User endpoint devices evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that user endpoint devices is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.2",
+      "title": "Privileged access rights",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "The allocation and use of privileged access rights should be restricted and managed.",
+      "description": "The allocation and use of privileged access rights should be restricted and managed.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review privileged access rights at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.3",
+        "T-TC.4"
+      ],
+      "relatedRisks": [
+        "R-TC.1",
+        "R-TC.2"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ],
+      "aiGuidance": "Confirm that privileged access rights is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.3",
+      "title": "Information access restriction",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Access to information and other associated assets should be restricted in accordance with the established topic-specific policy on access control.",
+      "description": "Access to information and other associated assets should be restricted in accordance with the established topic-specific policy on access control.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review information access restriction at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.5",
+        "T-TC.6"
+      ],
+      "relatedRisks": [
+        "R-TC.1"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ],
+      "aiGuidance": "Confirm that information access restriction is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.4",
+      "title": "Access to source code",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Read and write access to source code, development tools and software libraries should be appropriately managed.",
+      "description": "Read and write access to source code, development tools and software libraries should be appropriately managed.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review access to source code at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.7",
+        "T-TC.8"
+      ],
+      "relatedRisks": [
+        "R-TC.3"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ],
+      "aiGuidance": "Confirm that access to source code is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.5",
+      "title": "Secure authentication",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Secure authentication technologies and procedures should be implemented based on information access restrictions and the topic-specific policy on access control.",
+      "description": "Secure authentication technologies and procedures should be implemented based on information access restrictions and the topic-specific policy on access control.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review secure authentication at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.10",
+        "T-TC.9"
+      ],
+      "relatedRisks": [
+        "R-TC.4"
+      ],
+      "requiredEvidence": [
+        "Access configuration export",
+        "Approval records",
+        "Periodic review evidence"
+      ],
+      "aiGuidance": "Confirm that secure authentication is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.6",
+      "title": "Capacity management",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "The use of resources should be monitored and adjusted in line with current and expected capacity requirements.",
+      "description": "The use of resources should be monitored and adjusted in line with current and expected capacity requirements.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review capacity management at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.11",
+        "T-TC.12"
+      ],
+      "relatedRisks": [
+        "R-TC.4",
+        "R-TC.5"
+      ],
+      "requiredEvidence": [
+        "Capacity management evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that capacity management is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.7",
+      "title": "Protection against malware",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Protection against malware should be implemented and supported by appropriate user awareness.",
+      "description": "Protection against malware should be implemented and supported by appropriate user awareness.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review protection against malware at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.13",
+        "T-TC.14"
+      ],
+      "relatedRisks": [
+        "R-TC.1"
+      ],
+      "requiredEvidence": [
+        "Protection against malware evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that protection against malware is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.8",
+      "title": "Management of technical vulnerabilities",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Information about technical vulnerabilities of information systems in use should be obtained, the organization\u2019s exposure to such vulnerabilities should be evaluated and appropriate measures should be taken.",
+      "description": "Information about technical vulnerabilities of information systems in use should be obtained, the organization\u2019s exposure to such vulnerabilities should be evaluated and appropriate measures should be taken.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review management of technical vulnerabilities at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.15",
+        "T-TC.16"
+      ],
+      "relatedRisks": [
+        "R-TC.6"
+      ],
+      "requiredEvidence": [
+        "Management of technical vulnerabilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that management of technical vulnerabilities is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.9",
+      "title": "Configuration management",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Configurations, including security configurations, of hardware, software, services and networks should be established, documented, implemented, monitored and reviewed.",
+      "description": "Configurations, including security configurations, of hardware, software, services and networks should be established, documented, implemented, monitored and reviewed.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review configuration management at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.17",
+        "T-TC.18"
+      ],
+      "relatedRisks": [
+        "R-TC.6",
+        "R-TC.7"
+      ],
+      "requiredEvidence": [
+        "Configuration management evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that configuration management is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.10",
+      "title": "Information deletion",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Information stored in information systems, devices or in any other storage media should be deleted when no longer required.",
+      "description": "Information stored in information systems, devices or in any other storage media should be deleted when no longer required.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review information deletion at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.19",
+        "T-TC.20"
+      ],
+      "relatedRisks": [
+        "R-TC.7"
+      ],
+      "requiredEvidence": [
+        "Information deletion evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that information deletion is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.11",
+      "title": "Data masking",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Data masking should be used in accordance with the organization\u2019s topic-specific policy on access control and other related topic-specific policies, and business requirements, taking applicable legislation into consideration.",
+      "description": "Data masking should be used in accordance with the organization\u2019s topic-specific policy on access control and other related topic-specific policies, and business requirements, taking applicable legislation into consideration.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review data masking at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.21",
+        "T-TC.22"
+      ],
+      "relatedRisks": [
+        "R-TC.8"
+      ],
+      "requiredEvidence": [
+        "Data masking evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that data masking is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.12",
+      "title": "Data leakage prevention",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Data leakage prevention measures should be applied to systems, networks and any other devices that process, store or transmit sensitive information.",
+      "description": "Data leakage prevention measures should be applied to systems, networks and any other devices that process, store or transmit sensitive information.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review data leakage prevention at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.23",
+        "T-TC.24"
+      ],
+      "relatedRisks": [
+        "R-TC.9"
+      ],
+      "requiredEvidence": [
+        "Data leakage prevention evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that data leakage prevention is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.13",
+      "title": "Information backup",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Backup copies of information, software and systems should be maintained and regularly tested in accordance with the agreed topic-specific policy on backup.",
+      "description": "Backup copies of information, software and systems should be maintained and regularly tested in accordance with the agreed topic-specific policy on backup.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review information backup at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.25",
+        "T-TC.26"
+      ],
+      "relatedRisks": [
+        "R-TC.10"
+      ],
+      "requiredEvidence": [
+        "Backup configuration",
+        "Restore test evidence",
+        "Continuity plan review"
+      ],
+      "aiGuidance": "Confirm that information backup is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.14",
+      "title": "Redundancy of information processing facilities",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Information processing facilities should be implemented with redundancy sufficient to meet availability requirements.",
+      "description": "Information processing facilities should be implemented with redundancy sufficient to meet availability requirements.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review redundancy of information processing facilities at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.27",
+        "T-TC.28"
+      ],
+      "relatedRisks": [
+        "R-TC.10"
+      ],
+      "requiredEvidence": [
+        "Redundancy of information processing facilities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that redundancy of information processing facilities is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.15",
+      "title": "Logging",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Logs that record activities, exceptions, faults and other relevant events should be produced, stored, protected and analysed.",
+      "description": "Logs that record activities, exceptions, faults and other relevant events should be produced, stored, protected and analysed.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review logging at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.29",
+        "T-TC.30"
+      ],
+      "relatedRisks": [
+        "R-TC.11"
+      ],
+      "requiredEvidence": [
+        "Logging evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that logging is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.16",
+      "title": "Monitoring activities",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Networks, systems and applications should be monitored for anomalous behaviour and appropriate actions taken to evaluate potential information security incidents.",
+      "description": "Networks, systems and applications should be monitored for anomalous behaviour and appropriate actions taken to evaluate potential information security incidents.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review monitoring activities at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.31",
+        "T-TC.32"
+      ],
+      "relatedRisks": [
+        "R-TC.11",
+        "R-TC.12"
+      ],
+      "requiredEvidence": [
+        "Monitoring activities evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that monitoring activities is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.17",
+      "title": "Clock synchronization",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "The clocks of information processing systems used by the organization should be synchronized to approved time sources.",
+      "description": "The clocks of information processing systems used by the organization should be synchronized to approved time sources.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review clock synchronization at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.33",
+        "T-TC.34"
+      ],
+      "relatedRisks": [
+        "R-TC.13"
+      ],
+      "requiredEvidence": [
+        "Clock synchronization evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that clock synchronization is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.18",
+      "title": "Use of privileged utility programs",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "The use of utility programs that can be capable of overriding system and application controls should be restricted and tightly controlled.",
+      "description": "The use of utility programs that can be capable of overriding system and application controls should be restricted and tightly controlled.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review use of privileged utility programs at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.35",
+        "T-TC.36"
+      ],
+      "relatedRisks": [
+        "R-TC.13"
+      ],
+      "requiredEvidence": [
+        "Use of privileged utility programs evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that use of privileged utility programs is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.19",
+      "title": "Installation of software on operational systems",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Procedures and measures should be implemented to securely manage software installation on operational systems.",
+      "description": "Procedures and measures should be implemented to securely manage software installation on operational systems.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review installation of software on operational systems at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.37",
+        "T-TC.38"
+      ],
+      "relatedRisks": [
+        "R-TC.14"
+      ],
+      "requiredEvidence": [
+        "Installation of software on operational systems evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that installation of software on operational systems is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.20",
+      "title": "Networks security",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Networks and network devices should be secured, managed and controlled to protect information in systems and applications.",
+      "description": "Networks and network devices should be secured, managed and controlled to protect information in systems and applications.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review networks security at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.39",
+        "T-TC.40"
+      ],
+      "relatedRisks": [
+        "R-TC.15"
+      ],
+      "requiredEvidence": [
+        "Networks security evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that networks security is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.21",
+      "title": "Security of network services",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Security mechanisms, service levels and service requirements of network services should be identified, implemented and monitored.",
+      "description": "Security mechanisms, service levels and service requirements of network services should be identified, implemented and monitored.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review security of network services at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.41"
+      ],
+      "relatedRisks": [
+        "R-TC.16"
+      ],
+      "requiredEvidence": [
+        "Security of network services evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that security of network services is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.22",
+      "title": "Segregation of networks",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Groups of information services, users and information systems should be segregated in the organization\u2019s networks.",
+      "description": "Groups of information services, users and information systems should be segregated in the organization\u2019s networks.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review segregation of networks at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.42"
+      ],
+      "relatedRisks": [
+        "R-TC.16"
+      ],
+      "requiredEvidence": [
+        "Segregation of networks evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that segregation of networks is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.23",
+      "title": "Web filtering",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Access to external websites should be managed to reduce exposure to malicious content.",
+      "description": "Access to external websites should be managed to reduce exposure to malicious content.",
+      "priority": "High",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review web filtering at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.43"
+      ],
+      "relatedRisks": [
+        "R-TC.16",
+        "R-TC.17"
+      ],
+      "requiredEvidence": [
+        "Web filtering evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that web filtering is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.24",
+      "title": "Use of cryptography",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Rules for the effective use of cryptography, including cryptographic key management, should be defined and implemented.",
+      "description": "Rules for the effective use of cryptography, including cryptographic key management, should be defined and implemented.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review use of cryptography at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.44"
+      ],
+      "relatedRisks": [
+        "R-TC.18"
+      ],
+      "requiredEvidence": [
+        "Use of cryptography evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that use of cryptography is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.25",
+      "title": "Secure development life cycle",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Rules for the secure development of software and systems should be established and applied.",
+      "description": "Rules for the secure development of software and systems should be established and applied.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review secure development life cycle at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.45"
+      ],
+      "relatedRisks": [
+        "R-TC.19"
+      ],
+      "requiredEvidence": [
+        "Secure development life cycle evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that secure development life cycle is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.26",
+      "title": "Application security requirements",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Information security requirements should be identified, specified and approved when developing or acquiring applications.",
+      "description": "Information security requirements should be identified, specified and approved when developing or acquiring applications.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review application security requirements at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.46"
+      ],
+      "relatedRisks": [
+        "R-TC.19"
+      ],
+      "requiredEvidence": [
+        "Application security requirements evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that application security requirements is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.27",
+      "title": "Secure system architecture and engineering principles",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Principles for engineering secure systems should be established, documented, maintained and applied to any information system development activities.",
+      "description": "Principles for engineering secure systems should be established, documented, maintained and applied to any information system development activities.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review secure system architecture and engineering principles at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.47"
+      ],
+      "relatedRisks": [
+        "R-TC.20"
+      ],
+      "requiredEvidence": [
+        "Secure system architecture and engineering principles evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that secure system architecture and engineering principles is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.28",
+      "title": "Secure coding",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Secure coding principles should be applied to software development.",
+      "description": "Secure coding principles should be applied to software development.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review secure coding at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.48"
+      ],
+      "relatedRisks": [
+        "R-TC.21"
+      ],
+      "requiredEvidence": [
+        "Secure coding evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that secure coding is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.29",
+      "title": "Security testing in development and acceptance",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Security testing processes should be defined and implemented in the development life cycle.",
+      "description": "Security testing processes should be defined and implemented in the development life cycle.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review security testing in development and acceptance at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.49"
+      ],
+      "relatedRisks": [
+        "R-TC.21"
+      ],
+      "requiredEvidence": [
+        "Security testing in development and acceptance evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that security testing in development and acceptance is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.30",
+      "title": "Outsourced development",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "The organization should direct, monitor and review the activities related to outsourced system development.",
+      "description": "The organization should direct, monitor and review the activities related to outsourced system development.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review outsourced development at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.50"
+      ],
+      "relatedRisks": [
+        "R-TC.22"
+      ],
+      "requiredEvidence": [
+        "Outsourced development evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that outsourced development is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.31",
+      "title": "Separation of development, test and production environments",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Development, testing and production environments should be separated and secured.",
+      "description": "Development, testing and production environments should be separated and secured.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review separation of development, test and production environments at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.51"
+      ],
+      "relatedRisks": [
+        "R-TC.22",
+        "R-TC.23"
+      ],
+      "requiredEvidence": [
+        "Separation of development, test and production environments evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that separation of development, test and production environments is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.32",
+      "title": "Change management",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Changes to information processing facilities and information systems should be subject to change management procedures.",
+      "description": "Changes to information processing facilities and information systems should be subject to change management procedures.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review change management at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.52"
+      ],
+      "relatedRisks": [
+        "R-TC.24"
+      ],
+      "requiredEvidence": [
+        "Change management evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that change management is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.33",
+      "title": "Test information",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Test information should be appropriately selected, protected and managed.",
+      "description": "Test information should be appropriately selected, protected and managed.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review test information at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.53"
+      ],
+      "relatedRisks": [
+        "R-TC.2"
+      ],
+      "requiredEvidence": [
+        "Test information evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that test information is documented, implemented, assigned to an owner, and supported by current evidence."
+    },
+    {
+      "id": "8.34",
+      "title": "Protection of information systems during audit testing",
+      "category": "Technology",
+      "annexDomain": "Technological Controls",
+      "objective": "Audit tests and other assurance activities involving assessment of operational systems should be planned and agreed between the tester and appropriate management.",
+      "description": "Audit tests and other assurance activities involving assessment of operational systems should be planned and agreed between the tester and appropriate management.",
+      "priority": "Medium",
+      "guidance": "Define ownership, document the expected process, retain evidence, and review protection of information systems during audit testing at planned intervals.",
+      "relatedPolicies": [],
+      "relatedTests": [
+        "T-TC.54"
+      ],
+      "relatedRisks": [
+        "R-TC.25"
+      ],
+      "requiredEvidence": [
+        "Protection of information systems during audit testing evidence",
+        "Procedure or standard",
+        "Review or approval record"
+      ],
+      "aiGuidance": "Confirm that protection of information systems during audit testing is documented, implemented, assigned to an owner, and supported by current evidence."
+    }
+  ]
+}
